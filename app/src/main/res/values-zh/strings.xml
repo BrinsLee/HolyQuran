@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quran Pashto قرآن پښتو</string>
+
+    <string name="navigation_drawer_open">打开导航抽屉</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+    <string name="nav_header_title">د قرآن پښتو ترجمه</string>
+    <string name="nav_header_subtitle">إحياء السنة فاونډیشن</string>
+    <string name="nav_header_desc">导航标题</string>
+    <string name="action_settings">设置</string>
+
+    <string name="menu_home">使用方法</string>
+    <string name="menu_gallery">创建应用</string>
+    <string name="menu_slideshow">评分</string>
+    <string name="menu_tools">前往标记</string>
+    <string name="menu_share">分享应用</string>
+    <string name="menu_send">联系我们（Akçod）</string>
+    <string name="agza">水星</string>
+    <string name="hi">你好</string>
+    <string name="fhares">苏拉</string>
+
+    <string name="is">更进一步</string>
+
+    <string name="zakr">来自真主的信息</string>
+    <string name="alah">了解信息</string>
+    <string name="notification">提醒提及</string>
+    <string name="messag">联系</string>
+    <string name="suppo">合作</string>
+    <string name="aler">通知</string>
+    <string name="_0">0</string>
+    <string name="_1">每12小时。</string>
+    <string name="stopalert">关闭提醒</string>
+    <string name="m">每30分钟。</string>
+    <string name="a">每小时。</string>
+    <string name="naby">每6小时。</string>
+    <string name="stop">停止</string>
+    <string name="zak">打开数字念珠</string>
+    <string name="zakrallah">你今天祈祷了吗？</string>
+    <string name="t">提及提醒</string>
+    <string name="n">更多我们的应用</string>
+    <string name="da">联系我们</string>
+    <string name="e">夜晚</string>
+    <string name="marks">段落</string>
+    <string name="parties">你好</string>
+
+    <string name="close">关闭</string>
+    <string name="continue1">继续</string>
+    <string name="congrat">恭喜</string>
+    <string name="dowell">你做得很好</string>
+    <string name="gotostore">去吧</string>
+    <string name="ratetheapp">如果你喜欢这个应用，请去评分</string>
+    <string name="ratingapp">你喜欢这个应用吗？</string>
+    <string name="light">光</string>
+    <string name="mark">标记</string>
+    <string name="add">添加</string>
+    <string name="marked">已标记</string>
+    <string name="symptoms">到达标记</string>
+    <string name="press_back_again_to_exit">再次按返回键退出</string>
+</resources>

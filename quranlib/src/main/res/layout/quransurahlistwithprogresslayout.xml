@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/surfaceColor1"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/surahCmpletedBTn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingTop="20sp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="20sp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvCounter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_ayah_bg"
+            android:gravity="center"
+            android:text="1. "
+            android:textColor="@color/onSurface2"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvSurahEnglishName"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSurahEnglishName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:text="Allah"
+            android:textAlignment="viewStart"
+            android:textColor="@color/onPrimary1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvSurahUrduName"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvCounter"
+            app:layout_constraintTop_toTopOf="@+id/tvCounter" />
+
+        <TextView
+            android:id="@+id/tvSurahDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Description"
+            android:textAlignment="viewStart"
+            android:textColor="@color/onPrimary1"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvSurahEnglishName"
+            app:layout_constraintStart_toStartOf="@+id/tvSurahEnglishName"
+            app:layout_constraintTop_toBottomOf="@+id/tvSurahEnglishName" />
+
+        <TextView
+            android:id="@+id/tvSurahUrduName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اَ للّ"
+            android:textColor="@color/onSurface2"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCounter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvSurahEnglishName"
+            app:layout_constraintTop_toTopOf="@+id/tvCounter" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/onSurface3"
+            android:progressTint="@color/onSurface2"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/tvSurahUrduName"
+            app:layout_constraintStart_toStartOf="@+id/tvCounter"
+            app:layout_constraintTop_toBottomOf="@+id/barrier2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forwargreen"
+            android:drawablePadding="0dp"
+            android:drawableTint="@color/onSurface2"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/qurankhatam_startReading"
+            android:textAllCaps="false"
+            android:textColor="@color/onSurface2"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar2"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/surahCompletedBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_check_24"
+            android:drawableTint="@color/onSurface2"
+            android:gravity="center_vertical"
+            android:includeFontPadding="true"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/qurankhatam_completed"
+            android:textAllCaps="false"
+            android:textColor="@color/onSurface2"
+            android:visibility="invisible"
+            app:iconTint="@color/onPrimary1"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="@+id/tvSurahUrduName"
+            app:layout_constraintTop_toTopOf="@+id/button" />
+
+        <Button
+            android:id="@+id/markReadBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            android:drawableLeft="@drawable/ic_eye_fill"
+            android:drawableTint="@color/onSurface2"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/qurankhatam_markread"
+
+            android:textAllCaps="false"
+            android:textColor="@color/onSurface2"
+            android:visibility="gone"
+            app:iconPadding="6dp"
+            app:iconTint="@color/onSurface2"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintStart_toStartOf="@+id/progressBar2"
+            app:layout_constraintTop_toTopOf="@+id/button"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tvSurahDescription,tvCounter"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

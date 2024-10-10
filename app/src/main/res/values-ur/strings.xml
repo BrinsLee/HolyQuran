@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quran Pashto قرآن پښتو</string>
+
+    <string name="navigation_drawer_open">نیویگیشن ڈراور کھولیں</string>
+    <string name="navigation_drawer_close">نیویگیشن ڈراور بند کریں</string>
+    <string name="nav_header_title">د قرآن پښتو ترجمه</string>
+    <string name="nav_header_subtitle">إحياء السنة فاونډیشن</string>
+    <string name="nav_header_desc">نیویگیشن ہیڈر</string>
+    <string name="action_settings">ترتیبات</string>
+
+    <string name="menu_home">استعمال کا طریقہ</string>
+    <string name="menu_gallery">ایک ایپ بنائیں</string>
+    <string name="menu_slideshow">درجہ بندی</string>
+    <string name="menu_tools">مارک پر جائیں</string>
+    <string name="menu_share">ایپ شیئر کریں</string>
+    <string name="menu_send">رابطہ کریں (Akçod)</string>
+    <string name="agza">عطارد</string>
+    <string name="hi">ہیلو</string>
+    <string name="fhares">سورتیں</string>
+
+    <string name="is">مزید</string>
+
+    <string name="zakr">اللہ سے پیغام</string>
+    <string name="alah">پیغام جاننا</string>
+    <string name="notification">ذکر کا یاددہانی</string>
+    <string name="messag">رابطہ کریں</string>
+    <string name="suppo">تعاون کریں</string>
+    <string name="aler">نوٹیفیکیشنز</string>
+    <string name="_0">0</string>
+    <string name="_1">ہر 12 گھنٹے۔</string>
+    <string name="stopalert">ذکر کی یاد دہانی بند کریں</string>
+    <string name="m">ہر 30 منٹ۔</string>
+    <string name="a">ہر گھنٹے۔</string>
+    <string name="naby">ہر 6 گھنٹے۔</string>
+    <string name="stop">روک دیں</string>
+    <string name="zak">ڈیجیٹل تسبیح کھولیں</string>
+    <string name="zakrallah">کیا آپ نے آج نماز پڑھی؟</string>
+    <string name="t">ذکر کا یاددہانی</string>
+    <string name="n">ہمارے مزید ایپس</string>
+    <string name="da">ہم سے رابطہ کریں</string>
+    <string name="e">رات</string>
+    <string name="marks">حصے</string>
+    <string name="parties">ہیلو</string>
+
+    <string name="close">بند کریں</string>
+    <string name="continue1">جاری رکھیں</string>
+    <string name="congrat">مبارک ہو</string>
+    <string name="dowell">آپ اچھا کر رہے ہیں</string>
+    <string name="gotostore">جاؤ</string>
+    <string name="ratetheapp">اگر آپ کو ایپ پسند ہے، تو اسے درجہ دیں</string>
+    <string name="ratingapp">کیا آپ کو یہ ایپ پسند ہے؟</string>
+    <string name="light">روشنی</string>
+    <string name="mark">مارک</string>
+    <string name="add">شامل کریں</string>
+    <string name="marked">نشان زدہ</string>
+    <string name="symptoms">نشان تک پہنچ گئے</string>
+    <string name="press_back_again_to_exit">"باہر نکلنے کے لیے دوبارہ دبائیں           "</string>
+</resources>

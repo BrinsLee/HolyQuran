@@ -1,0 +1,205 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.ihyas.soharamkarubar.ui.compass.CompassViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".compass.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            tools:context=".compass.MainActivity">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_layout" />
+
+            <RelativeLayout
+                android:id="@+id/compassMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.5"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/compassContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/baseimg"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/compass_one" />
+
+                    <ImageView
+                        android:id="@+id/indicator"
+                        android:layout_width="285dp"
+                        android:layout_height="285dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_compass_text" />
+
+                    <TextView
+                        android:id="@+id/ifnosensortxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/sorry_device_sensor"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/compassMapContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/innerplace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/red_circle"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/oval_green"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/poinerInner"
+                        android:layout_width="285dp"
+                        android:layout_height="285dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/needl" />
+
+                </RelativeLayout>
+
+                <com.ihyas.soharamkarubar.utils.custom_sensor.AccelerometerView
+                    android:id="@+id/accelerometer_view"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:gravity="center"
+                    android:id="@+id/tv_prayer_times"
+                    android:background="@drawable/bg_rounded"
+                    android:backgroundTint="@color/dull_black"
+                    android:fontFamily="@font/ralewayregular"
+                    android:text="@string/prayer_time"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/ralewaymedium"
+                    android:text="Pakistan"
+                    android:visibility="invisible"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/ralewaymedium"
+                    android:text="@string/qibla_direction"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/notetxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/ralewayregular"
+                android:gravity="center"
+                android:text="@string/qibla_notic"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+
+
+            <FrameLayout
+                android:id="@+id/adView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

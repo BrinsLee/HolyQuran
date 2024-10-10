@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Thurs day"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center|left"
+            android:id="@+id/textView17" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_sun"
+            android:layout_marginTop="-4dp"
+            android:id="@+id/imageView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:fontFamily="sans-serif-light"
+            android:textSize="14sp"
+            android:text="--/--"
+            android:textColor="@color/dullblack"
+            android:id="@+id/textView18" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

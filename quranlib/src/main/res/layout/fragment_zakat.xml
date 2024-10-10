@@ -1,0 +1,2926 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/onSurface2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="22dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:rotation="180"
+                android:src="@drawable/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ralewaymedium"
+                android:gravity="center"
+                android:text="@string/zakat_calculator"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_zakat_info"
+                android:layout_width="22dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginLeft="25dp"
+                android:onClick="ZakatInfo"
+                android:src="@drawable/information"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:foregroundGravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout15"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <ScrollView
+                android:id="@+id/mainScrollView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:scrollbars="none"
+                app:layout_constraintBottom_toTopOf="@+id/zakatTotalAssetsCL"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:background="@null"
+                    android:clipToPadding="false"
+                    android:paddingBottom="10dp">
+
+                    <!--                money-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/moneyHeadingCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:background="@drawable/bg_home_aya_of_moment"
+                        android:elevation="3dp"
+                        app:layout_constraintBottom_toTopOf="@+id/goldHeadingCL"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/moneyTitleCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            android:paddingStart="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/moneyHeadingTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/zakatMoneyTitle"
+                                android:textColor="@color/onSurface1"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/moneyInfoIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium_small"
+                                android:paddingEnd="16dp"
+                                android:src="@drawable/more_ic_info"
+                                app:layout_constraintBottom_toBottomOf="@id/moneyHeadingTV"
+                                app:layout_constraintStart_toEndOf="@+id/moneyHeadingTV"
+                                app:layout_constraintTop_toTopOf="@+id/moneyHeadingTV"
+                                app:tint="@color/onPrimary1" />
+
+                            <TextView
+                                android:id="@+id/totalMoneyTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/margin_medium"
+                                android:text="@string/totalMoney"
+                                android:textColor="@color/onSurface2"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="@id/moneyInfoIV"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/moneyInfoIV" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/moneyChildCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/moneyTitleCL"
+                            app:layout_constraintStart_toStartOf="@id/moneyTitleCL"
+                            app:layout_constraintTop_toBottomOf="@+id/moneyTitleCL">
+
+                            <View
+
+                                android:id="@+id/monySprater"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:background="@color/surfaceSeparatorColor"
+                                app:layout_constraintEnd_toEndOf="@+id/cashInHandCL"
+                                app:layout_constraintStart_toStartOf="@+id/cashInHandCL"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cashInHandCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_small"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/monySprater">
+
+                                <TextView
+                                    android:id="@+id/cashInHandTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/moneyCashInHandTitle"
+                                    android:textColor="@color/onPrimary1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/cashInHandET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:maxLength="10"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/cashInHandTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/cashInHandTV"
+                                    app:layout_constraintTop_toTopOf="@id/cashInHandTV" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cashInBankCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/cashInHandCL"
+                                app:layout_constraintStart_toStartOf="@+id/cashInHandCL"
+                                app:layout_constraintTop_toBottomOf="@+id/cashInHandCL">
+
+                                <TextView
+                                    android:id="@+id/cashInBankTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/moneyCashInBankAccountTitle"
+                                    android:textColor="@color/onPrimary1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/cashInBankET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:maxLength="10"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/cashInBankTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/cashInBankTV"
+                                    app:layout_constraintTop_toTopOf="@id/cashInBankTV" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--// gold-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/goldHeadingCL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/bg_home_aya_of_moment"
+                        android:elevation="3dp"
+                        app:layout_constraintBottom_toTopOf="@+id/silverHeadingCL"
+                        app:layout_constraintEnd_toEndOf="@+id/moneyHeadingCL"
+                        app:layout_constraintStart_toStartOf="@+id/moneyHeadingCL"
+                        app:layout_constraintTop_toBottomOf="@+id/moneyHeadingCL">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/goldTitleCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            android:paddingStart="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/goldHeadingTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/zakatGoldTitle"
+                                android:textColor="@color/onSurface1"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+
+                                android:id="@+id/goldInfoIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium_small"
+                                android:paddingEnd="16dp"
+                                android:src="@drawable/more_ic_info"
+                                app:layout_constraintBottom_toBottomOf="@id/goldHeadingTV"
+                                app:layout_constraintStart_toEndOf="@+id/goldHeadingTV"
+                                app:layout_constraintTop_toTopOf="@+id/goldHeadingTV"
+                                app:tint="@color/onPrimary1" />
+
+                            <TextView
+                                android:id="@+id/totalGoldTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:text="@string/totalGoldTV"
+                                android:textColor="@color/onSurface2"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="@id/goldInfoIV"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/goldInfoIV" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/goldChildHeadingCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/goldTitleCL">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:background="@color/surfaceSeparatorColor"
+                                app:layout_constraintEnd_toEndOf="@+id/goldRadioBtn"
+                                app:layout_constraintStart_toStartOf="@+id/goldRadioBtn"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <RadioGroup
+                                android:id="@+id/goldRadioBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <RadioButton
+                                    android:id="@+id/radio_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/onSurface2"
+                                    android:checked="true"
+                                    android:text="@string/goldValueRB" />
+
+                                <RadioButton
+                                    android:id="@+id/radio_weight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/onSurface2"
+                                    android:text="@string/goldWeightRB" />
+                            </RadioGroup>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/goldValueCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/goldRadioBtn">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/goldValueChildCL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin_medium"
+                                    android:visibility="visible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/carat24HeadingTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/goldValuePriceTV"
+                                        android:textColor="@color/onSurface1"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <EditText
+                                        android:id="@+id/goldValuePriceET"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_small"
+                                        android:background="@null"
+                                        android:gravity="end"
+                                        android:hint="@string/moneyCashInHandET"
+                                        android:maxLength="10"
+                                        android:inputType="numberDecimal"
+                                        android:maxLines="1"
+                                        android:paddingVertical="@dimen/margin_small"
+                                        android:textColor="@color/onSurface2"
+                                        android:textColorHint="@color/onSurface2"
+                                        android:textCursorDrawable="@null"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="@id/carat24HeadingTV"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/carat24HeadingTV"
+                                        app:layout_constraintTop_toTopOf="@id/carat24HeadingTV" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/goldWeightCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_medium"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/goldRadioBtn">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/goldWeightUnitPriceCL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingHorizontal="@dimen/margin_medium"
+                                    android:paddingVertical="@dimen/margin_medium"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/goldWeightTitleTV"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/goldWeight24caratPriceTV"
+                                        android:textColor="@color/onPrimary1"
+                                        android:textSize="16sp"
+                                        app:layout_constraintEnd_toStartOf="@+id/goldweightUnitPriceET"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <EditText
+                                        android:id="@+id/goldweightUnitPriceET"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:hint="@string/goldWeightUnitPriceET"
+                                        android:inputType="numberDecimal"
+                                        android:maxLines="1"
+                                        android:maxLength="10"
+                                        android:paddingHorizontal="@dimen/margin_medium"
+                                        android:paddingVertical="@dimen/margin_small"
+                                        android:textColor="@color/onSurface2"
+                                        android:textColorHint="@color/onSurface2"
+                                        android:textCursorDrawable="@null"
+                                        app:layout_constraintBottom_toBottomOf="@+id/goldWeightTitleTV"
+                                        app:layout_constraintEnd_toStartOf="@+id/goldweightUnit_spinner"
+                                        app:layout_constraintTop_toTopOf="@+id/goldWeightTitleTV" />
+
+                                    <Spinner
+                                        android:id="@+id/goldweightUnit_spinner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="@color/onSurface2"
+                                        app:layout_constraintBottom_toBottomOf="@+id/goldweightUnitPriceET"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="@+id/goldweightUnitPriceET" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/margin_1"
+                                        android:layout_marginEnd="@dimen/margin_medium"
+                                        android:background="@color/surfaceSeparatorColor"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/goldweightUnitPriceET" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/goldWeightPriceCL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin_small"
+                                    android:paddingVertical="@dimen/margin_medium"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/goldWeightUnitPriceCL">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:id="@+id/goldWeight24caratCL"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent">
+
+                                            <TextView
+                                                android:id="@+id/gold24CaratWeightQuentityTV"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/goldWeight24caratQuantityTV"
+                                                android:textColor="@color/onPrimary1"
+                                                android:textSize="16sp"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent" />
+
+                                            <EditText
+                                                android:id="@+id/gold24CaratweightPerUnitPriceET"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@android:color/transparent"
+                                                android:hint="@string/goldWeight24caratET"
+                                                android:inputType="number"
+                                                android:maxLines="1"
+                                                android:paddingHorizontal="32dp"
+                                                android:paddingVertical="@dimen/margin_small"
+                                                android:textColor="@color/onSurface2"
+                                                android:textColorHint="@color/onSurface2"
+                                                android:textCursorDrawable="@null"
+                                                android:textSize="16sp"
+                                                android:maxLength="10"
+                                                app:layout_constraintBottom_toBottomOf="@+id/gold24CaratWeightQuentityTV"
+                                                app:layout_constraintEnd_toStartOf="@+id/gold24CaratWeightUnit_Txt"
+                                                app:layout_constraintHorizontal_chainStyle="packed"
+                                                app:layout_constraintStart_toEndOf="@+id/gold24CaratWeightQuentityTV"
+                                                app:layout_constraintTop_toTopOf="@+id/gold24CaratWeightQuentityTV" />
+
+                                            <TextView
+                                                android:id="@+id/gold24CaratWeightUnit_Txt"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingHorizontal="20dp"
+                                                android:paddingVertical="@dimen/margin_small"
+                                                android:text="@string/goldWeight24caratgiramTV"
+                                                android:textColor="@color/onSurface2"
+                                                android:textSize="16sp"
+                                                app:layout_constraintBottom_toBottomOf="@+id/gold24CaratweightPerUnitPriceET"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toEndOf="@+id/gold24CaratweightPerUnitPriceET"
+                                                app:layout_constraintTop_toTopOf="@+id/gold24CaratweightPerUnitPriceET" />
+
+                                            <TextView
+                                                android:id="@+id/goldWeight24caratTitleTV2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/margin_medium"
+                                                android:text="@string/gold24caratpriceTitleTV"
+                                                android:textColor="@color/onPrimary1"
+                                                android:textSize="16sp"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@+id/gold24CaratWeightUnit_Txt" />
+
+                                            <TextView
+                                                android:id="@+id/goldWeight24CaratPriceTV"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@android:color/transparent"
+                                                android:maxLines="1"
+                                                android:paddingHorizontal="20dp"
+                                                android:paddingVertical="@dimen/margin_small"
+                                                android:text="@string/goldWeight24CaratPriceTV"
+                                                android:textColor="@color/onSurface2"
+                                                android:textSize="16sp"
+                                                app:layout_constraintBottom_toBottomOf="@+id/goldWeight24caratTitleTV2"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintTop_toTopOf="@+id/goldWeight24caratTitleTV2" />
+
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/margin_1"
+                                                android:layout_marginEnd="@dimen/margin_medium"
+                                                android:background="@color/surfaceSeparatorColor"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@+id/goldWeight24CaratPriceTV" />
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:id="@+id/goldWeight22caratCL"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/goldWeight24caratCL">
+
+                                            <TextView
+                                                android:id="@+id/gold22CaratWeightQuentityTV"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/gold22CaratWeightQuentityTV"
+                                                android:textColor="@color/onPrimary1"
+                                                android:textSize="16sp"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent" />
+
+                                            <EditText
+                                                android:id="@+id/gold22CaratweightPerUnitPriceET"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@android:color/transparent"
+                                                android:hint="@string/gold22CaratweightPerUnitPriceET"
+                                                android:inputType="number"
+                                                android:maxLines="1"
+                                                android:paddingHorizontal="32dp"
+                                                android:paddingVertical="@dimen/margin_small"
+                                                android:textColor="@color/onSurface2"
+                                                android:textColorHint="@color/onSurface2"
+                                                android:textCursorDrawable="@null"
+                                                android:textSize="16sp"
+                                                android:maxLength="10"
+                                                app:layout_constraintBottom_toBottomOf="@+id/gold22CaratWeightQuentityTV"
+                                                app:layout_constraintEnd_toStartOf="@+id/gold22CaratWeightUnit_Txt"
+                                                app:layout_constraintHorizontal_chainStyle="packed"
+                                                app:layout_constraintStart_toEndOf="@+id/gold22CaratWeightQuentityTV"
+                                                app:layout_constraintTop_toTopOf="@+id/gold22CaratWeightQuentityTV" />
+
+                                            <TextView
+                                                android:id="@+id/gold22CaratWeightUnit_Txt"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingHorizontal="20dp"
+                                                android:paddingVertical="@dimen/margin_small"
+                                                android:text="@string/gold22CaratWeightUnit_Txt"
+                                                android:textColor="@color/onSurface2"
+                                                android:textSize="16sp"
+                                                app:layout_constraintBottom_toBottomOf="@+id/gold22CaratweightPerUnitPriceET"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toEndOf="@+id/gold22CaratweightPerUnitPriceET"
+                                                app:layout_constraintTop_toTopOf="@+id/gold22CaratweightPerUnitPriceET" />
+
+                                            <TextView
+                                                android:id="@+id/goldWeight22caratTitleTV2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/margin_medium"
+                                                android:text="@string/goldWeight22caratTitleTV2"
+                                                android:textColor="@color/onPrimary1"
+                                                android:textSize="16sp"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@+id/gold22CaratWeightUnit_Txt" />
+
+                                            <TextView
+                                                android:id="@+id/goldWeight22CaratPriceTV"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@android:color/transparent"
+                                                android:maxLines="1"
+                                                android:paddingHorizontal="20dp"
+                                                android:paddingVertical="@dimen/margin_small"
+                                                android:text="@string/goldWeight22CaratPriceTV"
+                                                android:textColor="@color/onSurface2"
+                                                android:textSize="16sp"
+                                                app:layout_constraintBottom_toBottomOf="@+id/goldWeight22caratTitleTV2"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintTop_toTopOf="@+id/goldWeight22caratTitleTV2" />
+
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/margin_1"
+                                                android:layout_marginEnd="@dimen/margin_medium"
+                                                android:background="@color/surfaceSeparatorColor"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@+id/goldWeight22CaratPriceTV" />
+
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:id="@+id/goldWeight18caratCL"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/goldWeight22caratCL">
+
+                                            <TextView
+                                                android:id="@+id/gold18CaratWeightQuentityTV"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/gold18CaratWeightQuentityTV"
+                                                android:textColor="@color/onPrimary1"
+                                                android:textSize="16sp"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent" />
+
+                                            <EditText
+                                                android:id="@+id/gold18CaratweightPerUnitPriceET"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@android:color/transparent"
+                                                android:hint="@string/gold18CaratweightPerUnitPriceET"
+                                                android:inputType="number"
+                                                android:maxLines="1"
+                                                android:maxLength="10"
+                                                android:paddingHorizontal="32dp"
+                                                android:paddingVertical="@dimen/margin_small"
+                                                android:textColor="@color/onSurface2"
+                                                android:textColorHint="@color/onSurface2"
+                                                android:textCursorDrawable="@null"
+                                                android:textSize="16sp"
+                                                app:layout_constraintBottom_toBottomOf="@+id/gold18CaratWeightQuentityTV"
+                                                app:layout_constraintEnd_toStartOf="@+id/gold18CaratWeightUnit_Txt"
+                                                app:layout_constraintHorizontal_chainStyle="packed"
+                                                app:layout_constraintStart_toEndOf="@+id/gold18CaratWeightQuentityTV"
+                                                app:layout_constraintTop_toTopOf="@+id/gold18CaratWeightQuentityTV" />
+
+                                            <TextView
+                                                android:id="@+id/gold18CaratWeightUnit_Txt"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:paddingHorizontal="20dp"
+                                                android:paddingVertical="@dimen/margin_small"
+                                                android:text="@string/gold18CaratWeightUnit_Txt"
+                                                android:textColor="@color/onSurface2"
+                                                android:textSize="16sp"
+                                                app:layout_constraintBottom_toBottomOf="@+id/gold18CaratweightPerUnitPriceET"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toEndOf="@+id/gold18CaratweightPerUnitPriceET"
+                                                app:layout_constraintTop_toTopOf="@+id/gold18CaratweightPerUnitPriceET" />
+
+                                            <TextView
+                                                android:id="@+id/goldWeight18caratTitleTV2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/margin_medium"
+                                                android:text="@string/goldWeight18caratTitleTV2"
+                                                android:textColor="@color/onPrimary1"
+                                                android:textSize="16sp"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@+id/gold18CaratWeightUnit_Txt" />
+
+                                            <TextView
+                                                android:id="@+id/goldWeight18CaratPriceTV"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:background="@android:color/transparent"
+                                                android:maxLines="1"
+                                                android:paddingHorizontal="20dp"
+                                                android:paddingVertical="@dimen/margin_small"
+                                                android:text="@string/goldWeight18CaratPriceTV"
+                                                android:textColor="@color/onSurface2"
+                                                android:textSize="16sp"
+                                                app:layout_constraintBottom_toBottomOf="@+id/goldWeight18caratTitleTV2"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintTop_toTopOf="@+id/goldWeight18caratTitleTV2" />
+
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/margin_1"
+                                                android:layout_marginEnd="@dimen/margin_medium"
+                                                android:background="@color/surfaceSeparatorColor"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toBottomOf="@+id/goldWeight18CaratPriceTV" />
+
+
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--// silver-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/silverHeadingCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:background="@drawable/bg_home_aya_of_moment"
+                        android:elevation="3dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/goldHeadingCL">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/silverTitleCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            android:paddingStart="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/silverHeadingTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/silverHeadingTV"
+                                android:textColor="@color/onSurface1"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/silverInfoIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium_small"
+                                android:paddingEnd="16dp"
+                                android:src="@drawable/more_ic_info"
+                                app:layout_constraintBottom_toBottomOf="@id/silverHeadingTV"
+                                app:layout_constraintStart_toEndOf="@+id/silverHeadingTV"
+                                app:layout_constraintTop_toTopOf="@+id/silverHeadingTV"
+                                app:tint="@color/onPrimary1" />
+
+                            <TextView
+                                android:id="@+id/totalSilverTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:text="@string/zakatTotalSilverTV"
+                                android:textColor="@color/onSurface2"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="@id/silverHeadingTV"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/silverHeadingTV" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/silverChildHeadingCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/silverTitleCL">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:background="@color/surfaceSeparatorColor"
+                                app:layout_constraintEnd_toEndOf="@+id/silverRadioBtn"
+                                app:layout_constraintStart_toStartOf="@+id/silverRadioBtn"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <RadioGroup
+                                android:id="@+id/silverRadioBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <RadioButton
+                                    android:id="@+id/silverValueRB"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/onSurface2"
+                                    android:checked="true"
+                                    android:text="@string/silverValueRB" />
+
+                                <RadioButton
+                                    android:id="@+id/silverWeightRB"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/onSurface2"
+                                    android:text="@string/silverWeightRB" />
+                            </RadioGroup>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/silverValueCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_small"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/silverRadioBtn"
+                                app:layout_constraintStart_toStartOf="@+id/silverRadioBtn"
+                                app:layout_constraintTop_toBottomOf="@+id/silverRadioBtn">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/silverValueUnitPriceCL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin_small"
+                                    android:layout_marginTop="@dimen/margin_small"
+                                    android:paddingVertical="@dimen/margin_medium"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/silverValueTitle2TV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/silverValueTitle2TV"
+                                        android:textColor="@color/onSurface1"
+                                        android:textSize="16sp"
+                                        app:layout_constraintEnd_toStartOf="@+id/silverValuePriceET"
+                                        app:layout_constraintHorizontal_chainStyle="packed"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <EditText
+                                        android:id="@+id/silverValuePriceET"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_small"
+                                        android:background="@null"
+                                        android:gravity="end"
+                                        android:hint="@string/moneyCashInHandET"
+                                        android:maxLength="10"
+                                        android:inputType="numberDecimal"
+                                        android:maxLines="1"
+                                        android:paddingVertical="@dimen/margin_small"
+                                        android:textColor="@color/onSurface2"
+                                        android:textColorHint="@color/onSurface2"
+                                        android:textCursorDrawable="@null"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="@+id/silverValueTitle2TV"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/silverValueTitle2TV"
+                                        app:layout_constraintTop_toTopOf="@+id/silverValueTitle2TV" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/silverWeightCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toEndOf="@+id/silverRadioBtn"
+                                app:layout_constraintStart_toStartOf="@+id/silverRadioBtn"
+                                app:layout_constraintTop_toBottomOf="@+id/silverRadioBtn">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/silverWeightUnitPriceCL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin_small"
+                                    android:paddingVertical="@dimen/margin_medium"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/silverWeightTitleTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/silverWeightTitleTV"
+                                        android:textColor="@color/onSurface1"
+                                        android:textSize="16sp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <Spinner
+                                        android:id="@+id/silverWeightUnit_spinner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="@color/onSurface2"
+                                        app:layout_constraintBottom_toBottomOf="@+id/silverWeightTitleTV"
+                                        app:layout_constraintEnd_toStartOf="@+id/silverWeightUnitPriceET"
+                                        app:layout_constraintStart_toEndOf="@+id/silverWeightTitleTV"
+                                        app:layout_constraintTop_toTopOf="@+id/silverWeightTitleTV" />
+
+                                    <EditText
+                                        android:id="@+id/silverWeightUnitPriceET"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:hint="@string/silverWeightUnitPriceET"
+                                        android:inputType="numberDecimal"
+                                        android:maxLines="1"
+                                        android:maxLength="10"
+                                        android:paddingHorizontal="32dp"
+                                        android:paddingVertical="@dimen/margin_small"
+                                        android:textColor="@color/onSurface2"
+                                        android:textColorHint="@color/onSurface2"
+                                        android:textCursorDrawable="@null"
+                                        app:layout_constraintBottom_toBottomOf="@+id/silverWeightUnit_spinner"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="@+id/silverWeightUnit_spinner" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/silverWeightPriceCL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin_small"
+                                    android:paddingVertical="@dimen/margin_medium"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/silverWeightUnitPriceCL">
+
+                                    <TextView
+                                        android:id="@+id/silverWeightQuentityTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/silverWeightQuentityTV"
+                                        android:textColor="@color/onSurface1"
+                                        android:textSize="16sp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <EditText
+                                        android:id="@+id/silverWeightQuentityET"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:hint="@string/silverWeightQuentityET"
+                                        android:inputType="number"
+                                        android:maxLines="1"
+                                        android:maxLength="10"
+                                        android:paddingHorizontal="32dp"
+                                        android:paddingVertical="@dimen/margin_small"
+                                        android:textColor="@color/onSurface2"
+                                        android:textColorHint="@color/onSurface2"
+                                        android:textCursorDrawable="@null"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="@+id/silverWeightQuentityTV"
+                                        app:layout_constraintEnd_toStartOf="@+id/weightUnit_Txt"
+                                        app:layout_constraintHorizontal_chainStyle="packed"
+                                        app:layout_constraintStart_toEndOf="@+id/silverWeightQuentityTV"
+                                        app:layout_constraintTop_toTopOf="@+id/silverWeightQuentityTV" />
+
+                                    <TextView
+                                        android:id="@+id/weightUnit_Txt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingHorizontal="20dp"
+                                        android:paddingVertical="@dimen/margin_small"
+                                        android:text="@string/weightUnit_Txt"
+                                        android:textColor="@color/onSurface2"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="@+id/silverWeightQuentityET"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/silverWeightQuentityET"
+                                        app:layout_constraintTop_toTopOf="@+id/silverWeightQuentityET" />
+
+                                    <TextView
+                                        android:id="@+id/silverWeightTitleTV2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin_medium"
+                                        android:text="@string/silverWeightTitleTV2"
+                                        android:textColor="@color/onSurface1"
+                                        android:textSize="16sp"
+                                        android:visibility="gone"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/weightUnit_Txt" />
+
+                                    <TextView
+                                        android:id="@+id/weightPriceTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:inputType="number"
+                                        android:maxLines="1"
+                                        android:paddingHorizontal="20dp"
+                                        android:paddingVertical="@dimen/margin_small"
+                                        android:text="@string/weightPriceTV"
+                                        android:textColor="@color/onSurface1"
+                                        android:textSize="16sp"
+                                        android:visibility="gone"
+                                        app:layout_constraintBottom_toBottomOf="@+id/silverWeightTitleTV2"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="@+id/silverWeightTitleTV2" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--// investment-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/investmentHeadingCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:background="@drawable/bg_home_aya_of_moment"
+                        android:elevation="3dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/silverHeadingCL">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/investmentTitleCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            android:paddingStart="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/investmentHeadingTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/investmentHeadingTV"
+                                android:textColor="@color/onSurface1"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+
+                                android:id="@+id/investmentInfoIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium_small"
+                                android:paddingEnd="16dp"
+                                android:src="@drawable/more_ic_info"
+                                app:layout_constraintBottom_toBottomOf="@id/investmentHeadingTV"
+                                app:layout_constraintStart_toEndOf="@+id/investmentHeadingTV"
+                                app:layout_constraintTop_toTopOf="@+id/investmentHeadingTV"
+                                app:tint="@color/onPrimary1" />
+
+                            <TextView
+                                android:id="@+id/totalInvestmentTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:text="@string/totalInvestmentTV"
+                                android:textColor="@color/onSurface2"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="@id/investmentInfoIV"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/investmentInfoIV" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/investmentChildHeadingCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/investmentTitleCL">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:background="@color/surfaceSeparatorColor"
+                                app:layout_constraintEnd_toEndOf="@+id/sharesCL"
+                                app:layout_constraintStart_toStartOf="@+id/sharesCL"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/sharesCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_small"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/sharesTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/sharesTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/sharesET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:maxLength="10"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/sharesTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/sharesTV"
+                                    app:layout_constraintTop_toTopOf="@id/sharesTV" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/otherInvestmentCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/sharesCL"
+                                app:layout_constraintStart_toStartOf="@+id/sharesCL"
+                                app:layout_constraintTop_toBottomOf="@+id/sharesCL">
+
+                                <TextView
+                                    android:id="@+id/otherInvestmentTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/otherInvestmentTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/otherInvestmentET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:maxLength="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/otherInvestmentTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/otherInvestmentTV"
+                                    app:layout_constraintTop_toTopOf="@id/otherInvestmentTV" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--                properties-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/propertiesHeadingCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:background="@drawable/bg_home_aya_of_moment"
+                        android:elevation="3dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/investmentHeadingCL">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/propertyTitleCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            android:paddingStart="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/propertyHeadingTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/propertyHeadingTV"
+                                android:textColor="@color/onSurface1"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+
+                                android:id="@+id/propertyInfoIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium_small"
+                                android:paddingEnd="16dp"
+                                android:src="@drawable/more_ic_info"
+                                app:layout_constraintBottom_toBottomOf="@id/propertyHeadingTV"
+                                app:layout_constraintStart_toEndOf="@+id/propertyHeadingTV"
+                                app:layout_constraintTop_toTopOf="@+id/propertyHeadingTV"
+                                app:tint="@color/onPrimary1" />
+
+                            <TextView
+
+                                android:id="@+id/totalPropertyTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:text="@string/totalPropertyTV"
+                                android:textColor="@color/onSurface2"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="@id/propertyInfoIV"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/propertyInfoIV" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/propertiesChildHeadingCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/propertyTitleCL">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:background="@color/surfaceSeparatorColor"
+                                app:layout_constraintEnd_toEndOf="@+id/rentCL"
+                                app:layout_constraintStart_toStartOf="@+id/rentCL"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/rentCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_small"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/rentTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/rentTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/propertyRentET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:maxLength="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/rentTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/rentTV"
+                                    app:layout_constraintTop_toTopOf="@id/rentTV" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/propertyCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toEndOf="@+id/rentCL"
+                                app:layout_constraintStart_toStartOf="@+id/rentCL"
+                                app:layout_constraintTop_toBottomOf="@+id/rentCL">
+
+                                <TextView
+                                    android:id="@+id/propertyTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/propertyTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/propertyET"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:hint="@string/propertyET"
+                                    android:inputType="numberDecimal"
+                                    android:paddingHorizontal="32dp"
+                                    android:maxLength="10"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface1"
+                                    android:textColorHint="@color/onSurface1"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/propertyTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@id/propertyTV" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--                business-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/businessHeadingCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:background="@drawable/bg_home_aya_of_moment"
+                        android:elevation="3dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/propertiesHeadingCL">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/businessTitleCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            android:paddingStart="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/businessHeadingTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/businessHeadingTV"
+                                android:textColor="@color/onSurface1"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+
+                                android:id="@+id/businessInfoIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium_small"
+                                android:paddingEnd="16dp"
+                                android:src="@drawable/more_ic_info"
+                                app:layout_constraintBottom_toBottomOf="@id/businessHeadingTV"
+                                app:layout_constraintStart_toEndOf="@+id/businessHeadingTV"
+                                app:layout_constraintTop_toTopOf="@+id/businessHeadingTV"
+                                app:tint="@color/onPrimary1" />
+
+                            <TextView
+                                android:id="@+id/totalBusinessTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:text="@string/totalBusinessTV"
+                                android:textColor="@color/onSurface2"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="@id/businessInfoIV"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/businessInfoIV" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/businessChildHeadingCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/businessTitleCL">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:background="@color/surfaceSeparatorColor"
+                                app:layout_constraintEnd_toEndOf="@+id/businessCashCL"
+                                app:layout_constraintStart_toStartOf="@+id/businessCashCL"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/businessCashCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_small"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/businessCashTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/businessCashTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/businessCashET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:maxLength="10"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/businessCashTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/businessCashTV"
+                                    app:layout_constraintTop_toTopOf="@id/businessCashTV" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/businessGoodsCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/businessCashCL"
+                                app:layout_constraintStart_toStartOf="@+id/businessCashCL"
+                                app:layout_constraintTop_toBottomOf="@+id/businessCashCL">
+
+                                <TextView
+                                    android:id="@+id/businessGoodsTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/businessGoodsTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/businessGoodsET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="10"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/businessGoodsTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/businessGoodsTV"
+                                    app:layout_constraintTop_toTopOf="@id/businessGoodsTV" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--                agriculture-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/agricultureCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:background="@drawable/bg_home_aya_of_moment"
+                        android:elevation="3dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/businessHeadingCL">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/agricultureTitleCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            android:paddingStart="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/agricultureHeadingTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/agricultureHeadingTV"
+                                android:textColor="@color/onSurface1"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+
+                                android:id="@+id/agricultureInfoIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium_small"
+                                android:paddingEnd="16dp"
+                                android:src="@drawable/more_ic_info"
+                                app:layout_constraintBottom_toBottomOf="@id/agricultureHeadingTV"
+                                app:layout_constraintStart_toEndOf="@+id/agricultureHeadingTV"
+                                app:layout_constraintTop_toTopOf="@+id/agricultureHeadingTV"
+                                app:layout_constraintVertical_bias="0.695"
+                                app:tint="@color/onPrimary1" />
+
+                            <TextView
+                                android:id="@+id/totalAgriTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:text="@string/totalAgriTV"
+                                android:textColor="@color/onSurface2"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="@id/agricultureInfoIV"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/agricultureInfoIV" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/agricultureChildCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/agricultureTitleCL">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:background="@color/surfaceSeparatorColor"
+                                app:layout_constraintEnd_toEndOf="@+id/agriTypeCL"
+                                app:layout_constraintStart_toStartOf="@+id/agriTypeCL"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/agriTypeCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agriPriceCL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin_small"
+                                    android:layout_marginTop="@dimen/margin_small"
+                                    android:paddingVertical="@dimen/margin_medium"
+                                    android:visibility="gone"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/agriPriceTitleTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/agriPriceTitleTV"
+                                        android:textColor="@color/onSurface1"
+                                        android:textSize="16sp"
+                                        app:layout_constraintEnd_toStartOf="@+id/agriPriceET"
+                                        app:layout_constraintHorizontal_chainStyle="packed"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <EditText
+                                        android:id="@+id/agriPriceET"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:hint="@string/agriPriceET"
+                                        android:inputType="numberDecimal"
+                                        android:maxLength="10"
+                                        android:maxLines="1"
+                                        android:paddingHorizontal="@dimen/margin_58dp"
+                                        android:paddingVertical="@dimen/margin_small"
+                                        android:textColorHint="@color/onSurface1"
+                                        android:textCursorDrawable="@null"
+                                        app:layout_constraintBottom_toBottomOf="@+id/agriPriceTitleTV"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/agriPriceTitleTV"
+                                        app:layout_constraintTop_toTopOf="@+id/agriPriceTitleTV" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agriRainCL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin_medium"
+                                    android:layout_marginTop="@dimen/margin_small"
+                                    android:paddingVertical="@dimen/margin_medium"
+                                    android:visibility="visible"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/agriPriceCL">
+
+                                    <TextView
+                                        android:id="@+id/agriRainHeadingTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/agriRainHeadingTV"
+                                        android:textColor="@color/onSurface1"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <EditText
+                                        android:id="@+id/agriRainET"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_small"
+                                        android:background="@null"
+                                        android:gravity="end"
+                                        android:hint="@string/moneyCashInHandET"
+                                        android:inputType="numberDecimal"
+                                        android:maxLines="1"
+                                        android:maxLength="10"
+                                        android:paddingVertical="@dimen/margin_small"
+                                        android:textColor="@color/onSurface2"
+                                        android:textColorHint="@color/onSurface2"
+                                        android:textCursorDrawable="@null"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="@id/agriRainHeadingTV"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/agriRainHeadingTV"
+                                        app:layout_constraintTop_toTopOf="@id/agriRainHeadingTV" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agriIrrigationCL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin_medium"
+                                    android:paddingVertical="@dimen/margin_medium"
+                                    android:visibility="visible"
+                                    app:layout_constraintEnd_toEndOf="@+id/agriRainCL"
+                                    app:layout_constraintStart_toStartOf="@+id/agriRainCL"
+                                    app:layout_constraintTop_toBottomOf="@+id/agriRainCL">
+
+                                    <TextView
+                                        android:id="@+id/agriIrrigationHeadingTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/agriIrrigationHeadingTV"
+                                        android:textColor="@color/onSurface1"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <EditText
+
+                                        android:id="@+id/agriIrrigationET"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_small"
+                                        android:background="@null"
+                                        android:gravity="end"
+                                        android:hint="@string/moneyCashInHandET"
+                                        android:maxLength="10"
+                                        android:inputType="numberDecimal"
+                                        android:maxLines="1"
+                                        android:paddingVertical="@dimen/margin_small"
+                                        android:textColor="@color/onSurface2"
+                                        android:textColorHint="@color/onSurface2"
+                                        android:textCursorDrawable="@null"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="@id/agriIrrigationHeadingTV"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/agriIrrigationHeadingTV"
+                                        app:layout_constraintTop_toTopOf="@id/agriIrrigationHeadingTV" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agriBothCL"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/margin_medium"
+                                    android:paddingVertical="@dimen/margin_medium"
+                                    android:visibility="visible"
+                                    app:layout_constraintEnd_toEndOf="@+id/agriIrrigationCL"
+                                    app:layout_constraintStart_toStartOf="@+id/agriIrrigationCL"
+                                    app:layout_constraintTop_toBottomOf="@+id/agriIrrigationCL">
+
+                                    <TextView
+                                        android:id="@+id/agriBothHeadingTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/agriBothHeadingTV"
+                                        android:textColor="@color/onSurface1"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <EditText
+
+                                        android:id="@+id/agriBothET"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_small"
+                                        android:background="@null"
+                                        android:gravity="end"
+                                        android:maxLength="10"
+                                        android:hint="@string/moneyCashInHandET"
+                                        android:inputType="numberDecimal"
+                                        android:maxLines="1"
+                                        android:paddingVertical="@dimen/margin_small"
+                                        android:textColor="@color/onSurface2"
+                                        android:textColorHint="@color/onSurface2"
+                                        android:textCursorDrawable="@null"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="@id/agriBothHeadingTV"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/agriBothHeadingTV"
+                                        app:layout_constraintTop_toTopOf="@id/agriBothHeadingTV" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--                cattle-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cattleCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:background="@drawable/bg_home_aya_of_moment"
+                        android:elevation="3dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/agricultureCL">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cattleTitleCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            android:paddingStart="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/cattleHeadingTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cattleHeadingTV"
+                                android:textColor="@color/onSurface1"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+
+                                android:id="@+id/cattleInfoIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium_small"
+                                android:paddingEnd="16dp"
+                                android:src="@drawable/more_ic_info"
+                                app:layout_constraintBottom_toBottomOf="@id/cattleHeadingTV"
+                                app:layout_constraintStart_toEndOf="@+id/cattleHeadingTV"
+                                app:layout_constraintTop_toTopOf="@+id/cattleHeadingTV"
+                                app:tint="@color/onPrimary1" />
+
+                            <TextView
+
+                                android:id="@+id/totalCattleTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:text="@string/totalCattleTV"
+                                android:textColor="@color/onSurface2"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="@id/cattleInfoIV"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/cattleInfoIV" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cattleTypeCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cattleTitleCL">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:background="@color/surfaceSeparatorColor"
+                                app:layout_constraintEnd_toEndOf="@+id/cattleCamelCL"
+                                app:layout_constraintStart_toStartOf="@+id/cattleCamelCL"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cattleCamelCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_small"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/cattleCamelHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cattleCamelHeadingTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/cattleCamelET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:maxLength="10"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/cattleCamelHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/cattleCamelHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/cattleCamelHeadingTV" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cattleCowCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/cattleCamelCL"
+                                app:layout_constraintStart_toStartOf="@+id/cattleCamelCL"
+                                app:layout_constraintTop_toBottomOf="@+id/cattleCamelCL">
+
+                                <TextView
+                                    android:id="@+id/cattleCowHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cattleCowHeadingTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/cattleCowET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:maxLength="10"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/cattleCowHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/cattleCowHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/cattleCowHeadingTV" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cattleSheepCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/cattleCowCL"
+                                app:layout_constraintStart_toStartOf="@+id/cattleCowCL"
+                                app:layout_constraintTop_toBottomOf="@+id/cattleCowCL">
+
+                                <TextView
+                                    android:id="@+id/cattleSheepHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cattleSheepHeadingTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/cattleSheepET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:maxLength="10"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/cattleSheepHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/cattleSheepHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/cattleSheepHeadingTV" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--             precious stones-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/preciousStonesCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:background="@drawable/bg_home_aya_of_moment"
+                        android:elevation="3dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cattleCL">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/preciousStonesTitleCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            android:paddingStart="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/preciousStonesHeadingTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/preciousStonesHeadingTV"
+                                android:textColor="@color/onSurface1"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+
+                                android:id="@+id/preciousStonesInfoIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium_small"
+                                android:paddingEnd="16dp"
+                                android:src="@drawable/more_ic_info"
+                                app:layout_constraintBottom_toBottomOf="@id/preciousStonesHeadingTV"
+                                app:layout_constraintStart_toEndOf="@+id/preciousStonesHeadingTV"
+                                app:layout_constraintTop_toTopOf="@+id/preciousStonesHeadingTV"
+                                app:tint="@color/onPrimary1" />
+
+                            <TextView
+                                android:id="@+id/totalPreciousStonesTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:text="@string/totalPreciousStonesTV"
+                                android:textColor="@color/onSurface2"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="@id/preciousStonesInfoIV"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/preciousStonesInfoIV" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/preciousStonesChildCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/preciousStonesTitleCL">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:background="@color/surfaceSeparatorColor"
+                                app:layout_constraintEnd_toEndOf="@+id/preciousStonesChildCL2"
+                                app:layout_constraintStart_toStartOf="@+id/preciousStonesChildCL2"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/preciousStonesChildCL2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:layout_marginTop="@dimen/margin_small"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/preciousStonesHeadingChildTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/preciousStonesHeadingChildTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/preciousStonesET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:maxLength="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/preciousStonesHeadingChildTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/preciousStonesHeadingChildTV"
+                                    app:layout_constraintTop_toTopOf="@id/preciousStonesHeadingChildTV" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--             others-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/otherCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:background="@drawable/bg_home_aya_of_moment"
+                        android:elevation="3dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/preciousStonesCL">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/otherTitleCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            android:paddingStart="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/otherHeadingTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/otherHeadingTV"
+                                android:textColor="@color/onSurface1"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+
+                                android:id="@+id/otherInfoIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium_small"
+                                android:paddingEnd="16dp"
+                                android:src="@drawable/more_ic_info"
+                                app:layout_constraintBottom_toBottomOf="@id/otherHeadingTV"
+                                app:layout_constraintStart_toEndOf="@+id/otherHeadingTV"
+                                app:layout_constraintTop_toTopOf="@+id/otherHeadingTV"
+                                app:tint="@color/onPrimary1" />
+
+                            <TextView
+                                android:id="@+id/totalOtherTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:text="@string/totalOtherTV"
+                                android:textColor="@color/onSurface2"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="@id/otherInfoIV"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/otherInfoIV" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/otherTypeCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/otherTitleCL">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:background="@color/surfaceSeparatorColor"
+                                app:layout_constraintEnd_toEndOf="@+id/otherPensionCL"
+                                app:layout_constraintStart_toStartOf="@+id/otherPensionCL"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/otherPensionCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_small"
+                                android:layout_marginTop="@dimen/margin_small"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/otherPensionHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/otherPensionHeadingTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/otherPensionET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:maxLength="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/otherPensionHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/otherPensionHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/otherPensionHeadingTV" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/otherLoanCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_small"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/otherPensionCL"
+                                app:layout_constraintStart_toStartOf="@+id/otherPensionCL"
+                                app:layout_constraintTop_toBottomOf="@+id/otherPensionCL">
+
+                                <TextView
+                                    android:id="@+id/otherLoanHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/otherLoanHeadingTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/otherLoanET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:maxLength="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/otherLoanHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/otherLoanHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/otherLoanHeadingTV" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/otherAssetsCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_small"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/otherLoanCL"
+                                app:layout_constraintStart_toStartOf="@+id/otherLoanCL"
+                                app:layout_constraintTop_toBottomOf="@+id/otherLoanCL">
+
+                                <TextView
+                                    android:id="@+id/otherAssetsHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/otherAssetsHeadingTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/otherAssetsET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:maxLength="10"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/otherAssetsHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/otherAssetsHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/otherAssetsHeadingTV" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--             payables-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/payableCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:background="@drawable/bg_home_aya_of_moment"
+                        android:elevation="3dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/otherCL">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/payableTitleCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="16dp"
+                            android:paddingStart="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/payableHeadingTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/zakatPayablesTitle"
+                                android:textColor="@android:color/holo_red_dark"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+
+                                android:id="@+id/payableInfoIV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium"
+                                android:paddingVertical="@dimen/margin_medium_small"
+                                android:paddingEnd="16dp"
+                                android:src="@drawable/more_ic_info"
+                                app:layout_constraintBottom_toBottomOf="@id/payableHeadingTV"
+                                app:layout_constraintStart_toEndOf="@+id/payableHeadingTV"
+                                app:layout_constraintTop_toTopOf="@+id/payableHeadingTV"
+                                app:tint="@color/onPrimary1" />
+
+                            <TextView
+                                android:id="@+id/totalPayableTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="16dp"
+                                android:text="@string/totalOtherTV"
+                                android:textColor="@android:color/holo_red_dark"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toBottomOf="@id/payableInfoIV"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/payableInfoIV" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/payableTypeCL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/payableTitleCL">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginHorizontal="@dimen/margin_medium"
+                                android:background="@color/surfaceSeparatorColor"
+                                app:layout_constraintEnd_toEndOf="@+id/creditCardPaymentCL"
+                                app:layout_constraintStart_toStartOf="@+id/creditCardPaymentCL"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/creditCardPaymentCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_small"
+                                android:layout_marginTop="@dimen/margin_small"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/creditCardPaymentHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/zakatCreditCardPaymentHeadingTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+                                    android:id="@+id/creditCardPaymentET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="10"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/creditCardPaymentHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/creditCardPaymentHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/creditCardPaymentHeadingTV" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/homeCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_small"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/creditCardPaymentCL"
+                                app:layout_constraintStart_toStartOf="@+id/creditCardPaymentCL"
+                                app:layout_constraintTop_toBottomOf="@+id/creditCardPaymentCL">
+
+                                <TextView
+                                    android:id="@+id/homeHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/zakat_calculator"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/homePaymentET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:maxLength="10"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/homeHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/homeHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/homeHeadingTV" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/carCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_small"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/homeCL"
+                                app:layout_constraintStart_toStartOf="@+id/homeCL"
+                                app:layout_constraintTop_toBottomOf="@+id/homeCL">
+
+                                <TextView
+                                    android:id="@+id/carHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/zakatCarHeadingTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/carPaymentET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:maxLength="10"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/carHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/carHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/carHeadingTV" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/BusinessPaymentCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_small"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/carCL"
+                                app:layout_constraintStart_toStartOf="@+id/carCL"
+                                app:layout_constraintTop_toBottomOf="@+id/carCL">
+
+                                <TextView
+                                    android:id="@+id/BusinessPaymentHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/zakatBusinessPaymentHeadingTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/businessPaymentET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:maxLength="10"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/BusinessPaymentHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/BusinessPaymentHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/BusinessPaymentHeadingTV" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/familyDebtCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_small"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/BusinessPaymentCL"
+                                app:layout_constraintStart_toStartOf="@+id/BusinessPaymentCL"
+                                app:layout_constraintTop_toBottomOf="@+id/BusinessPaymentCL">
+
+                                <TextView
+                                    android:id="@+id/familyDebtHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/zakatFamilyDebtHeadingTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/familyDebtET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:gravity="end"
+                                    android:maxLength="10"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/familyDebtHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/familyDebtHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/familyDebtHeadingTV" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/othersDebtCL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/margin_small"
+                                android:paddingVertical="@dimen/margin_medium"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="@+id/familyDebtCL"
+                                app:layout_constraintStart_toStartOf="@+id/familyDebtCL"
+                                app:layout_constraintTop_toBottomOf="@+id/familyDebtCL">
+
+                                <TextView
+                                    android:id="@+id/othersDebtHeadingTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/zakatOthersDebtHeadingTV"
+                                    android:textColor="@color/onSurface1"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <EditText
+
+                                    android:id="@+id/othersDebtET"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_small"
+                                    android:background="@null"
+                                    android:maxLength="10"
+                                    android:gravity="end"
+                                    android:hint="@string/moneyCashInHandET"
+                                    android:inputType="numberDecimal"
+                                    android:maxLines="1"
+                                    android:paddingVertical="@dimen/margin_small"
+                                    android:textColor="@color/onSurface2"
+                                    android:textColorHint="@color/onSurface2"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@id/othersDebtHeadingTV"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/othersDebtHeadingTV"
+                                    app:layout_constraintTop_toTopOf="@id/othersDebtHeadingTV" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/zakatTotalAssetsCL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/onPrimary3"
+                android:paddingHorizontal="@dimen/margin_medium"
+                android:paddingVertical="@dimen/margin_20dp"
+                app:layout_constraintBottom_toTopOf="@+id/zakatDueCL"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/zakatTotalAssetsHeadingTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zakatTotalAssetsHeadingTV"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/totalAssetsTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zakatTotalAssetsTV"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@id/zakatTotalAssetsHeadingTV"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/zakatTotalAssetsHeadingTV" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/zakatDueCL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/onSurface2"
+                android:paddingHorizontal="@dimen/margin_medium"
+                android:paddingVertical="@dimen/margin_20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/adView7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/zakatDueHeadingTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zakatDueHeadingTV"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/totalZakatDueTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/totalZakatDueTV"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@id/zakatDueHeadingTV"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/zakatDueHeadingTV" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <FrameLayout
+                android:id="@+id/adView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

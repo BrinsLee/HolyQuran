@@ -1,0 +1,131 @@
+buildscript {
+    ext {
+        compile_sdk_version = 32
+        app_id = 'islam.muslim.app'
+        min_sdk_version = 23
+        target_sdk_version = 32
+        version_code = 1
+        version_name = "1.0"
+        jvm_target = '1.8'
+        google_services_version = '4.3.13'
+        crashlytics_version = '2.9.4'
+        perf_version = '1.4.1'
+        room_version = '2.6.1'
+
+        coreDependencies = [
+                core : 'androidx.core:core-ktx:1.7.0',
+                app_compat : 'androidx.appcompat:appcompat:1.5.0',
+                material : 'com.google.android.material:material:1.6.1',
+                constraint_layout : 'androidx.constraintlayout:constraintlayout:2.1.4',
+                legacy_support : 'androidx.legacy:legacy-support-v4:1.0.0'
+        ]
+
+        navVersion = '2.5.1'
+
+        navigationDependencies = [
+                navigation : "androidx.navigation:navigation-fragment-ktx:${navVersion}",
+                navigation_ui : "androidx.navigation:navigation-ui-ktx:${navVersion}",
+        ]
+
+        hiltVersion = '2.51.1'
+
+        hiltDependencies = [
+                hilt : "com.google.dagger:hilt-android:${hiltVersion}",
+                hilt_android_compiler : "com.google.dagger:hilt-android-compiler:${hiltVersion}",
+                hilt_compiler : 'androidx.hilt:hilt-compiler:1.0.0',
+                hilt_nav : 'androidx.hilt:hilt-navigation-fragment:1.0.0'
+        ]
+
+        gsonDependency = [
+                gson : 'com.google.code.gson:gson:2.8.5'
+        ]
+
+        okHttpDependency = [
+                okhttp : 'com.squareup.okhttp3:okhttp:3.10.0',
+                okhttp_logging : 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+        ]
+
+        retrofitVersion = '2.3.0'
+        retrofitDependency = [
+                retrofit : 'com.squareup.retrofit2:retrofit:2.9.0',
+                retrofit_converter : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+                retrofit_adapter : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
+        ]
+
+        lifecycleVersion = '2.4.1'
+        lifecycleDependency = [
+                lifecycle_livedata : "androidx.lifecycle:lifecycle-livedata-ktx:${lifecycleVersion}",
+                lifecycle_viewmodel : "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycleVersion}",
+                lifecycle_runtime : "androidx.lifecycle:lifecycle-runtime-ktx:${lifecycleVersion}"
+        ]
+
+        glideDependency = [
+                glide : 'com.github.bumptech.glide:glide:4.13.1',
+                glide_compiler : 'com.github.bumptech.glide:compiler:4.12.0'
+        ]
+
+        googleAuth = [
+                auth : 'com.google.android.gms:play-services-auth:20.2.0'
+        ]
+
+        firebaseBom = [
+                firebase : 'com.google.firebase:firebase-bom:30.3.2',
+                auth_ktx : 'com.google.firebase:firebase-auth-ktx:21.0.7'
+        ]
+
+        firebase = [
+                crashlytics: 'com.google.firebase:firebase-crashlytics-ktx',
+                analytics: 'com.google.firebase:firebase-analytics-ktx',
+                monitoring: 'com.google.firebase:firebase-perf-ktx'
+        ]
+
+        hawkDependency = [
+                hawk : 'com.orhanobut:hawk:2.0.1'
+        ]
+
+        permissionDependency = [
+                permissionx : 'com.guolindev.permissionx:permissionx:1.6.1'
+        ]
+
+        splash = [
+                core_splash : 'androidx.core:core-splashscreen:1.0.0-beta01'
+        ]
+
+        lottie = [
+                animation : 'com.airbnb.android:lottie:3.5.0'
+        ]
+
+        pagingDependency = [
+                paging : 'androidx.paging:paging-runtime:3.0.0-alpha06'
+        ]
+
+        updates = [
+                app_update : 'com.google.android.play:core-ktx:1.8.1',
+        ]
+
+        circle = [
+                image_view : 'de.hdodenhof:circleimageview:3.1.0',
+        ]
+
+        picasso = [
+                pic : 'com.squareup.picasso:picasso:2.71828'
+        ]
+
+        simple = [
+                tooltip : 'com.github.douglasjunior:android-simple-tooltip:1.0.0-rc.0'
+        ]
+
+        billing_version = '5.0.0'
+        billing = [
+                billing_client : "com.android.billingclient:billing:${billing_version}",
+                billing_client_ktx : "com.android.billingclient:billing-ktx:${billing_version}"
+        ]
+
+        data_store_version = '1.0.0'
+        store = [
+                data_store: "androidx.datastore:datastore:${data_store_version}",
+                data_store_preferences: "androidx.datastore:datastore-preferences:${data_store_version}"
+        ]
+
+    }
+}

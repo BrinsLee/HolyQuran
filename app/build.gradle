@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin:  'kotlin-kapt'
+apply plugin:  'dagger.hilt.android.plugin'
+android {
+    compileSdk 34
+    namespace 'com.ihyas.soharamkarubar'
+
+    defaultConfig {
+        applicationId "apps.ssatechs.quranpashto"
+        minSdk 21
+        targetSdk 34
+        versionCode 14
+        versionName "1.14"
+    }
+    signingConfigs {
+        release {
+            storeFile file('/quranpashto1.jks')
+            storePassword 'Sparco786'
+            keyAlias 'key0'
+            keyPassword 'Sparco786'
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation("com.google.android.gms:play-services-ads-identifier:18.0.1")
+    implementation(project(":android-pdf-viewer"))
+    implementation(project(":quranlib"))
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+//    implementation 'androidx.activity:activity:1.8.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'com.google.android.gms:play-services-ads:23.2.0'
+    implementation 'com.google.android.ump:user-messaging-platform:2.2.0'
+
+    // Hilt
+    implementation hiltDependencies.hilt
+    //implementation 'com.google.firebase:firebase-firestore-ktx:24.1.1'
+    //implementation 'com.google.firebase:firebase-database-ktx:19.6.0'
+    kapt hiltDependencies.hilt_android_compiler
+    kapt hiltDependencies.hilt_compiler
+    implementation hiltDependencies.hilt_nav
+//    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+//    implementation 'androidx.core:core-ktx:1.13.1'
+//    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+
+/*    def lifecycle_version = '2.6.2'
+    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"*/
+
+}

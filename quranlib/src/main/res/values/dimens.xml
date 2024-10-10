@@ -1,0 +1,71 @@
+<resources>
+    <!--<dimen name="fab_margin">16dp</dimen>-->
+    <dimen name="prayer_text_size">18sp</dimen>
+    <dimen name="about_padding">10sp</dimen>
+    <dimen name="stop_btn_size">18sp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="gradient_radius">320dp</dimen>
+    <dimen name="accelerometer_view_size">90dp</dimen>
+    <dimen name="spacing_double">32dp</dimen>
+    <dimen name="text_normal">14sp</dimen>
+    <dimen name="spacing_huge">72dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="spacing_zero">0dp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_xmedium">18sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_xlarge">24sp</dimen>
+    <dimen name="activity_vertical_margin">12dp</dimen>
+    <dimen name="recycleView_padding">6dp</dimen>
+    <dimen name="textViewPadding">5dp</dimen>
+
+    <dimen name="textViewMargin">6dp</dimen>
+
+    <dimen name="lineSpacingExtra">2dp</dimen>
+    <dimen name="fontSizeArabic">30sp</dimen>
+    <dimen name="fontSizeArabicHeader">35sp</dimen>
+    <dimen name="fontSizeTranslate">14sp</dimen>
+    <dimen name="fontSizeText">20sp</dimen>
+    <dimen name="lineWidth">0.5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="scroller">5dp</dimen>
+    <dimen name="scrollerPadding">2dp</dimen>
+
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2dp">2dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_6dp">6dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_14dp">-14dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_23dp">23dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_36dp">36dp</dimen>
+    <dimen name="margin_58dp">58dp</dimen>
+    <dimen name="margin_xx_small">2dp</dimen>
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_medium_small">6dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_extra_large">24dp</dimen>
+    <dimen name="margin_xxl">32dp</dimen>
+    <dimen name="icon_size_dashboard">36dp</dimen>
+
+    <dimen name="card_elevation">3dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="card_outer_stroke">1dp</dimen>
+    <dimen name="more_screen_image_45dp">45dp</dimen>
+    <dimen name="size_16">16sp</dimen>
+    <dimen name="size_14">14sp</dimen>
+    <dimen name="size_12">12sp</dimen>
+    <dimen name="size_10">10sp</dimen>
+    <dimen name="size_32">32sp</dimen>
+</resources>

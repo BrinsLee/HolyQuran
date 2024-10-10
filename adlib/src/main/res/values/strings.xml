@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--广告测试id-->
+    <string name="ad_app_id_test" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ad_app_id" translatable="false">ca-app-pub-3043644740178862~5593958367</string>
+    <!--开屏广告-->
+    <string name="ad_open_id_test" translatable="false">ca-app-pub-3940256099942544/9257395921</string>
+    <!--自适应横幅广告-->
+    <string name="ad_banner_id_test" translatable="false">ca-app-pub-3940256099942544/9214589741</string>
+
+    <string name="ad_banner_id_bottom" translatable="false">ca-app-pub-3043644740178862/6834166034</string>
+
+    <string name="ad_banner_id_prayer_detail" translatable="false">ca-app-pub-3043644740178862/9620111470</string>
+
+    <string name="ad_banner_id_quran_book" translatable="false">ca-app-pub-3043644740178862/2679326853</string>
+
+    <!--固定尺寸广告-->
+    <string name="ad_rectangle_id_test" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <!--插页式广告-->
+    <string name="ad_interstitial_id_test" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <!--插页式视频广告-->
+    <string name="ad_interstitial_video_id_test" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <!--激励广告-->
+    <string name="ad_reward_id_test" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <!--插页式激励广告-->
+    <string name="ad_reward_interstitial_id_test" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <!--原生高级广告-->
+    <string name="ad_native_id_test" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!--原生高级视频广告-->
+    <string name="ad_native_video_id_test" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+</resources>

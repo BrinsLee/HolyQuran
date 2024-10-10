@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="navigation_drawer_open">د نیویګیشن دراز خلاص کړئ</string>
+    <string name="navigation_drawer_close">د نیویګیشن دراز وتړئ</string>
+    <string name="nav_header_title">د قرآن پښتو ترجمه</string>
+    <string name="nav_header_subtitle">إحياء السنة فاونډیشن</string>
+
+    <string name="nav_header_desc">د نیویګیشن سرلیک</string>
+    <string name="action_settings">ترتیبونه</string>
+
+    <string name="menu_home">د استعمال طریقه</string>
+    <string name="menu_gallery">ایپ جوړ کړئ</string>
+    <string name="menu_slideshow">درجه بندي</string>
+    <string name="menu_tools">نښې ته لاړ شئ</string>
+    <string name="menu_share">ایپ شریکه کړئ</string>
+    <string name="menu_send">اړیکه (Akçod)</string>
+    <string name="agza">عطارد</string>
+    <string name="hi">سلام</string>
+    <string name="fhares">سورتونه</string>
+
+    <string name="is">نور</string>
+
+    <string name="zakr">د الله پیغام</string>
+    <string name="alah">پیغام پوهه کړئ</string>
+    <string name="notification">د ذکر یادونه</string>
+    <string name="messag">اړیکه</string>
+    <string name="suppo">همکاري وکړئ</string>
+    <string name="aler">خبرتیاوې</string>
+    <string name="_0">۰</string>
+    <string name="_1">هر ۱۲ ساعته.</string>
+    <string name="stopalert">یادونه بنده کړئ</string>
+    <string name="m">هر ۳۰ دقیقې.</string>
+    <string name="a">هر ساعت.</string>
+    <string name="naby">هر ۶ ساعته.</string>
+    <string name="stop">ودروي</string>
+    <string name="zak">ډیجیټل تسبیح خلاص کړئ</string>
+    <string name="zakrallah">تاسو نن دعا کړې ده؟</string>
+    <string name="t">د ذکر یادونه</string>
+    <string name="n">نور زموږ ایپسونه</string>
+    <string name="da">له موږ سره اړیکه</string>
+    <string name="e">شپه</string>
+    <string name="marks">برخې</string>
+    <string name="parties">سلام</string>
+
+    <string name="close">بند کړئ</string>
+    <string name="continue1">ادامه ورکړئ</string>
+    <string name="congrat">مبارکۍ</string>
+    <string name="dowell">تاسو ښه کړی</string>
+    <string name="gotostore">ولاړ شئ</string>
+    <string name="ratetheapp">که تاسو ایپ خوښ کړئ، نو د هغې درجه بندي وکړئ</string>
+    <string name="ratingapp">تاسو ایپ خوښوی؟</string>
+    <string name="light">رڼا</string>
+    <string name="mark">نښه</string>
+    <string name="add">اضافه کړئ</string>
+    <string name="marked">نښه ولګیده</string>
+    <string name="symptoms">نښې ته ورسیدئ</string>
+    <string name="press_back_again_to_exit">د وتلو لپاره بیا شاته تڼۍ کېکاږئ</string>
+
+</resources>

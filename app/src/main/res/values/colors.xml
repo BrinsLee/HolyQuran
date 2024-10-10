@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#23DDDD</color>
+    <color name="colorPrimaryDark">#3C4B51</color><!-- closing app button background color-->
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#F1F1EF</color><!-- closing app popup(rectangle) background color and button text color-->
+    <color name="black">#333332</color> <!-- closing app popup message text color-->
+    <color name="grey">#F33333</color>
+    <color name="fav_black">#0f76df</color> <!-- app menu background color-->
+    <color name="fav_grey">#ECECEC</color> <!-- app left menu drawer text color-->
+</resources>
+    <!-- for app bottom menu icons and text color replace color code in Notepad++ -->

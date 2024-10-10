@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".Activities.WeatherWidget">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgcolor"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_layout" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/weatherbgcard"
+                    android:backgroundTint="#0085FF"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="40dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/txtTemp"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="74"
+                            android:textColor="@color/black"
+                            android:textSize="32sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:id="@+id/descTxt"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:gravity="center"
+                            android:text="@string/sunny"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="22dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="Feels like 71°"
+                            android:id="@+id/feelsText"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="center"
+                            android:id="@+id/minmaxTxt"
+                            android:text="Min 50° | Max 85°"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/timeTxt"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="09:22"
+                            android:textColor="@color/black"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="AM"
+                            android:id="@+id/ampmTxt"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center"
+                        android:id="@+id/dayTxt"
+                        android:text="Wed, Oct 01- 2020"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="22dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/black" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/dailyRV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1.8"
+                    android:background="@drawable/weatherbgcard"
+                    android:backgroundTint="#0085FF"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/nextWeatherRV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="40dp" />
+
+
+
+
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/adView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/onSurface2"
+                android:orientation="vertical"
+                android:id="@+id/btnRefresh"
+                android:gravity="center"
+                android:layout_marginBottom="70dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/reset"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+</layout>

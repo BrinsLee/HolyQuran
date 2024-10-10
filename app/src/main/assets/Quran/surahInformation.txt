@@ -1,0 +1,114 @@
+﻿1,الْفَاتِحَة,Al-Fatihah,(The Opening),7
+2,الْبَقَرَة,Al-Baqarah,(The Cow),286
+3,آل عِمْرَان,Ali `Imran,(The Family of 'Imran),200
+4,النِّسَآء,An-Nisa',(Women),176
+5,الْمَآئِدَة,Al-Ma'idah,(The Table),120
+6,الْأَنْعَام,Al-'An`am,(Cattle),165
+7,الْأَعْرَاف,Al-'A`raf,(The Heights),206
+8,الْأَنْفَال,Al-'Anfal,(Spoils of War),75
+9,التَّوْبَة,At-Tawbah,(Repentance),129
+10,يُوْنـُس,Yunus,(Jonah),109
+11,هُوْد,Hud,(Hud),123
+12,يُوْسُف,Yusuf,(Joseph),111
+13,الرَّعْد,Ar-Ra`d,(The Thunder),43
+14,إِبْرَاهِيْم,Ibrahim,(Abraham),52
+15,الْحِجْر,Al-Hijr,(Stone Land),99
+16,النَّحْل,An-Nahl,(The Bee),128
+17,الْإِسْرَاء  بَنِيْ إِسْرَآءِيْل,Al-'Isra',(The Night Journey),111
+18,الْكَهْف,Al-Kahf,(The Cave),110
+19,مَرْيَم,Maryam,(Mary),98
+20,طهٰ,Taha,(Ta-Ha),135
+21,الْأَنْبِيَآء,Al-'Anbya',(The Prophets),112
+22,الْحَجّ,Al-Haj,(The Pilgrimage),78
+23,الْمُؤْمِنُوْن,Al-Mu'uminun,(The Believers),118
+24,النُّوْر,An-Nur,(The Light),64
+25,الْفُرْقَان,Al-Furqan,(The Criterion),77
+26,الشُّعَرَآء,Ash-Shu`ara',(The Poets),227
+27,النَّمْل,An-Naml,(The Ant),93
+28,الْقَصَص,Al-Qasas,(The Stories),88
+29,الْعَنْکَبُوْت,Al-`Ankabut,(The Spider),69
+30,الرُّوْم,Ar-Rum,(The Romans),60
+31,لُقْمَان,Luqman,(Luqman),34
+32,السَّجْدَة,As-Sajdah,(The Prostration),30
+33,الْأَحْزَاب,Al-'Ahzab,(The Combined Forces),73
+34,سَبـَا,Saba',(Sheba),54
+35,فَاطِر,Fatir,(Originator),45
+36,يٰس,Yaseen,(Yaa-Seen),83
+37,الصَّافَّات,As-Saffat,(Those who set the Ranks),182
+38,ص,Sad,(The Letter Sad),88
+39,الزُّمَر,Az-Zumar,(The Troops),75
+40,غَافِر الْمُؤْمِن,Ghafir,(The Forgiver God),85
+41,فُصِّلَت  حٰم السَّجْدَة,Fussilat,(Explained in Detail),54
+42,الشُّوْرٰی, Ash-Shura,(Consultation),53
+43,الزُّخْرُف,Az-Zukhruf,(Ornaments of Gold),89
+44,الدُّخَان,Ad-Dukhan,(Smoke),59
+45,الْجَاثِيَة,Al-Jathiyah,(Crouching),37
+46,الْأَحْقَاف,Al-'Ahqaf,(The Wind Curved Sandhills),35
+47,مُحَمَّد,Muhammad,(Muhammad),38
+48,الْفَتْح,Al-Fath,(Victory),29
+49,الْحُجُرَات,Al-Hujurat,(The Private Apartments),18
+50,ق,Qaf,(The Letter Qaf),45
+51,الذَّارِيَات,Adh-Dhariyat,(The Winnowing Winds),60
+52,الطُّوْر,At-Tur,(The Mount),49
+53,النَّجْم,An-Najm,(The Star),62
+54,الْقَمَر,Al-Qamar,(The Moon),55
+55,الرَّحْمٰن,Ar-Rahman,(The Beneficent),78
+56,الْوَاقِعَة,Al-Waqi`ah,(The Inevitable),96
+57,الْحَدِيْد,Al-Hadid,(The Iron),29
+58,الْمُجَادَلَة,Al-Mujadila,(She That Disputeth),22
+59,الْحَشْر,Al-Hashr,(Exile),24
+60,الْمُمْتَحِنَة,Al-Mumtahanah,(She that is to be examined),13
+61,الصَّفّ,As-Saf,(Battle Array),14
+62,الْجُمُعَة,Al-Jumu`ah,(Friday),11
+63,الْمُنَافِقُوْن,Al-Munafiqun,(The Hypocrites),11
+64,التَّغَابُن,At-Taghabun,(Mutual Disillusion),18
+65,الطَّلاَق,At-Talaq,(Divorce),12
+66,التَّحْرِيْم,At-Tahrim,(Prohibition),12
+67,الْمُلْک,Al-Mulk,(The Sovereignty),30
+68,الْقَلَم,Al-Qalam,(The Pen),52
+69,الْحَآقَّة,Al-Haqqa,(The Reality),52
+70,الْمَعَارِج,Al-Ma`arij,(The Ascending Stairways),44
+71,نُوْح,Nuh,(Nooh),28
+72,الْجِنّ,Al-Jinn,(The Jinn),28
+73,الْمُزَّمِّل,Al-Muzzammil,(The Enshrouded One),20
+74,الْمُدَّثِّر,Al-Muddaththir,(The Cloaked One),56
+75,الْقِيَامَة,Al-Qiyamah,(The Rising of The Dead),40
+76,الْإِنْسَان   الدَّهْر,Al-'Insan,(Man),31
+77,الْمُرْسَلاَت,Al-Mursalat,(The Emissaries),50
+78,النَّبَا,An-Naba',(The Tidings),40
+79,النَّازِعَات,An-Nazi`at,(Those who drag forth),46
+80,عَبَسَ,`Abasa,(He frowned),42
+81,التَّکْوِيْر,At-Takwir,(The Overthrowing),29
+82,الْإِنْفِطَار,Al-'Infitar,(The Cleaving),19
+83,الْمُطَفِّفِيْن,Al-Mutaffifin,(Defrauding),36
+84,الْإِنْشِقَاق,Al-'Inshiqaq,(The Sundering),25
+85,الْبُرُوْج,Al-Buruj,(The Mansions of the Stars),22
+86,الطَّارِق,At-Tariq,(The Nightcomer),17
+87,الْأَعْلیٰ,Al-A'la,(The Most High),19
+88,الْغَاشِيَة,Al-Ghashiyah,(The Overwhelming),26
+89,الْفَجْر,Al-Fajr,(The Dawn),30
+90,الْبَلَد,Al-Balad,(The City),20
+91,الشَّمْس,Ash-Shams,(The Sun),15
+92,اللَّيْل,Al-Layl,(The Night),21
+93,الضُّحٰی,Ad-Dhuha,(The Morning Hours),11
+94,الْإِنْشِرَاح,Ash-Sharh,(Relief),8
+95,التِّيْن,At-Tin,(The Fig),8
+96,الْعَلَق,Al-`Alaq,(The Clot),19
+97,الْقَدْر,Al-Qadr,(Power),5
+98,الْبَـيِّـنَة,Al-Bayyinah,(The Clear Proof),8
+99,الزَّلْزَلَة  الزِّلْزَال,Az-Zalzalh,(The Earthquake),8
+100,الْعَادِيَات,Al-`Adiyat,(The Courser),11
+101,الْقَارِعَة,Al-Qari`ah,(The Calamity),11
+102,التَّکَاثُر,At-Takathur,(Rivalry in wealth),8
+103,الْعَصْر,Al-`Asr,(The Declining Day),3
+104,الْهُمَزَة,Al-Humazah,(The Traducer),9
+105,الْفِيل,Al-Fil,(The Elephant),5
+106,قُرَيْش,Quraysh,(Winter - Quraysh),4
+107,الْمَاعُوْن,Al-Ma`un,(Small Kindnesses),7
+108,الْکَوْثَر,Al-Kawthar,(Abundance),3
+109,الْکَافِرُوْن,Al-Kafirun,(The Disbelievers),6
+110,النَّصْر,An-Nasr,(Divine Support),3
+111,الْمَسَد  اللَّهَب,Al-Masad,(The Flame),5
+112,الْإِخْلاَص,Al-'Ikhlas,(Sincerity),4
+113,الْفَلَق,Al-Falaq,(The Daybreak),5
+114,النَّاس,An-Nas,(Mankind),6

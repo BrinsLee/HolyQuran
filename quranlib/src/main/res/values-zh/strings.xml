@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Quran Majeed</string>
+    <string name="app_description">古兰经马吉德</string>
+    <string name="share_kalma">分享这个词</string>
+    <string name="action_settings">设置</string>
+    <string name="time_for">%s祷告时间</string>
+    <string name="time_in">在 %s 的 %s</string>
+    <string name="time_up">自 %s 时间以来</string>
+    <string name="time_to_next">下一次祷告在</string>
+    <string name="downloading_downloading">正在下载 . . .</string>
+    <string name="qurantp_download">下载</string>
+    <string name="downloading_complete">下载完成</string>
+    <string name="kalma_audio">神学音频</string>
+    <string name="text_text_and_translations">选择古兰经翻译</string>
+    <string name="delete_translation_message">您确定要删除此翻译吗？</string>
+    <string name="text_ok">确定</string>
+    <string name="text_cancel">取消</string>
+    <string name="arabic_text_error_message">请输入阿拉伯语</string>
+    <string name="stop_athan">停止诵读阿赞</string>
+    <string name="close_notification">关闭</string>
+    <string name="set_location">点此设置位置</string>
+    <string name="notifications">注意事项</string>
+    <string name="qibla_notic">注意:您可能需要以圆周运动移动设备来重置指南针</string>
+    <string name="qibla_direction">从北方看朝拜方向:</string>
+    <string name="accuracy">精度</string>
+    <string name="accuracy3">精度：%s</string>
+    <string name="about_us">是否曾经想在生活中获得动力？如果是的话，这个应用将通过它庞大的最佳伊斯兰工具集，帮助你在生活的每个阶段获得激励。</string>
+    <string name="error">错误</string>
+    <string name="unable_to_init_sensor">无法初始化指南针的传感器。</string>
+    <string name="btn_ok">确定</string>
+    <string name="acceleration">加速度</string>
+    <string name="fajrar">黎明</string>
+    <string name="dhuhrar">中午</string>
+    <string name="asrar">时代</string>
+    <string name="maghribar">摩洛哥</string>
+    <string name="ishaar">晚餐</string>
+
+    <string name="menu_fadl1">最好的、最容易的工作是使穆斯林人更接近其神。</string>
+    <string name="menu_fadl2">一些男性、祈祷和劝导的经文和谈话:</string>
+    <string name="menu_fadlGod1">他说:</string>
+    <string name="menu_fadlGod2">他说:</string>
+    <string name="menu_fadlProphet">神的使者对他说</string>
+    <string name="ProphetSaid">神的使者对他说</string>
+    <string name="thought1">愿神更大。</string>
+    <string name="thought2">他们长长长寿。</string>
+    <string name="thought3">你们要记住我，向我致谢，也不满足+。</string>
+    <string name="thought4">你们这些信的人啊，你们要多记神+。</string>
+    <string name="thought5">许多弟兄姊妹和弟兄姊妹都得到很大的宽恕和报酬。</string>
+    <string name="thought6">他称赞你，又赞美你，又赞美你。</string>
+    <string name="thought7">那些记得上帝站起来，站在他们身边的人。</string>
+    <string name="thought8">要是你的人被杀了，就要把你们的祖先或最重要的事记在神上。</string>
+    <string name="thought9">你们这些信的人啊，你们的财物和你们的儿女，都不可分散你们+。</string>
+    <string name="thought10">要谨记，不要不要说胡言乱语，不要说胡言乱语。</string>
+    <string name="thought11">就像提到他的上帝而不提他的上帝就像活着和死亡。</string>
+    <string name="thought12">不要告诉你，你的国王的工作和建议是正确的，把它提升到你的成绩上，比金子和纸的隧道更好，也不要让你看到敌人的脖子。他说:</string>
+    <string name="thought13">神说:“我以为abdi be，如果他想起我，我就跟他在一起，我提醒提醒我，在我的书里以美好的方式提醒我;靠近shabra，抱着我的臂膀，抱着他的臂膀，紧紧抱着他的臂膀，带着他的臂膀，走来走去。</string>
+    <string name="thought14">他坐在没有提到过的椅子上，他是神看见的，他躺在床上的时候，他却没有提到他。</string>
+    <string name="thought15">他们所坐的是一个理事会，他们在那里没有提到神，也没有得到先知的启示，除非他们想要折磨和宽恕。</string>
+    <string name="thought16">在这个理事会中，没有人会提到上帝，他们只会像一头驴一样哀叹。</string>
+    <string name="AdkarExtra1">阿塞拜疆的圣像照亮了奴隶在丹尼亚的道路，使他走在正直的道路上</string>
+    <string name="AdkarExtra2">它能消除舌头，让他远离昏迷、流言蜚语</string>
+    <string name="AdkarExtra3">圣物会使穆斯林的慈悲、安宁、舒适和安全</string>
+    <string name="AdkarExtra4">万能的真主保佑他，他所做的一切，不亚于吊死和为神而战。</string>
+    <string name="AdkarExtra5">早晨和晚上的回忆抚慰心灵，在穆斯林的心中传播安宁和心理安慰</string>
+    <string name="AdkarExtra6">早晨和夜晚的回忆有助于穆斯林远离对神的记忆</string>
+    <string name="SalatThought1">在忠信的人会在有尊荣的乐园里拥护你</string>
+    <string name="SalatThought2">忠信的人有坚定的信念</string>
+    <string name="SalatThought3">在他面前的时候，要把虔诚和敬虔</string>
+    <string name="SalatThought4">你们这些信的人啊，要忍耐忍耐，求神与忍耐的人同在。</string>
+    <string name="SalatThought5">日间的沟通，日间的沟通，日间的沟通，使人想起美好的事，</string>
+    <string name="SalatThought6">凡信的人啊，下跪，下跪，崇拜你们的主，行善，</string>
+    <string name="SalatThought7">信信的人行善的人，虔诚的人，带来正义的人，在主面前领报酬，不怕他们，也不忧愁。</string>
+    <string name="SalatExtra1">奴隶在赎罪日首先要对祈祷负责;他改革了他的事业，腐败了他的事业</string>
+    <string name="SalatExtra2">从热爱生意的人到全能的上帝</string>
+    <string name="SalatExtra3">在与万能的神相遇时，神之光、圣灵和朝圣者的朝圣</string>
+    <string name="SalatExtra4">在天涯海角，为主祈祷</string>
+    <string name="SalatExtra5">祷告是上帝最好的事情-在这两个见证之后</string>
+    <string name="menu_sunrise">早上</string>
+    <string name="menu_sunset">晚上</string>
+    <string name="internetlost">要更新页面数据，您必须连接到互联网</string>
+    <string name="internetfound">正在更新数据</string>
+    <string name="orientation">方向</string>
+    <string name="accuracy_unreliable">不可靠的</string>
+    <string name="accuracy_low">低</string>
+    <string name="accuracy_medium">中等</string>
+    <string name="accuracy_high">高</string>
+    <string name="need_calibration">需要校准指南针。旋转手机，重复“8”字形，直到校准完成。</string>
+    <string name="asr">阿斯尔（下午礼拜）</string>
+    <string name="maghrib">马格里布（傍晚礼拜）</string>
+    <string name="isha">伊莎（夜间礼拜）</string>
+    <string name="tahajjud">泰哈朱德（深夜礼拜）</string>
+    <string name="nextfajr">下一次晨礼</string>
+    <string name="pref_header_general">一般</string>
+    <string name="pref_title_language">语言</string>
+    <string name="pref_title_numerals">数字</string>
+    <string name="get_started">开始使用</string>
+    <string name="fetching">获取当前位置</string>
+    <string name="grant_all">授予全部权限</string>
+    <string name="about_permissions">请求权限</string>
+    <string name="sunrise">日出</string>
+    <string name="sunset">日落</string>
+    <string name="duhr">杜赫尔（正午礼拜）</string>
+    <string name="asar">阿斯尔（下午礼拜）</string>
+    <string name="prayer_time">祷告时间</string>
+    <string name="gregorian_date">" 今天的日期："</string>
+    <string name="islamic_date">伊斯兰日期：</string>
+    <string name="settings">设置</string>
+    <string name="time_formats">时间格式</string>
+    <string name="calculation_methods">计算方法</string>
+    <string name="juristic_methods">法学方法</string>
+    <string name="adjusting_methods">调整方法</string>
+    <string name="pref_title_about">关于</string>
+    <string name="pref_header_notifications">通知</string>
+    <string name="pref_title_prayer_time">祷告时间</string>
+    <string name="pref_title_athan">阿赞</string>
+    <string name="pref_title_muezzin">穆安津</string>
+    <string name="pref_title_vibrate">震动</string>
+    <string name="search_city">搜索城市</string>
+    <string name="pref_header_locations">位置</string>
+    <string name="pref_title_search_city">城市</string>
+    <string name="pref_undefined_city">未定义</string>
+    <string name="pref_title_method">计算方法</string>
+    <string name="pref_title_mathhab_hanafi">哈纳菲学派</string>
+    <string name="pref_description_mathhab_hanafi">根据哈纳菲学派的阿斯尔时间</string>
+    <string name="al_hajj">朝觐</string>
+    <string name="calander_al_hijira">迁徙</string>
+    <string name="calander_ashura">阿舒拉节</string>
+    <string name="calander_malid_al_nabi">圣纪节</string>
+    <string name="text_hisnual_125">当害怕眼睛可能伤害某物或某人时###2</string>
+    <string name="text_hisnual_126">受到惊吓时###4</string>
+    <string name="text_hisnual_127">当宰杀或献祭时###8</string>
+    <string name="text_hisnual_128">防止顽固的恶魔的欺骗###2</string>
+    <string name="text_hisnual_129">寻求宽恕和忏悔###7</string>
+    <string name="text_hisnual_130">纪念和赞美安拉的卓越###7</string>
+    <string name="text_hisnual_131">先知（愿主赐予他平安）如何做念珠祷告###7</string>
+    <string name="text_hisnual_132">一般和有益的规则###2</string>
+    <string name="what_is_fasting">什么是斋戒？</string>
+    <string name="fasting_is_a_direction_to_Allah">斋戒是引导穆斯林社区走向真主之道的途径。他们对此会感到兴奋。</string>
+    <string name="fasting_rule">斋戒规则</string>
+    <string name="sunnah_fasting_rule">逊尼派斋戒规则</string>
+    <string name="shia_fasting_rule">什叶派斋戒规则</string>
+    <string name="sunnah">逊尼派</string>
+    <string name="tashi">什叶派</string>
+
+    <string name="fajr">晨礼</string>
+    <string name="shuruk">日出</string>
+    <string name="dhuhr">正午礼</string>
+    <string name="jumu3a">聚礼</string>
+
+    <string name="internetfirst">需要互联网连接</string>
+    <string name="pref_title_round">秒数四舍五入</string>
+    <string name="nissab">冒名顶替者：</string>
+
+    <string name="goldsilver">要衡量您持有超过一年的黄金或白银的价格，您必须以当地货币计算每10克的价格。由于价值的差异，您必须分别添加每种类型的黄金（按克拉计算）。</string>
+    <string name="nissabinfo">根据伊斯兰教法，尼萨布是一个人拥有超过一年的最低金额，以此作为缴纳天课的标准。您可以按黄金或白银的价值来计算尼萨布值。对于白银，尼萨布为21盎司（653.17克）或等值的货币。对于黄金，尼萨布为3盎司（85.05克）或等值的货币。</string>
+    <string name="zakatfitr">穆斯林还需要缴纳另一种类型的天课——天课菲特尔。这是伊斯兰教在斋月结束时分发的施舍。无论收入差异，天课菲特尔的数额对于所有人都是一样的。天课的最低要求是每个家庭成员提供一份手捧粮食、谷物或干果。</string>
+    <string name="zakatcalcul">输入您要提取天课的金额，以使用天课计算器获取结果</string>
+    <string name="menu_zakat">天课</string>
+    <string name="totalprice">总价</string>
+    <string name="goldprice">黄金价格</string>
+    <string name="calculate">计算</string>
+    <string name="zakatprice">天课金额</string>
+    <string name="nozakat">无天课</string>
+    <string name="localprice">当地价格</string>
+    <string name="localgoldprice"><u>当地黄金价格</u></string>
+
+    <string name="zakathowto">天课计算方法</string>
+    <string name="stepone">第一步：</string>
+    <string name="steptwo">第二步：</string>
+    <string name="stepthree">第三步：</string>
+    <string name="steponedetail">将您拥有超过一年的钱、房地产和财富的价值加上，同时减去您必须偿还的债务金额和必须支付的义务。</string>
+    <string name="steptwodetail">再次检查您的本地货币中的黄金价值</string>
+    <string name="stepthreedetail">点击计算天课按钮，系统将生成摘要，告知您是否有义务支付天课，如果有义务支付，支付的天课金额将清楚显示。这个数值是您所有资产的2.5%。</string>
+    <string name="info">信息：</string>
+
+    <string name="latitude_label">纬度：</string>
+    <string name="longitude_label">经度：</string>
+    <string name="get_updates">获取更新</string>
+    <string name="title_activity_main">主活动</string>
+    <string name="default_notification_channel_id">默认</string>
+
+    <string name="go_to_geo_fencing">地理围栏</string>
+    <string name="go_to_fetch_location_in_fore_ground">在前台获取位置</string>
+    <string name="go_to_fetch_location_in_back_ground">在后台获取位置</string>
+    <string name="latitude">纬度</string>
+    <string name="longitude">经度</string>
+    <string name="radius_in_meter">半径（米）</string>
+    <string name="set_geo_fence">设置地理围栏</string>
+    <string name="valid_latitude">请输入有效的纬度值</string>
+    <string name="valid_longitude">请输入有效的经度值</string>
+    <string name="default_radius_is_set_as_100_meter_for_geo_fencing">默认半径设置为100米用于地理围栏</string>
+    <string name="geo_fencing_added_successfully">地理围栏添加成功</string>
+    <string name="geo_fencing_removed_successfully">地理围栏删除成功</string>
+    <string name="geo_fencing_add_failed">地理围栏添加失败</string>
+    <string name="geo_fencing_remove_failed">地理围栏删除失败</string>
+
+    <string name="errorloadprayertimes">更新祷告时间失败</string>
+    <string name="loadingprayertimes">正在更新祷告时间...</string>
+    <string name="prayertimesloaded">祷告时间已更新</string>
+
+    <string name="itsprayertime">到祷告时间了</string>
+    <string name="city">城市</string>
+    <string name="action_about">关于</string>
+    <string name="action_rateUs">评价我们</string>
+    <string name="day">日</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="tohijri">转到伊斯兰历</string>
+    <string name="togregorian">转到公历</string>
+    <string name="dayw">星期几</string>
+
+    <string name="convert">转换</string>
+    <string name="restore">恢复</string>
+    <string name="clear">清除</string>
+    <string name="note">*可能存在一天的误差</string>
+
+    <!--About-->
+    <string name="copyToastText">已复制到剪贴板</string>
+
+    <!-- Settings-->
+    <string name="lang">语言</string>
+    <string name="content">内容</string>
+    <string name="show_trans">显示翻译</string>
+    <string name="wordbyword">逐字翻译</string>
+    <string name="appearance">外观（需要重新启动应用）</string>
+    <string name="arabic_font">阿拉伯字体</string>
+    <string name="arabic_font_size">阿拉伯字体大小</string>
+    <string name="trans_font_size">翻译字体大小</string>
+    <string name="other">其他</string>
+    <string name="screen_on">保持屏幕常亮</string>
+
+    <!-- -->
+    <string name="cancel">取消</string>
+    <string name="rootWord">词根</string>
+
+    <string name="copy">复制</string>
+    <string name="share">分享</string>
+
+    <string name="title_activity_test">测试活动</string>
+
+    <string name="allah_99_names">真主的99个名字</string>
+    <string name="azkar">祷词</string>
+    <string name="qibla_compass">朝向指南针</string>
+    <string name="sorry_device_sensor">抱歉，您的设备不支持磁场传感器</string>
+    <string name="tasbeeh_counter">念珠计数器</string>
+    <string name="counter">计数器</string>
+    <string name="reset">重置</string>
+    <string name="count">计数</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="internet">互联网</string>
+    <string name="internet_permission">此权限处理与互联网相关的任务。</string>
+    <string name="access_coarse">访问粗略位置</string>
+    <string name="access_coarse_permission">允许API使用WiFi或移动蜂窝数据（或两者）来确定设备的位置。API返回的位置信息精度大约相当于一个城市街区。</string>
+    <string name="access_fine">访问精确位置</string>
+    <string name="access_fine_permission">为了使用Wi-Fi P2P共享文件，官方安卓文档建议添加此权限以建立连接。</string>
+    <string name="location_detail">位置信息：</string>
+    <string name="country">国家：</string>
+    <string name="_city">城市：</string>
+    <string name="location">位置：</string>
+    <string name="counter_sound">计数器声音：</string>
+    <string name="on">开启</string>
+    <string name="off">关闭</string>
+    <string name="alarm_setting">闹钟设置</string>
+    <string name="translation">翻译：</string>
+    <string name="six_kalmas">六个卡尔玛</string>
+    <string name="weather">天气</string>
+    <string name="sunny">晴天</string>
+    <string name="zakat_calculator">天课计算器</string>
+    <string name="search">搜索</string>
+    <string name="results">结果</string>
+    <string name="dates_conversion">日期转换</string>
+    <string name="pick_date">选择日期</string>
+    <string name="search_methods">搜索方法</string>
+    <string name="flashlight">手电筒</string>
+    <string name="al_quran">古兰经</string>
+    <string name="shirk">多神教</string>
+
+    <string name="first_kalma">第一卡尔玛</string>
+    <string name="second_kalma">第二卡尔玛</string>
+    <string name="third_kalma">第三卡尔玛</string>
+    <string name="forth_kalma">第四卡尔玛</string>
+    <string name="fifth_kalma">第五卡尔玛</string>
+    <string name="sixth_kalma">第六卡尔玛</string>
+
+    <string name="first_kalma_name">清洁之言（泰亚巴）</string>
+    <string name="second_kalma_name">见证之言（沙哈达）</string>
+    <string name="third_kalma_name">荣耀之言（图姆吉德）</string>
+    <string name="forth_kalma_name">统一之言（陶赫德）</string>
+    <string name="fifth_kalma_name">忏悔之言（阿斯塔赫法尔）</string>
+    <string name="sixth_kalma_name">拒绝不信之言（鲁德-阿-库菲尔）</string>
+
+    <string name="first_kalma_translation">（除了真主以外，没有神灵；穆罕默德是真主的使者）</string>
+    <string name="second_kalma_translation">（我作证，除了真主以外，没有任何值得崇拜的神灵，独一无二，没有伙伴；我作证，穆罕默德是真主的仆人和使者）</string>
+    <string name="third_kalma_translation">（荣耀归于真主，赞美真主，除了真主以外，没有神灵；真主至大。没有力量和能力，唯有来自伟大的真主。）</string>
+    <string name="forth_kalma_translation">（除了真主以外，没有值得崇拜的神灵。他是唯一的，没有伙伴。祂拥有王国，祂拥有赞美。祂赐予生命，祂使死亡。他永远活着，永不死。威严与敬畏的拥有者。在祂手中的是一切美好。他是美好的，他是全能的。）</string>
+    <string name="fifth_kalma_translation">（我向我的主真主寻求宽恕，因我有意或无意犯下的每一罪过，秘密或公开的，我向他忏悔，我知道的罪和我不知道的罪。你无疑是隐藏事物的知道者，是错误的遮盖者，是罪过的宽恕者。除了来自至高伟大的真主，没有力量和能力。）</string>
+    <string name="sixth_kalma_translation">（哦，真主！我确实寻求您的保护，免得我在知道的情况下与您共享任何东西。我寻求您的宽恕，因我不知道。我从中忏悔，并使自己摆脱不信、多神教、谎言、背叛、创新、恶言恶行和所有不义。我投降，并且说，除了真主以外，没有值得崇拜的神灵，穆罕默德是真主的使者。）</string>
+
+    <string name="copied">成功复制</string>
+    <string name="send_to">发送到</string>
+    <string name="permissions">所需权限</string>
+    <string name="core_fundamentals">核心基本建立在这些权限之上</string>
+    <string name="allow_necessary_permissions">您需要在设置中手动允许必要的权限</string>
+    <string name="all_permissions_granted">所有权限已授予</string>
+    <string name="download_this">下载这个</string>
+    <string name="download">下载</string>
+    <string name="tafseer_download_message">下载此注释？</string>
+    <string name="downloading">正在下载</string>
+    <string name="downloading_download_progress">下载进度</string>
+    <string name="downloading_start_downloading">开始下载 . . .</string>
+    <string name="downloading_mb" translatable="false">MB</string>
+    <string name="downloading_kb" translatable="false">KB</string>
+    <string name="prayer_guide">祈祷指南</string>
+    <string name="downloading_failed">下载失败</string>
+
+    <string name="zakatMoneyTitle">钱</string>
+    <string name="totalMoney" translatable="false">0.00</string>
+    <string name="moneyCashInHandTitle">手中的现金</string>
+    <string name="moneyCashInHandET" translatable="false">0.00</string>
+    <string name="moneyCashInBankAccountTitle">银行账户中的现金</string>
+    <string name="moneyCashInBankET" translatable="false">0.00</string>
+    <string name="zakatGoldTitle">黄金</string>
+    <string name="totalGoldTV" translatable="false">0.00</string>
+    <string name="goldValuePriceTV">黄金价格</string>
+    <string name="goldValuePriceET" translatable="false">00.0</string>
+    <string name="goldWeight24caratPriceTV">24克拉的黄金价格</string>
+    <string name="goldWeightUnitPriceET" translatable="false">00.0</string>
+    <string name="goldWeight24caratQuantityTV">黄金数量</string>
+    <string name="goldWeight24caratET" translatable="false">0</string>
+    <string name="goldWeight24caratgiramTV">克</string>
+    <string name="gold24caratpriceTitleTV">24克拉的黄金价格</string>
+    <string name="goldWeight24CaratPriceTV" translatable="false">00.0</string>
+    <string name="gold22CaratWeightQuentityTV">黄金数量</string>
+    <string name="gold22CaratweightPerUnitPriceET" translatable="false">0</string>
+    <string name="gold22CaratWeightUnit_Txt">克</string>
+    <string name="goldWeight22caratTitleTV2">22克拉的黄金价格</string>
+    <string name="goldWeight22CaratPriceTV" translatable="false">00.0</string>
+    <string name="gold18CaratWeightQuentityTV">黄金数量</string>
+    <string name="gold18CaratweightPerUnitPriceET" translatable="false">0</string>
+    <string name="gold18CaratWeightUnit_Txt">克</string>
+    <string name="goldWeight18caratTitleTV2">18克拉的黄金价格</string>
+    <string name="goldWeight18CaratPriceTV" translatable="false">00.0</string>
+    <string name="silverHeadingTV">银</string>
+    <string name="silverValueRB">现金</string>
+    <string name="silverWeightRB">重量</string>
+    <string name="silverValueTitle2TV">银价</string>
+    <string name="silverValuePriceET" translatable="false">00.0</string>
+    <string name="silverWeightTitleTV">银价</string>
+    <string name="silverWeightUnitPriceET" translatable="false">00.0</string>
+    <string name="silverWeightQuentityTV">银数量</string>
+    <string name="silverWeightQuentityET" translatable="false">0</string>
+    <string name="weightUnit_Txt">克</string>
+    <string name="silverWeightTitleTV2">银价</string>
+    <string name="weightPriceTV" translatable="false">00.0</string>
+    <string name="investmentHeadingTV">投资</string>
+    <string name="totalInvestmentTV" translatable="false">0.00</string>
+    <string name="sharesTV">股份</string>
+    <string name="sharesET" translatable="false">0.00</string>
+    <string name="otherInvestmentTV">银行账户中的现金</string>
+    <string name="otherInvestmentET" translatable="false">0.00</string>
+    <string name="propertyHeadingTV">物业</string>
+    <string name="totalPropertyTV" translatable="false">0.00</string>
+    <string name="rentTV">租金收入</string>
+    <string name="propertyRentET" translatable="false">0.00</string>
+    <string name="propertyTV">物业</string>
+    <string name="propertyET" translatable="false">0.00</string>
+    <string name="businessHeadingTV">商业</string>
+    <string name="totalBusinessTV" translatable="false">0.00</string>
+    <string name="businessCashTV">业务现金</string>
+    <string name="businessCashET" translatable="false">0.00</string>
+    <string name="businessGoodsTV">商品 / 股票</string>
+    <string name="businessGoodsET" translatable="false">0.00</string>
+    <string name="agricultureHeadingTV">农业</string>
+    <string name="totalAgriTV" translatable="false">0.00</string>
+    <string name="agriPriceTitleTV">农业总收入</string>
+    <string name="agriPriceET" translatable="false">00.0</string>
+    <string name="agriRainHeadingTV">雨水10%</string>
+    <string name="agriRainET" translatable="false">00.0</string>
+    <string name="agriIrrigationHeadingTV">灌溉5%</string>
+    <string name="agriIrrigationET" translatable="false">00.0</string>
+    <string name="agriBothHeadingTV">雨水和灌溉7.5%</string>
+    <string name="agriBothET" translatable="false">00.0</string>
+    <string name="cattleHeadingTV">牲畜</string>
+    <string name="totalCattleTV" translatable="false">0.00</string>
+    <string name="cattleCamelET" translatable="false">00.0</string>
+    <string name="cattleCowHeadingTV">牛</string>
+    <string name="cattleCowET" translatable="false">00.0</string>
+    <string name="cattleSheepHeadingTV">羊</string>
+    <string name="cattleSheepET" translatable="false">00.0</string>
+    <string name="preciousStonesHeadingTV">宝石</string>
+    <string name="totalPreciousStonesTV" translatable="false">0.00</string>
+    <string name="preciousStonesHeadingChildTV">宝石</string>
+    <string name="preciousStonesET" translatable="false">00.0</string>
+    <string name="otherHeadingTV">其他</string>
+    <string name="totalOtherTV" translatable="false">0.00</string>
+    <string name="otherPensionHeadingTV">养老金</string>
+    <string name="otherPensionET" translatable="false">00.0</string>
+    <string name="otherLoanHeadingTV">贷款给家人和其他人</string>
+    <string name="otherAssetsHeadingTV">其他资产</string>
+    <string name="zakatPayablesTitle">应付款</string>
+    <string name="zakatCreditCardPaymentHeadingTV">信用卡付款</string>
+    <string name="zakatCreditCardPaymentET" translatable="false">00.0</string>
+    <string name="zakatHomeHeadingTV">房屋付款</string>
+    <string name="homePaymentET" translatable="false">00.0</string>
+    <string name="zakatCarHeadingTV">汽车付款</string>
+    <string name="zakatCarPaymentET" translatable="false">00.0</string>
+    <string name="zakatBusinessPaymentHeadingTV">业务付款</string>
+    <string name="zakatBusinessPaymentET" translatable="false">00.0</string>
+    <string name="zakatFamilyDebtHeadingTV">家庭债务</string>
+    <string name="zakatFamilyDebtET" translatable="false">00.0</string>
+    <string name="zakatOthersDebtHeadingTV">其他人的债务</string>
+    <string name="zakatOthersDebtET" translatable="false">00.0</string>
+    <string name="zakatTotalAssetsHeadingTV">总资产</string>
+    <string name="zakatTotalAssetsTV" translatable="false">0.00</string>
+    <string name="zakatDueHeadingTV">应付天课</string>
+    <string name="totalZakatDueTV" translatable="false">0.00</string>
+    <string name="zakatTotalSilverTV" translatable="false">0.00</string>
+    <string name="zakatDetailTitle">天课详细信息</string>
+    <string name="zakatDetailInfo">对一年财富适用2.5％的天课。除农业外。农业分为3个部分：雨水的天课为10％，灌溉水的天课为5％，雨水和灌溉水的天课为7.5％</string>
+    <string name="goldValueRB">现金</string>
+    <string name="goldWeightRB">重量</string>
+    <string name="cattleCamelHeadingTV">骆驼</string>
+
+    <string name="definition">定义</string>
+    <string name="verses">经文</string>
+    <string name="ahadees">圣训</string>
+    <string name="types">类型</string>
+    <string name="differences">区别</string>
+    <string name="tawhid">认主独一</string>
+
+    <string name="shirk_difference_1">大谢克会使人脱离伊斯兰教，而小谢克不会使人脱离伊斯兰教，但会削弱人对真主的信仰。</string>
+    <string name="shirk_difference_2">犯大谢克而死的人将在地狱中永远受罚；而犯小谢克的人则不一定如此。</string>
+    <string name="shirk_difference_3">大谢克会抹去并取消所有善行，而小谢克只会毁坏它激发或包含的行为。</string>
+    <string name="shirk_difference_4">除非在死前进行真诚的忏悔，否则真主不会原谅大谢克；而对于小谢克，真主可以选择惩罚或宽恕。</string>
+    <string name="shirk_definition">“设伙伴”是指在那些独属于安拉的方面，把别人或其他事物与安拉相提并论。设伙伴是像崇拜安拉那样崇拜被造物，像应当尊崇安拉那样尊崇被造物，或将安拉的神性的一部分赋予他人。</string>
+    <string name="shirk_verse_1" ><p><b>麦达 05:72：</b></p> \n他们确实是不信者，谁说‘安拉是麦西哈，马利亚的儿子’。但麦西哈曾说，‘以色列的子孙们！崇拜安拉，我的主，也是你们的主。谁若为安拉设伙伴，安拉将禁止他进入天堂，而他的归宿是火狱。恶人将没有帮助者。\'</string>
+    <string name="shirk_verse_2" ><p><b>队伍 39:65：</b></p> \n已经启示给你（先知）和你之前的人：‘如果你为安拉设伙伴，你的所有工作将化为乌有，你将成为失败者之一。\'</string>
+    <string name="shirk_hadees_1" ><p><b>大马志 11457：</b></p> \n伊本·阿巴斯报道：安拉的使者，愿安拉赐他平安，说：“安拉全能者说：谁知道我有能力赦免罪过，我将赦免他，不在意，只要他不为我设伙伴。”</string>
+    <string name="shirk_hadees_2" ><p><b>穆斯林圣训 2985：</b></p> \n阿布·胡莱拉报道：安拉的使者（愿他平安）说，安拉至高无上的主说：“我是独一无二的，无需伙伴。如果有人在任何事情上与我设伙伴，我将抛弃他和他所设的伙伴。”</string>
+    <string name="shirk_type_1" ><p><b>大设伙伴（Shirk Akbar）：</b></p> \n大设伙伴是指在安拉的独一性方面设伙伴，视某物为安拉的对手或伙伴，并使其与安拉平等。这是设伙伴在安拉为主上的表现。</string>
+    <string name="shirk_type_2" ><p><b>小设伙伴（Shirk Asghar）：</b></p> \n小设伙伴是指在《古兰经》和圣训中明确被称为“设伙伴”，但未达到大设伙伴的程度。此外，小设伙伴被认为是通向大设伙伴的途径。有些学者认为小设伙伴的范围非常广，难以精确定义。</string>
+    <string name="shirk_type_3" ><p><b>炫耀（Riyaa）：</b></p> \n安拉的使者说：“我最害怕你们的是小设伙伴。”他们问：“安拉的使者，小设伙伴是什么？”他说：“炫耀，因为在那一天，当人们因其行为受到报偿时，安拉会说：‘去找那些你们在尘世为之炫耀的人，看看你们从他们那里得到了什么回报。’”（艾哈迈德）炫耀是为了让人们看见并称赞而进行崇拜。炫耀使行为无效；此人获得罪过而不是来自安拉的奖励，并面临惩罚。</string>
+
+    <string name="tawhid_defination">认主独一（Tawhid），在伊斯兰教中，指的是真主的独一性，意指真主是独一无二的，除了真主以外没有其他的神灵，这在“沙哈达”（Shahadah）中有所陈述：“除了真主，没有其他的神灵，穆罕默德是真主的使者。” 认主独一进一步指的是真主的本质——他是统一的，不是由部分组成的，不是复合的，而是简单且不复杂的。在伊斯兰历史的大部分时间里，真主的独一性及其引发的问题，如真主的本质与属性之间的关系问题，一直是一个反复出现的主题。然而，在穆斯林神秘主义者（苏菲派）的术语中，认主独一具有泛神论的意义；所有本质都是神圣的，除了真主，没有绝对的存在。对大多数穆斯林学者来说，认主独一的科学是一种系统神学，通过它可以更好地认识真主，但对于苏菲派来说，只有通过宗教体验和直接的视觉才能达到对真主的认识。</string>
+    <string name="tawhid_verse_1" ><p><b>尘扬者 51:56 :</b></p>  \n我（安拉）创造精灵和人类只是为了让他们崇拜我（独一无二）。</string>
+    <string name="tawhid_verse_2" ><p><b>牲畜 6:151 :</b></p>  \n（穆罕默德 P.B.U.H）说：“来吧，我将为你们诵读主禁止你们的事物：不可与他人共同崇拜安拉。”</string>
+    <string name="tawhid_hadees_1" ><p><b>布哈里圣训 7373 :</b></p> \n穆斯林圣训 30 穆阿兹·本·贾巴尔报道：先知，愿安拉赐他平安，说：“穆阿兹啊，你知道安拉对其仆人的权利是什么吗？”我说：“安拉和他的使者知道最好。”先知说：“崇拜他独一无二，不与他人共同崇拜。你知道仆人对他的权利是什么吗？”我说：“安拉和他的使者知道最好。”先知说：“如果他们这样做，不惩罚他们。”</string>
+    <string name="tawhid_hadees_2" ><p><b>纳赛伊大圣训 5760：</b></p> \n阿布·胡莱拉报道：安拉的使者，愿安拉赐他平安，说：“只有安拉是独一无二的，安拉是至大的。只有安拉，没有伙伴，只有安拉，主宰和赞美属于他。没有权力和力量，除非来自安拉。谁在一天或一夜或一个月里说这些话，若他在那天、那夜或那个月死去，他的罪孽将被赦免。”</string>
+    <string name="kalmas">卡尔玛</string>
+    <string name="muharram_1236_ah">伊斯兰历1236年穆哈兰月</string>
+    <string name="oct_24_2012">2012年10月24日</string>
+
+    <string name="calander_lailat_al_miraj">夜行登霄夜</string>
+    <string name="calander_lailat_al_barat">赦罪之夜</string>
+    <string name="calander_ramdan_start">斋月开始</string>
+    <string name="calander_eid_ul_fitr">开斋节</string>
+    <string name="calander_waqf_al_arafa_hajj">阿拉法日 - 朝觐</string>
+    <string name="calander_eid_ul_azha">古尔邦节</string>
+    <string name="Hajj_guide">朝觐指南</string>
+    <string name="Hajj_hajj_umrah">朝觐</string>
+    <string name="Hajj_umrah">副朝</string>
+
+    <!--Islamic months-->
+    <string name="text_muharram">穆哈兰姆月</string>
+    <string name="text_safar">萨法尔月</string>
+    <string name="text_rabi_ul_awal">拉比·欧来沃月</string>
+    <string name="text_rabi_ul_thani">拉比·赛尼月</string>
+    <string name="text_jumad_al_awal">朱马达·欧来月</string>
+    <string name="text_jumad_al_thani">朱马达·赛尼月</string>
+    <string name="text_rajab">拉贾卜月</string>
+    <string name="text_shaban">沙尔巴尼月</string>
+    <string name="text_ramdan">斋月</string>
+    <string name="text_shawwal">肖瓦尔月</string>
+    <string name="text_zul_qaadah">祖·尔卡尔德月</string>
+    <string name="text_zul_hajj">祖·勒赫哲月</string>
+    <string name="text_today">今天</string>
+    <string name="text_done">完成</string>
+    <string name="text_title_isalamic_calandar">伊斯兰历</string>
+
+    <string name="prayer_formale">男性</string>
+    <string name="prayer_forfemale">女性</string>
+    <string name="Quran_bookmarkadded">书签已添加</string>
+
+    <!-- Quran -->
+    <string name="text_quran">古兰经</string>
+    <string name="juz">卷</string>
+    <string name="surah">苏拉</string>
+    <string name="bookmarks">书签</string>
+    <string name="text_notes">笔记</string>
+    <string name="no_data_found">未找到数据</string>
+    <string name="selectVerseNumber">选择经文编号</string>
+
+    <!-- Quran Khatam -->
+    <string name="qurankhatam_khatamdescription">Khatam 使您可以单独或与家人和朋友一起创建自己的古兰经阅读计划。</string>
+    <string name="qurankhatam_planmykhatambtntext">计划我自己的Khatam</string>
+    <string name="qurankhatam_wantokhatam">我想通过以下方式完成Khatam</string>
+    <string name="qurankhatam_khatamduraton">您必须每天阅读 %1$s 节经文，以便在 %2$s 之前完成古兰经的阅读</string>
+    <string name="qurankhatam_khatamdurationbefore">选择的日期应在当前日期之后</string>
+    <string name="qurankhatam_nextBtn">下一步</string>
+    <string name="qurankhatam_startReading">开始阅读</string>
+    <string name="qurankhatam_yes">是</string>
+    <string name="qurankhatam_no">否</string>
+    <string name="qurankhatam_youhaveactivekhaam">您有一个活动的古兰经阅读计划，您想开始跟踪吗？</string>
+    <string name="qurankhatam_deletqurankhatam">删除古兰经Khatam！</string>
+    <string name="qurankhatam_areYouSuretoDeleteQuranKhatam">您确定要删除古兰经Khatam吗？</string>
+    <string name="qurankhatam_totalVerse">总经文数</string>
+    <string name="qurankhatam_readedVerse">已阅读的经文</string>
+    <string name="qurankhatam_completed">已完成</string>
+    <string name="qurankhatam_completedsurahlist">已完成的苏拉列表</string>
+    <string name="qurankhatam_markread">标记为已读</string>
+    <string name="qurankhatam_markunread">标记为未读</string>
+    <string name="qurankhatam_unreadSurah">未读的苏拉</string>
+    <string name="qurankhatam_areToUnread">您确定要将此苏拉标记为未读吗？</string>
+    <string name="qurankhatam_WaitPlease">请稍候…</string>
+    <string name="qurankhatam_deletekhatamsuccess">Khatam 删除成功</string>
+    <string name="qurankhatam_title">古兰经Khatam</string>
+    <string name="qurankhatam_start">开始</string>
+    <string name="qurankhatam_planyourownkhatam">计划您自己的Khatam</string>
+    <string name="qurankhatam_quranreadingprogress">古兰经阅读进度</string>
+    <string name="qurankhatam_verseno">经文编号 %1$s</string>
+    <string name="qurankhatam_dayleft">剩余天数</string>
+    <string name="qurankhatam_surahLeft">剩余的苏拉</string>
+    <string name="qurankhatam_ayatLeft">剩余的经文</string>
+    <string name="qurankhatam_completedby">完成时间：</string>
+    <string name="qurankhatam_enteryournotehere">在此输入您的笔记</string>
+    <string name="qurankhatam_prayertimecalculationmethodmanual">手动调整祈祷时间</string>
+    <string name="qurankhatam_change">更改</string>
+    <string name="qurankhatam_quransetting">古兰经设置</string>
+    <string name="qurankhatam_setFont">设置字体</string>
+    <string name="qurankhatam_setTranslation">设置翻译</string>
+    <string name="qurankhatam_setAudio">设置音频</string>
+    <string name="qurankhatam_audiorepeattitle">从不</string>
+    <string name="qurankhatam_audiorepeat1">1 次</string>
+    <string name="qurankhatam_audiorepeat2">2 次</string>
+    <string name="qurankhatam_audiorepeat3">3 次</string>
+    <string name="qurankhatam_audiorepeat4">4 次</string>
+    <string name="qurankhatam_audiorepeat5">5 次</string>
+    <string name="qurankhatam_audiorepeat6">无限</string>
+
+    <string name="set_arabic_text_size">阿拉伯文字大小</string>
+    <string name="set_translation_text_size">翻译文字大小</string>
+    <string name="asdadasadads" translatable="false">asdadasadads</string>
+    <string name="quran_khatam">古兰经诵读完毕</string>
+    <string name="ayatShare_setArabicTextColor">设置阿拉伯文字颜色</string>
+    <string name="ayatShare_setTranslationTextColor">设置翻译文字颜色</string>
+    <string name="searchinquran">在古兰经中搜索</string>
+    <string name="ayatShare_Both">两者</string>
+    <string name="ayatShare_translation">翻译</string>
+
+    <string name="settingpg_shafi">沙斐</string>
+    <string name="settingpg_never">从不</string>
+    <string name="settingpg_save">保存</string>
+    <string name="settingpg_diable">禁用</string>
+    <string name="settingpg_miles">英里</string>
+    <string name="settingpg_kilo_meters">公里</string>
+    <string name="settingpg_test_adhan">测试宣礼</string>
+    <string name="quransp_audio_play_option">音频播放选项</string>
+    <string name="quransp_auto_scroll">自动滚动</string>
+    <string name="quransp_keep_screen_on_while_reading">朗读时保持屏幕常亮</string>
+    <string name="quransp_at_the_end_of_surah">苏拉结束时</string>
+    <string name="quransp_repeat_each_verse">重复每节经文</string>
+    <string name="quransp_time">时间</string>
+    <string name="quransp_times">次数</string>
+    <string name="quransp_infinite">无限</string>
+    <string name="quransp_reciters">诵读者</string>
+    <string name="quransp_quran_reciter1">阿卜杜勒·拉赫曼·阿尔-苏戴斯</string>
+    <string name="quransp_quran_reciter2">米沙里·拉希德·阿尔-阿法西</string>
+    <string name="quransp_quran_reciter3">萨阿德·阿尔-加姆迪</string>
+    <string name="quransp_arabic">阿拉伯语</string>
+    <string name="quransp_premium_user_can_download_all_recitation_for_offline_playback">高级用户可以下载所有诵读以便离线播放</string>
+    <string name="quransp_arabic_text">阿拉伯文字体样式</string>
+    <string name="quransp_default_diacritics_or_symbols">默认（发音符号或符号）</string>
+    <string name="quransp_no_diacritics_or_symbols">无发音符号或符号</string>
+    <string name="quransp_arabic_font">阿拉伯字体</string>
+    <string name="quransp_select_the_best_arabic_font_for_your_device">为您的设备选择最佳阿拉伯字体</string>
+    <string name="quransp_default_font">默认字体</string>
+    <string name="quransp_custom_font">自定义字体</string>
+    <string name="qurantp_phonetic_transliteration">音标音译</string>
+    <string name="qurantp_default_phonetic_transliteration">默认音标音译</string>
+    <string name="qurantp_translations">翻译</string>
+    <string name="qurantp_translation_1">萨洛莫·凯泽</string>
+    <string name="qurantp_translation_2">马尔代夫总统办公室</string>
+    <string name="qurantp_translation_3">伊·赫尔贝克</string>
+    <string name="qurantp_translation_4">阿卜杜拉·穆罕默德·巴斯梅赫</string>
+    <string name="qurantp_translation_5">印度尼西亚宗教事务部</string>
+    <string name="qurantp_translation_6">穆希丁·汗</string>
+    <string name="qurantp_translation_7">拉姆丹·阿特·曼苏尔</string>
+    <string name="qurantp_translation_8">穆斯塔法·姆利沃</string>
+    <string name="qurantp_translation_9">阿卜杜拉·优素福·阿里</string>
+    <string name="qurantp_translation_10">穆罕默德·伊萨·加西亚</string>
+    <string name="qurantp_translation_11">穆罕默德·哈米杜拉</string>
+    <string name="qurantp_translation_12">阿布巴卡尔·马哈茂德·古米</string>
+    <string name="qurantp_translation_13">穆罕默德·法鲁克·汗 和 穆罕默德·艾哈迈德</string>
+    <string name="qurantp_translation_14">哈姆扎·罗伯托·皮卡尔多</string>
+    <string name="qurantp_translation_15">布尔汉·穆罕默德-阿明</string>
+    <string name="qurantp_translation_16">穆罕默德·卡拉昆努 和 瓦尼达斯·埃拉亚沃尔</string>
+    <string name="qurantp_translation_17">约瑟法·别拉夫斯基</string>
+    <string name="qurantp_translation_18">艾纳尔·伯格</string>
+    <string name="qurantp_translation_19">侯赛因·安萨里安</string>
+    <string name="qurantp_translation_20">萨米尔·海耶克</string>
+    <string name="qurantp_translation_21">阿布·阿德尔</string>
+    <string name="qurantp_translation_22" tools:ignore="Typos">谢里夫·阿赫梅蒂</string>
+    <string name="qurantp_translation_23">塔吉·迈赫穆德·阿姆罗提</string>
+    <string name="qurantp_translation_24">克努特·伯恩斯特伦</string>
+    <string name="qurantp_translation_25">阿里·穆赫辛·阿尔-巴尔瓦尼</string>
+    <string name="qurantp_translation_26">阿卜杜勒·穆罕默德·阿亚提</string>
+    <string name="qurantp_translation_27">简·图尔斯特基金会</string>
+    <string name="qurantp_translation_28">雅库布·伊本·努格曼</string>
+    <string name="qurantp_translation_29">苏莱曼·阿泰斯</string>
+    <string name="qurantp_translation_30">穆罕默德·索迪克·穆罕默德·优素福</string>
+    <string name="qurantp_translation_31">茨维坦·西奥法诺夫</string>
+    <string name="qurantp_translation_32">法特·穆罕默德·贾兰德里</string>
+    <string name="qurantp_translation_33">法赫德国王古兰经复合体</string>
+    <string name="qurantp_translation_34">未知</string>
+    <string name="qurantp_translation_35">不适用</string>
+    <string name="qurantp_translation_36">马建</string>
+    <string name="qurantp_translation_37">赛义德·穆罕默德·扎基尔·侯赛因·沙阿·西亚尔维</string>
+    <string name="qurantp_download_phonetic_transliteration">尚未下载此古兰经的音标音译。你现在想下载它吗？</string>
+    <string name="qurantp_legal_information">法律信息</string>
+    <string name="enternotehere">在此输入您的笔记</string>
+    <string name="tasbeehSaveBtn">保存</string>
+    <string name="text_font_setting">字体设置</string>
+
+    <string name="quransp_stop_playing">停止播放</string>
+    <string name="quransp_repeat_the_surah">重复播放苏拉</string>
+    <string name="quransp_play_the_next_surah">播放下一章</string>
+    <string name="quran_ayahshareapplink">获取 Islamic Guide Pro 以探索更多伊斯兰内容：https://play.google.com/store/apps/details?id=%s</string>
+    <string name="searchHere...">在这里搜索…</string>
+    <string name="quran_madesuccess">古兰经诵读计划创建成功</string>
+    <string name="text_none">无</string>
+    <string name="text_audio_recitations">音频诵读</string>
+    <string name="connecting">正在连接 ....</string>
+    <string name="qurankhatam_QuranKhatamCompleted">古兰经诵读完成</string>
+    <string name="qurankhatam_CongrateQuranKhatmCompleted">恭喜你已完成古兰经的诵读</string>
+    <string name="text_ayah">节</string>
+    <string name="text_copy_to_clipboard">复制到剪贴板</string>
+    <string name="no_internet_message">无可用网络</string>
+    <string name="emptytNoteIsnotAllowed">不允许空笔记</string>
+    <string name="note_updated_msg">成功更新了该节的笔记。</string>
+    <string name="note_save_message">成功保存了该节的笔记。</string>
+    <string name="note_delete_msg">笔记已成功删除</string>
+    <string name="edit_as_you_want">随意编辑！</string>
+    <string name="ayah_saved">古兰经节已保存</string>
+
+    <string name="tafseer">注释</string>
+    <string name="tafseer_english_Hafiz_Ibn_Kathir">英文版哈菲兹·伊本·卡希尔注释</string>
+    <string name="tafseer_english_Mufti_Muhammad_Shafi">英文版穆夫提·穆罕默德·沙菲注释</string>
+    <string name="tafseer_russian_Saddi">俄文版萨迪注释</string>
+    <string name="tafseer_arabic_Qurtubi">阿拉伯语库尔图比注释</string>
+    <string name="tafseer_arabic_Saddi">阿拉伯语萨迪注释</string>
+    <string name="tafseer_arabic_Tanweer">阿拉伯语塔努维尔注释</string>
+    <string name="tafseer_arabic_Waseet">阿拉伯语瓦西特注释</string>
+    <string name="tafseer_arabic_Baghawy">阿拉伯语巴哈维注释</string>
+    <string name="tafseer_english_Al_Mukhtasar">英文版阿尔-穆赫塔萨尔注释</string>
+    <string name="tafseer_bengali_Bayaan_Foundation">孟加拉语拜安基金会注释</string>
+    <string name="tafseer_bengali_King_Fahd_Quran_Printing_Complex">孟加拉语法赫德国王古兰经印刷中心注释</string>
+    <string name="tafseer_bengali_Tawheed_Publication">孟加拉语陶希德出版物注释</string>
+    <string name="tafseer_urdu_Dr_Israr_Ahmad">乌尔都语伊斯拉尔·艾哈迈德博士注释</string>
+    <string name="tafseer_urdu_Hafiz_Ibn_Kathir">乌尔都语哈菲兹·伊本·卡希尔注释</string>
+    <string name="tafseer_urdu_Sayyid_Ibrahim_Qutb">乌尔都语赛义德·易卜拉欣·库特布注释</string>
+
+    <string name="shareDua">分享祈祷</string>
+    <string name="allDuas">所有祈祷</string>
+    <string name="no_dua_s_saved">没有保存的祈祷</string>
+    <string name="downloading_rabbana_dua_audio">正在下载“我们的主”祈祷音频</string>
+    <string name="text_rabbana_duas">“我们的主”祈祷</string>
+    <string name="text_rabbana_duas2">“我们的主”祈祷 %1$s</string>
+    <string name="deleteDua">"你确定要删除这个祈祷吗？"</string>
+    <string name="shareRamadanDua">分享斋月祈祷</string>
+    <string name="text_surah">苏拉</string>
+    <string name="text_dua_audio">祈祷音频</string>
+    <string name="favorite_duas">收藏的祈祷</string>
+
+    <string name="text_hisnul_muslim">穆斯林的堡垒</string>
+    <string name="ramdhan_dua">斋月祈祷</string>
+
+    <!-- 斋月祈祷 -->
+    <string name="dua_for_fasting">禁食祈祷</string>
+    <string name="dua_when_breaking_fast">开斋祈祷</string>
+    <string name="dua_for_fast_ashra">前十天祈祷</string>
+    <string name="dua_for_second_ashra">中十天祈祷</string>
+    <string name="dua_for_third_ashra">后十天祈祷</string>
+    <string name="tasbeeh_e_taraweeh">夜间礼拜祷文</string>
+
+    <!-- 穆斯林的堡垒 -->
+    <string name="text_hisnual_1">记念的卓越性###1</string>
+    <string name="text_hisnual_2">醒来时###1</string>
+    <string name="text_hisnual_3">穿衣时###2</string>
+    <string name="text_hisnual_4">穿新衣时###2</string>
+    <string name="text_hisnual_5">对穿新衣的人###2</string>
+    <string name="text_hisnual_6">脱衣前###2</string>
+    <string name="text_hisnual_7">进入厕所前###2</string>
+    <string name="text_hisnual_8">离开厕所后###6</string>
+    <string name="text_hisnual_9">开始洗漱时###6</string>
+    <string name="text_hisnual_10">完成洗漱时###2</string>
+    <string name="text_hisnual_11">进入/离开家时###2</string>
+    <string name="text_hisnual_12">去清真寺时###6</string>
+    <string name="text_hisnual_13">进入清真寺时###6</string>
+    <string name="text_hisnual_14">离开清真寺时###6</string>
+    <string name="text_hisnual_15">关于宣礼###6</string>
+    <string name="text_hisnual_16">开始礼拜时###6</string>
+    <string name="text_hisnual_17">礼拜时弯腰###6</string>
+    <string name="text_hisnual_18">从弯腰位置站起时###6</string>
+    <string name="text_hisnual_19">礼拜时叩头###6</string>
+    <string name="text_hisnual_20">两次叩头之间###6</string>
+    <string name="text_hisnual_21">由于诵读《古兰经》而叩头时###6</string>
+    <string name="text_hisnual_22">他沙胡德###6</string>
+    <string name="text_hisnual_23">在他沙胡德之后向先知（SAWS）祈祷###6</string>
+    <string name="text_hisnual_24">在最后的他沙胡德之后和道别之前###6</string>
+    <string name="text_hisnual_25">道别后###6</string>
+    <string name="text_hisnual_26">寻求指导以形成决策或选择正确的路线###7</string>
+    <string name="text_hisnual_27">早晚祈祷###1</string>
+    <string name="text_hisnual_28">睡前###1</string>
+    <string name="text_hisnual_29">晚上翻身时###1</string>
+    <string name="text_hisnual_30" tools:ignore="TypographyEllipsis">在睡眠中经历不安、恐惧、担忧时###1</string>
+    <string name="text_hisnual_31">做了好梦或噩梦时###1</string>
+    <string name="text_hisnual_32">维特尔祈祷###6</string>
+    <string name="text_hisnual_33">维特尔礼拜道别后###6</string>
+    <string name="text_hisnual_34">为焦虑和悲伤祈祷###4</string>
+    <string name="text_hisnual_35">为困扰的人祈祷###4</string>
+    <string name="text_hisnual_36">遭遇敌人或当权者时###4</string>
+    <string name="text_hisnual_37">害怕政府的不公正时###4</string>
+    <string name="text_hisnual_38">针对敌人祈祷###4</string>
+    <string name="text_hisnual_39">害怕一群人时###4</string>
+    <string name="text_hisnual_40">为信仰受到质疑的人祈祷###4</string>
+    <string name="text_hisnual_41">还债###4</string>
+    <string name="text_hisnual_42">为在礼拜或诵读《古兰经》时感到困惑的人祈祷###6</string>
+    <string name="text_hisnual_43">为事务变得困难的人祈祷###7</string>
+    <string name="text_hisnual_44">犯错时###7</string>
+    <string name="text_hisnual_45">驱逐恶魔及其低语###2</string>
+    <string name="text_hisnual_46">遭遇不幸或意外时###7</string>
+    <string name="text_hisnual_47">庆祝新生儿的诞生###9</string>
+    <string name="text_hisnual_48">将孩子置于真主的保护之下###11</string>
+    <string name="text_hisnual_49">探访病人时###11</string>
+    <string name="text_hisnual_50">探访病人的重要性###11</string>
+    <string name="text_hisnual_51">当病人失去生活希望时###11</string>
+    <string name="text_hisnual_52">为临终者提供的指导###11</string>
+    <string name="text_hisnual_53">为遭受灾难的人祈祷###4</string>
+    <string name="text_hisnual_54">为去世者合上眼睛时###11</string>
+    <string name="text_hisnual_55">在葬礼上的祈祷###11</string>
+    <string name="text_hisnual_56">当去世者是孩子时，在葬礼上的祈祷###11</string>
+    <string name="text_hisnual_57">慰问###11</string>
+    <string name="text_hisnual_58">将去世者放入墓穴时###11</string>
+    <string name="text_hisnual_59">安葬后###11</string>
+    <string name="text_hisnual_60">探访坟墓时###11</string>
+    <string name="text_hisnual_61">风暴期间###10</string>
+    <string name="text_hisnual_62">听到雷声时###10</string>
+    <string name="text_hisnual_63">祈雨时###10</string>
+    <string name="text_hisnual_64">下雨时###10</string>
+    <string name="text_hisnual_65">降雨后###10</string>
+    <string name="text_hisnual_66">请求晴朗的天空###10</string>
+    <string name="text_hisnual_67">看见新月时###10</string>
+    <string name="text_hisnual_68">开斋时###3</string>
+    <string name="text_hisnual_69">吃饭前###3</string>
+    <string name="text_hisnual_70">饭后###3</string>
+    <string name="text_hisnual_71">客人为主人祈祷###3</string>
+    <string name="text_hisnual_72">对提供饮料的人或打算提供饮料的人祈祷###3</string>
+    <string name="text_hisnual_73">在他人家中开斋时###3</string>
+    <string name="text_hisnual_74">在禁食时被提供食物但不打破禁食###3</string>
+    <string name="text_hisnual_75">禁食时被侮辱时###9</string>
+    <string name="text_hisnual_76">看到早期或未成熟的果实时###10</string>
+    <string name="text_hisnual_77">打喷嚏时###9</string>
+    <string name="text_hisnual_78">当不信者在打喷嚏后赞美真主时###9</string>
+    <string name="text_hisnual_79">新婚祝福###2</string>
+    <string name="text_hisnual_80">在婚礼之夜或购买动物时###9</string>
+    <string name="text_hisnual_81">性交前###2</string>
+    <string name="text_hisnual_82">生气时###9</string>
+    <string name="text_hisnual_83">看到有人在试炼中###9</string>
+    <string name="text_hisnual_84">在聚会或集会上###9</string>
+    <string name="text_hisnual_85">集会或聚会结束时的赎罪祈祷###9</string>
+    <string name="text_hisnual_86">返回赎罪祈祷###9</string>
+    <string name="text_hisnual_87">对你表示恩惠的人祈祷###9</string>
+    <string name="text_hisnual_88">保护免受敌基督者侵害###7</string>
+    <string name="text_hisnual_89">对因真主之名表示爱意的人祈祷###9</string>
+    <string name="text_hisnual_90">对向你提供财富的人祈祷###9</string>
+    <string name="text_hisnual_91">当债务清偿时对债权人的祈祷###9</string>
+    <string name="text_hisnual_92">对惧怕陷入偶像崇拜的祈祷###4</string>
+    <string name="text_hisnual_93">赠与礼物或慈善后返回祈祷###9</string>
+    <string name="text_hisnual_94">对占卜的禁止###4</string>
+    <string name="text_hisnual_95">乘坐动物或任何交通工具时###5</string>
+    <string name="text_hisnual_96">旅行时###5</string>
+    <string name="text_hisnual_97">进入城镇或村庄时###5</string>
+    <string name="text_hisnual_98">进入市场时###5</string>
+    <string name="text_hisnual_99">当骑乘动物（或交通工具）绊倒时###5</string>
+    <string name="text_hisnual_100">旅行者为居民祈祷###5</string>
+    <string name="text_hisnual_101">居民为旅行者祈祷###5</string>
+    <string name="text_hisnual_102">攀登或下降时的记念###5</string>
+    <string name="text_hisnual_103">黎明时的旅行者祈祷###5</string>
+    <string name="text_hisnual_104">停留或住宿时###5</string>
+    <string name="text_hisnual_105">旅行归来时###5</string>
+    <string name="text_hisnual_106">接收到令人愉快或不愉快的消息时的祈祷###4</string>
+    <string name="text_hisnual_107">向先知（SAWS）祈祷的卓越性###7</string>
+    <string name="text_hisnual_108">传播伊斯兰问候的卓越性###9</string>
+    <string name="text_hisnual_109">对不信者的问候###9</string>
+    <string name="text_hisnual_110">听到鸡鸣或驴叫时###10</string>
+    <string name="text_hisnual_111">听到狗在夜间叫时###10</string>
+    <string name="text_hisnual_112">为你侮辱过的人祈祷###9</string>
+    <string name="text_hisnual_113">赞美穆斯林同胞的礼节###9</string>
+    <string name="text_hisnual_114">为受到赞美的人祈祷###9</string>
+    <string name="text_hisnual_115">朝觐或小朝觐时的“塔尔比亚”###8</string>
+    <string name="text_hisnual_116">经过黑石时的“塔克比尔”###8</string>
+    <string name="text_hisnual_117">也门角和黑石之间###8</string>
+    <string name="text_hisnual_118">在萨法山和玛尔瓦山###8</string>
+    <string name="text_hisnual_119">阿拉法特日###8</string>
+    <string name="text_hisnual_120">在穆兹达里发的记念###8</string>
+    <string name="text_hisnual_121">在“贾马拉特”投掷石子时###8</string>
+    <string name="text_hisnual_122">在惊奇和喜悦时###4</string>
+    <string name="text_hisnual_123">收到好消息时###4</string>
+    <string name="text_hisnual_124">身体疼痛时###11</string>
+    <string name="prayer_timings">祈祷时间</string>
+    <string name="learn_quran">学习古兰经</string>
+    <string name="_6_kalma">六卡尔玛</string>
+    <string name="islamic_calendar">伊斯兰历</string>
+    <string name="fasting_rules">斋戒规则</string>
+    <string name="how_to_pray">如何祈祷</string>
+    <string name="pray_guide_desc1">祈祷（salah；复数为salawat）是伊斯兰五大支柱之一。\n  \n所有成年穆斯林都有责任完成他们的五次日常祈祷，并建议十岁及以上的儿童按照先知（PBUH）的方式进行，以确保其有效性。穆斯林相信，通过与安拉的沟通，祈祷者能够获得力量。\n \n穆斯林相信安拉通过《古兰经》与我们交流，而祈祷是我们与安拉连接的方式。\n \n无论你只是对穆斯林如何祈祷感到好奇，还是你自己想要学习祈祷，开始永远都不算晚。</string>
+    <string name="make_your_intention">在心中表达你的意图。</string>
+    <string name="pray_guide_desc2">在开始祈祷之前，重要的是你有祈祷的意图。</string>
+    <string name="raise_your_hands_up">将双手举至耳朵和肩膀旁边。</string>
+    <string name="pray_guide_desc3">将双手举至耳朵和肩膀旁边，然后说“Allah akbar”（安拉至大）。这句话的意思是“安拉是最大的”。站着（或坐着如果你不能站立）时做这个动作。\n \n举手时，手指应该自然分开。</string>
+    <string name="place_your_right_hand_over">将右手放在左手上方。</string>
+    <string name="pray_guide_desc4">将双手放在肚脐上、胸部或两者之间，伊斯兰学派对此有不同意见。保持眼睛注视地面，最好集中注意力于你的头在稍后跪拜时将放置的位置。不要让你的眼睛四处游动。\n \n念诵可选的“杜阿”祈祷词（开篇祈祷词）：\n \n随后念诵《苏拉提哈》（每个祈祷单元中都要念诵这段经文）：\n \n念诵任何其他经文或《古兰经》的部分章节，如《苏拉伊克拉斯》。\n \n在主祷文之后念诵经文只在义务祈祷的前两个单元中进行，而在强烈推荐的祈祷中，所有单元都需要念诵经文。</string>
+    <string name="say_allahu_akbar">说“Allah akbar”并弯下腰。</string>
+    <string name="pray_guide_desc5">弯下身体，使你的背部和颈部尽可能保持平直并与地面平行，保持眼睛注视地面，保持手指和手掌放在膝盖上。你的背部和头部应该与腿形成90°角。你不需要做出一个完美的角度；你的身体应该放松。这个姿势称为“鞠躬”（ruku）。</string>
+    <string name="stand_back_up_raise">站起来（从鞠躬中站起）。</string>
+    <string name="pray_guide_desc6">站立起来，双臂放在身体两侧。</string>
+    <string name="say_allahu_akbar_and_prostrate">说“Allah akbar”并跪拜。</string>
+    <string name="pray_guide_desc7">将你的头、膝盖和双手放在地上。在“跪拜”（sujood）时，确保你的额头和鼻子接触地面。这个姿势称为“ سجده ”。</string>
+    <string name="rise_from_sajdah">从跪拜中站起并跪坐。</string>
+    <string name="pray_guide_desc8">将左脚从脚掌到脚跟放在地上。右脚只需用脚趾接触地面。双手平放在膝盖上。</string>
+    <string name="say_allahu_akbar_and_stand_up">说“Allah akbar”并站起来。</string>
+    <string name="pray_guide_desc9">你已经完成了一个祈祷单元（rak\'ah）。根据祈祷类型，你可能还需要完成多达三个单元。\n \n在每个祈祷的第二个单元中，在第二次跪拜后，重新跪坐并念诵：\n \n塔沙胡德（Tashahhud）\n杜阿（Durood）</string>
+    <string name="finish_the_prayer_with_tasleem">以“Tasleem”结束祈祷。</string>
+    <string name="pray_guide_desc10">在念完塔沙胡德、杜阿和你想要念诵的任何祈祷词后，结束祈祷：\n \n将头转向右侧，并说“愿安拉的平安与祝福降临于你”。记录你善行的天使在这一侧。\n \n将头转向左侧，并说“愿安拉的平安与祝福降临于你”。记录你恶行的天使在这一侧。祈祷结束了！</string>
+    <string name="pray_guide_desc1_female">祈祷（salah；复数为salawat）是伊斯兰五大支柱之一。\n\n 对所有成年穆斯林来说，祈祷是义务，对十岁及以上的儿童极力推荐，应按先知（PBUH）所行的方式完成他们的五次日常祈祷，以使其有效。人们相信，与安拉的交流将赋予祈祷者生命，并给他们带来勇气。\n\n穆斯林相信安拉通过《古兰经》与我们交流，而祈祷是我们与安拉联系的方式。\n \n无论你是对穆斯林如何祈祷感到好奇，还是自己想要学习祈祷，开始永远都不算晚。</string>
+    <string name="make_your_intention_known_in_your_heart">在心中表达你的意图。</string>
+    <string name="pray_guide_desc2_female">在开始祈祷之前，重要的是要有祈祷的意图。</string>
+    <string name="raise_your_hands_up_next_to_your_ears_and_shoulders">将双手举至耳朵和肩膀旁边。</string>
+    <string name="pray_guide_desc3_female">双脚并拢站立，双手举至肩部高度，手掌朝向祈祷方向，手指自然张开，手腕和前臂遮盖。</string>
+    <string name="place_your_right_hand_over_your_left_hand">将右手放在左手上方。</string>
+    <string name="pray_guide_desc4_female">双脚并拢站立，双手举至肩部高度，手掌朝向祈祷方向，手指自然张开，手腕和前臂遮盖。伊斯兰学派对此有不同看法。保持眼睛注视地面。这样有助于集中注意力于稍后你头部跪拜的位置。不要让你的眼睛四处游动。\n \n 诵读可选的开篇祷文：\n \n接着诵读《苏拉提哈》（每个祈祷单元中都要诵读这段经文）\n \n ：诵读其他任何苏拉或《古兰经》的任何部分，如《苏拉伊克拉斯》。\n \n在义务祈祷的前两个单元中，阿法蒂哈后诵读的苏拉，而在推荐祈祷中，在所有单元中均需诵读。</string>
+    <string name="say_allahu_akbar_and_bend_down">说“Allah Akbar”并弯腰。</string>
+    <string name="pray_guide_desc5_female">弯下你的身体，使你的背部和脖子尽可能保持平直，并与地面平行，眼睛注视地面，保持手指和手掌放在膝盖上。你的背部和头部应与双腿成90度角。你不必完美地成角度；你的身体应该放松。这种姿势称为鞠躬（ruku）。</string>
+    <string name="stand_back_up_raise_from_ruku">站起来（从鞠躬姿势中抬起）。</string>
+    <string name="pray_guide_desc6_female">完全站立。用低沉的声音诵读此祷文，同时在站立姿势中将视线固定在跪拜处。</string>
+    <string name="say_allahu_akbar_">说“Allah Akbar”并跪拜。</string>
+    <string name="pray_guide_desc7_female">将你的头、膝盖和手放在地上。在“sujood”姿势下，确保你的额头和鼻子接触地面。这种姿势称为“sajdah”。</string>
+    <string name="rise_from_sajdah_and_sit_on_your_knees">从sajdah姿势中起身，跪坐。</string>
+    <string name="pray_guide_desc8_female">双腿向右侧收拢，大腿叠在一起，坐在左臀部上，双手放在大腿上，使指尖触及膝盖，手指并拢，眼睛注视膝上。</string>
+    <string name="say_allahu_akbar_a">说“Allah Akbar”并站起来。</string>
+    <string name="pray_guide_desc9_female">你已经完成了一个祈祷单元（rak\'ah）。根据祈祷的不同，你可能还需要完成最多三个单元。\n \n 在每个祈祷的第二个单元中，在第二次sajdah后，再次跪坐并诵读：\n \nTashahhud \n \nDurood</string>
+    <string name="finish_the_prayer_with_t">以“tasleem”结束祈祷。</string>
+    <string name="pray_guide_desc10_female">在诵读完Tashahhud、Durood以及任何你希望诵读的祷文后，结束祈祷：\n \n 将头转向右侧并说“Assalamu alaykum wa Rahmatullahi”。记录你善行的天使在这一侧。\n \n 将头转向左侧并说“Assalamu alaykum wa Rahmatullahi”。记录你恶行的天使在这一侧。祈祷结束了！</string>
+    <string name="internet_not_available">网络不可用</string>
+
+
+</resources>

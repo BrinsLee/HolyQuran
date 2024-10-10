@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quran Pashto قرآن پښتو</string>
+
+    <string name="navigation_drawer_open">Buka laci navigasi</string>
+    <string name="navigation_drawer_close">Tutup laci navigasi</string>
+    <string name="nav_header_title">د قرآن پښتو ترجمه</string>
+    <string name="nav_header_subtitle">إحياء السنة فاونډیشن</string>
+    <string name="nav_header_desc">Header navigasi</string>
+    <string name="action_settings">Pengaturan</string>
+
+    <string name="menu_home">Cara penggunaan</string>
+    <string name="menu_gallery">Buat aplikasi</string>
+    <string name="menu_slideshow">Penilaian</string>
+    <string name="menu_tools">Pergi ke tanda</string>
+    <string name="menu_share">Bagikan aplikasi</string>
+    <string name="menu_send">Kontak (Akçod)</string>
+    <string name="agza">Merkurius</string>
+    <string name="hi">Hai</string>
+    <string name="fhares">Surah</string>
+
+    <string name="is">lebih jauh</string>
+
+    <string name="zakr">Pesan dari Allah</string>
+    <string name="alah">Untuk mengetahui pesan</string>
+    <string name="notification">Pengingat dzikir</string>
+    <string name="messag">Kontak</string>
+    <string name="suppo">Bekerja sama</string>
+    <string name="aler">Notifikasi</string>
+    <string name="_0">0</string>
+    <string name="_1">Setiap 12 jam.</string>
+    <string name="stopalert">Tutup pengingat dzikir</string>
+    <string name="m">Setiap 30 menit.</string>
+    <string name="a">Setiap jam.</string>
+    <string name="naby">Setiap 6 jam.</string>
+    <string name="stop">Berhenti</string>
+    <string name="zak">Buka Tasbih Digital</string>
+    <string name="zakrallah">Apakah Anda sudah berdoa hari ini?</string>
+    <string name="t">Pengingat Dzikir</string>
+    <string name="n">Lebih banyak aplikasi kami</string>
+    <string name="da">Hubungi kami</string>
+    <string name="e">malam</string>
+    <string name="marks">Bagian-bagian</string>
+    <string name="parties">Hai</string>
+
+    <string name="close">Tutup</string>
+    <string name="continue1">Lanjutkan</string>
+    <string name="congrat">Selamat</string>
+    <string name="dowell">Anda melakukannya dengan baik</string>
+    <string name="gotostore">Pergi</string>
+    <string name="ratetheapp">Jika Anda suka aplikasinya, beri peringkat</string>
+    <string name="ratingapp">Apakah Anda suka aplikasinya?</string>
+    <string name="light">cahaya</string>
+    <string name="mark">tanda</string>
+    <string name="add">Tambah</string>
+    <string name="marked">Tanda itu ditandai.</string>
+    <string name="symptoms">Telah mencapai tanda</string>
+    <string name="press_back_again_to_exit">Tekan kembali lagi untuk keluar</string>
+</resources>

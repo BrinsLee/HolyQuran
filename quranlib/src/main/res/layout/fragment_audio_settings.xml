@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.quran.QuranAudioSettingsFragment">
+
+    <include
+        android:id="@+id/include15"
+        layout="@layout/toolbar_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include15">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/audioScrollingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvAutoScroll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quransp_auto_scroll"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16"
+                    app:layout_constraintBottom_toBottomOf="@id/autoScrollSwitch"
+                    app:layout_constraintEnd_toStartOf="@+id/autoScrollSwitch"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/autoScrollSwitch" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/autoScrollSwitch"
+                    style="@style/Widget.App.Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumbTint="@color/onPrimary1"
+                    android:trackTint="@color/onPrimary1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <View
+                    android:id="@+id/firstSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:background="@color/surfaceSeparatorColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/autoScrollSwitch" />
+
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/screenOnSwitch"
+                    style="@style/Widget.App.Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:thumbTint="@color/onPrimary1"
+                    android:trackTint="@color/onPrimary1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/firstSeprator" />
+
+
+                <TextView
+                    android:id="@+id/tvScreenOnWhileReading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quransp_keep_screen_on_while_reading"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16"
+                    app:layout_constraintBottom_toBottomOf="@+id/screenOnSwitch"
+                    app:layout_constraintEnd_toStartOf="@+id/screenOnSwitch"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/screenOnSwitch" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/secondSeprator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@color/surfaceSeparatorColor"
+                app:layout_constraintEnd_toEndOf="@+id/audioScrollingLayout"
+                app:layout_constraintStart_toStartOf="@+id/audioScrollingLayout"
+                app:layout_constraintTop_toBottomOf="@id/audioScrollingLayout" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/atTheEndOfSurahLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="@+id/audioScrollingLayout"
+                app:layout_constraintStart_toStartOf="@+id/audioScrollingLayout"
+                app:layout_constraintTop_toBottomOf="@id/secondSeprator">
+
+                <TextView
+                    android:id="@+id/titleAtTheEndOfSurahLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quransp_at_the_end_of_surah"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <RadioGroup
+                    android:id="@+id/rdoAtTheEndOfSurah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titleAtTheEndOfSurahLayout">
+
+
+                    <RadioButton
+                        android:id="@+id/rdoStopPlaying"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/onSurface2"
+                        android:text="@string/quransp_stop_playing"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/rdoRepeatTheSurah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/onSurface2"
+                        android:text="@string/quransp_repeat_the_surah"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/rdoTheNextSurah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/onSurface2"
+                        android:text="@string/quransp_play_the_next_surah"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/thirdSeprator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@color/surfaceSeparatorColor"
+                app:layout_constraintEnd_toEndOf="@+id/audioScrollingLayout"
+                app:layout_constraintStart_toStartOf="@+id/audioScrollingLayout"
+                app:layout_constraintTop_toBottomOf="@id/atTheEndOfSurahLayout" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/repeatEachVerseLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="@+id/atTheEndOfSurahLayout"
+                app:layout_constraintStart_toStartOf="@+id/atTheEndOfSurahLayout"
+                app:layout_constraintTop_toBottomOf="@id/thirdSeprator">
+
+                <TextView
+                    android:id="@+id/titleRepeatEachVerseLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quransp_repeat_each_verse"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinnerRepeatAyahTimes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titleRepeatEachVerseLayout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/fourthSeprator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@color/surfaceSeparatorColor"
+                app:layout_constraintEnd_toEndOf="@+id/repeatEachVerseLayout"
+                app:layout_constraintStart_toStartOf="@+id/repeatEachVerseLayout"
+                app:layout_constraintTop_toBottomOf="@id/repeatEachVerseLayout" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/reciterLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="@+id/repeatEachVerseLayout"
+                app:layout_constraintStart_toStartOf="@+id/repeatEachVerseLayout"
+                app:layout_constraintTop_toBottomOf="@id/fourthSeprator">
+
+                <TextView
+                    android:id="@+id/titleReciterLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quransp_reciters"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rdoReciters"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titleReciterLayout">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/onSurface2"
+                        android:drawableEnd="@drawable/ic_circle_icon_reciter_green"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/onSurface2"
+                        android:layoutDirection="rtl"
+                        android:text="@string/quransp_quran_reciter1"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/onSurface2"
+                        android:drawableEnd="@drawable/ic_circle_icon_reciter_green"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/onSurface2"
+                        android:layoutDirection="rtl"
+                        android:text="@string/quransp_quran_reciter2"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/onSurface2"
+                        android:drawableEnd="@drawable/ic_circle_icon_reciter_green"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/onSurface2"
+                        android:layoutDirection="rtl"
+                        android:text="@string/quransp_quran_reciter3"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:adSize="BANNER"
+        app:adUnitId="@string/ad_banner_id_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainScrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

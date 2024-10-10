@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/margin_small"
+    android:paddingHorizontal="@dimen/margin_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fastingRuleQuestionCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/fastingRuleQuestionTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/what_is_fasting"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textColor="?attr/onSurface1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/fastingRuleQuestionIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/fastingRuleQuestionIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_expand_more"
+            app:layout_constraintBottom_toBottomOf="@+id/fastingRuleQuestionTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fastingRuleQuestionTV"
+            app:layout_constraintTop_toTopOf="@+id/fastingRuleQuestionTV"
+            app:tint="?attr/onSurface1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fastingRuleAnswerCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/fastingRuleQuestionCL"
+        app:layout_constraintStart_toStartOf="@+id/fastingRuleQuestionCL"
+        app:layout_constraintTop_toBottomOf="@+id/fastingRuleQuestionCL">
+
+        <TextView
+            android:id="@+id/fastingRuleAnswerTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="@dimen/margin_xx_small"
+            android:text="@string/fasting_is_a_direction_to_Allah"
+            android:textAlignment="textStart"
+            android:textColor="?attr/onSurface1"
+            android:textSize="@dimen/size_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

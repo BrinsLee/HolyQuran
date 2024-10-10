@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ConstraintSet android:id="@+id/BaseState">
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/showTextSettings">
+
+
+        <Constraint
+            android:id="@+id/quranBookView_TextSettings"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+
+    <ConstraintSet android:id="@+id/showSoundSettings">
+
+
+        <Constraint
+            android:id="@+id/soundLayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/showVerseList">
+
+
+        <Constraint
+            android:id="@+id/surahVerseListMainLay"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/quranBookView_BottomMenu"
+            android:visibility="visible"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <Transition
+        motion:duration="600"
+        android:id="@+id/showTextSettingsTrans"
+        motion:constraintSetStart="@+id/BaseState"
+        motion:constraintSetEnd="@+id/showTextSettings" />
+    <Transition     motion:duration="600"
+        android:id="@+id/showSoundSettingsTrans"
+        motion:constraintSetStart="@+id/BaseState"
+        motion:constraintSetEnd="@+id/showSoundSettings" />
+    <Transition     motion:duration="600"
+        android:id="@+id/showVerseListTrans"
+        motion:constraintSetStart="@+id/BaseState"
+        motion:constraintSetEnd="@+id/showVerseList" />
+    <Transition     motion:duration="600"
+        android:id="@+id/hideTextSettingsTrans"
+        motion:constraintSetStart="@+id/showTextSettings"
+        motion:constraintSetEnd="@+id/BaseState" />
+    <Transition     motion:duration="600"
+        android:id="@+id/hideSoundSettingsTrans"
+        motion:constraintSetStart="@+id/showSoundSettings"
+        motion:constraintSetEnd="@+id/BaseState" />
+    <Transition     motion:duration="600"
+        android:id="@+id/hideVerseSettingTrans"
+        motion:constraintSetStart="@+id/showVerseList"
+        motion:constraintSetEnd="@+id/BaseState" />
+</MotionScene>

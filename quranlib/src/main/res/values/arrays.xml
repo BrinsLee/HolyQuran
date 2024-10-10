@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lang_names">
+        <item>বাংলা</item>
+        <item>English</item>
+        <item>Indonesian</item>
+    </string-array>
+
+    <string-array name="lang_codes">
+        <item>bn</item>
+        <item>en</item>
+        <item>indo</item>
+    </string-array>
+
+    <string-array name="arabic_font">
+        <item>Amiri</item>
+        <item>Me Quran</item>
+        <item>PDMS Islamic</item>
+        <item>PDMS Quran</item>
+        <item>Uthmani</item>
+    </string-array>
+
+    <string-array name="arabic_font_code">
+        <item>amiri.ttf</item>
+        <item>me_quran.ttf</item>
+        <item>PDMS_IslamicFont.ttf</item>
+        <item>PDMS_Saleem_QuranFont.ttf</item>
+        <item>Uthmani.otf</item>
+    </string-array>
+
+    <string-array name="arabic_font_sizes">
+        <item>22</item>
+        <item>26</item>
+        <item>30</item>
+        <item>34</item>
+        <item>38</item>
+        <item>42</item>
+        <item>46</item>
+    </string-array>
+
+    <string-array name="translation_font_sizes">
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+    </string-array>
+
+    <string-array name="aya_operations">
+        <item>@string/copy</item>
+        <item>@string/share</item>
+    </string-array>
+
+    <string-array name="corpus_word_type">
+        <item>Accusative particle</item>
+        <item>Adjective</item>
+        <item>Amendment particle</item>
+        <item>Answer particle</item>
+        <item>Aversion Particle</item>
+        <item>Particle of cause</item>
+        <item>Particle of certainty</item>
+        <item>Circumstance particle</item>
+        <item>Comitative particle</item>
+        <item>Conditional particle</item>
+        <item>Coordinating conjunction</item>
+        <item>Demonstrative Pronoun</item>
+        <item>Determiner</item>
+        <item>Emphatic iaam prefix</item>
+        <item>Equalization particle</item>
+        <item>Exhortation particle</item>
+        <item>Explanation particle</item>
+        <item>Exceptive particle</item>
+        <item>Future particle</item>
+        <item>Imperative particle</item>
+        <item>imperative iaam prefix</item>
+        <item>Inceptive particle</item>
+        <item>Quranic initial</item>
+        <item>Particle of interpretation</item>
+        <item>Interrogative particle</item>
+        <item>Locative adverb</item>
+        <item>Noun</item>
+        <item>Negative pronoun</item>
+        <item>Preposition</item>
+        <item>Proper noun</item>
+        <item>Preventive particle</item>
+        <item>Prohibition particle</item>
+        <item>Personal pronoun</item>
+        <item>Purpose iaam prefix</item>
+        <item>Relative pronoun</item>
+        <item>Resumption particle</item>
+        <item>Restriction</item>
+        <item>Retraction particle</item>
+        <item>Result particle</item>
+        <item>Subordinating conjunction</item>
+        <item>Supplemental particle</item>
+        <item>Surprise particle</item>
+        <item>Time adverb</item>
+        <item>Verb</item>
+        <item>Vocative particle</item>
+
+    </string-array>
+
+
+    <string-array name="hijri_months">
+        <item>@string/text_muharram</item>
+        <item>@string/text_safar</item>
+        <item>@string/text_rabi_ul_awal</item>
+        <item>@string/text_rabi_ul_thani</item>
+        <item>@string/text_jumad_al_awal</item>
+        <item>@string/text_jumad_al_thani</item>
+        <item>@string/text_rajab</item>
+        <item>@string/text_shaban</item>
+        <item>@string/text_ramdan</item>
+        <item>@string/text_shawwal</item>
+        <item>@string/text_zul_qaadah</item>
+        <item>@string/text_zul_hajj</item>
+    </string-array>
+
+    <string-array name="tafseer_author_list">
+        <item>@string/tafseer_arabic_Baghawy</item>
+        <item>@string/tafseer_arabic_Qurtubi</item>
+        <item>@string/tafseer_arabic_Saddi</item>
+        <item>@string/tafseer_arabic_Tanweer</item>
+        <item>@string/tafseer_arabic_Waseet</item>
+        <item>@string/tafseer_bengali_Bayaan_Foundation</item>
+        <item>@string/tafseer_bengali_King_Fahd_Quran_Printing_Complex</item>
+        <item>@string/tafseer_bengali_Tawheed_Publication</item>
+        <item>@string/tafseer_english_Al_Mukhtasar</item>
+        <item>@string/tafseer_english_Hafiz_Ibn_Kathir</item>
+        <item>@string/tafseer_english_Mufti_Muhammad_Shafi</item>
+        <item>@string/tafseer_russian_Saddi</item>
+        <item>@string/tafseer_urdu_Dr_Israr_Ahmad</item>
+        <item>@string/tafseer_urdu_Hafiz_Ibn_Kathir</item>
+        <item>@string/tafseer_urdu_Sayyid_Ibrahim_Qutb</item>
+    </string-array>
+
+    <string-array name="repeat_ayah_array">
+        <item>@string/qurankhatam_audiorepeattitle</item>
+        <item>@string/qurankhatam_audiorepeat1</item>
+        <item>@string/qurankhatam_audiorepeat2</item>
+        <item>@string/qurankhatam_audiorepeat3</item>
+        <item>@string/qurankhatam_audiorepeat4</item>
+        <item>@string/qurankhatam_audiorepeat5</item>
+        <item>@string/qurankhatam_audiorepeat6</item>
+    </string-array>
+
+    <string-array name="fasting_duas">
+        <item>@string/dua_for_fasting</item>
+        <item>@string/dua_when_breaking_fast</item>
+        <item>@string/dua_for_fast_ashra</item>
+        <item>@string/dua_for_second_ashra</item>
+        <item>@string/dua_for_third_ashra</item>
+        <item>@string/tasbeeh_e_taraweeh</item>
+    </string-array>
+
+</resources>

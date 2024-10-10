@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/soundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/quranBookView_TextSettings">
+
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBar1"
+            app:layout_constraintEnd_toStartOf="@+id/seekBar1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/seekBar1"
+            app:srcCompat="@drawable/ic_volume_up_solid" />
+
+        <ImageView
+            android:id="@+id/closeAudioBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rabbaclosebackground"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+
+            android:src="@drawable/ic_baseline_close_white"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBar1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/seekBar1" />
+
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:progressBackgroundTint="@color/onSurface5"
+            android:progressBackgroundTintMode="add"
+            android:progressTint="@color/onSurface2"
+            android:thumbTint="@color/onSurface2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/closeAudioBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/quranBookView_TextSettings"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/settingControl">
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textSizeSeekbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textSizeSeekbar"
+            app:srcCompat="@drawable/ic_text"
+            app:tint="@color/onSurface2" />
+
+        <ImageView
+            android:id="@+id/ivCancelDialogue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rabbaclosebackground"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_close_white"
+            app:layout_constraintBottom_toBottomOf="@+id/textSizeSeekbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textSizeSeekbar" />
+
+        <SeekBar
+            android:id="@+id/textSizeSeekbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:max="10"
+            android:progress="3"
+            android:progressBackgroundTint="@color/onSurface5"
+            android:progressTint="@color/onSurface2"
+            android:thumbTint="@color/onSurface2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivCancelDialogue"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settingControl"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        android:background="@color/surfaceColor1"
+        android:clickable="true"
+        android:padding="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/rabbanaPreBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/background"
+            android:src="@drawable/ramdanduaprebtn"
+            app:layout_constraintBottom_toBottomOf="@+id/tt"
+            app:layout_constraintEnd_toStartOf="@+id/tt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="@+id/tt"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/tt"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/background"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:src="@drawable/ic_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/playAudio"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rabbanaPreBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/onSurface2" />
+
+        <ImageButton
+            android:id="@+id/playAudio"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/background"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:src="@drawable/ic_play_white"
+            app:layout_constraintEnd_toStartOf="@+id/rabbanaNextBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tt"
+            app:layout_constraintTop_toTopOf="@+id/tt"
+            app:tint="@color/onSurface2" />
+
+        <ImageView
+            android:id="@+id/rabbanaNextBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/background"
+
+            android:src="@drawable/ramdanduanextbtn"
+            app:layout_constraintBottom_toBottomOf="@+id/playAudio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/playAudio"
+            app:layout_constraintTop_toTopOf="@+id/playAudio" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

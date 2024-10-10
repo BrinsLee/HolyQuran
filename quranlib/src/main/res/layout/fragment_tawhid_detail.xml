@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.shirk.TawhidDetailFragment">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardShirkDefinition"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:backgroundTint="@color/surfaceColor1"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintBottom_toTopOf="@+id/cardShirkVerses"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread"
+                    app:strokeColor="@color/surfaceColor2"
+                    app:strokeWidth="@dimen/card_outer_stroke">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_16dp">
+
+                        <TextView
+                            android:id="@+id/definitionTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/definition"
+                            android:textColor="@color/onSurface1"
+                            android:textSize="@dimen/size_16"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+
+                            android:id="@+id/definitionDecs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:justificationMode="inter_word"
+                            android:text="@string/tawhid_defination"
+                            android:textColor="@color/onSurface3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/definitionTitle" />
+
+                        <ImageView
+                            android:id="@+id/definitionShareIV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_20dp"
+                            android:background="@drawable/ic_share_button"
+                            app:layout_constraintEnd_toEndOf="@id/definitionDecs"
+                            app:layout_constraintTop_toBottomOf="@+id/definitionDecs" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardShirkVerses"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/surfaceColor1"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintBottom_toTopOf="@+id/cardShirkAhadees"
+                    app:layout_constraintEnd_toEndOf="@+id/cardShirkDefinition"
+                    app:layout_constraintStart_toStartOf="@+id/cardShirkDefinition"
+                    app:layout_constraintTop_toBottomOf="@+id/cardShirkDefinition"
+                    app:strokeColor="@color/surfaceColor2"
+                    app:strokeWidth="@dimen/card_outer_stroke">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/margin_16dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/versesTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/verses"
+                            android:textColor="@color/onSurface1"
+                            android:textSize="@dimen/size_16"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/verseOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:justificationMode="inter_word"
+                            android:text="@string/tawhid_verse_1"
+                            android:textColor="@color/onSurface3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/versesTitle" />
+
+                        <TextView
+
+                            android:id="@+id/verseTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:justificationMode="inter_word"
+                            android:text="@string/tawhid_verse_2"
+                            android:textColor="@color/onSurface3"
+                            app:layout_constraintEnd_toEndOf="@+id/verseOne"
+                            app:layout_constraintStart_toStartOf="@+id/verseOne"
+                            app:layout_constraintTop_toBottomOf="@+id/verseOne" />
+
+                        <ImageView
+                            android:id="@+id/verseShareIV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_20dp"
+                            android:background="@drawable/ic_share_button"
+                            app:layout_constraintEnd_toEndOf="@id/verseTwo"
+                            app:layout_constraintTop_toBottomOf="@+id/verseTwo" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardShirkAhadees"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/surfaceColor1"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/cardShirkVerses"
+                    app:layout_constraintStart_toStartOf="@+id/cardShirkVerses"
+                    app:layout_constraintTop_toBottomOf="@+id/cardShirkVerses"
+                    app:strokeColor="@color/surfaceColor2"
+                    app:strokeWidth="@dimen/card_outer_stroke">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/margin_16dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/ahadeesTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ahadees"
+                            android:textColor="@color/onSurface1"
+                            android:textSize="@dimen/size_16"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/hadeesOne"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:justificationMode="inter_word"
+                            android:text="@string/tawhid_hadees_1"
+                            android:textColor="@color/onSurface3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/ahadeesTitle" />
+
+                        <TextView
+                            android:id="@+id/hadeesTwo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8dp"
+                            android:justificationMode="inter_word"
+                            android:text="@string/tawhid_hadees_2"
+                            android:textColor="@color/onSurface3"
+                            app:layout_constraintEnd_toEndOf="@+id/hadeesOne"
+                            app:layout_constraintStart_toStartOf="@+id/hadeesOne"
+                            app:layout_constraintTop_toBottomOf="@id/hadeesOne" />
+
+                        <ImageView
+                            android:id="@+id/hadeesShareIV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_20dp"
+                            android:background="@drawable/ic_share_button"
+                            app:layout_constraintEnd_toEndOf="@id/hadeesTwo"
+                            app:layout_constraintTop_toBottomOf="@+id/hadeesTwo" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.favoriteduas.FavoriteDuas">
+
+    <include
+        android:id="@+id/include23"
+        layout="@layout/toolbar_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include23">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tableLayoutAllDuas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hadees_big_section_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicatorColor="@color/onSurface2"
+            app:tabSelectedTextColor="@color/onPrimary1"
+            app:tabTextAppearance="@style/tabAllDuasTextStyle"
+            app:tabTextColor="@color/onSurface5" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerAllDuas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayoutAllDuas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/adView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

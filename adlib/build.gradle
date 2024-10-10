@@ -1,0 +1,50 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.ihyas.adlib'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "String", "ADMOB_APP_ID", "${ADMOB_APP_ID_DEBUG}"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField "String", "ADMOB_APP_ID", "${ADMOB_APP_ID_DEBUG}"
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        buildConfig true
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation coreDependencies.core
+    implementation coreDependencies.app_compat
+//    implementation 'com.google.android.material:material:1.12.0'
+    testImplementation 'junit:junit:4.14-SNAPSHOT'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+}

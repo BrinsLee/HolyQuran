@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/txtFileName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="test"
+        android:layout_marginHorizontal="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/onPrimary1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDownloading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/downloading"
+        android:textColor="@color/onPrimary1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtFileName" />
+
+    <TextView
+        android:id="@+id/txtDownloadPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/onPrimary1"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/txtDownloading"
+        app:layout_constraintTop_toTopOf="@id/txtDownloading" />
+
+    <TextView
+        android:id="@+id/txtProgressCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="2MB"
+        android:textColor="@color/onPrimary1"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/txtDownloading"
+        app:layout_constraintTop_toBottomOf="@id/txtDownloading" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="6dp"
+        android:maxHeight="8dp"
+        android:minHeight="8dp"
+        android:progress="10"
+        android:progressTint="@color/onSurface2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtProgressCurrent" />
+
+    <Button
+        android:id="@+id/btnCancelDownloadDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/onSurface2"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="10dp"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

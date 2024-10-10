@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.quran.AyahNoteFragment">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/ivDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivShare"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/background"
+        android:contentDescription="@string/app_name"
+        android:padding="4dp"
+        android:src="@drawable/ic_share_single_ayah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivDelete"
+        app:tint="@color/onSurface2" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background"
+        android:contentDescription="@string/app_name"
+        android:padding="4dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/include2"
+        app:layout_constraintEnd_toStartOf="@+id/ivShare"
+        app:tint="@color/onSurface2" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNote"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColorHint="@color/onPrimary1"
+        app:counterOverflowTextColor="@color/onPrimary1"
+        app:helperTextTextColor="@color/onPrimary1"
+        app:hintTextColor="@color/onPrimary1"
+        app:layout_constraintBottom_toTopOf="@+id/saveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:hint="@string/enternotehere"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:textColor="@color/onPrimary1"
+            android:textColorHint="@color/onPrimary1"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/tasbeehSaveBtn"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/onSurface2"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tilNote"
+        app:layout_constraintStart_toStartOf="@+id/tilNote"
+        app:layout_constraintTop_toBottomOf="@+id/tilNote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

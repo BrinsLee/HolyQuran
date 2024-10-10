@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+<!--        <item-->
+<!--            android:id="@+id/nav_gotoprayy"-->
+<!--            android:icon="@drawable/ic_praying"-->
+<!--            android:title="@string/menu_home"-->
+<!--            />-->
+        <item
+            android:id="@+id/nav_language"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_rateappp"
+            android:icon="@drawable/ic_grade_black_24dp"
+            android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/nav_night"
+            android:icon="@drawable/ic_brightness_4_black_24dp"
+            android:title="@string/e" />
+        <item
+            android:id="@+id/nav_light"
+            android:icon="@drawable/ic_light_1_black_24dp"
+            android:title="@string/light" />
+
+        <item
+            android:id="@+id/nav_sharee"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_share" />
+
+        <item
+            android:id="@+id/nav_sendd"
+            android:visible="false"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_send" />
+
+<!--        <item-->
+<!--            android:id="@+id/app_bar_switchh"-->
+<!--            android:title="@string/notification"-->
+<!--            android:icon="@drawable/ic_notifications_none_black_24dp"-->
+<!--            app:showAsAction="always"-->
+<!--            />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_zakralahh"-->
+<!--            android:icon="@drawable/ic_arrow_back_black_24dp"-->
+<!--            android:title="@string/zakrallah"-->
+<!--            android:onClick="go_zakralah"-->
+<!--            />-->
+
+        <item
+            android:id="@+id/privacy_settings"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:visible="false"
+            android:title="@string/privacy_settings" />
+    </group>
+
+
+</menu>
+    <!-- app:actionLayout="@layout/switch_item"-->

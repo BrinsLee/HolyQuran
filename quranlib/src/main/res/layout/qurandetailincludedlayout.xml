@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quranBookView_BottomMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layoutDescription="@xml/qurandetailincludedlayout_scene">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/surfaceColor1"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/surfaceColor2"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/settingControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_prev"
+                app:layout_constraintBottom_toBottomOf="@+id/sound"
+                app:layout_constraintEnd_toStartOf="@+id/tt"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/sound"
+                app:layout_constraintVertical_bias="0.0"
+                app:tint="@color/onSurface2" />
+
+            <ImageView
+                android:id="@+id/tt"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_text"
+                app:layout_constraintBottom_toBottomOf="@+id/sound"
+                app:layout_constraintEnd_toStartOf="@+id/sound"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/next"
+                app:layout_constraintTop_toTopOf="@+id/sound"
+                app:tint="@color/onSurface2" />
+
+            <ImageView
+                android:id="@+id/sound"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/ic_player"
+                app:layout_constraintEnd_toStartOf="@+id/verse"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tt"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/onSurface2" />
+
+            <ImageView
+                android:id="@+id/verse"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_align_center_24"
+                app:layout_constraintBottom_toBottomOf="@+id/sound"
+                app:layout_constraintEnd_toStartOf="@+id/pre"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/sound"
+                app:layout_constraintTop_toTopOf="@+id/sound"
+                app:tint="@color/onSurface2" />
+
+            <ImageView
+                android:id="@+id/pre"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_next"
+                app:layout_constraintBottom_toBottomOf="@+id/verse"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/verse"
+                app:layout_constraintTop_toTopOf="@+id/verse"
+                app:tint="@color/onSurface2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/surahVerseListMainLay"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/surfaceColor1"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardMaxElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSurahVersesList"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/closeVerseListBtn"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:listitem="@layout/item_verses" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/selectVerseNumber"
+                android:textColor="@color/onPrimary1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/closeVerseListBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rabbaclosebackground"
+
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_close_white"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/quranBookView_TextSettings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="auto"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/surfaceColor1"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardMaxElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/surfaceColor2"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="20dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textSizeSeekbar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textSizeSeekbar"
+                app:srcCompat="@drawable/ic_text"
+                app:tint="@color/onSurface2" />
+
+            <ImageView
+                android:id="@+id/ivCancelDialogue"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rabbaclosebackground"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_close_white"
+                app:layout_constraintBottom_toBottomOf="@+id/textSizeSeekbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textSizeSeekbar" />
+
+            <SeekBar
+                android:id="@+id/textSizeSeekbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:max="10"
+                android:progress="3"
+                android:progressBackgroundTint="@color/onSurface5"
+                android:progressTint="@color/onSurface2"
+                android:thumbTint="@color/onSurface2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivCancelDialogue"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/soundLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/surfaceColor1"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardMaxElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/surfaceColor2"
+        app:strokeWidth="1dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cSoundLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/nextSurah"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_prev"
+                app:layout_constraintBottom_toBottomOf="@+id/playAudio"
+                app:layout_constraintEnd_toStartOf="@+id/playAudio"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/playAudio"
+                app:tint="@color/onSurface2" />
+
+            <ImageView
+                android:id="@+id/autoScroll"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/app_name"
+
+                android:src="@drawable/quran_autoscroll"
+                app:layout_constraintEnd_toStartOf="@+id/recitor"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/playAudio"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/onSurface2" />
+
+            <ImageButton
+                android:id="@+id/playAudio"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:padding="4dp"
+                android:src="@drawable/ic_play_white"
+                app:layout_constraintBottom_toBottomOf="@+id/autoScroll"
+                app:layout_constraintEnd_toStartOf="@+id/autoScroll"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/nextSurah"
+                app:layout_constraintTop_toTopOf="@+id/autoScroll"
+                app:tint="@color/onSurface2" />
+
+            <ImageView
+                android:id="@+id/preSurah"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+
+
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_next"
+                app:layout_constraintBottom_toBottomOf="@+id/recitor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/recitor"
+                app:layout_constraintTop_toTopOf="@+id/recitor"
+                app:tint="@color/onSurface2" />
+
+            <ImageView
+                android:id="@+id/recitor"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/app_name"
+
+                android:src="@drawable/quran_recitor"
+                app:layout_constraintBottom_toBottomOf="@+id/autoScroll"
+                app:layout_constraintEnd_toStartOf="@+id/preSurah"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/autoScroll"
+                app:layout_constraintTop_toTopOf="@+id/autoScroll"
+                app:tint="@color/onSurface2" />
+
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:text="--:--"
+                android:textColor="@color/onSurface2"
+                app:layout_constraintBottom_toBottomOf="@+id/audioSeekBar"
+                app:layout_constraintEnd_toStartOf="@+id/soundCloseBtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/audioSeekBar"
+                app:layout_constraintTop_toTopOf="@+id/audioSeekBar" />
+
+            <SeekBar
+                android:id="@+id/audioSeekBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="10dp"
+
+                android:layout_marginTop="10dp"
+                android:progress="10"
+                android:progressBackgroundTint="@color/onSurface5"
+                android:progressTint="@color/onSurface2"
+                android:thumbTint="@color/onSurface2"
+
+                app:layout_constraintEnd_toStartOf="@+id/totalTime"
+                app:layout_constraintStart_toEndOf="@+id/currentTime"
+                app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+            <TextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:text="--:--"
+                android:textColor="@color/onSurface2"
+                app:layout_constraintBottom_toBottomOf="@+id/audioSeekBar"
+                app:layout_constraintEnd_toStartOf="@+id/audioSeekBar"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/rAyahLayout"
+                app:layout_constraintTop_toTopOf="@+id/audioSeekBar" />
+
+            <ImageView
+                android:id="@+id/soundCloseBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rabbaclosebackground"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+
+                android:src="@drawable/ic_baseline_close_white"
+                app:layout_constraintBottom_toBottomOf="@+id/audioSeekBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/totalTime"
+                app:layout_constraintTop_toTopOf="@+id/audioSeekBar" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rAyahLayout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/currentTime"
+                app:layout_constraintEnd_toStartOf="@+id/currentTime"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/currentTime">
+
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:clickable="false"
+                    android:src="@drawable/quran_repeat"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/onSurface2" />
+
+
+                <TextView
+                    android:id="@+id/ayahRepeat"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/onSurface2"
+                    android:textSize="8sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/surfaceSeparatorColor"
+                app:layout_constraintEnd_toEndOf="@+id/preSurah"
+                app:layout_constraintStart_toStartOf="@+id/nextSurah"
+                app:layout_constraintTop_toBottomOf="@+id/autoScroll" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

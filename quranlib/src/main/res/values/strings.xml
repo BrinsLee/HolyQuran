@@ -1,0 +1,1046 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Quran Majeed</string>
+    <string name="app_description" translatable="false">Quran Majeed</string>
+    <string name="share_kalma">Share Kalma</string>
+    <string name="action_settings">Settings</string>
+    <string name="time_for">Time for %s prayer</string>
+    <string name="time_in">In %s at %s</string>
+    <string name="time_up">It is %s time since </string>
+    <string name="time_to_next">Next prayer in </string>
+    <string name="time_interval" translatable="false">%2d h, %2d m and %2d s</string>
+    <string name="time_interval_rounded" translatable="false">%2d h and %2d m</string>
+    <string name="time_interval_0h" translatable="false">%2d m and %2d s</string>
+    <string name="downloading_downloading">Downloading . . .</string>
+
+    <string name="qurantp_download">Download</string>
+    <string name="downloading_complete">Downloading Complete</string>
+    <string name="kalma_audio">Kalam Audio</string>
+<!--    <string name="server_link" translatable="false">http://server.sofit.ltd:4011/data/</string>-->
+    <string name="server_link" translatable="false">https://github.com/Tpiano14/Moslem/raw/main/</string>
+    <string name="translation_server_link" translatable="false">https://github.com/Tpiano14/Moslem/raw/main/translations/</string>
+    <string name="kalma_server_link" translatable="false">https://github.com/Tpiano14/Moslem/raw/main/kalmas/kalma_</string>
+
+    <string name="text_text_and_translations">Select Quran Translation</string>
+    <string name="delete_translation_message">Are you sure you want to delete this translation ?</string>
+    <string name="text_ok">OK</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="arabic_text_error_message">Please enter Arabic only</string>
+    <string name="time_interval_0h_rounded" translatable="false">%2d m</string>
+    <string name="kalam_title" translatable="false">06 Kalmas</string>
+    <string name="stop_athan">Stop Athan</string>
+    <string name="close_notification">Close</string>
+    <string name="set_location">Tap here to set location</string>
+    <string name="zero_hour" translatable="false">00:00</string>
+    <string name="square" translatable="false">\u25A0</string>
+    <string name="qibla_notic">Note: you might need to move the device in a circular motion to reset the compass</string>
+    <string name="qibla_direction">Qibla direction from North:</string>
+    <string name="mt_val" translatable="false">μT</string>
+    <string name="mag_field" translatable="false">mag.field</string>
+    <string name="n" translatable="false">N</string>
+    <string name="e" translatable="false">E</string>
+    <string name="s" translatable="false">S</string>
+    <string name="w" translatable="false">W</string>
+    <string name="ne" translatable="false">NE</string>
+    <string name="se" translatable="false">SE</string>
+    <string name="sw" translatable="false">SW</string>
+    <string name="nw" translatable="false">NW</string>
+    <string name="magnetic_field2" translatable="false">Magnetic field: %1$d %2$s</string>
+    <string name="accuracy">accuracy</string>
+    <string name="accuracy3">Accuracy: %s</string>
+
+    <string name="about_us">Ever wanted to motivation in your life ? If yes, then this app will help you to get motivated at every point of your life with it largest collection of best Islamic Utilities.</string>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+
+    <string name="error">Error</string>
+    <string name="unable_to_init_sensor">Unable to initialize sensors for Compass.</string>
+    <string name="btn_ok">OK</string>
+    <string name="acceleration">acceleration</string>
+    <string name="orientation">orientation</string>
+    <string name="wind_meager" translatable="false">m/s</string>
+
+    <string name="accuracy_unreliable">unreliable</string>
+    <string name="accuracy_low">low</string>
+    <string name="accuracy_medium">medium</string>
+    <string name="accuracy_high">high</string>
+    <string name="need_calibration">The compass needs to be calibrated.  Rotate the phone repeating figure eight until the calibration is complete.</string>
+
+    <string name="fajrar">الفجر</string>
+    <string name="dhuhrar">الظهر</string>
+    <string name="asrar">العصر</string>
+    <string name="maghribar">المغرب</string>
+    <string name="ishaar">العشاء</string>
+
+    <string name="fajr">Fajr</string>
+    <string name="shuruk">Sunset</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="jumu3a">Jumuaa</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="tahajjud">Tahajjud</string>
+
+    <string name="nextfajr">Next fajr</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <!--<string name="pref_title_social_recommendations">Enable social recommendations</string>-->
+    <!--<string name="pref_description_social_recommendations">Recommendations for people to contact-->
+    <!--based on your message history-->
+    <!--</string>-->
+
+    <!--<string name="pref_title_display_name">Display name</string>-->
+    <!--<string name="pref_default_display_name">John Smith</string>-->
+
+    <string name="pref_title_language">Language</string>
+    <string-array name="pref_language_list_titles">
+        <item>Follow device settings</item>
+        <item>Arabic</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="pref_language_list_values">
+        <item>--</item>
+        <item>ar</item>
+        <item>en</item>
+    </string-array>
+    <string name="pref_language_default_value" translatable="false">--</string>
+
+    <!--<string name="pref_title_hindu_nbrs">Eastern Arabic numerals</string>-->
+    <!--<string name="pref_description_hindu_nbrs">٠ ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩</string>-->
+
+    <string name="pref_title_numerals">Numerals</string>
+    <string-array name="pref_numerals_list_titles">
+        <item>Follow location</item>
+        <item>Arabic</item>
+        <item>Arabic Eastern</item>
+    </string-array>
+    <string-array name="pref_numerals_list_values">
+        <item>CC</item>
+        <item>DZ</item>
+        <item>EG</item>
+    </string-array>
+    <string name="pref_numerals_default_value" translatable="false">CC</string>
+    <string name="get_started">Get Started</string>
+    <string name="fetching">Fetching current location</string>
+    <string name="grant_all">Grant All</string>
+    <string name="about_permissions">Required Permissions</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="duhr">Duhr</string>
+    <string name="asar">Asar</string>
+    <string name="prayer_time">Prayers Time</string>
+    <string name="gregorian_date">Today\'s Date:</string>
+    <string name="islamic_date">Islamic:</string>
+    <string name="settings">Settings</string>
+    <string name="time_formats">Time formats</string>
+    <string name="calculation_methods">Calculation methods</string>
+    <string name="juristic_methods">Juristic methods</string>
+    <string name="adjusting_methods">Adjusting methods</string>
+
+    <string name="pref_title_about">About</string>
+    <string name="pref_txt_about" translatable="false">
+Athan Bilal is a free software released under the GNU General Public License version 3.0.
+It uses prayer time calculation code from the Islamic Tools Library released by the Arab Eyes project.
+Its source is available at github.com/cdjalel/Bilal.\n
+\n
+Athan Bilal contains the coordinates of 23784 cities around the world, extracted from the geoname.org
+site under the Creative Commons Attribution 4.0 License.\n
+\n
+The background image was designed by Freepick and licensed via www.freepick.com.\n
+\n
+There might be a slight difference between prayer times displayed here
+and the real times adopted by the mosques in your city. In such case, please try:\n
+- first to configure the right calculation method in the location settings.\n
+- Next, if your town/commune is very close to a big city, try to use its name instead in location settings.\n
+- Otherwise, send the name of your city (both in english and your local language), its exact
+coordinates (latitude, longitude and altitude) and its prayer time calculation method to our address:
+athan.bilal1@gmail.com, so we can fix it.
+    </string>
+
+    <!-- Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_prayer_time">Prayer time</string>
+
+    <string name="pref_title_athan">Athan</string>
+
+    <string name="pref_title_muezzin">Muezzin</string>
+    <string-array name="pref_muezzin_list_titles">
+        <item>Abdulbaset Abdesamad (Egypt)</item>
+        <item>Ali Mullah (Mecca)</item>
+        <item>Naser Alqatami (Al-Riyadh)</item>
+        <item>Abdulmajeed Aserehy (Al-Madinah)</item>
+        <item>İsmail Coşar (Turkey)</item>
+        <item>Kefah Issa (Palestine)</item>
+        <item>Riad Aït-Hamou (Algeria)</item>
+    </string-array>
+    <string-array name="pref_muezzin_list_values">
+        <item>ABDELBASET</item>
+        <item>ALIMULLA</item>
+        <item>ALQATAMI</item>
+        <item>ASEREHY</item>
+        <item>JOSHAR</item>
+        <item>KEFAH</item>
+        <item>RIAD</item>
+    </string-array>
+    <string name="select_muezzin">Select muezzin %1$s?</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!--Location settings-->
+    <!--<string name="btn_search_city">Search</string>-->
+    <string name="search_city">Search city</string>
+
+    <string name="pref_header_locations">Location</string>
+    <string name="pref_title_search_city">City</string>
+    <string name="pref_undefined_city">Undefined</string>
+
+    <string name="pref_title_method">Calculation method</string>
+    <string-array name="pref_method_list_titles">
+        <item>Muslim World League</item>
+        <item>Egyptian Survey Authority</item>
+        <item>Umm Al-Qurra University</item>
+        <item>Karachi Univ. of Islamic Sciences</item>
+        <item>Islamic Society of North America</item>
+        <item>Union of Islamic Org. in France</item>
+        <item>Kuwait Ministry of Awqaf</item>
+    </string-array>
+    <string-array name="pref_method_list_values">
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+    <string name="pref_title_mathhab_hanafi">Mathhab Hanafi</string>
+    <string name="pref_description_mathhab_hanafi">Follow Mathhab Hanafi for Asr time</string>
+
+    <string name="internetfirst">Internet required</string>
+    <string name="pref_title_round">Rounding seconds</string>
+    <string name="nissab">Imposter: </string>
+
+    <string name="goldsilver">To measure the price of gold or silver that you own for more than a year, you must calculate its price per 10 grams in your local currency. Each type of gold that you own must be added (according to karat) separately due to the difference in their value.</string>
+    <string name="nissabinfo">According to Sharia law, the nisab is the minimum amount that a person has for more than a year to be obligated to pay zakat. You can calculate the nisab value in terms of the value of gold or silver. For silver, the nisab is 21 ounces of silver (653.17 grams) or the money equivalent. For gold, the nisab is 3 ounces (85.05 grams) of gold or the money equivalent.</string>
+    <string name="zakatfitr">There is another type of zakat that Muslims are obligated to pay zakat al-Fitr. This name is given in Islam for alms that are distributed near the end of Ramadan. The value of Zakat Al-Fitr is the same for all people, regardless of their different income. The minimum for zakat is one saa \'(two handfuls) of food, grains, or dried fruit for each family member.</string>
+    <string name="zakatcalcul">Enter the value of the money you want to take out your Zakat to get the result using the Zakat Calculator</string>
+    <string name="menu_zakat">Zakat</string>
+    <string name="totalprice">Total Price</string>
+    <string name="goldprice">Gold Price</string>
+    <string name="calculate">Calculate</string>
+    <string name="zakatprice">Zakat Price</string>
+    <string name="nozakat">No Zakat</string>
+    <string name="localprice">Local Price</string>
+    <string name="localgoldprice"><u>Local Gold Price</u></string>
+
+    <!--Zakat Menu Strings-->
+    <string name="zakathowto">Zakat calculation method</string>
+    <string name="stepone">The first step :</string>
+    <string name="steptwo">The second step :</string>
+    <string name="stepthree">The third step :</string>
+    <string name="steponedetail">Add the value of money, real estate and wealth that you have owned for more than a year while subtracting the amount of debts you must pay and the obligations that must be paid.</string>
+    <string name="steptwodetail">Check again the gold\'s value in your local currency</string>
+    <string name="stepthreedetail">Click on the Calculate your Zakat button, a summary will be issued that tells you whether you are obligated to pay the zakat or not, if you are obligated to pay, the amount to be paid for Zakat will be clear. This value is 2.5% of all your holdings.</string>
+    <string name="info">Information: </string>
+
+    <string name="latitude_label">Latitude: </string>
+    <string name="longitude_label">Longitude: </string>
+    <string name="get_updates">Get Update</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="default_notification_channel_id">default</string>
+
+    <string name="go_to_geo_fencing">Geo-Fencing</string>
+    <string name="go_to_fetch_location_in_fore_ground">Fetch Location in Foreground</string>
+    <string name="go_to_fetch_location_in_back_ground">Fetch Location in Background</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="radius_in_meter">Radius in meters</string>
+    <string name="set_geo_fence">Set Geo-Fence</string>
+    <string name="valid_latitude">Enter valid latitude value</string>
+    <string name="valid_longitude">Enter valid longitude value</string>
+    <string name="default_radius_is_set_as_100_meter_for_geo_fencing">Default radius is set as 100 meter for Geo-fencing</string>
+    <string name="geo_fencing_added_successfully">Geo-fencing added successfully</string>
+    <string name="geo_fencing_removed_successfully">Geo-fencing removed successfully</string>
+    <string name="geo_fencing_add_failed">Geo-fencing add failed</string>
+    <string name="geo_fencing_remove_failed">Geo-fencing remove failed</string>
+
+    <string name="errorloadprayertimes">Faulty renewal of prayer times</string>
+    <string name="loadingprayertimes">Renewing prayer times ...</string>
+    <string name="prayertimesloaded">Prayer times have been updated</string>
+
+    <!-- Fadl Adkar Menu Strings -->
+    <string name="menu_fadl1">إنَّ من أفضل الأعمال الصالحة اليسيرة التي تقرب المسلم إلى ربه جل وعلا الذكرُ.</string>
+    <string name="menu_fadl2">بعض الآيات والأحاديث في فضل الذكر والدعاء والحث عليها :</string>
+    <string name="menu_fadlGod1">قال تعالى :</string>
+    <string name="menu_fadlGod2">و قال تعالى :</string>
+    <string name="menu_fadlProphet">و قال رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّم َ:</string>
+    <string name="ProphetSaid"> قال رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّم َ:</string>
+    <string name="thought1">"وَلَذِكْرُ اللَّهِ أَكْبَرُ".</string>
+    <string name="thought2">"وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا".</string>
+    <string name="thought3">"فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلا تَكْفُرُونِ".</string>
+    <string name="thought4">"يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْراً كَثِيراً".</string>
+    <string name="thought5"> "وَالذَّاكِرِينَ اللَّهَ كَثِيراً وَالذَّاكِرَاتِ أَعَدَّ اللَّهُ لَهُمْ مَغْفِرَةً وَأَجْراً عَظِيماً".</string>
+    <string name="thought6">"وَاذْكُر رَّبَّكَ كَثِيرًا وَسَبِّحْ بِالْعَشِيِّ وَالْإِبْكَارِ".</string>
+    <string name="thought7">"الَّذِينَ يَذْكُرُونَ اللَّهَ قِيَامًا وَقُعُودًا وَعَلَىٰ جُنُوبِهِمْ".</string>
+    <string name="thought8">"فَإِذَا قَضَيْتُم مَّنَاسِكَكُمْ فَاذْكُرُوا اللَّهَ كَذِكْرِكُمْ آبَاءَكُمْ أَوْ أَشَدَّ ذِكْرًا".</string>
+    <string name="thought9">"يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تُلْهِكُمْ أَمْوَالُكُمْ وَلَا أَوْلَادُكُمْ عَن ذِكْرِ اللَّهِ".</string>
+    <string name="thought10"> "وَاذْكُرْ رَبَّكَ فِي نَفْسِكَ تَضَرُّعاً وَخِيفَةً وَدُونَ الْجَهْرِ مِنْ الْقَوْلِ بِالْغُدُوِّ وَالآصَالِ وَلا تَكُنْ مِنْ الْغَافِلِينَ".</string>
+    <string name="thought11"> "مثل الذي يذكر ربه و الذي لا يذكر ربه مثل الحي و الميت".</string>
+    <string name="thought12">"ألا أنبئكم بخير أعمالكم و أزكاها عند مليككم و أرفعها في درجاتكم و خير لكم من أنفاق الذهب و الورق و خير لكم من أن تلقوا عدوكم فتضربوا أعناقهم و يضربوا أعناقكم ?، قالو بلى .  قال : (ذكر الله تعالى).</string>
+    <string name="thought13">"يقول الله تعالى : أنا عند ظن عبدي بي ، و أنا معه إذا ذكرني ، فان ذكرني في نفسه ذكرته في نفسي و ان ذكرني في ملأ ذكرته في ملأ خير منهم ، و ان تقرب إلي شبرا تقربت اليه ذراعا و ان تقرب إلى ذراعا تقربت اليه باعا و ان اتاني يمشي أتيته هرولة.</string>
+    <string name="thought14">"من قعد مقعدا لم يذكر الله فيه كانت عليه من الله تره ، و من أضطجع مضجعا لم يذكر فيه الله كانت عليه ترة".</string>
+    <string name="thought15">"ما جلس قوم مجلسا لم يذكروا الله فيه ، و لم يصلوا على نبيهم الا كان عليهم ترة فان شاء عذبهم و ان شاء غفر لهم".</string>
+    <string name="thought16"> "ما من قوم يقومون من مجلس لا يذكرون الله فيه الا قاموا عن مثل جيفة حمار و كان لهم حسره".</string>
+    <string name="AdkarExtra1">الأذكار تنير للعبد طريقه في دنياه وأخرته وعند الصراط المستقيم</string>
+    <string name="AdkarExtra2">الأذكار تعمل على تطهير اللسان وإشغاله بالذكر عن الغيبة والنميمة والقول الفاسد</string>
+    <string name="AdkarExtra3">الأذكار تنزل الرحمة والسكينة والراحة والأمان على المسلم وتحفه بالملائكة</string>
+    <string name="AdkarExtra4">ذكر الله سبحانه وتعالى يعادل أفضل الأعمال من عتق الرقاب و الجهاد في سبيل الله جل جلاله، وإنفاق المال في سبيله</string>
+    <string name="AdkarExtra5">أذكار الصباح و المساء تريح القلب وتنشر الطمأنينة والراحة النفسية في قلب المسلم</string>
+    <string name="AdkarExtra6">أذكار الصباح و المساء تساعد المسلم في الابتعاد عن الغفلة عن ذكر الله</string>
+    <string name="SalatThought1">َالَّذِينَ هُمْ عَلَى صَلَاتِهِمْ يُحَافِظُونَ*أُولَئِكَ فِي جَنَّاتٍ مُّكْرَمُونَ</string>
+    <string name="SalatThought2">إِنَّ الصَّلاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَاباً مَوْقُوتاً</string>
+    <string name="SalatThought3">وَأَنْ أَقِيمُوا الصَّلَاةَ وَاتَّقُوهُ وَهُوَ الَّذِي إِلَيْهِ تُحْشَرُونَِ</string>
+    <string name="SalatThought4">يَا أَيُّهَا الَّذِينَ آمَنُوا اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ</string>
+    <string name="SalatThought5">وَأَقِمِ الصَّلَاةَ طَرَفَيِ النَّهَارِ وَزُلَفًا مِنَ اللَّيْلِ إِنَّ الْحَسَنَاتِ يُذْهِبْنَ السَّيِّئَاتِ ذَلِكَ ذِكْرَى لِلذَّاكِرِينَ</string>
+    <string name="SalatThought6">يَا أَيُّهَا الَّذِينَ آمَنُوا ارْكَعُوا وَاسْجُدُوا وَاعْبُدُوا رَبَّكُمْ وَافْعَلُوا الْخَيْرَ لَعَلَّكُمْ تُفْلِحُونَ</string>
+    <string name="SalatThought7">إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَأَقَامُوا الصَّلَاةَ وَآتَوُا الزَّكَاةَ لَهُمْ أَجْرُهُمْ عِنْدَ رَبِّهِمْ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ</string>
+    <string name="SalatExtra1"> أول ما يُحاسب عليه العبد يوم القيامة الصلاة؛ فصلاحها صلاح لأعماله، وفسادها فساد لأعماله</string>
+    <string name="SalatExtra2">المحافظة على الصلاة في وقتها من أحبّ الأعمال إلى الله تعالى</string>
+    <string name="SalatExtra3">الصّلاة نور وهداية وحُجّة لصاحبها في الدنيا والآخرة عند لقاء الله تعالى</string>
+    <string name="SalatExtra4">الصلاة نور لصاحبها في الدنيا وفي الآخرة</string>
+    <string name="SalatExtra5">الصّلاة أفضل الأعمال عند الله -تعالى- بعد الشهادتين</string>
+    <string name="menu_sunrise">أذكار الصباح</string>
+    <string name="menu_sunset">أذكار المساء</string>
+    <string name="dohr">Dohr</string>
+    <string name="internetlost">لتجديد معطيات الصفحة، يجب أن تتصل بالإنترنت</string>
+    <string name="internetfound">جاري تجديد المعطيات ...</string>
+    <string name="itsprayertime">It\'s prayer time</string>
+    <string name="city">City</string>
+    <string name="action_about">About</string>
+    <string name="action_rateUs">Rate us</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="tohijri">To Hijri</string>
+    <string name="togregorian">To Gregorian</string>
+    <string name="dayw">Day of Week</string>
+
+    <string name="convert"> Convert</string>
+    <string name="restore"> Restore</string>
+    <string name="clear">Clear</string>
+    <string name="note">*There is a small probability of one day error</string>
+
+    <!--About-->
+
+    <string name="copyToastText">Copied to Clipboard</string>
+
+    <!-- Settings-->
+    <string name="lang">Language</string>
+    <string name="content">Content</string>
+    <string name="show_trans">Show Translation</string>
+    <string name="wordbyword">Word By Word</string>
+    <string name="appearance">Appearance(Application Restart Required)</string>
+    <string name="arabic_font">Arabic Font</string>
+    <string name="arabic_font_size">Arabic Font Size</string>
+    <string name="trans_font_size">Translation Font Size</string>
+    <string name="other">Other</string>
+    <string name="screen_on">Keep Screen On</string>
+    <string name="string">bn</string>
+
+    <!-- -->
+    <string name="cancel">Cancel</string>
+    <string name="rootWord">Root</string>
+
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+
+    <string name="bismillah" translatable="false">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="allah_99_names">Allah 99 Names</string>
+    <string name="azkar">Azkar</string>
+    <string name="qibla_compass">Qibla Compass</string>
+    <string name="sorry_device_sensor">Sorry, Your device doesn\'t support Magnetic Field Sensor</string>
+    <string name="tasbeeh_counter">Tasbeeh Counter</string>
+    <string name="counter">Counter</string>
+    <string name="reset">Reset</string>
+    <string name="count">Count</string>
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="internet">INTERNET</string>
+    <string name="internet_permission">This permission deals with internet related tasks.</string>
+    <string name="access_coarse">ACCESS_COARSE_LOCATION</string>
+    <string name="access_coarse_permission">Allows the API to use WiFi or mobile cell data (or both) to determine the device\'s location. The API returns the location with an accuracy approximately equivalent to a city block.</string>
+    <string name="access_fine">ACCESS_FINE_LOCATION</string>
+    <string name="access_fine_permission">In order to use Wi-Fi P2P for files sharing, official android documentation suggests to add this permission for connection.</string>
+    <string name="location_detail">Location Details:</string>
+    <string name="country">Country:</string>
+    <string name="_city">City:</string>
+    <string name="location">Location:</string>
+    <string name="counter_sound">Counter Sound:</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="alarm_setting">Alarm Settings</string>
+    <string name="translation">Translation:  </string>
+    <string name="six_kalmas">6 Kalmas</string>
+    <string name="weather">Weather</string>
+    <string name="sunny">Sunny</string>
+    <string name="zakat_calculator">Zakat Calculator</string>
+    <string name="search">Search</string>
+    <string name="results">Results</string>
+    <string name="dates_conversion">Dates Conversion</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="search_methods">SEARCH METHODS</string>
+    <string name="flashlight">Flashlight</string>
+    <string name="al_quran">Al Quran</string>
+    <string name="shirk">Shirk</string>
+
+    <string name="first_kalma">First Kalima</string>
+    <string name="second_kalma">Second Kalima</string>
+    <string name="third_kalma">Third Kalima</string>
+    <string name="forth_kalma">Forth Kalima</string>
+    <string name="fifth_kalma">Fifth Kalima</string>
+    <string name="sixth_kalma">Sixth Kalima</string>
+
+    <string name="first_kalma_name">The Word of Purity (Tayyabah)</string>
+    <string name="second_kalma_name">The word of Testimony (Shahaadat)</string>
+    <string name="third_kalma_name">The word of Glorification (Tumjeed)</string>
+    <string name="forth_kalma_name">The word of Unity (Tauhid)</string>
+    <string name="fifth_kalma_name">The word of Penitence (Astaghfar)</string>
+    <string name="sixth_kalma_name">The words of rejecting disbelief (Rud-A-Kuffer)</string>
+
+    <string name="first_kalma_translation">(There is no God but Allah Muhammad is the Messenger of Allah)</string>
+    <string name="second_kalma_translation">(I bear witness that no-one is worthy of worship but Allah, the One alone, without partner, and I bear witness that Muhammad is His servant and Messenger)</string>
+    <string name="third_kalma_translation">(Glory be to Allah and Praise to Allah, and there is no God But Allah, and Allah is the Greatest. And there is no Might or Power except with Allah.)</string>
+    <string name="forth_kalma_translation">(There is) none worthy of worship except Allah. He is only One. (There is) no partners for Him. For Him (is) the Kingdom. And for Him (is) the Praise. He gives life and acuses death. And He (is) Alive. He will not die, never, ever. Possessor of Majesty and Reverence. In His hand (is) the goodness. And He (is) the goodness. And He (is) on everything powerful.)</string>
+    <string name="fifth_kalma_translation">(I seek forgiveness from Allah, my Lord, from every sin I committed knowingly or unknowingly, secretly or openly, and I turn towards Him from the sin that I know and from the sin that I do not know. Certainly You, You (are) the knower of the hidden things and the Concealer (of) the mistakes and the Forgiver (of) the sins. And (there is) no power and no strength except from Allah, the Most High, the Most Great)</string>
+    <string name="sixth_kalma_translation">(O Allah! Certainly I seek protection with You from, that I associate partner with You anything and I know it. And I seek forgiveness from You for that I do not know it. I repended from it and I made myself free from disbelief and polytheism and the falsehood and the back-biting and the innovation and the tell-tales and the bad deeds and the blame and the disobedience, all of them. And I submit and I say (there is) none worthy of worship except Allah, Muhammad is the Messenger of Allah.)</string>
+
+    <string name="copied">Copied successfully</string>
+    <string name="send_to">Send to</string>
+    <string name="permissions">Required Permissions</string>
+    <string name="core_fundamentals">Core fundamental are based on these permissions</string>
+    <string name="allow_necessary_permissions">You need to allow necessary permissions in Settings manually</string>
+    <string name="all_permissions_granted">All permissions are granted</string>
+    <string name="download_this">Download this</string>
+    <string name="download">Download</string>
+    <string name="tafseer_download_message">Download this tafseer ?</string>
+    <string name="downloading">Downloading</string>
+    <string name="downloading_download_progress">Download Progress</string>
+    <string name="downloading_start_downloading">Start Downloading . . .</string>
+    <string name="downloading_mb">MB</string>
+    <string name="downloading_kb">KB</string>
+    <string name="prayer_guide">Prayer Guide</string>
+    <string name="downloading_failed">Downloading Failed</string>
+    jklkkl
+    <string name="zakatMoneyTitle">Money</string>
+    <string name="totalMoney">0.00</string>
+    <string name="moneyCashInHandTitle">Cash in hand</string>
+    <string name="moneyCashInHandET">0.00</string>
+    <string name="moneyCashInBankAccountTitle">Cash in Bank account</string>
+    <string name="moneyCashInBankET">0.00</string>
+    <string name="zakatGoldTitle">Gold</string>
+    <string name="totalGoldTV">0.00</string>
+    <string name="goldValuePriceTV">Gold Price</string>
+    <string name="goldValuePriceET">00.0</string>
+    <string name="goldWeight24caratPriceTV">Gold Price (in 24 carat)</string>
+    <string name="goldWeightUnitPriceET">00.0</string>
+    <string name="goldWeight24caratQuantityTV">Gold quantity</string>
+    <string name="goldWeight24caratET">0</string>
+    <string name="goldWeight24caratgiramTV">Gram</string>
+    <string name="gold24caratpriceTitleTV">Gold 24 carat Price</string>
+    <string name="goldWeight24CaratPriceTV">00.0</string>
+    <string name="gold22CaratWeightQuentityTV">Gold quantity</string>
+    <string name="gold22CaratweightPerUnitPriceET">0</string>
+    <string name="gold22CaratWeightUnit_Txt">Gram</string>
+    <string name="goldWeight22caratTitleTV2">Gold 22 carat Price</string>
+    <string name="goldWeight22CaratPriceTV">00.0</string>
+    <string name="gold18CaratWeightQuentityTV">Gold quantity</string>
+    <string name="gold18CaratweightPerUnitPriceET">0</string>
+    <string name="gold18CaratWeightUnit_Txt">Gram</string>
+    <string name="goldWeight18caratTitleTV2">Gold 18 carat Price</string>
+    <string name="goldWeight18CaratPriceTV">00.0</string>
+    <string name="silverHeadingTV">Silver</string>
+    <string name="silverValueRB">In cash</string>
+    <string name="silverWeightRB">In Weight</string>
+    <string name="silverValueTitle2TV">Silver Price</string>
+    <string name="silverValuePriceET">00.0</string>
+    <string name="silverWeightTitleTV">Silver Price</string>
+    <string name="silverWeightUnitPriceET">00.0</string>
+    <string name="silverWeightQuentityTV">Silver quantity</string>
+    <string name="silverWeightQuentityET">0</string>
+    <string name="weightUnit_Txt">Gram</string>
+    <string name="silverWeightTitleTV2">Silver Price</string>
+    <string name="weightPriceTV">00.0</string>
+    <string name="investmentHeadingTV">Investment</string>
+    <string name="totalInvestmentTV">0.00</string>
+    <string name="sharesTV">Shares</string>
+    <string name="sharesET">0.00</string>
+    <string name="otherInvestmentTV">Cash in Bank account</string>
+    <string name="otherInvestmentET">0.00</string>
+    <string name="propertyHeadingTV">Properties</string>
+    <string name="totalPropertyTV">0.00</string>
+    <string name="rentTV">Rental Incomes</string>
+    <string name="propertyRentET">0.00</string>
+    <string name="propertyTV">Properties</string>
+    <string name="propertyET">0.00</string>
+    <string name="businessHeadingTV">Business</string>
+    <string name="totalBusinessTV">0.00</string>
+    <string name="businessCashTV">Business Cash</string>
+    <string name="businessCashET">0.00</string>
+    <string name="businessGoodsTV">Goods / Stocks</string>
+    <string name="businessGoodsET">0.00</string>
+    <string name="agricultureHeadingTV">Agriculture</string>
+    <string name="totalAgriTV">0.00</string>
+    <string name="agriPriceTitleTV">Total agri incom</string>
+    <string name="agriPriceET">00.0</string>
+    <string name="agriRainHeadingTV">By Rain Water 10%</string>
+    <string name="agriRainET">00.0</string>
+    <string name="agriIrrigationHeadingTV">By irrigation 5%</string>
+    <string name="agriIrrigationET">00.0</string>
+    <string name="agriBothHeadingTV">by both 7.5%</string>
+    <string name="agriBothET">00.0</string>
+    <string name="cattleHeadingTV">Cattle</string>
+    <string name="totalCattleTV">0.00</string>
+    <string name="cattleCamelET">00.0</string>
+    <string name="cattleCowHeadingTV">Cow</string>
+    <string name="cattleCowET">00.0</string>
+    <string name="cattleSheepHeadingTV">Sheep</string>
+    <string name="cattleSheepET">00.0</string>
+    <string name="preciousStonesHeadingTV">Precious Stones</string>
+    <string name="totalPreciousStonesTV">0.00</string>
+    <string name="preciousStonesHeadingChildTV">Precious Stones</string>
+    <string name="preciousStonesET">00.0</string>
+    <string name="otherHeadingTV">Others</string>
+    <string name="totalOtherTV">0.00</string>
+    <string name="otherPensionHeadingTV">Pension</string>
+    <string name="otherPensionET">00.0</string>
+    <string name="otherLoanHeadingTV">Loans to family and others</string>
+    <string name="otherLoanET">00.0</string>
+    <string name="otherAssetsHeadingTV">Other Assets</string>
+    <string name="zakatPayablesTitle">Payables</string>
+    <string name="zakatTotalPayableTV" translatable="false">0.00</string>
+    <string name="zakatCreditCardPaymentHeadingTV">Credit card payment</string>
+    <string name="zakatCreditCardPaymentET">00.0</string>
+    <string name="zakatHomeHeadingTV">Home payment</string>
+    <string name="homePaymentET">00.0</string>
+    <string name="zakatCarHeadingTV">Car payment</string>
+    <string name="zakatCarPaymentET">00.0</string>
+    <string name="zakatBusinessPaymentHeadingTV">Business payment</string>
+    <string name="zakatBusinessPaymentET">00.0</string>
+    <string name="zakatFamilyDebtHeadingTV">Debt to family</string>
+    <string name="zakatFamilyDebtET">00.0</string>
+    <string name="zakatOthersDebtHeadingTV">Debt to others</string>
+    <string name="zakatOthersDebtET">00.0</string>
+    <string name="zakatTotalAssetsHeadingTV">Total Assets</string>
+    <string name="zakatTotalAssetsTV">0.00</string>
+    <string name="zakatDueHeadingTV">Zakat Due</string>
+    <string name="totalZakatDueTV">0.00</string>
+    <string name="zakatTotalSilverTV">0.00</string>
+    <string name="zakatDetailTitle">Zakat Detail</string>
+    <string name="zakatDetailInfo">one year wealth apply 2.5% zakat. except agriculture. agriculture divide into 3 parts for zakat apply from rain-water zakat apply 10% , from irrigation-water zakat apply 5% and from both-water( rain-water and irrigation-water) zakat apply 7.5%</string>
+    <string name="goldValueRB">In cash</string>
+    <string name="goldWeightRB">in Weight</string>
+    <string name="cattleCamelHeadingTV">Camel</string>
+
+    <string-array name="zakat_weight_unit_array">
+        <item>Gram</item>
+        <item>tola</item>
+        <item>Kg</item>
+    </string-array>
+
+    <string-array name="zakat_info_detail_array">
+        <item>Zakat is applicable on all cash balances and bank balances of 2.5%</item>
+        <item>Zakat is applicable on all gold but as a pure gold(24-carat) 2.5%. when you calculate zakat as a gold weight enter price of 24-carat(pure gold) gold. this calculate zakat on 22-carat and 18-carat automatically</item>
+        <item>Zakat is applicable on all silver but as a pure silver(without decorative item, all household item) 2.5%</item>
+        <item>Zakat is applicable on all investment as firm or separately by owners 2.5%</item>
+        <item>Zakat is applicable on Property(only rental incomes) 2.5%. However zakat is applied after deducting maintenance and other expenses</item>
+        <item>Zakat is applicable on all Business(cash, goods/stocks) 2.5%. This is for business person only. No matter what business you are into, you have got to pay zakat on all stoke-in-trade. the stock must be valued at its Landed Cast Price. if you have any bills receivable(sales on credit) then you need to add the same towards calculations.</item>
+        <item>Zakat is applicable on all Agriculture(fruits, commercially grown flowers, vegetables,all type of grains) at harvest time itself. in agriculture zakat not applied after year.
+        if there are two or more crop on the same land per year, then zakat has to be paid as many times on crop. Crop depend on rain-water 10% zakat, crop depend on irrigation-water 5% zakat and both-water 7.5% zakat</item>
+        <item>Zakat is applicable on all Cattle(camel, cows, sheeps, goats,broiler chickens) every 40 animals 1 animal zakat. you may wish to give cash as animal price please consult your Scholar or Imaam who can guide you to the right direction</item>
+        <item>if they have a value, then they calculate towards your wealth, and it is on the wealth that zakat is mandatory. However please consult with Ullema. Most Ullema contentd that a diamond is a piece of corbin and its value varies, unlike that of gold or silver. One may calculate the Saleable Value of Items-at-hand on the date of Zakat Calculation</item>
+        <item>Zakat is applicable on Loans you have given from friends and relatives. it should be treated as Cash in Hand. if you are in doubt, on the return of your money, then you may not calculate it as your wealth. when you receive your money, then add it your wealth.</item>
+        <item>if you have any pending tax payable to the govt, as of the date of zakat calculation, then the same may be deducted before arriving at the net worth. if you have taken any loans from any person or institution, and if you have not already deducted the same from any of the above sections, then you can deduct your payable over here. please be truthful, as zakat is a sure way of protecting ones wealth if zakat has been paid on it regularly and fully.  LOANS takes only for zakatable-wealth should be deducted. Cars, Houses etc are not zakatable wealth. So any loan/mort-gate taken for these purposes are not to be deducted</item>
+    </string-array>
+
+    <string name="definition">Definition</string>
+    <string name="verses">Verses</string>
+    <string name="ahadees">Ahadees</string>
+    <string name="types">Types</string>
+    <string name="differences">Differences</string>
+    <string name="tawhid">Tawhid</string>
+
+
+    <string name="shirk_definition" >Shirk is to associate someone other than Allah in those aspects which are unique to Allah and His exclusive right.  Shirk is to worship created beings like Allah is worshipped, to venerate created beings like Allah must be venerated, and to assign a portion of His divinity to someone else.</string>
+    <string name="shirk_verse_1" ><p><b>Al-maida 05:72 :</b></p> \nThey are certainly faithless who say, ‘Allah is the Messiah, son of Mary.’ But the Messiah had said, ‘O Children of Israel! Worship Allah, my Lord and your Lord. Indeed whoever ascribes partners to Allah, Allah shall forbid him [entry into] paradise, and his refuge shall be the Fire, and the wrongdoers will not have any helpers.</string>
+    <string name="shirk_verse_2" ><p><b>Az-Zumar 39:65 : </b></p> \nIt has already been revealed to you [Prophet] and to those before you: ‘If you ascribe any partner to God, all your work will come to nothing: you will be one if the losers.</string>
+    <string name="shirk_hadees_1" ><p><b> Al-Mu’jam al-Kabīr 11457 :</b></p>\nIbn Abbas reported: The Messenger of Allah, peace and blessings be upon him, said, “Allah Almighty said: Whoever knows that I have power to forgive sins, I will forgive him and I will not mind, as long as he does not associate any partners with me.</string>
+    <string name="shirk_hadees_2" ><p><b>Sahih Muslim 2985 :</b></p> \nAbu Huraira reported Allah\'s Messenger (ﷺ) as stating that Allah the Most High and Exalted said: I am the One, One Who does not stand in need of a partner. If anyone does anything in which he associates anyone else with Me, I shall abandon him with one whom he associates with Allah.</string>
+    <string name="shirk_type_1" ><p><b>Greater Shirk (Shirk Akbar) :</b></p> \nGreater Shirk is associating others with Allah in those aspects which are unique to Allah in his person taking a rival or associate unto Allah and making it an equal to Allah. Shirk in Allah Being the Lord.</string>
+    <string name="shirk_type_2" ><p><b>Lesser Shirk (Shirk Asghar) :</b></p> \nLesser Shirk is what has been specifically called shirk in the Quran and Sunnah, but does not reach the level of greater shirk.   Also, lesser shirk is said to lead to greater shirk.   Some scholars have said lesser shirk is so vast that it is difficult to define it precisely.</string>
+    <string name="shirk_type_3" ><p><b>Riyaa (Showing-Off) :</b></p> \nThe Messenger of Allah said: “The thing that I fear most for you is lesser shirk.” They said: “O Messenger of Allah, what is lesser shirk?”  He said: “Riyaa (showing off), for Allah will say on the Day when people are recompensed for their actions: ‘Go to those for whom you were showing off with your deeds in the world, and see what reward you find with them.’” (Ahmad) Riyaa is to perform worship in order to be seen and praised by people. Riyaa renders a deed void; the person earns sin instead of reward from Allah, and it exposes him to punishment.</string>
+    <string name="shirk_difference_1">The greater shirk expels a person from the fold of Islam, whereas the lesser shirk does not take one out of Islam, but reduces one’s belief in Allah.</string>
+    <string name="shirk_difference_2">A person who dies committing greater shirk will be in Hellfire for eternity; this is not the case with one committing lesser shirk.</string>
+    <string name="shirk_difference_3">Greater shirk wipes out and annuls all good deeds, whereas lesser shirk only ruins the deeds it motivates or is a part of.</string>
+    <string name="shirk_difference_4">Greater shirk is not forgiven by Allah except through sincere repentance done before death; whereas it is up to Allah to punish or forgive lesser shirk.</string>
+
+    <string name="tawhid_defination">Tawhid, also spelled Tauhid, Arabic Tawḥīd, (“making one,” “asserting oneness”), in Islam, the oneness of God, in the sense that he is one and there is no god but he, as stated in the shahādah (“witness”) formula: “There is no god but God and Muhammad is His prophet. Tawhid further refers to the nature of that God—that he is a unity, not composed, not made up of parts, but simple and uncompounded. The doctrine of the unity of God and the issues that it raises, such as the question of the relation between the essence and the attributes of God, reappear throughout most of Islamic history. In the terminology of Muslim mystics (Sufis), however, tawhid has a pantheistic sense; all essences are divine, and there is no absolute existence besides that of God. To most Muslim scholars, the science of tawhid is the systematic theology through which a better knowledge of God may be reached, but, to the Sufis, knowledge of God can be reached only through religious experience and direct vision.</string>
+    <string name="tawhid_verse_1" ><p><b>Az-Zariyat 51:56 :</b></p>  \nAnd I (Allah) created not the jinn and mankind except that they should worship Me (Alone).</string>
+    <string name="tawhid_verse_2" ><p><b>Al-An’am 6:151 :</b></p>  \nSay (O Muhammad P.B.U.H): “Come, I will recite what your Lord has prohibited you from: Join not anything in worship with Him.</string>
+    <string name="tawhid_hadees_1" ><p><b>Sahih al-Bukhārī 7373 :</b></p> \nSahih Muslim 30 Mu’adh bin Jabal reported: The Prophet, peace and blessings be upon him, said, “O Mu’adh, do you know what is the right of Allah upon His servants?” I said, “Allah and His messenger know best.” The Prophet said, “To worship Him alone and to associate none in worship with Him. And do you know what is their right upon Him?” I said, “Allah and His messenger know best.” The Prophet said, “Not to punish them if they do so.”</string>
+    <string name="tawhid_hadees_2" ><p><b>Al-Sunan al-Kubrā lil-Nasa’i 5760 :</b></p> \nAbu Huraira reported: The Messenger of Allah, peace and blessings be upon him, said, “There is no God but Allah, and Allah is the greatest. There is no God but Allah without any partner, there is no God but Allah. To Him belong dominion and praise, there is no God but Allah. There is no power or might but in Allah. Whoever says these words in a day or a night or a month, then he dies in that day or night or month, his sins will be forgiven.”</string>
+    <string name="kalmas" >Kalmas</string>
+    <string name="muharram_1236_ah" >Muharram 1236 Ah</string>
+    <string name="oct_24_2012" >Oct 24, 2012</string>
+    <string name="al_hajj">Al-Hajj</string>
+
+    <string name="calander_al_hijira">AL-HIJIRA</string>
+    <string name="calander_ashura">ASHURA</string>
+    <string name="calander_malid_al_nabi">MAWLID AL-NABI</string>
+    <string name="calander_lailat_al_miraj">LAILAT AL MIRAJ</string>
+    <string name="calander_lailat_al_barat">LAILAT AL BARAT</string>
+    <string name="calander_ramdan_start">RAMDAN (START)</string>
+    <string name="calander_eid_ul_fitr">EID UL FITR</string>
+    <string name="calander_waqf_al_arafa_hajj">WAQF AL ARAFA-HAJJ</string>
+    <string name="calander_eid_ul_azha">EID UL AZHA</string>
+    <string name="Hajj_guide">Guide</string>
+    <string name="Hajj_hajj_umrah">Hajj</string>
+    <string name="Hajj_umrah">Umrah</string>
+
+    <!--Islamic months-->
+    <string name="text_muharram">Muḥarram </string>
+    <string name="text_safar">Ṣafar </string>
+    <string name="text_rabi_ul_awal">Rabīʿ al-awwal </string>
+    <string name="text_rabi_ul_thani">Rabīʿ al-thānī </string>
+    <string name="text_jumad_al_awal">Jumādá al-ūlá </string>
+    <string name="text_jumad_al_thani">Jumādá al-ākhirah </string>
+    <string name="text_rajab">Rajab </string>
+    <string name="text_shaban">Shaʿbān </string>
+    <string name="text_ramdan">Ramaḍān </string>
+    <string name="text_shawwal">Shawwāl </string>
+    <string name="text_zul_qaadah">Dhū al-Qaʿdah </string>
+    <string name="text_zul_hajj">Dhū al-Ḥijjah </string>
+    <string name="text_today">Today</string>
+    <string name="text_done">Done</string>
+    <string name="text_title_isalamic_calandar">Islamic Calendar</string>
+
+    <string name="prayer_formale">Male</string>
+    <string name="prayer_forfemale">Female</string>
+    <string name="Quran_bookmarkadded">Bookmark added</string>
+
+    // Quran
+    <string name="text_quran">Quran</string>
+    <string name="juz">Juz</string>
+    <string name="surah">Surah</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="text_notes">Notes</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="selectVerseNumber">Select Verse Number</string>
+
+    // Quran Khatam
+    <string name="qurankhatam_khatamdescription">Khatam enables you to create your own Quran reading plan either individually or in a group with your family and friends.</string>
+    <string name="qurankhatam_planmykhatambtntext">Plan my Own Khatam</string>
+    <string name="qurankhatam_wantokhatam">I want to khatam by</string>
+    <string name="qurankhatam_khatamduraton">You have to read %1$s ayat a day to complete reading the Quran by %2$s</string>
+    <string name="qurankhatam_khatamdurationbefore">Selected date should be after current date</string>
+    <string name="qurankhatam_nextBtn">Next</string>
+    <string name="qurankhatam_startReading">Start Reading</string>
+    <string name="qurankhatam_yes">Yes</string>
+    <string name="qurankhatam_no">No</string>
+    <string name="qurankhatam_youhaveactivekhaam">You have an active Quran reading plan, would you like to start tracking?</string>
+    <string name="qurankhatam_deletqurankhatam">Delete Quran Khatam!</string>
+    <string name="qurankhatam_areYouSuretoDeleteQuranKhatam">Are you sure to delete Quran Khatam?</string>
+    <string name="qurankhatam_totalVerse">Total Verse</string>
+    <string name="qurankhatam_readedVerse">Readed Verse</string>
+    <string name="qurankhatam_completed">Completed</string>
+    <string name="qurankhatam_completedsurahlist">Completed surah list</string>
+    <string name="qurankhatam_markread">Mark as read</string>
+    <string name="qurankhatam_markunread">Mark as unread</string>
+    <string name="qurankhatam_surahNumber" translatable="false">Surah %1$s</string>
+    <string name="qurankhatam_unreadSurah">UnRead Surah</string>
+    <string name="qurankhatam_areToUnread">Are you sure to unread this surah?</string>
+    <string name="qurankhatam_WaitPlease">Wait Please …</string>
+    <string name="qurankhatam_deletekhatamsuccess">Khatam deleted successfully</string>
+    <string name="qurankhatam_title">Quran Khatam</string>
+    <string name="qurankhatam_start">Start</string>
+    <string name="qurankhatam_planyourownkhatam">Plan your own khatam</string>
+    <string name="qurankhatam_quranreadingprogress">Quran Reading Progress</string>
+    <string name="qurankhatam_verseno">Verse No %1$s</string>
+    <string name="qurankhatam_dayleft">Days Left</string>
+    <string name="qurankhatam_surahLeft">Surah Left</string>
+    <string name="qurankhatam_ayatLeft">Ayat Left</string>
+    <string name="qurankhatam_completedby">Complete by:</string>
+    <string name="qurankhatam_enteryournotehere">Enter Your Note Here</string>
+    <string name="qurankhatam_prayertimecalculationmethodmanual">Manual Prayer Time Correction</string>
+    <string name="qurankhatam_change">Change</string>
+    <string name="qurankhatam_quransetting">Quran Settings</string>
+    <string name="qurankhatam_setFont">Set Font</string>
+    <string name="qurankhatam_setTranslation">Set Translation</string>
+    <string name="qurankhatam_setAudio">Set Audio</string>
+    <string name="qurankhatam_audiorepeattitle">Never</string>
+    <string name="qurankhatam_audiorepeat1">1 Times</string>
+    <string name="qurankhatam_audiorepeat2">2 Times</string>
+    <string name="qurankhatam_audiorepeat3">3 Times</string>
+    <string name="qurankhatam_audiorepeat4">4 Times</string>
+    <string name="qurankhatam_audiorepeat5">5 Times</string>
+    <string name="qurankhatam_audiorepeat6">Infinite</string>
+    <string name="text_disabled" translatable="false">Disabled</string>
+    <string name="text_bismillaah_roman" translatable="false">Bismillaahir Rahmaanir Raheem</string>
+    <string name="some_reference_text" translatable="false">Some Reference</string>
+    <string name="set_arabic_text_size">Arabic Text Size</string>
+    <string name="set_translation_text_size">Translation Text Size</string>
+    <string name="asdadasadads">asdadasadads</string>
+    <string name="quran_khatam">Quran Khatam</string>
+    <string name="ayatShare_setArabicTextColor">Set Arabic Text Color</string>
+    <string name="ayatShare_setTranslationTextColor">Set Translation text Color</string>
+    <string name="searchinquran">Search In Quran</string>
+    <string name="ayatShare_Both">Both</string>
+    <string name="ayatShare_translation">Translation</string>
+
+    <string name="settingpg_shafi">Shafi</string>
+    <string name="settingpg_never">Never</string>
+    <string name="settingpg_save">Save</string>
+    <string name="settingpg_diable">Disable</string>
+    <string name="settingpg_miles">Miles</string>
+    <string name="settingpg_kilo_meters">Kilo Meters</string>
+    <string name="settingpg_test_adhan">Test Adhan</string>
+    <string name="quransp_audio_play_option">Audio Play Option</string>
+    <string name="quransp_auto_scroll">Auto Scroll</string>
+    <string name="quransp_keep_screen_on_while_reading">Keep Screen On While Reciting</string>
+    <string name="quransp_at_the_end_of_surah">At The End Of Surah</string>
+    <string name="quransp_repeat_each_verse">Repeat Each Verse</string>
+    <string name="quransp_time">Time</string>
+    <string name="quransp_times">Times</string>
+    <string name="quransp_infinite">Infinite</string>
+    <string name="quransp_reciters">Reciters</string>
+    <string name="quransp_quran_reciter1">Abdul Reham Al-Sudais</string>
+    <string name="quransp_quran_reciter2">Mishari Rashid Al- Afasy</string>
+    <string name="quransp_quran_reciter3">Saad Al-Ghaamdi</string>
+    <string name="quransp_arabic">Arabic</string>
+    <string name="quransp_premium_user_can_download_all_recitation_for_offline_playback">Premium User Can Download All Recitation For Offline Playback</string>
+    <string name="quransp_arabic_text">Arabic Text Style</string>
+    <string name="quransp_default_diacritics_or_symbols">Default (Diacritics Or Symbols)</string>
+    <string name="quransp_no_diacritics_or_symbols">No Diacritics Or Symbols</string>
+    <string name="quransp_arabic_font">Arabic Font</string>
+    <string name="quransp_select_the_best_arabic_font_for_your_device">Select The best Arabic Font For Your Device</string>
+    <string name="quransp_default_font">Default Font</string>
+    <string name="quransp_custom_font">Custom Font</string>
+    <string name="qurantp_phonetic_transliteration">Phonetic Transliteration</string>
+    <string name="qurantp_default_phonetic_transliteration">Default Phonetic Transliteration</string>
+    <string name="qurantp_translations">Translation</string>
+    <string name="qurantp_translation_1">Salomo Keyzer</string>
+    <string name="qurantp_translation_2">Office of the President of Maldives</string>
+    <string name="qurantp_translation_3">Preklad I. Hrbek</string>
+    <string name="qurantp_translation_4">Abdullah Muhammad Basmeih</string>
+    <string name="qurantp_translation_5">Indonesian Ministry of Religious Affairs</string>
+    <string name="qurantp_translation_6">Muhiuddin Khan</string>
+    <string name="qurantp_translation_7">Ramdane At Mansour</string>
+    <string name="qurantp_translation_8">Mustafa Mlivo</string>
+    <string name="qurantp_translation_9">Abdullah Yusuf Ali</string>
+    <string name="qurantp_translation_10">Muhammad Isa García</string>
+    <string name="qurantp_translation_11">Muhammad Hamidullah</string>
+    <string name="qurantp_translation_12">Abubakar Mahmoud Gumi</string>
+    <string name="qurantp_translation_13">Muhammad Farooq Khan and Muhammad Ahmed</string>
+    <string name="qurantp_translation_14">Hamza Roberto Piccardo</string>
+    <string name="qurantp_translation_15">Burhan Muhammad-Amin</string>
+    <string name="qurantp_translation_16">Muhammad Karakunnu and Vanidas Elayavoor</string>
+    <string name="qurantp_translation_17">Józefa Bielawskiego</string>
+    <string name="qurantp_translation_18">Einar Berg</string>
+    <string name="qurantp_translation_19">Hussain Ansarian</string>
+    <string name="qurantp_translation_20">Samir El-Hayek</string>
+    <string name="qurantp_translation_21">Abu Adel</string>
+    <string name="qurantp_translation_22" tools:ignore="Typos">Sherif Ahmeti</string>
+    <string name="qurantp_translation_23">Taj Mehmood Amroti</string>
+    <string name="qurantp_translation_24">Knut Bernström</string>
+    <string name="qurantp_translation_25">Ali Muhsin Al-Barwani</string>
+    <string name="qurantp_translation_26">Abdol Mohammad Ayati</string>
+    <string name="qurantp_translation_27">Jan Turst Foundation</string>
+    <string name="qurantp_translation_28">Yakub Ibn Nugman</string>
+    <string name="qurantp_translation_29">Süleyman Ateş</string>
+    <string name="qurantp_translation_30">Muhammad Sodik Muhammad Yusuf</string>
+    <string name="qurantp_translation_31">Tzvetan Theophanov</string>
+    <string name="qurantp_translation_32">Fateh Muhammad Jalandhry</string>
+    <string name="qurantp_translation_33">King Fahad Quran Complex</string>
+    <string name="qurantp_translation_34">Unknown</string>
+    <string name="qurantp_translation_35">N.A</string>
+    <string name="qurantp_translation_36">Ma Jian</string>
+    <string name="qurantp_translation_37">Syed Muhammad Zakir Hussain Shah Sialvi</string>
+    <string name="qurantp_download_phonetic_transliteration">This phonetic Transliteration Of The Quran Has Not Been Downloaded Yet. Would You Like To Download It Now ?</string>
+    <string name="qurantp_legal_information">Legal Information</string>
+    <string name="enternotehere">Enter your note here</string>
+    <string name="tasbeehSaveBtn">Save</string>
+    <string name="text_font_setting">Font Setting</string>
+
+    <!--    audio player-->
+    <string name="quransp_stop_playing">Stop Playing</string>
+    <string name="quransp_repeat_the_surah">Repeat The Surah</string>
+    <string name="quransp_play_the_next_surah">Play The Next Surah</string>
+    <string name="quran_ayahshareapplink">Get the Islamic Guide Pro to explore more Islamic content:https://play.google.com/store/apps/details?id=%s</string>
+    <string name="searchHere...">Search Here…</string>
+    <string name="quran_madesuccess">Quran Khatam created successfully</string>
+    <string name="text_none">None</string>
+    <string name="text_audio_recitations">Audio Recitations</string>
+    <string name="connecting">Connecting ....</string>
+    <string name="qurankhatam_QuranKhatamCompleted">Quran Khatam Completed</string>
+    <string name="qurankhatam_CongrateQuranKhatmCompleted">Congratulations you have completed your Quran khatam</string>
+    <string name="text_ayah">Ayah</string>
+    <string name="text_copy_to_clipboard">Copy To clipboard</string>
+    <string name="no_internet_message">Internet not available</string>
+    <string name="emptytNoteIsnotAllowed">Empty note is not allowed</string>
+    <string name="note_updated_msg">Successfully updated your note for this ayah.</string>
+    <string name="note_save_message">Successfully saved your note for this ayah.</string>
+    <string name="note_delete_msg">Successfully Deleted the note</string>
+    <string name="edit_as_you_want">Edit As You Want!</string>
+    <string name="ayah_saved">Quranic Ayah Saved</string>
+
+    <string name="tafseer">Tafseer</string>
+    <string name="tafseer_english_Hafiz_Ibn_Kathir">English Hafiz Ibn Kathir</string>
+    <string name="tafseer_english_Mufti_Muhammad_Shafi">English Mufti Muhammad Shafi</string>
+    <string name="tafseer_russian_Saddi">Russian Saddi</string>
+    <string name="tafseer_arabic_Qurtubi">Arabic Qurtubi</string>
+    <string name="tafseer_arabic_Saddi">Arabic Saddi</string>
+    <string name="tafseer_arabic_Tanweer">Arabic Tanweer</string>
+    <string name="tafseer_arabic_Waseet">Arabic Waseet</string>
+    <string name="tafseer_arabic_Baghawy">Arabic Baghawy</string>
+    <string name="tafseer_english_Al_Mukhtasar">English Al-Mukhtasar</string>
+    <string name="tafseer_bengali_Bayaan_Foundation">Bengali Bayaan Foundation</string>
+    <string name="tafseer_bengali_King_Fahd_Quran_Printing_Complex">Bengali King Fahd Quran Printing Complex</string>
+    <string name="tafseer_bengali_Tawheed_Publication">Bengali Tawheed Publication</string>
+    <string name="tafseer_urdu_Dr_Israr_Ahmad">Urdu Dr. Israr Ahmad</string>
+    <string name="tafseer_urdu_Hafiz_Ibn_Kathir">Urdu Hafiz Ibn Kathir</string>
+    <string name="tafseer_urdu_Sayyid_Ibrahim_Qutb">Urdu Sayyid Ibrahim Qutb</string>
+
+    // Azkar
+    <string name="shareDua">Share Dua</string>
+    <string name="allDuas">All Duas</string>
+    <string name="no_dua_s_saved">No dua\'s saved</string>
+    <string name="downloading_rabbana_dua_audio">Rabbana Dua Audio</string>
+    <string name="rabbana_dua_server_link" translatable="false">https://github.com/Tpiano14/Moslem/raw/main/rabbana/</string>
+    <string name="rDua_server_link" translatable="false">https://github.com/Tpiano14/Moslem/raw/main/ramadan/</string>
+    <string name="text_rabbana_duas">Rabbana Duas</string>
+    <string name="text_rabbana_duas2">Rabbana Duas %1$s</string>
+    <string name="deleteDua">"Are you sure you want to delete this dua ?"</string>
+    <string name="shareRamadanDua">Share Ramadan Dua</string>
+    <string name="text_surah">Surah</string>
+    <string name="text_dua_audio">Dua_Audio</string>
+    <string name="favorite_duas">Favorite Duas</string>
+
+    <string name="text_hisnul_muslim">Hisnul Muslim</string>
+    <string name="ramdhan_dua">Ramadan Duas</string>
+
+    <!--    Ramzan Duas -->
+    <string name="dua_for_fasting">Dua For Fasting</string>
+    <string name="dua_when_breaking_fast">Dua When Breaking Fast</string>
+    <string name="dua_for_fast_ashra">Dua For First Ashra</string>
+    <string name="dua_for_second_ashra">Dua For Second Ashra</string>
+    <string name="dua_for_third_ashra">Dua For Third Ashra</string>
+    <string name="tasbeeh_e_taraweeh">Tasbeeh-e-Taraweeh</string>
+
+    <!--    Hisnual -->
+    <string name="text_hisnual_1">The Excellence Of Remembrance###1</string>
+    <string name="text_hisnual_2">When Waking Up###1</string>
+    <string name="text_hisnual_3">When Wearing A Garment###2</string>
+    <string name="text_hisnual_4">When Wearing A New Garment###2</string>
+    <string name="text_hisnual_5">To Someone Wearing A New Garment###2</string>
+    <string name="text_hisnual_6">Before Undressing###2</string>
+    <string name="text_hisnual_7">Before Entering The Toilet###2</string>
+    <string name="text_hisnual_8">After Leaving The Toilet###6</string>
+    <string name="text_hisnual_9">When Starting Ablution###6</string>
+    <string name="text_hisnual_10">Upon Completing The Ablution###2</string>
+    <string name="text_hisnual_11">Upon Entering / When Leaving The Home###2</string>
+    <string name="text_hisnual_12">When Going To The Mosque###6</string>
+    <string name="text_hisnual_13">Upon Entering The mosque###6</string>
+    <string name="text_hisnual_14">Upon Leaving The Mosque###6</string>
+    <string name="text_hisnual_15">Concerning The Athan (the call to prayer)###6</string>
+    <string name="text_hisnual_16">At The Start Of The Prayer (after takbeer)###6</string>
+    <string name="text_hisnual_17">While Bowing In Prayer###6</string>
+    <string name="text_hisnual_18">Upon Rising From The Bowing Position###6</string>
+    <string name="text_hisnual_19">While Prostrating###6</string>
+    <string name="text_hisnual_20">Between The Two Prostrations###6</string>
+    <string name="text_hisnual_21">When Prostrating Due To Recitation Of The Quran###6</string>
+    <string name="text_hisnual_22">The Tashahhud###6</string>
+    <string name="text_hisnual_23">Prayers Upon The Prophet (SAWS) After The Tashahhud###6</string>
+    <string name="text_hisnual_24">After The Last Tashahhud And Before Salam###6</string>
+    <string name="text_hisnual_25">After Salam###6</string>
+    <string name="text_hisnual_26">For Seeking Guidance In Forming A Decision Or Choosing The Proper Course###7</string>
+    <string name="text_hisnual_27">In The Morning And Evening###1</string>
+    <string name="text_hisnual_28">Before Sleeping###1</string>
+    <string name="text_hisnual_29">When Turning Over During The Night###1</string>
+    <string name="text_hisnual_30" tools:ignore="TypographyEllipsis">Upon Experiencing Unrest, Fear, Apprehensiveness... During Sleep###1</string>
+    <string name="text_hisnual_31">Upon Seeing A Good Dream Or A Bad Dream###1</string>
+    <string name="text_hisnual_32">Qunoot Al-Witr###6</string>
+    <string name="text_hisnual_33">Immediately After Salam Of The Witr Prayer###6</string>
+    <string name="text_hisnual_34">For Anxiety And Sorrow###4</string>
+    <string name="text_hisnual_35">For One In Distress###4</string>
+    <string name="text_hisnual_36">Upon Encountering An Enemy Or Those Of uthority###4</string>
+    <string name="text_hisnual_37">For One Afraid Of Governor\'s Injustice###4</string>
+    <string name="text_hisnual_38">Against Enemies###4</string>
+    <string name="text_hisnual_39">When Being Afraid Of A Group Of People###4</string>
+    <string name="text_hisnual_40">For One Afflicted With Doubt In His Faith###4</string>
+    <string name="text_hisnual_41">Settling A Debt###4</string>
+    <string name="text_hisnual_42">for One Afflicted By Whisperings In Prayer Or Recitation###6</string>
+    <string name="text_hisnual_43">For One Whose Affairs Have Become Difficult###7</string>
+    <string name="text_hisnual_44">Upon Committing A Sin###7</string>
+    <string name="text_hisnual_45">For Expelling The Devil And His Whisperings###2</string>
+    <string name="text_hisnual_46">When Stricken With A Mishap Or Overtaken By An Affair###7</string>
+    <string name="text_hisnual_47">Congratulation On The Occasion Of A Birth###9</string>
+    <string name="text_hisnual_48">Placing Children Under Allah’s Protection###11</string>
+    <string name="text_hisnual_49">When Visiting The Sick###11</string>
+    <string name="text_hisnual_50">Excellence Of Visiting The Sick###11</string>
+    <string name="text_hisnual_51">When The Sick Have Renounced All Hope Of Life###11</string>
+    <string name="text_hisnual_52">Instruction For The One Nearing Death###11</string>
+    <string name="text_hisnual_53">For One Afflicted By A Calamity###4</string>
+    <string name="text_hisnual_54">When Closing The Eyes Of The Deceased###11</string>
+    <string name="text_hisnual_55">For The Deceased At The Funeral Prayer###11</string>
+    <string name="text_hisnual_56">When The Deceased Is A Child, During The Funeral Prayer###11</string>
+    <string name="text_hisnual_57">Condolence###11</string>
+    <string name="text_hisnual_58">Placing The Deceased In The Grave###11</string>
+    <string name="text_hisnual_59">After Burying The Deceased###11</string>
+    <string name="text_hisnual_60">Visiting The Graves###11</string>
+    <string name="text_hisnual_61">During A Wind Storm###10</string>
+    <string name="text_hisnual_62">Upon Hearing Thunder###10</string>
+    <string name="text_hisnual_63">For Rain###10</string>
+    <string name="text_hisnual_64">When It Rains###10</string>
+    <string name="text_hisnual_65">After Rainfall###10</string>
+    <string name="text_hisnual_66">Asking For Clear Skies###10</string>
+    <string name="text_hisnual_67">Upon Sighting The Crescent Moon###10</string>
+    <string name="text_hisnual_68">Upon Breaking Fast###3</string>
+    <string name="text_hisnual_69">Before Eating###3</string>
+    <string name="text_hisnual_70">Upon Completing The Meal###3</string>
+    <string name="text_hisnual_71">Of The Guest For The Host###3</string>
+    <string name="text_hisnual_72">To One Offering A Drink Or To One Who Intended To Do That###3</string>
+    <string name="text_hisnual_73">When Breaking Fast In Someone’s Home###3</string>
+    <string name="text_hisnual_74">By One Fasting When Presented With Food And Does Not Break His Fast###3</string>
+    <string name="text_hisnual_75">When Insulted While Fasting###9</string>
+    <string name="text_hisnual_76">Upon Seeing The Early Or Premature Fruit###10</string>
+    <string name="text_hisnual_77">Upon Sneezing###9</string>
+    <string name="text_hisnual_78">When A Misbeliever Praise Allah After Sneezing###9</string>
+    <string name="text_hisnual_79">To The Newlywed###2</string>
+    <string name="text_hisnual_80">On The Wedding Night Or When Buying An Animal###9</string>
+    <string name="text_hisnual_81">Before Sexual Intercourse###2</string>
+    <string name="text_hisnual_82">When Angry###9</string>
+    <string name="text_hisnual_83">Upon Seeing Someone In Trial Or Tribulation###9</string>
+    <string name="text_hisnual_84">At A Sitting Or Gathering###9</string>
+    <string name="text_hisnual_85">For The Expiation Of Sins, Said At The Conclusion Of A Sitting Or Gathering###9</string>
+    <string name="text_hisnual_86">Returning A Supplication Of Forgiveness###9</string>
+    <string name="text_hisnual_87">To One Who Does You A Favour###9</string>
+    <string name="text_hisnual_88">Protection From The Dajjal###7</string>
+    <string name="text_hisnual_89">To One Who Pronounces His Love For You, For Allah’s Sake###9</string>
+    <string name="text_hisnual_90">To One Who Has Offered You Some Of His Wealth###9</string>
+    <string name="text_hisnual_91">To The Debtor When His Debt Is Settled###9</string>
+    <string name="text_hisnual_92">For fear Of Shirk###4</string>
+    <string name="text_hisnual_93">Returning A Supplication After Having Bestowed A Gift Or Charity Upon Someone###9</string>
+    <string name="text_hisnual_94">Forbiddance Of Ascribing Things To Omens###4</string>
+    <string name="text_hisnual_95">When Mounting An Animal Or Any Means Of Transport###5</string>
+    <string name="text_hisnual_96">For Travel###5</string>
+    <string name="text_hisnual_97">Upon Entering A Town Or Village###5</string>
+    <string name="text_hisnual_98">When Entering The Market###5</string>
+    <string name="text_hisnual_99">When The Mounted Animal (or mean of transport) Stumbles###5</string>
+    <string name="text_hisnual_100">Supplication Of The Traveller For The Resident###5</string>
+    <string name="text_hisnual_101">Supplication Of The Resident For The Traveller###5</string>
+    <string name="text_hisnual_102">Remembrance While Ascending Or Descending###5</string>
+    <string name="text_hisnual_103">Prayer Of The Traveller As Dawn Approaches###5</string>
+    <string name="text_hisnual_104">Stopping Or Lodging Somewhere###5</string>
+    <string name="text_hisnual_105">While Returning From Travel###5</string>
+    <string name="text_hisnual_106">What To Say Upon Receiving Pleasing Or Displeasing News###4</string>
+    <string name="text_hisnual_107">Excellence Of Sending Prayers Upon The Prophet (saws)###7</string>
+    <string name="text_hisnual_108">Excellence Of Spreading The Islamic Greeting###9</string>
+    <string name="text_hisnual_109">Returning A Greeting To A Misbeliever###9</string>
+    <string name="text_hisnual_110">Upon Hearing A Rooster Crow Or The Braying Of An Ass###10</string>
+    <string name="text_hisnual_111">Upon Hearing The Barking Of Dogs At Night###10</string>
+    <string name="text_hisnual_112">For One You Have Insulted###9</string>
+    <string name="text_hisnual_113">The Etiquette Of PPraising A Fellow Muslim###9</string>
+    <string name="text_hisnual_114">For The One That Have Been Praised###9</string>
+    <string name="text_hisnual_115">The Talbiya For The One Doing Haj Or \'Omra###8</string>
+    <string name="text_hisnual_116">The Takbîr Passing The Black Stone###8</string>
+    <string name="text_hisnual_117">Between The Yemeni Corner And The Black Stone###8</string>
+    <string name="text_hisnual_118">When At Mount Safa And Mount Marwah###8</string>
+    <string name="text_hisnual_119">The Day Of \'Arafah###8</string>
+    <string name="text_hisnual_120">Remembrance At Muzdalifa###8</string>
+    <string name="text_hisnual_121">When Throwing Each Pebble At The Jamarat###8</string>
+    <string name="text_hisnual_122">At Times Of Amazement And Delight###4</string>
+    <string name="text_hisnual_123">Upon Receiving Pleasant News###4</string>
+    <string name="text_hisnual_124">When Feeling Some Pain In The Body###11</string>
+    <string name="text_hisnual_125">When In Fear Of Afflicting Something Or Someone With One’s Eye###2</string>
+    <string name="text_hisnual_126">When Startled###4</string>
+    <string name="text_hisnual_127">When Slaughtering Or Offering A Sacrifice###8</string>
+    <string name="text_hisnual_128">To Ward Of The Deception Of The Obstinate Shaytans###2</string>
+    <string name="text_hisnual_129">Seeking Forgiveness and Repentance###7</string>
+    <string name="text_hisnual_130">Excellence Of Remembrance And Glorification Of Allah###7</string>
+    <string name="text_hisnual_131">How The Prophet (SAWS) Made Tasbeeh###7</string>
+    <string name="text_hisnual_132">General And Beneficent Rules###2</string>
+    
+    <!-- Fasting -->
+    <string name="what_is_fasting">What is Fasting?</string>
+    <string name="fasting_is_a_direction_to_Allah">Fasting is a direction to Allah Path for Muslim Community. they would be excited for this</string>
+    <string name="fasting_rule">Fasting Rules</string>
+    <string name="sunnah_fasting_rule">sunnah_fasting_rule</string>
+    <string name="shia_fasting_rule">shia_fasting_rule</string>
+    <string name="sunnah">Sunni</string>
+    <string name="tashi">Shia</string>
+
+<!--    <string name="admob__app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_adunit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    &lt;!&ndash;<string name="interstitial_adunit_id">ca-app-pub-3940256099942544/1033173712</string>&ndash;&gt;
+    <string name="reward_id" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="native_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+    <string name="notifications">Cautions</string>
+    <string name="prayer_timings">Prayer Timings</string>
+    <string name="learn_quran">Learn Quran</string>
+    <string name="_6_kalma">6 kalma</string>
+    <string name="islamic_calendar">Islamic Calendar</string>
+    <string name="fasting_rules">Fasting Rules</string>
+    <string name="how_to_pray">How to Pray</string>
+    <string name="pray_guide_desc1">Prayer (salah; plural salawat) is one of the five pillars of Islam. \n  \n
+        It is incumbent upon all mature Muslims, and highly
+                        recommended for children aged ten and over, to complete their five daily prayers according to the way the Prophet (PBUH)
+                        performed it in order for them to be valid. It is believed that communication with Allah will bring life to the prayerful
+                        and bring them courage. \n \nMuslims believe that Allah speaks to us through the Quran, and salaah is our means of
+                        connecting to Allah. \n \nWhether you\'re just curious as to how Muslims pray or if you\'re looking to learn for yourself,
+                        it\'s never too late to start.</string>
+    <string name="make_your_intention">Make your intention known in your heart.</string>
+    <string name="pray_guide_desc2">Before initiating the salat, it is important that you have the intention to pray.</string>
+    <string name="raise_your_hands_up">Raise your hands up next to your ears and shoulders.</string>
+    <string name="pray_guide_desc3">Raise your hands up next to your ears and shoulders, then say Allāhu akbar (الله أَكْبَر). This translates to \"Allah is the greatest.\" Do this while standing (or sitting if you can\'t stand). \\n \\nThe fingers should be spaced when the hands are\" +\n                        \" raised.</string>
+    <string name="place_your_right_hand_over">Place your right hand over your left hand.</string>
+    <string name="pray_guide_desc4">Place your hands either on your navel, on your chest, or between the two; there\'s a difference of opinion between Islamic schools \" \n                        \"of thoughts. Keep your eyes focused on the ground. It helps to keep your sight fixed on where your head will rest when \" +\n                        \"prostrating later. Do not let your eyes wander. \\n \\nRecite the optional Istiftah Du\'a (opening prayer): \\n \\nFollow it \" +\n                        \"with \" +\n                        \"Surah Al-Fatiha (this Surah is recited in each Rak\'ah): \\n \\nRecite any other surah or any part of the Qu\'ran, such as \" +\n                        \"Surah Ikhlas. \\n \\nReciting a surah after Al-Fatiha is only done in the first 2 units (Rakaa\'s) of fardh salat while in \" +\n                        \"sunnah mu\'akkadah it is done in all units(Rakaa\'s)</string>
+    <string name="say_allahu_akbar">Say \"Allahu Akbar\" and bend down.</string>
+    <string name="pray_guide_desc5">Bend your body so that your back and neck are as straight as possible and level with the ground, keeping your eyes focused on the ground and keep your fingers and palm on the knees. Your back and head should be at a 90° angle with your legs. You don\'t need to make a perfect angle; your body should be relaxed. This position is called ruku.</string>
+    <string name="stand_back_up_raise">Stand back up (raise from ruku).</string>
+    <string name="pray_guide_desc6">While rising up with your arms beside you.</string>
+    <string name="say_allahu_akbar_and_prostrate">Say Allahu Akbar and prostrate.</string>
+    <string name="pray_guide_desc7">Place your head, knees and hands on the floor. While \\\"sujood\\\" (prostration) make sure that your forehead and nose touch the ground. This is the position called \\\"sajdah.\\\"</string>
+    <string name="rise_from_sajdah">Rise from sajdah and sit on your knees.</string>
+    <string name="pray_guide_desc8">Place your left foot from ball to heel on the floor. Your right foot should be toes on the floor only. Place your hands flat on your knees.</string>
+    <string name="say_allahu_akbar_and_stand_up">Say Allahu akbar and stand up.</string>
+    <string name="pray_guide_desc9">You have completed one rak\'ah. Depending on the salah, you may need to complete up to three more. \\n \\nIn every second rak\'ah, after the second sajdah, sit on your knee again. Recite: \\n \\nTashahhud \\nDurood</string>
+    <string name="finish_the_prayer_with_tasleem">Finish the prayer with tasleem.</string>
+    <string name="pray_guide_desc10">After the tashahhud, durood, and any du\'a you wish to recite, end the prayer by: \\n \\nTurning your head to the right and saying, As-salamu alaykum wa Rahmatullahi. The angel who records your good deeds is to this side. \\n \\nTurning your head to the left and saying, As-salamu alaykum wa Rahmatullahi. The angel who records your wrongful deeds is to this side. The prayers have ended!</string>
+    <string name="pray_guide_desc1_female">Prayer (salah; plural salawat) is one of the five pillars of Islam.\\nIt is incumbent upon all mature Muslims, and highly recommended for children aged ten and over, to complete their five daily prayers according to the way the Prophet (PBUH) performed it in order for them to be valid. It is believed that communication with Allah will bring life to the prayerful and bring them courage.\\nMuslims believe that Allah speaks to us through the Qur\'an, and salaah is our means of connecting to Allah.\\nWhether you\'re just curious as to how Muslims pray or if you\'re looking to learn for yourself, it\'s never too late to start.</string>
+    <string name="make_your_intention_known_in_your_heart">Make your intention known in your heart.</string>
+    <string name="pray_guide_desc2_female">Before initiating the salat, it is important that you have the intention to pray.</string>
+    <string name="raise_your_hands_up_next_to_your_ears_and_shoulders">Raise your hands up next to your ears and shoulders.</string>
+    <string name="pray_guide_desc3_female">Stand with one\'s feet close together, raising one\'s hands to the level of the shoulders, palms facing the qibla , fingers naturally outspread, with one\'s wrists and forearms covered</string>
+    <string name="place_your_right_hand_over_your_left_hand">Place your right hand over your left hand.</string>
+    <string name="pray_guide_desc4_female">Stand with one\'s feet close together, raising one\'s hands to the level of the shoulders, palms facing the qibla , fingers naturally outspread, with one\'s wrists and forearms covered. There\'s a difference of opinion between Islamic schools of thoughts. Keep your eyes focused on the ground. It helps to keep your sight fixed on where your head will rest when prostrating later. Do not let your eyes wander.\\n Recite the optional Istiftah Du\'a (opening prayer):\\nFollow it with Surah Al-Fatiha (this Surah is recited in each Rak\'ah) \\n : Recite any other surah or any part of the Qu\'ran, such as Surah Ikhlas.\\nReciting a surah after Al-Fatiha is only done in the first 2 units (Rakaa\'s) of fardh salat while in sunnah mu\'akkadah it is done in all units(Rakaa\'s)</string>
+    <string name="say_allahu_akbar_and_bend_down">Say \"Allahu Akbar\" and bend down.</string>
+    <string name="pray_guide_desc5_female">Bend your body so that your back and neck are as straight as possible and level with the ground, keeping your eyes focused on the ground and keep your fingers and palm on the knees. Your back and head should be at a 90° angle with your legs. You don\'t need to make a perfect angle; your body should be relaxed. This position is called ruku.</string>
+    <string name="stand_back_up_raise_from_ruku">Stand back up (raise from ruku).</string>
+    <string name="pray_guide_desc6_female">Stand up completely. Say this supplication in a lowered voice while in the standing position with one\'s gaze fixed on the place of prostration.</string>
+    <string name="say_allahu_akbar_">Say Allahu Akbar and prostrate.</string>
+    <string name="pray_guide_desc7_female">Place your head, knees and hands on the floor. While \"sujood\" (prostration) make sure that your forehead and nose touch the ground. This is the position called \"sajdah.\"</string>
+    <string name="rise_from_sajdah_and_sit_on_your_knees">Rise from sajdah and sit on your knees.</string>
+    <string name="pray_guide_desc8_female">Draw both legs to the right side, thighs on top of each other, sitting on the left buttocks, hands on top of thighs such that the tips of the fingers reach the knees, fingers together, and eyes gazing at one\'s lap.</string>
+    <string name="say_allahu_akbar_a">Say Allahu akbar and stand up.</string>
+    <string name="pray_guide_desc9_female">You have completed one rak\'ah. Depending on the salah, you may need to complete up to three more.\n In every second rak\'ah, after the second sajdah, sit on your knee again. Recite:\nTashahhud Durood</string>
+    <string name="finish_the_prayer_with_t">Finish the prayer with tasleem.</string>
+    <string name="pray_guide_desc10_female">After the tashahhud, durood, and any du\'a you wish to recite, end the prayer by:\nTurning your head to the right and saying, As-salamu alaykum wa Rahmatullahi. The angel who records your good deeds is to this side.\nTurning your head to the left and saying, As-salamu alaykum wa Rahmatullahi. The angel who records your wrongful deeds is to this side. The prayers have ended!</string>
+    <string name="internet_not_available">Internet not available</string>
+
+
+</resources>

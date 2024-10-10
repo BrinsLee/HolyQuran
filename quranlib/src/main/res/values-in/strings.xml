@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Quran Majeed</string>
+    <string name="share_kalma">Bagikan Kalma</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="time_for">Waktu sholat %s</string>
+    <string name="time_in">Di %s pada %s</string>
+    <string name="time_up">Sudah waktunya %s sejak</string>
+    <string name="time_to_next">Sholat berikutnya dalam</string>
+    <string name="downloading_downloading">Mengunduh . . .</string>
+    <string name="qurantp_download">Unduh</string>
+    <string name="downloading_complete">Unduhan Selesai</string>
+    <string name="kalma_audio">Audio Kalam</string>
+    <string name="text_text_and_translations">Pilih Terjemahan Quran</string>
+    <string name="delete_translation_message">Apakah Anda yakin ingin menghapus terjemahan ini?</string>
+    <string name="text_ok">Oke</string>
+    <string name="text_cancel">Batal</string>
+    <string name="arabic_text_error_message">Silakan masukkan hanya bahasa Arab</string>
+    <string name="stop_athan">Hentikan Adzan</string>
+    <string name="close_notification">Tutup</string>
+    <string name="set_location">Ketuk di sini untuk mengatur lokasi</string>
+    <string name="notifications">Peringatan</string>
+    <string name="qibla_notic">Catatan: Anda mungkin perlu menggerakkan perangkat dalam gerakan melingkar untuk mengatur ulang kompas</string>
+    <string name="qibla_direction">Arah kiblat dari utara:</string>
+    <string name="accuracy">Akurasi</string>
+    <string name="accuracy3">Akurasi: %s</string>
+    <string name="about_us">Pernahkah Anda ingin mendapatkan motivasi dalam hidup Anda? Jika ya, maka aplikasi ini akan membantu Anda untuk tetap termotivasi di setiap titik dalam hidup Anda dengan koleksi terbesar dari Utility Islami terbaik.</string>
+    <string name="error">Kesalahan</string>
+    <string name="unable_to_init_sensor">Tidak dapat menginisialisasi sensor untuk Kompas.</string>
+    <string name="btn_ok">Oke</string>
+    <string name="acceleration">Percepatan</string>
+    <string name="orientation">Orientasi</string>
+    <string name="accuracy_unreliable">Tidak dapat diandalkan</string>
+    <string name="accuracy_low">Rendah</string>
+    <string name="accuracy_medium">Sedang</string>
+    <string name="accuracy_high">بلند</string>
+    <string name="need_calibration">Kompas perlu dikalibrasi. Putar ponsel dengan mengulang gerakan angka delapan hingga kalibrasi selesai.</string>
+    <string name="asr">Asar</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isya</string>
+    <string name="tahajjud">Tahajud</string>
+    <string name="nextfajr">Fajr Berikutnya</string>
+    <string name="pref_header_general">Umum</string>
+    <string name="pref_title_language">Bahasa</string>
+    <string name="pref_title_numerals">Angka</string>
+    <string name="get_started">Mulai</string>
+    <string name="fetching">Sedang mengambil lokasi saat ini</string>
+    <string name="grant_all">Berikan Semua</string>
+    <string name="about_permissions">Izin yang Diperlukan</string>
+    <string name="sunrise">Matahari Terbit</string>
+    <string name="sunset">Matahari Terbenam</string>
+    <string name="duhr">Zuhur</string>
+    <string name="asar">Asar</string>
+    <string name="prayer_time">Waktu Sholat</string>
+    <string name="gregorian_date">Tanggal Hari Ini:</string>
+    <string name="islamic_date">Islam:</string>
+    <string name="settings">Pengaturan</string>
+    <string name="time_formats">Format Waktu</string>
+    <string name="calculation_methods">Metode Perhitungan</string>
+    <string name="juristic_methods">Metode Fikih</string>
+    <string name="adjusting_methods">Metode Penyesuaian</string>
+    <string name="pref_title_about">Tentang</string>
+    <string name="pref_header_notifications">Notifikasi</string>
+    <string name="pref_title_prayer_time">Waktu Sholat</string>
+    <string name="pref_title_athan">Adzan</string>
+    <string name="pref_title_muezzin">Muazin</string>
+    <string name="pref_title_vibrate">Getar</string>
+    <string name="search_city">Cari Kota</string>
+    <string name="pref_header_locations">Lokasi</string>
+    <string name="pref_title_search_city">Kota</string>
+    <string name="pref_undefined_city">Tidak Didefinisikan</string>
+    <string name="pref_title_method">Metode Perhitungan</string>
+    <string name="pref_title_mathhab_hanafi">Mazhab Hanafi</string>
+    <string name="pref_description_mathhab_hanafi">Ikuti Mazhab Hanafi untuk waktu Asar</string>
+    <string name="al_hajj">Al-Haji</string>
+    <string name="calander_al_hijira">Al-Hijrah</string>
+    <string name="calander_ashura">Asyura</string>
+    <string name="calander_malid_al_nabi">Maulid Nabi</string>
+    <string name="text_hisnual_125">Ketika Takut Menyebabkan Sesuatu atau Seseorang Terkena \'Ain###2</string>
+    <string name="text_hisnual_126">Ketika Terkejut###4</string>
+    <string name="text_hisnual_127">Ketika Menyembelih atau Melakukan Kurban###8</string>
+    <string name="text_hisnual_128">Untuk Menangkis Tipuan Setan yang Keras Kepala###2</string>
+    <string name="text_hisnual_129">Memohon Pengampunan dan Taubat###7</string>
+    <string name="text_hisnual_130">Keutamaan Mengingat dan Memuliakan Allah###7</string>
+    <string name="text_hisnual_131">Bagaimana Nabi (SAWS) Melakukan Tasbih###7</string>
+    <string name="text_hisnual_132">Aturan Umum dan Bermanfaat###2</string>
+    <string name="what_is_fasting">Apa itu Puasa?</string>
+    <string name="fasting_is_a_direction_to_Allah">Puasa adalah petunjuk menuju Jalan Allah bagi komunitas Muslim. Mereka akan bersemangat untuk ini.</string>
+    <string name="fasting_rule">Aturan Puasa</string>
+    <string name="sunnah_fasting_rule">Aturan Puasa Sunnah</string>
+    <string name="shia_fasting_rule">Aturan Puasa Syiah</string>
+    <string name="sunnah">Sunni</string>
+    <string name="tashi">Syiah</string>
+
+    <string name="fajr">Fajr</string>
+    <string name="shuruk">Matahari Terbit</string>
+    <string name="dhuhr">Zuhur</string>
+    <string name="jumu3a">Jumat</string>
+
+    <string name="internetfirst">Internet diperlukan</string>
+    <string name="pref_title_round">Pembulatan detik</string>
+    <string name="nissab">Penipu:</string>
+
+    <string name="goldsilver">Untuk mengukur harga emas atau perak yang Anda miliki selama lebih dari setahun, Anda harus menghitung harganya per 10 gram dalam mata uang lokal Anda. Setiap jenis emas yang Anda miliki harus ditambahkan (sesuai karat) secara terpisah karena perbedaan nilainya.</string>
+    <string name="nissabinfo">Menurut hukum Syariah, nisab adalah jumlah minimum yang dimiliki seseorang selama lebih dari setahun sehingga wajib membayar zakat. Anda dapat menghitung nilai nisab dalam hal nilai emas atau perak. Untuk perak, nisab adalah 21 ons perak (653,17 gram) atau setara dengan uang. Untuk emas, nisab adalah 3 ons (85,05 gram) emas atau setara dengan uang.</string>
+    <string name="zakatfitr">Ada jenis zakat lain yang wajib dibayar oleh umat Islam yaitu zakat al-Fitr. Nama ini diberikan dalam Islam untuk sedekah yang didistribusikan menjelang akhir Ramadhan. Nilai Zakat Al-Fitr sama untuk semua orang, terlepas dari perbedaan pendapatan mereka. Minimal untuk zakat adalah satu sha\' (dua genggam) makanan, biji-bijian, atau buah kering untuk setiap anggota keluarga.</string>
+    <string name="zakatcalcul">Masukkan nilai uang yang ingin Anda keluarkan zakatnya untuk mendapatkan hasil menggunakan Kalkulator Zakat</string>
+    <string name="menu_zakat">Zakat</string>
+    <string name="totalprice">Total Harga</string>
+    <string name="goldprice">Harga Emas</string>
+    <string name="calculate">Hitung</string>
+    <string name="zakatprice">Harga Zakat</string>
+    <string name="nozakat">Tidak Ada Zakat</string>
+    <string name="localprice">Harga Lokal</string>
+    <string name="localgoldprice"><u>Harga Emas Lokal</u></string>
+
+    <string name="zakathowto">Metode Perhitungan Zakat</string>
+    <string name="stepone">Langkah pertama:</string>
+    <string name="steptwo">Langkah kedua:</string>
+    <string name="stepthree">Langkah ketiga:</string>
+    <string name="steponedetail">Tambahkan nilai uang, real estat, dan kekayaan yang Anda miliki selama lebih dari setahun dengan mengurangi jumlah hutang yang harus Anda bayar dan kewajiban yang harus dibayar.</string>
+    <string name="steptwodetail">Periksa kembali nilai emas dalam mata uang lokal Anda</string>
+    <string name="stepthreedetail">Klik tombol Hitung Zakat Anda, ringkasan akan dikeluarkan yang memberi tahu Anda apakah Anda diwajibkan membayar zakat atau tidak. Jika Anda diwajibkan membayar, jumlah yang harus dibayarkan untuk zakat akan jelas. Nilai ini adalah 2,5% dari semua kepemilikan Anda.</string>
+    <string name="info">Informasi:</string>
+
+    <string name="latitude_label">Garis Lintang:</string>
+    <string name="longitude_label">Garis Bujur:</string>
+    <string name="get_updates">Dapatkan Pembaruan</string>
+    <string name="title_activity_main">Aktivitas Utama</string>
+    <string name="default_notification_channel_id">default</string>
+
+    <string name="go_to_geo_fencing">Geo-Fencing</string>
+    <string name="go_to_fetch_location_in_fore_ground">Ambil Lokasi di Latar Depan</string>
+    <string name="go_to_fetch_location_in_back_ground">Ambil Lokasi di Latar Belakang</string>
+    <string name="latitude">Garis Lintang</string>
+    <string name="longitude">Garis Bujur</string>
+    <string name="radius_in_meter">Radius dalam meter</string>
+    <string name="set_geo_fence">Tetapkan Geo-Fence</string>
+    <string name="valid_latitude">Masukkan nilai garis lintang yang valid</string>
+    <string name="valid_longitude">Masukkan nilai garis bujur yang valid</string>
+    <string name="default_radius_is_set_as_100_meter_for_geo_fencing">Radius default diatur sebagai 100 meter untuk Geo-fencing</string>
+    <string name="geo_fencing_added_successfully">Geo-fencing berhasil ditambahkan</string>
+    <string name="geo_fencing_removed_successfully">Geo-fencing berhasil dihapus</string>
+    <string name="geo_fencing_add_failed">Gagal menambahkan Geo-fencing</string>
+    <string name="geo_fencing_remove_failed">Gagal menghapus Geo-fencing</string>
+
+    <string name="errorloadprayertimes">Gagal memperbarui waktu sholat</string>
+    <string name="loadingprayertimes">Memperbarui waktu sholat...</string>
+    <string name="prayertimesloaded">Waktu sholat telah diperbarui</string>
+    <string name="itsprayertime">Waktunya sholat</string>
+    <string name="city">Kota</string>
+    <string name="action_about">Tentang</string>
+    <string name="action_rateUs">Beri kami peringkat</string>
+    <string name="day">Hari</string>
+    <string name="month">Bulan</string>
+    <string name="year">Tahun</string>
+    <string name="tohijri">Ke Hijriah</string>
+    <string name="togregorian">Ke Gregorian</string>
+    <string name="dayw">Hari dalam Minggu</string>
+
+    <string name="convert">Konversi</string>
+    <string name="restore">Pulihkan</string>
+    <string name="clear">Bersihkan</string>
+    <string name="note">*Ada kemungkinan kesalahan satu hari</string>
+
+    <!--About-->
+    <string name="copyToastText">Disalin ke Papan Klip</string>
+
+    <!-- Settings-->
+    <string name="lang">Bahasa</string>
+    <string name="content">Konten</string>
+    <string name="show_trans">Tampilkan Terjemahan</string>
+    <string name="wordbyword">Kata Demi Kata</string>
+    <string name="appearance">Tampilan (Aplikasi Perlu Dijalankan Ulang)</string>
+    <string name="arabic_font">Font Arab</string>
+    <string name="arabic_font_size">Ukuran Font Arab</string>
+    <string name="trans_font_size">Ukuran Font Terjemahan</string>
+    <string name="other">Lainnya</string>
+    <string name="screen_on">Jaga Layar Tetap Menyala</string>
+
+    <!-- -->
+    <string name="cancel">Batal</string>
+    <string name="rootWord">Akar Kata</string>
+
+    <string name="copy">Salin</string>
+    <string name="share">Bagikan</string>
+
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="allah_99_names">99 Nama Allah</string>
+    <string name="azkar">Azkar</string>
+    <string name="qibla_compass">Kompas Kiblat</string>
+    <string name="sorry_device_sensor">Maaf, perangkat Anda tidak mendukung Sensor Medan Magnetik</string>
+    <string name="tasbeeh_counter">Penghitung Tasbih</string>
+    <string name="counter">Penghitung</string>
+    <string name="reset">Atur Ulang</string>
+    <string name="count">Hitungan</string>
+    <string name="back">Kembali</string>
+    <string name="save">Simpan</string>
+    <string name="internet">INTERNET</string>
+    <string name="internet_permission">Izin ini berhubungan dengan tugas yang berkaitan dengan internet.</string>
+    <string name="access_coarse">AKSES_LOKASI_KASAR</string>
+    <string name="access_coarse_permission">Mengizinkan API menggunakan WiFi atau data seluler (atau keduanya) untuk menentukan lokasi perangkat. API mengembalikan lokasi dengan akurasi yang kira-kira setara dengan satu blok kota.</string>
+    <string name="access_fine">AKSES_LOKASI_HALUS</string>
+    <string name="access_fine_permission">Untuk menggunakan Wi-Fi P2P untuk berbagi file, dokumentasi resmi android menyarankan untuk menambahkan izin ini untuk koneksi.</string>
+    <string name="location_detail">Detail Lokasi:</string>
+    <string name="country">Negara:</string>
+    <string name="_city">Kota:</string>
+    <string name="location">Lokasi:</string>
+    <string name="counter_sound">Suara Penghitung:</string>
+    <string name="on">NYALA</string>
+    <string name="off">MATI</string>
+    <string name="alarm_setting">Pengaturan Alarm</string>
+    <string name="translation">Terjemahan:</string>
+    <string name="six_kalmas">6 Kalimat</string>
+    <string name="weather">Cuaca</string>
+    <string name="sunny">Cerah</string>
+    <string name="zakat_calculator">Kalkulator Zakat</string>
+    <string name="search">Cari</string>
+    <string name="results">Hasil</string>
+    <string name="dates_conversion">Konversi Tanggal</string>
+    <string name="pick_date">Pilih Tanggal</string>
+    <string name="search_methods">METODE PENCARIAN</string>
+    <string name="flashlight">Senter</string>
+    <string name="al_quran">Al-Qur\'an</string>
+    <string name="shirk">Syirik</string>
+
+    <string name="first_kalma">Kalimat Pertama</string>
+    <string name="second_kalma">Kalimat Kedua</string>
+    <string name="third_kalma">Kalimat Ketiga</string>
+    <string name="forth_kalma">Kalimat Keempat</string>
+    <string name="fifth_kalma">Kalimat Kelima</string>
+    <string name="sixth_kalma">Kalimat Keenam</string>
+
+    <string name="first_kalma_name">Kata Kesucian (Tayyabah)</string>
+    <string name="second_kalma_name">Kata Kesaksian (Shahaadat)</string>
+    <string name="third_kalma_name">Kata Pengagungan (Tumjeed)</string>
+    <string name="forth_kalma_name">Kata Ke-esaan (Tauhid)</string>
+    <string name="fifth_kalma_name">Kata Tobat (Astaghfar)</string>
+    <string name="sixth_kalma_name">Kata Penolakan Kafir (Rud-A-Kuffer)</string>
+
+    <string name="first_kalma_translation">(Tiada Tuhan selain Allah, Muhammad adalah Rasul Allah)</string>
+    <string name="second_kalma_translation">(Saya bersaksi bahwa tiada yang patut disembah selain Allah, Yang Maha Esa, tanpa sekutu, dan saya bersaksi bahwa Muhammad adalah hamba dan Rasul-Nya)</string>
+    <string name="third_kalma_translation">(Maha Suci Allah dan segala puji bagi Allah, dan tiada Tuhan selain Allah, dan Allah Maha Besar. Dan tiada daya dan kekuatan kecuali dengan Allah.)</string>
+    <string name="forth_kalma_translation">(Tiada yang patut disembah kecuali Allah. Dia adalah satu-satunya. Tiada sekutu bagi-Nya. Bagi-Nya Kerajaan. Dan bagi-Nya Puji-pujian. Dia memberi kehidupan dan menyebabkan kematian. Dan Dia adalah Maha Hidup. Dia tidak akan mati, selama-lamanya. Pemilik Kemuliaan dan Keagungan. Dalam tangan-Nya terdapat kebaikan. Dan Dia adalah kebaikan. Dan Dia Maha Kuasa atas segala sesuatu.)</string>
+    <string name="fifth_kalma_translation">(Saya memohon ampun kepada Allah, Tuhan saya, dari setiap dosa yang saya lakukan dengan sengaja atau tidak sengaja, secara rahasia atau terbuka, dan saya bertobat kepada-Nya dari dosa yang saya ketahui dan dari dosa yang tidak saya ketahui. Sungguh Engkau, Engkau adalah Yang Maha Mengetahui perkara tersembunyi dan Yang Menutupi kesalahan serta Yang Mengampuni dosa. Dan tiada kekuatan dan tiada daya kecuali dengan Allah, Yang Maha Tinggi, Yang Maha Besar)</string>
+    <string name="sixth_kalma_translation">(Ya Allah! Sungguh aku berlindung kepada-Mu dari, bahwa aku menyekutukan-Mu dengan sesuatu apapun dan aku mengetahuinya. Dan aku memohon ampun kepada-Mu dari apa yang tidak aku ketahui. Aku bertobat darinya dan aku melepaskan diri dari kekafiran dan kesyirikan dan kebohongan dan fitnah dan inovasi dan gunjingan dan perbuatan buruk dan tuduhan serta kedurhakaan, semuanya. Dan aku berserah diri dan aku mengatakan (tiada yang patut disembah kecuali Allah, Muhammad adalah Rasul Allah.)</string>
+
+    <string name="copied">Berhasil disalin</string>
+    <string name="send_to">Kirim ke</string>
+    <string name="permissions">Izin yang Diperlukan</string>
+    <string name="core_fundamentals">Dasar-dasar inti didasarkan pada izin ini</string>
+    <string name="allow_necessary_permissions">Anda perlu memberikan izin yang diperlukan di Pengaturan secara manual</string>
+    <string name="all_permissions_granted">Semua izin telah diberikan</string>
+    <string name="download_this">Unduh ini</string>
+    <string name="download">Unduh</string>
+    <string name="tafseer_download_message">Unduh tafsir ini?</string>
+    <string name="downloading">Mengunduh</string>
+    <string name="downloading_download_progress">Kemajuan Pengunduhan</string>
+    <string name="downloading_start_downloading">Mulai Mengunduh . . .</string>
+    <string name="downloading_mb" translatable="false">MB</string>
+    <string name="downloading_kb" translatable="false">KB</string>
+    <string name="prayer_guide">Panduan Sholat</string>
+    <string name="downloading_failed">Pengunduhan Gagal</string>
+
+    <string name="zakatMoneyTitle">Uang</string>
+    <string name="totalMoney" translatable="false">0.00</string>
+    <string name="moneyCashInHandTitle">Uang tunai di tangan</string>
+    <string name="moneyCashInHandET" translatable="false">0.00</string>
+    <string name="moneyCashInBankAccountTitle">Uang tunai di rekening bank</string>
+    <string name="moneyCashInBankET" translatable="false">0.00</string>
+    <string name="zakatGoldTitle">Emas</string>
+    <string name="totalGoldTV" translatable="false">0.00</string>
+    <string name="goldValuePriceTV">Harga Emas</string>
+    <string name="goldValuePriceET" translatable="false">00.0</string>
+    <string name="goldWeight24caratPriceTV">Harga Emas (24 karat)</string>
+    <string name="goldWeightUnitPriceET" translatable="false">00.0</string>
+    <string name="goldWeight24caratQuantityTV">Jumlah Emas</string>
+    <string name="goldWeight24caratET" translatable="false">0</string>
+    <string name="goldWeight24caratgiramTV">Gram</string>
+    <string name="gold24caratpriceTitleTV">Harga Emas 24 karat</string>
+    <string name="goldWeight24CaratPriceTV" translatable="false">00.0</string>
+    <string name="gold22CaratWeightQuentityTV">Jumlah Emas</string>
+    <string name="gold22CaratweightPerUnitPriceET" translatable="false">0</string>
+    <string name="gold22CaratWeightUnit_Txt">Gram</string>
+    <string name="goldWeight22caratTitleTV2">Harga Emas 22 karat</string>
+    <string name="goldWeight22CaratPriceTV" translatable="false">00.0</string>
+    <string name="gold18CaratWeightQuentityTV">Jumlah Emas</string>
+    <string name="gold18CaratweightPerUnitPriceET" translatable="false">0</string>
+    <string name="gold18CaratWeightUnit_Txt">Gram</string>
+    <string name="goldWeight18caratTitleTV2">Harga Emas 18 karat</string>
+    <string name="goldWeight18CaratPriceTV" translatable="false">00.0</string>
+    <string name="silverHeadingTV">Perak</string>
+    <string name="silverValueRB">Dalam uang tunai</string>
+    <string name="silverWeightRB">Dalam Berat</string>
+    <string name="silverValueTitle2TV">Harga Perak</string>
+    <string name="silverValuePriceET" translatable="false">00.0</string>
+    <string name="silverWeightTitleTV">Harga Perak</string>
+    <string name="silverWeightUnitPriceET" translatable="false">00.0</string>
+    <string name="silverWeightQuentityTV">Jumlah Perak</string>
+    <string name="silverWeightQuentityET" translatable="false">0</string>
+    <string name="weightUnit_Txt">Gram</string>
+    <string name="silverWeightTitleTV2">Harga Perak</string>
+    <string name="weightPriceTV" translatable="false">00.0</string>
+    <string name="investmentHeadingTV">Investasi</string>
+    <string name="totalInvestmentTV" translatable="false">0.00</string>
+    <string name="sharesTV">Saham</string>
+    <string name="sharesET" translatable="false">0.00</string>
+    <string name="otherInvestmentTV">Uang tunai di rekening bank</string>
+    <string name="otherInvestmentET" translatable="false">0.00</string>
+    <string name="propertyHeadingTV">Properti</string>
+    <string name="totalPropertyTV" translatable="false">0.00</string>
+    <string name="rentTV">Pendapatan Sewa</string>
+    <string name="propertyRentET" translatable="false">0.00</string>
+    <string name="propertyTV">Properti</string>
+    <string name="propertyET" translatable="false">0.00</string>
+    <string name="businessHeadingTV">Bisnis</string>
+    <string name="totalBusinessTV" translatable="false">0.00</string>
+    <string name="businessCashTV">Uang Tunai Bisnis</string>
+    <string name="businessCashET" translatable="false">0.00</string>
+    <string name="businessGoodsTV">Barang / Saham</string>
+    <string name="businessGoodsET" translatable="false">0.00</string>
+    <string name="agricultureHeadingTV">Pertanian</string>
+    <string name="totalAgriTV" translatable="false">0.00</string>
+    <string name="agriPriceTitleTV">Total pendapatan pertanian</string>
+    <string name="agriPriceET" translatable="false">00.0</string>
+    <string name="agriRainHeadingTV">Dari air hujan 10%</string>
+    <string name="agriRainET" translatable="false">00.0</string>
+    <string name="agriIrrigationHeadingTV">Dari irigasi 5%</string>
+    <string name="agriIrrigationET" translatable="false">00.0</string>
+    <string name="agriBothHeadingTV">dari keduanya 7,5%</string>
+    <string name="agriBothET" translatable="false">00.0</string>
+    <string name="cattleHeadingTV">Ternak</string>
+    <string name="totalCattleTV" translatable="false">0.00</string>
+    <string name="cattleCamelET" translatable="false">00.0</string>
+    <string name="cattleCowHeadingTV">Sapi</string>
+    <string name="cattleCowET" translatable="false">00.0</string>
+    <string name="cattleSheepHeadingTV">Domba</string>
+    <string name="cattleSheepET" translatable="false">00.0</string>
+    <string name="preciousStonesHeadingTV">Batu Permata</string>
+    <string name="totalPreciousStonesTV" translatable="false">0.00</string>
+    <string name="preciousStonesHeadingChildTV">Batu Permata</string>
+    <string name="preciousStonesET" translatable="false">00.0</string>
+    <string name="otherHeadingTV">Lainnya</string>
+    <string name="totalOtherTV" translatable="false">0.00</string>
+    <string name="otherPensionHeadingTV">Pensiun</string>
+    <string name="otherPensionET" translatable="false">00.0</string>
+    <string name="otherLoanHeadingTV">Pinjaman untuk keluarga dan lainnya</string>
+    <string name="otherAssetsHeadingTV">Aset Lainnya</string>
+    <string name="zakatPayablesTitle">Hutang yang harus dibayar</string>
+    <string name="zakatCreditCardPaymentHeadingTV">Pembayaran kartu kredit</string>
+    <string name="zakatCreditCardPaymentET" translatable="false">00.0</string>
+    <string name="zakatHomeHeadingTV">Pembayaran rumah</string>
+    <string name="homePaymentET" translatable="false">00.0</string>
+    <string name="zakatCarHeadingTV">Pembayaran mobil</string>
+    <string name="zakatCarPaymentET" translatable="false">00.0</string>
+    <string name="zakatBusinessPaymentHeadingTV">Pembayaran bisnis</string>
+    <string name="zakatBusinessPaymentET" translatable="false">00.0</string>
+    <string name="zakatFamilyDebtHeadingTV">Hutang kepada keluarga</string>
+    <string name="zakatFamilyDebtET" translatable="false">00.0</string>
+    <string name="zakatOthersDebtHeadingTV">Hutang kepada lainnya</string>
+    <string name="zakatOthersDebtET" translatable="false">00.0</string>
+    <string name="zakatTotalAssetsHeadingTV">Total Aset</string>
+    <string name="zakatTotalAssetsTV" translatable="false">0.00</string>
+    <string name="zakatDueHeadingTV">Zakat yang Harus Dibayar</string>
+    <string name="totalZakatDueTV" translatable="false">0.00</string>
+    <string name="zakatTotalSilverTV" translatable="false">0.00</string>
+    <string name="zakatDetailTitle">Detail Zakat</string>
+    <string name="zakatDetailInfo">zakat sebesar 2,5% berlaku untuk kekayaan selama satu tahun. kecuali pertanian. pertanian dibagi menjadi 3 bagian untuk zakat: dari air hujan zakat sebesar 10%, dari air irigasi zakat sebesar 5%, dan dari keduanya (air hujan dan air irigasi) zakat sebesar 7,5%</string>
+    <string name="goldValueRB">Dalam uang tunai</string>
+    <string name="goldWeightRB">Dalam Berat</string>
+    <string name="cattleCamelHeadingTV">Unta</string>
+
+    <string name="definition">Definisi</string>
+    <string name="verses">Ayat-ayat</string>
+    <string name="ahadees">Hadits</string>
+    <string name="types">Jenis</string>
+    <string name="differences">Perbedaan</string>
+    <string name="tawhid">Tauhid</string>
+
+    <string name="shirk_difference_1">Syirik besar mengeluarkan seseorang dari Islam, sedangkan syirik kecil tidak mengeluarkan seseorang dari Islam, tetapi mengurangi keimanan seseorang kepada Allah.</string>
+    <string name="shirk_difference_2">Seseorang yang mati dalam keadaan syirik besar akan berada di Neraka selama-lamanya; ini tidak berlaku bagi orang yang melakukan syirik kecil.</string>
+    <string name="shirk_difference_3">Syirik besar menghapus dan membatalkan semua amal kebaikan, sedangkan syirik kecil hanya merusak amal yang memotivasinya atau menjadi bagiannya.</string>
+    <string name="shirk_difference_4">Syirik besar tidak diampuni oleh Allah kecuali melalui tobat yang tulus yang dilakukan sebelum kematian; sedangkan syirik kecil tergantung kepada Allah apakah akan dihukum atau diampuni.</string>
+
+    <string name="shirk_definition">Shirk adalah menyekutukan seseorang selain Allah dalam aspek-aspek yang unik untuk Allah dan hak eksklusif-Nya. Shirk adalah menyembah makhluk seperti menyembah Allah, menghormati makhluk seperti harus menghormati Allah, dan memberikan sebagian keilahian-Nya kepada orang lain.</string>
+    <string name="shirk_verse_1" ><p><b>Al-Maida 05:72 :</b></p> \nMereka pasti tidak beriman yang mengatakan, \'Allah adalah Mesias, putra Maria.\' Tapi Mesias telah berkata, \'Hai Bani Israil! Sembahlah Allah, Tuhanku dan Tuhanmu. Sesungguhnya siapa pun yang mempersekutukan Allah, Allah akan melarangnya masuk surga, dan tempatnya adalah neraka. Orang-orang yang zalim tidak akan memiliki penolong.\'</string>
+    <string name="shirk_verse_2" ><p><b>Az-Zumar 39:65 :</b></p> \nTelah diwahyukan kepadamu [Nabi] dan kepada orang-orang sebelum kamu: \'Jika kamu menyekutukan siapa pun dengan Allah, semua amalmu akan sia-sia: kamu akan menjadi salah satu dari yang merugi.\'</string>
+    <string name="shirk_hadees_1" ><p><b>Al-Mu\'jam al-Kabir 11457 :</b></p> \nIbnu Abbas meriwayatkan: Rasulullah, semoga damai dan berkah Allah besertanya, bersabda, "Allah Yang Maha Kuasa berfirman: Barang siapa mengetahui bahwa Aku memiliki kekuatan untuk mengampuni dosa, Aku akan mengampuninya dan Aku tidak peduli, asalkan dia tidak menyekutukan Aku dengan siapa pun."</string>
+    <string name="shirk_hadees_2" ><p><b>Sahih Muslim 2985 :</b></p> \nAbu Huraira meriwayatkan: Rasulullah (ﷺ) bersabda bahwa Allah Yang Maha Tinggi dan Maha Agung berfirman: "Aku adalah Yang Esa, Yang tidak membutuhkan partner. Jika seseorang melakukan sesuatu di mana dia menyekutukan orang lain dengan-Ku, Aku akan meninggalkannya bersama dengan yang dia sekutukan dengan Allah."</string>
+    <string name="shirk_type_1" ><p><b>Shirk Besar (Shirk Akbar) :</b></p> \nShirk Besar adalah menyekutukan orang lain dengan Allah dalam aspek-aspek yang unik untuk Allah dalam pribadi-Nya, mengambil saingan atau sekutu untuk Allah dan menjadikannya setara dengan Allah. Shirk dalam Tuhan sebagai Rabb.</string>
+    <string name="shirk_type_2" ><p><b>Shirk Kecil (Shirk Asghar) :</b></p> \nShirk Kecil adalah apa yang secara khusus disebut sebagai shirk dalam Al-Qur\'an dan Sunnah, tetapi tidak mencapai tingkat shirk besar. Shirk kecil juga dikatakan mengarah pada shirk besar. Beberapa ulama mengatakan bahwa shirk kecil begitu luas sehingga sulit untuk mendefinisikannya dengan tepat.</string>
+    <string name="shirk_type_3" ><p><b>Riyaa (Pameran) :</b></p> \nRasulullah berkata: “Hal yang paling aku takutkan untuk kalian adalah shirk kecil.” Mereka berkata: “Ya Rasulullah, apa itu shirk kecil?” Dia berkata: “Riyaa (pameran), karena Allah akan berkata pada Hari Kiamat ketika orang-orang diberi balasan atas perbuatan mereka: ‘Pergilah kepada mereka yang kalian pamerkan dengan amal kalian di dunia, dan lihatlah apa imbalan yang kalian temukan dari mereka.’” (Ahmad) Riyaa adalah melaksanakan ibadah agar dilihat dan dipuji oleh orang-orang. Riyaa membatalkan amal; orang tersebut mendapatkan dosa alih-alih pahala dari Allah, dan hal itu membuatnya terancam hukuman.</string>
+
+    <string name="tawhid_defination">Tauhid, juga dieja Tawhid, dalam bahasa Arab Tawḥīd, (“menjadikan satu,” “menegaskan keesaan”), dalam Islam, keesaan Tuhan, dalam arti bahwa Dia adalah satu dan tidak ada tuhan selain Dia, seperti yang dinyatakan dalam formula syahadat: "Tidak ada tuhan selain Allah dan Muhammad adalah rasul-Nya". Tauhid lebih lanjut merujuk pada sifat Tuhan itu—bahwa Dia adalah satu kesatuan, tidak tersusun, tidak terdiri dari bagian-bagian, tetapi sederhana dan tidak terkombinasi. Doktrin kesatuan Tuhan dan masalah-masalah yang ditimbulkannya, seperti pertanyaan tentang hubungan antara esensi dan atribut Tuhan, muncul kembali sepanjang sebagian besar sejarah Islam. Namun, dalam terminologi para mistikus Muslim (Sufi), tauhid memiliki makna panteistik; semua esensi adalah ilahi, dan tidak ada keberadaan mutlak selain Allah. Bagi sebagian besar ulama Muslim, ilmu tauhid adalah teologi sistematis yang melaluinya pengetahuan yang lebih baik tentang Allah dapat dicapai, tetapi bagi para Sufi, pengetahuan tentang Allah hanya dapat dicapai melalui pengalaman religius dan penglihatan langsung.</string>
+    <string name="tawhid_verse_1" ><p><b>Az-Zariyat 51:56 :</b></p>  \nDan Aku (Allah) tidak menciptakan jin dan manusia kecuali untuk menyembah-Ku (saja).</string>
+    <string name="tawhid_verse_2" ><p><b>Al-An’am 6:151 :</b></p>  \nKatakanlah (Muhammad S.A.W): "Mari, aku akan bacakan apa yang Tuhanmu telah larang kepadamu: Janganlah menyekutukan sesuatu dalam ibadah kepada-Nya."</string>
+    <string name="tawhid_hadees_1" ><p><b>Sahih al-Bukhari 7373 :</b></p> \nSahih Muslim 30 Mu\'adz bin Jabal melaporkan: Nabi, semoga Allah memberkatinya, berkata, "Wahai Mu\'adz, tahukah engkau apa hak Allah atas hamba-hamba-Nya?" Aku berkata, "Allah dan Rasul-Nya yang lebih tahu." Nabi berkata, "Untuk menyembah-Nya saja dan tidak menyekutukan-Nya dengan apapun. Dan tahukah engkau apa hak mereka atas Allah?" Aku berkata, "Allah dan Rasul-Nya yang lebih tahu." Nabi berkata, "Tidak menghukum mereka jika mereka melakukannya."</string>
+    <string name="tawhid_hadees_2" ><p><b>Al-Sunan al-Kubrā lil-Nasa\'i 5760 :</b></p> \nAbu Huraira melaporkan: Rasulullah, semoga Allah memberkatinya, berkata, "Tiada Tuhan selain Allah, dan Allah adalah Yang Terbesar. Tiada Tuhan selain Allah tanpa sekutu, tiada Tuhan selain Allah. Kepunyaan-Nya kerajaan dan pujian, tiada Tuhan selain Allah. Tiada kekuatan atau daya kecuali dari Allah. Barang siapa yang mengucapkan kata-kata ini pada siang atau malam atau bulan, kemudian ia wafat pada hari itu, malam itu, atau bulan itu, dosa-dosanya akan diampuni."</string>
+    <string name="kalmas">Kalimas</string>
+    <string name="muharram_1236_ah">Muharram 1236 H</string>
+    <string name="oct_24_2012">24 Okt 2012</string>
+
+    <string name="calander_lailat_al_miraj">Lailat al Miraj</string>
+    <string name="calander_lailat_al_barat">Lailat al Barat</string>
+    <string name="calander_ramdan_start">Ramadhan (Mulai)</string>
+    <string name="calander_eid_ul_fitr">Idul Fitri</string>
+    <string name="calander_waqf_al_arafa_hajj">Wukuf di Arafah - Haji</string>
+    <string name="calander_eid_ul_azha">Idul Adha</string>
+    <string name="Hajj_guide">Panduan</string>
+    <string name="Hajj_hajj_umrah">Haji</string>
+    <string name="Hajj_umrah">Umrah</string>
+
+    <!--Islamic months-->
+    <string name="text_muharram">Muharram</string>
+    <string name="text_safar">Safar</string>
+    <string name="text_rabi_ul_awal">Rabi\'ul Awal</string>
+    <string name="text_rabi_ul_thani">Rabi\'ul Akhir</string>
+    <string name="text_jumad_al_awal">Jumadil Awal</string>
+    <string name="text_jumad_al_thani">Jumadil Akhir</string>
+    <string name="text_rajab">Rajab</string>
+    <string name="text_shaban">Sya\'ban</string>
+    <string name="text_ramdan">Ramadhan</string>
+    <string name="text_shawwal">Syawwal</string>
+    <string name="text_zul_qaadah">Dzulqa\'dah</string>
+    <string name="text_zul_hajj">Dzulhijjah</string>
+    <string name="text_today">Hari Ini</string>
+    <string name="text_done">Selesai</string>
+    <string name="text_title_isalamic_calandar">Kalender Islam</string>
+
+    <string name="prayer_formale">Pria</string>
+    <string name="prayer_forfemale">Wanita</string>
+    <string name="Quran_bookmarkadded">Penanda telah ditambahkan</string>
+
+    <!-- Quran -->
+    <string name="text_quran">Quran</string>
+    <string name="juz">Juz</string>
+    <string name="surah">Surah</string>
+    <string name="bookmarks">Penanda</string>
+    <string name="text_notes">Catatan</string>
+    <string name="no_data_found">Data Tidak Ditemukan</string>
+    <string name="selectVerseNumber">Pilih Nomor Ayat</string>
+
+    <!-- Quran Khatam -->
+    <string name="qurankhatam_khatamdescription">Khatam memungkinkan Anda untuk membuat rencana membaca Al-Quran Anda sendiri baik secara individu atau dalam kelompok dengan keluarga dan teman-teman Anda.</string>
+    <string name="qurankhatam_planmykhatambtntext">Rencanakan Khatam Saya Sendiri</string>
+    <string name="qurankhatam_wantokhatam">Saya ingin khatam pada</string>
+    <string name="qurankhatam_khatamduraton">Anda harus membaca %1$s ayat sehari untuk menyelesaikan membaca Al-Quran pada %2$s</string>
+    <string name="qurankhatam_khatamdurationbefore">Tanggal yang dipilih harus setelah tanggal saat ini</string>
+    <string name="qurankhatam_nextBtn">Berikutnya</string>
+    <string name="qurankhatam_startReading">Mulai Membaca</string>
+    <string name="qurankhatam_yes">Ya</string>
+    <string name="qurankhatam_no">Tidak</string>
+    <string name="qurankhatam_youhaveactivekhaam">Anda memiliki rencana membaca Al-Quran yang aktif, apakah Anda ingin mulai melacak?</string>
+    <string name="qurankhatam_deletqurankhatam">Hapus Khatam Al-Quran!</string>
+    <string name="qurankhatam_areYouSuretoDeleteQuranKhatam">Apakah Anda yakin ingin menghapus Khatam Al-Quran?</string>
+    <string name="qurankhatam_totalVerse">Total Ayat</string>
+    <string name="qurankhatam_readedVerse">Ayat yang Dibaca</string>
+    <string name="qurankhatam_completed">Selesai</string>
+    <string name="qurankhatam_completedsurahlist">Daftar surah yang selesai</string>
+    <string name="qurankhatam_markread">Tandai sebagai telah dibaca</string>
+    <string name="qurankhatam_markunread">Tandai sebagai belum dibaca</string>
+    <string name="qurankhatam_unreadSurah">Surah yang belum dibaca</string>
+    <string name="qurankhatam_areToUnread">Apakah Anda yakin ingin menandai surah ini sebagai belum dibaca?</string>
+    <string name="qurankhatam_WaitPlease">Harap tunggu…</string>
+    <string name="qurankhatam_deletekhatamsuccess">Khatam berhasil dihapus</string>
+    <string name="qurankhatam_title">Khatam Al-Quran</string>
+    <string name="qurankhatam_start">Mulai</string>
+    <string name="qurankhatam_planyourownkhatam">Rencanakan khatam Anda sendiri</string>
+    <string name="qurankhatam_quranreadingprogress">Kemajuan Membaca Al-Quran</string>
+    <string name="qurankhatam_verseno">Nomor Ayat %1$s</string>
+    <string name="qurankhatam_dayleft">Hari Tersisa</string>
+    <string name="qurankhatam_surahLeft">Surah Tersisa</string>
+    <string name="qurankhatam_ayatLeft">Ayat Tersisa</string>
+    <string name="qurankhatam_completedby">Selesaikan sebelum:</string>
+    <string name="qurankhatam_enteryournotehere">Masukkan Catatan Anda Di Sini</string>
+    <string name="qurankhatam_prayertimecalculationmethodmanual">Koreksi Waktu Sholat Manual</string>
+    <string name="qurankhatam_change">Ubah</string>
+    <string name="qurankhatam_quransetting">Pengaturan Al-Quran</string>
+    <string name="qurankhatam_setFont">Atur Font</string>
+    <string name="qurankhatam_setTranslation">Atur Terjemahan</string>
+    <string name="qurankhatam_setAudio">Atur Audio</string>
+    <string name="qurankhatam_audiorepeattitle">Tidak Pernah</string>
+    <string name="qurankhatam_audiorepeat1">1 Kali</string>
+    <string name="qurankhatam_audiorepeat2">2 Kali</string>
+    <string name="qurankhatam_audiorepeat3">3 Kali</string>
+    <string name="qurankhatam_audiorepeat4">4 Kali</string>
+    <string name="qurankhatam_audiorepeat5">5 Kali</string>
+    <string name="qurankhatam_audiorepeat6">Tak Terbatas</string>
+
+    <string name="set_arabic_text_size">Ukuran Teks Arab</string>
+    <string name="set_translation_text_size">Ukuran Teks Terjemahan</string>
+    <string name="asdadasadads" translatable="false">asdadasadads</string>
+    <string name="quran_khatam">Khatam Al-Quran</string>
+    <string name="ayatShare_setArabicTextColor">Atur Warna Teks Arab</string>
+    <string name="ayatShare_setTranslationTextColor">Atur Warna Teks Terjemahan</string>
+    <string name="searchinquran">Cari dalam Al-Quran</string>
+    <string name="ayatShare_Both">Keduanya</string>
+    <string name="ayatShare_translation">Terjemahan</string>
+
+    <string name="settingpg_shafi">Syafi\'i</string>
+    <string name="settingpg_never">Tidak Pernah</string>
+    <string name="settingpg_save">Simpan</string>
+    <string name="settingpg_diable">Nonaktifkan</string>
+    <string name="settingpg_miles">Mil</string>
+    <string name="settingpg_kilo_meters">Kilometer</string>
+    <string name="settingpg_test_adhan">Uji Adzan</string>
+    <string name="quransp_audio_play_option">Opsi Putar Audio</string>
+    <string name="quransp_auto_scroll">Gulir Otomatis</string>
+    <string name="quransp_keep_screen_on_while_reading">Tetap Layar Menyala Saat Membaca</string>
+    <string name="quransp_at_the_end_of_surah">Di Akhir Surah</string>
+    <string name="quransp_repeat_each_verse">Ulangi Setiap Ayat</string>
+    <string name="quransp_time">Waktu</string>
+    <string name="quransp_times">Kali</string>
+    <string name="quransp_infinite">Tak Terbatas</string>
+    <string name="quransp_reciters">Qari</string>
+    <string name="quransp_quran_reciter1">Abdul Reham Al-Sudais</string>
+    <string name="quransp_quran_reciter2">Mishari Rashid Al- Afasy</string>
+    <string name="quransp_quran_reciter3">Saad Al-Ghaamdi</string>
+    <string name="quransp_arabic">Bahasa Arab</string>
+    <string name="quransp_premium_user_can_download_all_recitation_for_offline_playback">Pengguna Premium Dapat Mengunduh Semua Bacaan Untuk Pemutaran Offline</string>
+    <string name="quransp_arabic_text">Gaya Teks Arab</string>
+    <string name="quransp_default_diacritics_or_symbols">Default (Tanda Diakritik atau Simbol)</string>
+    <string name="quransp_no_diacritics_or_symbols">Tanpa Tanda Diakritik atau Simbol</string>
+    <string name="quransp_arabic_font">Font Arab</string>
+    <string name="quransp_select_the_best_arabic_font_for_your_device">Pilih Font Arab Terbaik Untuk Perangkat Anda</string>
+    <string name="quransp_default_font">Font Default</string>
+    <string name="quransp_custom_font">Font Khusus</string>
+    <string name="qurantp_phonetic_transliteration">Transliterasi Fonetik</string>
+    <string name="qurantp_default_phonetic_transliteration">Transliterasi Fonetik Default</string>
+    <string name="qurantp_translations">Terjemahan</string>
+    <string name="qurantp_translation_1">Salomo Keyzer</string>
+    <string name="qurantp_translation_2">Kantor Presiden Maladewa</string>
+    <string name="qurantp_translation_3">Preklad I. Hrbek</string>
+    <string name="qurantp_translation_4">Abdullah Muhammad Basmeih</string>
+    <string name="qurantp_translation_5">Kementerian Agama Republik Indonesia</string>
+    <string name="qurantp_translation_6">Muhiuddin Khan</string>
+    <string name="qurantp_translation_7">Ramdane At Mansour</string>
+    <string name="qurantp_translation_8">Mustafa Mlivo</string>
+    <string name="qurantp_translation_9">Abdullah Yusuf Ali</string>
+    <string name="qurantp_translation_10">Muhammad Isa García</string>
+    <string name="qurantp_translation_11">Muhammad Hamidullah</string>
+    <string name="qurantp_translation_12">Abubakar Mahmoud Gumi</string>
+    <string name="qurantp_translation_13">Muhammad Farooq Khan dan Muhammad Ahmed</string>
+    <string name="qurantp_translation_14">Hamza Roberto Piccardo</string>
+    <string name="qurantp_translation_15">Burhan Muhammad-Amin</string>
+    <string name="qurantp_translation_16">Muhammad Karakunnu dan Vanidas Elayavoor</string>
+    <string name="qurantp_translation_17">Józefa Bielawskiego</string>
+    <string name="qurantp_translation_18">Einar Berg</string>
+    <string name="qurantp_translation_19">Hussain Ansarian</string>
+    <string name="qurantp_translation_20">Samir El-Hayek</string>
+    <string name="qurantp_translation_21">Abu Adel</string>
+    <string name="qurantp_translation_22" tools:ignore="Typos">Sherif Ahmeti</string>
+    <string name="qurantp_translation_23">Taj Mehmood Amroti</string>
+    <string name="qurantp_translation_24">Knut Bernström</string>
+    <string name="qurantp_translation_25">Ali Muhsin Al-Barwani</string>
+    <string name="qurantp_translation_26">Abdol Mohammad Ayati</string>
+    <string name="qurantp_translation_27">Yayasan Jan Turst</string>
+    <string name="qurantp_translation_28">Yakub Ibn Nugman</string>
+    <string name="qurantp_translation_29">Süleyman Ateş</string>
+    <string name="qurantp_translation_30">Muhammad Sodik Muhammad Yusuf</string>
+    <string name="qurantp_translation_31">Tzvetan Theophanov</string>
+    <string name="qurantp_translation_32">Fateh Muhammad Jalandhry</string>
+    <string name="qurantp_translation_33">Kompleks Quran Raja Fahad</string>
+    <string name="qurantp_translation_34">Tidak Diketahui</string>
+    <string name="qurantp_translation_35">Tidak Tersedia</string>
+    <string name="qurantp_translation_36">Ma Jian</string>
+    <string name="qurantp_translation_37">Syed Muhammad Zakir Hussain Shah Sialvi</string>
+    <string name="qurantp_download_phonetic_transliteration">Transliterasi Fonetik Al-Quran Ini Belum Diunduh. Apakah Anda Ingin Mengunduhnya Sekarang?</string>
+    <string name="qurantp_legal_information">Informasi Hukum</string>
+    <string name="enternotehere">Masukkan catatan Anda di sini</string>
+    <string name="tasbeehSaveBtn">Simpan</string>
+    <string name="text_font_setting">Pengaturan Font</string>
+
+    <string name="quransp_stop_playing">Hentikan Pemutaran</string>
+    <string name="quransp_repeat_the_surah">Ulangi Surah</string>
+    <string name="quransp_play_the_next_surah">Putar Surah Berikutnya</string>
+    <string name="quran_ayahshareapplink">Dapatkan Islamic Guide Pro untuk menjelajahi lebih banyak konten Islam: https://play.google.com/store/apps/details?id=%s</string>
+    <string name="searchHere...">Cari di sini…</string>
+    <string name="quran_madesuccess">Quran Khatam berhasil dibuat</string>
+    <string name="text_none">Tidak ada</string>
+    <string name="text_audio_recitations">Rekaman Audio</string>
+    <string name="connecting">Menghubungkan ....</string>
+    <string name="qurankhatam_QuranKhatamCompleted">Quran Khatam Selesai</string>
+    <string name="qurankhatam_CongrateQuranKhatmCompleted">Selamat, Anda telah menyelesaikan khatam Quran Anda</string>
+    <string name="text_ayah">Ayat</string>
+    <string name="text_copy_to_clipboard">Salin ke papan klip</string>
+    <string name="no_internet_message">Internet tidak tersedia</string>
+    <string name="emptytNoteIsnotAllowed">Catatan kosong tidak diizinkan</string>
+    <string name="note_updated_msg">Catatan Anda untuk ayat ini berhasil diperbarui.</string>
+    <string name="note_save_message">Catatan Anda untuk ayat ini berhasil disimpan.</string>
+    <string name="note_delete_msg">Catatan berhasil dihapus</string>
+    <string name="edit_as_you_want">Edit Sesuai Keinginan Anda!</string>
+    <string name="ayah_saved">Ayat Quran Tersimpan</string>
+
+    <string name="tafseer">Tafsir</string>
+    <string name="tafseer_english_Hafiz_Ibn_Kathir">Tafsir Inggris Hafiz Ibn Kathir</string>
+    <string name="tafseer_english_Mufti_Muhammad_Shafi">Tafsir Inggris Mufti Muhammad Shafi</string>
+    <string name="tafseer_russian_Saddi">Tafsir Rusia Saddi</string>
+    <string name="tafseer_arabic_Qurtubi">Tafsir Arab Qurtubi</string>
+    <string name="tafseer_arabic_Saddi">Tafsir Arab Saddi</string>
+    <string name="tafseer_arabic_Tanweer">Tafsir Arab Tanweer</string>
+    <string name="tafseer_arabic_Waseet">Tafsir Arab Waseet</string>
+    <string name="tafseer_arabic_Baghawy">Tafsir Arab Baghawy</string>
+    <string name="tafseer_english_Al_Mukhtasar">Tafsir Inggris Al-Mukhtasar</string>
+    <string name="tafseer_bengali_Bayaan_Foundation">Tafsir Bengali Yayasan Bayaan</string>
+    <string name="tafseer_bengali_King_Fahd_Quran_Printing_Complex">Tafsir Bengali Kompleks Pencetakan Quran Raja Fahd</string>
+    <string name="tafseer_bengali_Tawheed_Publication">Tafsir Bengali Penerbitan Tawheed</string>
+    <string name="tafseer_urdu_Dr_Israr_Ahmad">Tafsir Urdu Dr. Israr Ahmad</string>
+    <string name="tafseer_urdu_Hafiz_Ibn_Kathir">Tafsir Urdu Hafiz Ibn Kathir</string>
+    <string name="tafseer_urdu_Sayyid_Ibrahim_Qutb">Tafsir Urdu Sayyid Ibrahim Qutb</string>
+
+    <string name="shareDua">Bagikan Doa</string>
+    <string name="allDuas">Semua Doa</string>
+    <string name="no_dua_s_saved">Tidak ada doa yang disimpan</string>
+    <string name="downloading_rabbana_dua_audio">Mengunduh Audio Doa Rabbana</string>
+    <string name="text_rabbana_duas">Doa Rabbana</string>
+    <string name="text_rabbana_duas2">Doa Rabbana %1$s</string>
+    <string name="deleteDua">"Apakah Anda yakin ingin menghapus doa ini?"</string>
+    <string name="shareRamadanDua">Bagikan Doa Ramadan</string>
+    <string name="text_surah">Surah</string>
+    <string name="text_dua_audio">Audio Doa</string>
+    <string name="favorite_duas">Doa Favorit</string>
+
+    <string name="text_hisnul_muslim">Benteng Muslim</string>
+    <string name="ramdhan_dua">Doa Ramadan</string>
+
+    <!-- Doa Ramadan -->
+    <string name="dua_for_fasting">Doa Untuk Puasa</string>
+    <string name="dua_when_breaking_fast">Doa Saat Berbuka Puasa</string>
+    <string name="dua_for_fast_ashra">Doa Untuk Sepuluh Hari Pertama</string>
+    <string name="dua_for_second_ashra">Doa Untuk Sepuluh Hari Kedua</string>
+    <string name="dua_for_third_ashra">Doa Untuk Sepuluh Hari Ketiga</string>
+    <string name="tasbeeh_e_taraweeh">Tasbih Taraweeh</string>
+
+    <!-- Benteng Muslim -->
+    <string name="text_hisnual_1">Keutamaan Dzikir###1</string>
+    <string name="text_hisnual_2">Saat Bangun Tidur###1</string>
+    <string name="text_hisnual_3">Saat Memakai Pakaian###2</string>
+    <string name="text_hisnual_4">Saat Memakai Pakaian Baru###2</string>
+    <string name="text_hisnual_5">Kepada Orang Yang Memakai Pakaian Baru###2</string>
+    <string name="text_hisnual_6">Sebelum Melepas Pakaian###2</string>
+    <string name="text_hisnual_7">Sebelum Masuk Toilet###2</string>
+    <string name="text_hisnual_8">Setelah Keluar Toilet###6</string>
+    <string name="text_hisnual_9">Saat Memulai Wudhu###6</string>
+    <string name="text_hisnual_10">Setelah Menyelesaikan Wudhu###2</string>
+    <string name="text_hisnual_11">Saat Masuk / Keluar Rumah###2</string>
+    <string name="text_hisnual_12">Saat Pergi Ke Masjid###6</string>
+    <string name="text_hisnual_13">Saat Memasuki Masjid###6</string>
+    <string name="text_hisnual_14">Saat Keluar Dari Masjid###6</string>
+    <string name="text_hisnual_15">Tentang Adzan###6</string>
+    <string name="text_hisnual_16">Saat Memulai Shalat (setelah takbir)###6</string>
+    <string name="text_hisnual_17">Saat Ruku\' Dalam Shalat###6</string>
+    <string name="text_hisnual_18">Saat Bangkit Dari Ruku\'###6</string>
+    <string name="text_hisnual_19">Saat Sujud Dalam Shalat###6</string>
+    <string name="text_hisnual_20">Antara Dua Sujud###6</string>
+    <string name="text_hisnual_21">Saat Sujud Karena Tilawah Al-Quran###6</string>
+    <string name="text_hisnual_22">Tasyahud###6</string>
+    <string name="text_hisnual_23">Doa Untuk Nabi (SAW) Setelah Tasyahud###6</string>
+    <string name="text_hisnual_24">Setelah Tasyahud Terakhir Dan Sebelum Salam###6</string>
+    <string name="text_hisnual_25">Setelah Salam###6</string>
+    <string name="text_hisnual_26">Untuk Memohon Petunjuk Dalam Membuat Keputusan Atau Memilih Jalan Yang Benar###7</string>
+    <string name="text_hisnual_27">Di Pagi Dan Sore###1</string>
+    <string name="text_hisnual_28">Sebelum Tidur###1</string>
+    <string name="text_hisnual_29">Saat Membalikkan Badan Pada Malam Hari###1</string>
+    <string name="text_hisnual_30" tools:ignore="TypographyEllipsis">Saat Mengalami Ketidaknyamanan, Ketakutan, Kekhawatiran... Saat Tidur###1</string>
+    <string name="text_hisnual_31">Saat Melihat Mimpi Baik Atau Buruk###1</string>
+    <string name="text_hisnual_32">Doa Qunut Al-Witr###6</string>
+    <string name="text_hisnual_33">Segera Setelah Salam Dari Shalat Witr###6</string>
+    <string name="text_hisnual_34">Untuk Kecemasan Dan Kesedihan###4</string>
+    <string name="text_hisnual_35">Untuk Orang Yang Dalam Kesusahan###4</string>
+    <string name="text_hisnual_36">Saat Menghadapi Musuh Atau Orang Berwenang###4</string>
+    <string name="text_hisnual_37">Untuk Orang Yang Takut Akan Ketidakadilan Gubernur###4</string>
+    <string name="text_hisnual_38">Terhadap Musuh###4</string>
+    <string name="text_hisnual_39">Saat Takut Pada Sekelompok Orang###4</string>
+    <string name="text_hisnual_40">Untuk Orang Yang Terkena Keraguan Dalam Imannya###4</string>
+    <string name="text_hisnual_41">Menyelesaikan Hutang###4</string>
+    <string name="text_hisnual_42">Untuk Orang Yang Terganggu Oleh Bisikan Dalam Shalat Atau Tilawah###6</string>
+    <string name="text_hisnual_43">Untuk Orang Yang Urusannya Menjadi Sulit###7</string>
+    <string name="text_hisnual_44">Saat Melakukan Dosa###7</string>
+    <string name="text_hisnual_45">Untuk Mengusir Setan Dan Bisikannya###2</string>
+    <string name="text_hisnual_46">Saat Tertimpa Musibah Atau Kesulitan###7</string>
+    <string name="text_hisnual_47">Ucapan Selamat Pada Kesempatan Kelahiran###9</string>
+    <string name="text_hisnual_48">Menempatkan Anak-Anak Di Bawah Perlindungan Allah###11</string>
+    <string name="text_hisnual_49">Saat Menjenguk Orang Sakit###11</string>
+    <string name="text_hisnual_50">Keutamaan Menjenguk Orang Sakit###11</string>
+    <string name="text_hisnual_51">Saat Orang Sakit Telah Kehilangan Harapan Hidup###11</string>
+    <string name="text_hisnual_52">Petunjuk Untuk Orang Yang Menjelang Kematian###11</string>
+    <string name="text_hisnual_53">Untuk Orang Yang Tertimpa Musibah###4</string>
+    <string name="text_hisnual_54">Saat Menutup Mata Orang Yang Meninggal###11</string>
+    <string name="text_hisnual_55">Untuk Orang Meninggal Dalam Shalat Jenazah###11</string>
+    <string name="text_hisnual_56">Ketika Orang Meninggal Adalah Seorang Anak Dalam Shalat Jenazah###11</string>
+    <string name="text_hisnual_57">Ucapan Belasungkawa###11</string>
+    <string name="text_hisnual_58">Saat Menempatkan Orang Meninggal Di Kuburan###11</string>
+    <string name="text_hisnual_59">Setelah Menguburkan Orang Meninggal###11</string>
+    <string name="text_hisnual_60">Saat Mengunjungi Makam###11</string>
+    <string name="text_hisnual_61">Saat Ada Badai###10</string>
+    <string name="text_hisnual_62">Saat Mendengar Petir###10</string>
+    <string name="text_hisnual_63">Saat Memohon Hujan###10</string>
+    <string name="text_hisnual_64">Saat Hujan###10</string>
+    <string name="text_hisnual_65">Setelah Hujan###10</string>
+    <string name="text_hisnual_66">Memohon Langit Cerah###10</string>
+    <string name="text_hisnual_67">Saat Melihat Bulan Sabit###10</string>
+    <string name="text_hisnual_68">Saat Berbuka Puasa###3</string>
+    <string name="text_hisnual_69">Sebelum Makan###3</string>
+    <string name="text_hisnual_70">Setelah Selesai Makan###3</string>
+    <string name="text_hisnual_71">Doa Tamu Untuk Tuan Rumah###3</string>
+    <string name="text_hisnual_72">Untuk Orang Yang Memberikan Minuman Atau Berniat Memberikan Minuman###3</string>
+    <string name="text_hisnual_73">Saat Berbuka Puasa Di Rumah Seseorang###3</string>
+    <string name="text_hisnual_74">Untuk Orang Yang Berpuasa Saat Disuguhkan Makanan Dan Tidak Berbuka###3</string>
+    <string name="text_hisnual_75">Saat Dihina Saat Berpuasa###9</string>
+    <string name="text_hisnual_76">Saat Melihat Buah Awal Atau Prematur###10</string>
+    <string name="text_hisnual_77">Saat Bersin###9</string>
+    <string name="text_hisnual_78">Ketika Orang Kafir Memuji Allah Setelah Bersin###9</string>
+    <string name="text_hisnual_79">Untuk Pengantin Baru###2</string>
+    <string name="text_hisnual_80">Pada Malam Pernikahan Atau Saat Membeli Hewan###9</string>
+    <string name="text_hisnual_81">Sebelum Berhubungan Seksual###2</string>
+    <string name="text_hisnual_82">Saat Marah###9</string>
+    <string name="text_hisnual_83">Saat Melihat Seseorang Dalam Cobaan###9</string>
+    <string name="text_hisnual_84">Saat Mengadakan Pertemuan###9</string>
+    <string name="text_hisnual_85">Kafarat Dosa Yang Diucapkan Saat Mengakhiri Sebuah Pertemuan###9</string>
+    <string name="text_hisnual_86">Mengembalikan Permohonan Pengampunan###9</string>
+    <string name="text_hisnual_87">Untuk Orang Yang Melakukan Kebaikan Kepada Anda###9</string>
+    <string name="text_hisnual_88">Perlindungan Dari Dajjal###7</string>
+    <string name="text_hisnual_89">Untuk Orang Yang Menyatakan Cintanya Kepada Anda, Karena Allah###9</string>
+    <string name="text_hisnual_90">Untuk Orang Yang Menawarkan Sebagian Kekayaannya Kepada Anda###9</string>
+    <string name="text_hisnual_91">Untuk Orang Yang Berhutang Saat Hutangnya Dilunasi###9</string>
+    <string name="text_hisnual_92">Untuk Takut Pada Syirik###4</string>
+    <string name="text_hisnual_93">Mengembalikan Doa Setelah Memberikan Hadiah Atau Amal###9</string>
+    <string name="text_hisnual_94">Larangan Menisbahkan Sesuatu Kepada Pertanda###4</string>
+    <string name="text_hisnual_95">Saat Naik Kendaraan Atau Sarana Transportasi Apa Pun###5</string>
+    <string name="text_hisnual_96">Untuk Perjalanan###5</string>
+    <string name="text_hisnual_97">Saat Memasuki Kota Atau Desa###5</string>
+    <string name="text_hisnual_98">Saat Memasuki Pasar###5</string>
+    <string name="text_hisnual_99">Saat Kendaraan (atau sarana transportasi) Tersandung###5</string>
+    <string name="text_hisnual_100">Doa Musafir Untuk Penduduk###5</string>
+    <string name="text_hisnual_101">Doa Penduduk Untuk Musafir###5</string>
+    <string name="text_hisnual_102">Dzikir Saat Mendaki Atau Menurun###5</string>
+    <string name="text_hisnual_103">Doa Musafir Saat Fajar Mendekat###5</string>
+    <string name="text_hisnual_104">Saat Berhenti Atau Menginap###5</string>
+    <string name="text_hisnual_105">Saat Kembali Dari Perjalanan###5</string>
+    <string name="text_hisnual_106">Apa Yang Harus Dikatakan Saat Menerima Berita Yang Menyenangkan Atau Tidak Menyenangkan###4</string>
+    <string name="text_hisnual_107">Keutamaan Mengirim Doa Kepada Nabi (SAW)###7</string>
+    <string name="text_hisnual_108">Keutamaan Menyebarkan Salam Islam###9</string>
+    <string name="text_hisnual_109">Mengembalikan Salam Kepada Orang Yang Bukan Muslim###9</string>
+    <string name="text_hisnual_110">Saat Mendengar Ayam Berkokok Atau Keledai Meringkik###10</string>
+    <string name="text_hisnual_111">Saat Mendengar Anjing Menyalak Di Malam Hari###10</string>
+    <string name="text_hisnual_112">Untuk Seseorang Yang Telah Anda Hina###9</string>
+    <string name="text_hisnual_113">Etika Memuji Sesama Muslim###9</string>
+    <string name="text_hisnual_114">Untuk Orang Yang Telah Dipuji###9</string>
+    <string name="text_hisnual_115">Talbiyah Bagi Yang Sedang Melakukan Haji Atau \'Umrah###8</string>
+    <string name="text_hisnual_116">Takbîr Melewati Hajar Aswad###8</string>
+    <string name="text_hisnual_117">Antara Rukun Yamani Dan Hajar Aswad###8</string>
+    <string name="text_hisnual_118">Saat Di Gunung Safa Dan Gunung Marwah###8</string>
+    <string name="text_hisnual_119">Hari \'Arafah###8</string>
+    <string name="text_hisnual_120">Dzikir Di Muzdalifa###8</string>
+    <string name="text_hisnual_121">Saat Melempar Setiap Batu Di Jamarat###8</string>
+    <string name="text_hisnual_122">Pada Saat Kagum Dan Gembira###4</string>
+    <string name="text_hisnual_123">Saat Menerima Berita Baik###4</string>
+    <string name="text_hisnual_124">Saat Merasa Sakit Di Tubuh###11</string>
+
+    <string name="prayer_timings">Waktu Sholat</string>
+    <string name="learn_quran">Belajar Quran</string>
+    <string name="_6_kalma">6 Kalima</string>
+    <string name="islamic_calendar">Kalender Islam</string>
+    <string name="fasting_rules">Aturan Puasa</string>
+
+
+    <string name="how_to_pray">Cara Shalat</string>
+    <string name="pray_guide_desc1">Shalat (salah; jamak salawat) adalah salah satu dari lima rukun Islam. \n  \n
+        Wajib bagi semua Muslim yang sudah dewasa, dan sangat dianjurkan bagi anak-anak yang berusia sepuluh tahun ke atas, untuk menyelesaikan shalat lima waktu mereka sesuai dengan cara Nabi (SAW) melaksanakannya agar sah. Dipercayai bahwa komunikasi dengan Allah akan menghidupkan shalat dan memberikan keberanian kepada orang yang berdoa. \n \nMuslim percaya bahwa Allah berbicara kepada kita melalui Al-Qur\'an, dan shalat adalah cara kita berhubungan dengan Allah. \n \nApakah Anda hanya ingin tahu bagaimana Muslim berdoa atau jika Anda ingin belajar sendiri, tidak pernah ada kata terlambat untuk memulai.</string>
+    <string name="make_your_intention">Nyatakan niat Anda dalam hati.</string>
+    <string name="pray_guide_desc2">Sebelum memulai shalat, penting bahwa Anda memiliki niat untuk shalat.</string>
+    <string name="raise_your_hands_up">Angkat tangan Anda di samping telinga dan bahu Anda.</string>
+    <string name="pray_guide_desc3">Angkat tangan Anda di samping telinga dan bahu Anda, lalu ucapkan Allahu Akbar (الله أَكْبَر). Ini berarti "Allah Maha Besar". Lakukan ini sambil berdiri (atau duduk jika Anda tidak bisa berdiri).\n \nJari-jari harus merenggang saat tangan diangkat.</string>
+    <string name="place_your_right_hand_over">Letakkan tangan kanan Anda di atas tangan kiri Anda.</string>
+    <string name="pray_guide_desc4">Letakkan tangan Anda di pusar, di dada, atau di antara keduanya; ada perbedaan pendapat antara madzhab Islam. Tetap fokuskan mata Anda pada tanah. Ini membantu menjaga pandangan Anda tetap pada tempat kepala Anda akan bersujud nanti. Jangan biarkan mata Anda berkeliaran.\n \nBacalah doa pembuka opsional (doa istiftah):\n \nIkuti dengan membaca Surah Al-Fatiha (Surah ini dibaca di setiap rakaat):\n \nBacalah surah lain atau bagian dari Al-Qur\'an, seperti Surah Ikhlas.\n \nMembaca surah setelah Al-Fatiha hanya dilakukan dalam dua rakaat pertama shalat fardhu, sedangkan dalam sunnah mu\'akkadah dilakukan di semua rakaat.</string>
+    <string name="say_allahu_akbar">Ucapkan \"Allahu Akbar\" dan rukuk.</string>
+    <string name="pray_guide_desc5">Bungkukkan tubuh Anda sehingga punggung dan leher Anda lurus sejajar dengan tanah, jaga pandangan Anda tetap pada tanah dan letakkan jari-jari dan telapak tangan Anda pada lutut. Punggung dan kepala Anda harus berada pada sudut 90° dengan kaki Anda. Anda tidak perlu membuat sudut yang sempurna; tubuh Anda harus rileks. Posisi ini disebut ruku.</string>
+    <string name="stand_back_up_raise">Berdiri kembali (bangkit dari ruku).</string>
+    <string name="pray_guide_desc6">Saat bangkit, angkat tangan Anda di samping Anda.</string>
+    <string name="say_allahu_akbar_and_prostrate">Ucapkan Allahu Akbar dan sujud.</string>
+    <string name="pray_guide_desc7">Letakkan kepala, lutut, dan tangan Anda di lantai. Saat sujud, pastikan dahi dan hidung Anda menyentuh tanah. Posisi ini disebut sajdah.</string>
+    <string name="rise_from_sajdah">Bangkit dari sajdah dan duduk di atas lutut Anda.</string>
+    <string name="pray_guide_desc8">Letakkan kaki kiri Anda dari bola kaki ke tumit di lantai. Kaki kanan Anda hanya dengan jari-jari di lantai. Letakkan tangan Anda datar di atas lutut.</string>
+    <string name="say_allahu_akbar_and_stand_up">Ucapkan Allahu Akbar dan berdiri.</string>
+    <string name="pray_guide_desc9">Anda telah menyelesaikan satu rakaat. Tergantung pada shalatnya, Anda mungkin perlu menyelesaikan hingga tiga rakaat lagi.\n \nPada setiap rakaat kedua, setelah sajdah kedua, duduklah di atas lutut Anda lagi. Bacalah:\n \nTashahhud\nDurood</string>
+    <string name="finish_the_prayer_with_tasleem">Akhiri shalat dengan tasleem.</string>
+    <string name="pray_guide_desc10">Setelah tashahhud, durood, dan doa yang ingin Anda baca, akhiri shalat dengan:\n \nMemutar kepala ke kanan dan mengucapkan, "As-salamu alaykum wa Rahmatullahi." Malaikat yang mencatat amal baik Anda ada di sisi ini.\n \nMemutar kepala ke kiri dan mengucapkan, "As-salamu alaykum wa Rahmatullahi." Malaikat yang mencatat amal buruk Anda ada di sisi ini. Shalat telah selesai!</string>
+    <string name="pray_guide_desc1_female">Shalat (salah; jamak salawat) adalah salah satu dari lima rukun Islam.\n \nWajib bagi semua Muslim yang sudah dewasa, dan sangat dianjurkan bagi anak-anak yang berusia sepuluh tahun ke atas, untuk menyelesaikan shalat lima waktu mereka sesuai dengan cara Nabi (SAW) melaksanakannya agar sah. Dipercayai bahwa komunikasi dengan Allah akan menghidupkan shalat dan memberikan keberanian kepada orang yang berdoa.\n \nMuslim percaya bahwa Allah berbicara kepada kita melalui Al-Qur\'an, dan shalat adalah cara kita berhubungan dengan Allah.\n \nApakah Anda hanya ingin tahu bagaimana Muslim berdoa atau jika Anda ingin belajar sendiri, tidak pernah ada kata terlambat untuk memulai.</string>
+    <string name="make_your_intention_known_in_your_heart">Nyatakan niat Anda dalam hati.</string>
+    <string name="pray_guide_desc2_female">Sebelum memulai shalat, penting bahwa Anda memiliki niat untuk shalat.</string>
+    <string name="raise_your_hands_up_next_to_your_ears_and_shoulders">Angkat tangan Anda di samping telinga dan bahu Anda.</string>
+    <string name="pray_guide_desc3_female">Berdiri dengan kaki merapat, angkat tangan Anda hingga setinggi bahu, telapak tangan menghadap kiblat, jari-jari tersebar secara alami, dengan pergelangan tangan dan lengan tertutup.</string>
+    <string name="place_your_right_hand_over_your_left_hand">Letakkan tangan kanan Anda di atas tangan kiri Anda.</string>
+    <string name="pray_guide_desc4_female">Berdiri dengan kaki merapat, angkat tangan Anda hingga setinggi bahu, telapak tangan menghadap kiblat, jari-jari tersebar secara alami, dengan pergelangan tangan dan lengan tertutup. Ada perbedaan pendapat di antara madzhab Islam. Tetap fokuskan mata Anda pada tanah. Ini membantu menjaga pandangan Anda tetap pada tempat kepala Anda akan bersujud nanti. Jangan biarkan mata Anda berkeliaran.\n \n Bacalah doa pembuka opsional (doa istiftah):\n \nIkuti dengan membaca Surah Al-Fatiha (Surah ini dibaca di setiap rakaat)\n \n : Bacalah surah lain atau bagian dari Al-Qur\'an, seperti Surah Ikhlas.\n \nMembaca surah setelah Al-Fatiha hanya dilakukan dalam dua rakaat pertama shalat fardhu, sedangkan dalam sunnah mu\'akkadah dilakukan di semua rakaat.</string>
+    <string name="say_allahu_akbar_and_bend_down">Ucapkan "Allahu Akbar" dan rukuk.</string>
+    <string name="pray_guide_desc5_female">Bungkukkan tubuh Anda sehingga punggung dan leher Anda lurus sejajar dengan tanah, jaga pandangan Anda tetap pada tanah dan letakkan jari-jari dan telapak tangan Anda pada lutut. Punggung dan kepala Anda harus berada pada sudut 90° dengan kaki Anda. Anda tidak perlu membuat sudut yang sempurna; tubuh Anda harus rileks. Posisi ini disebut ruku.</string>
+    <string name="stand_back_up_raise_from_ruku">Berdiri kembali (bangkit dari ruku).</string>
+    <string name="pray_guide_desc6_female">Berdiri sepenuhnya. Ucapkan doa ini dengan suara rendah sambil berdiri dengan pandangan tetap pada tempat sujud.</string>
+    <string name="say_allahu_akbar_">Ucapkan "Allahu Akbar" dan sujud.</string>
+    <string name="pray_guide_desc7_female">Letakkan kepala, lutut, dan tangan Anda di lantai. Saat sujud, pastikan dahi dan hidung Anda menyentuh tanah. Posisi ini disebut sajdah.</string>
+    <string name="rise_from_sajdah_and_sit_on_your_knees">Bangkit dari sajdah dan duduk di atas lutut Anda.</string>
+    <string name="pray_guide_desc8_female">Tarik kedua kaki ke sisi kanan, paha bertumpuk, duduk di pantat kiri, tangan diletakkan di atas paha sehingga ujung jari menyentuh lutut, jari-jari rapat, dan pandangan mata ke pangkuan Anda.</string>
+    <string name="say_allahu_akbar_a">Ucapkan "Allahu Akbar" dan berdiri.</string>
+    <string name="pray_guide_desc9_female">Anda telah menyelesaikan satu rakaat. Tergantung pada shalat, Anda mungkin perlu menyelesaikan hingga tiga rakaat lagi.\n Pada setiap rakaat kedua, setelah sajdah kedua, duduklah di atas lutut Anda lagi. Bacalah:\nTashahhud\nDurood</string>
+    <string name="finish_the_prayer_with_t">Akhiri shalat dengan tasleem.</string>
+    <string name="pray_guide_desc10_female">Setelah tashahhud, durood, dan doa yang ingin Anda baca, akhiri shalat dengan:\nMemutar kepala ke kanan dan mengucapkan, "As-salamu alaykum wa Rahmatullahi." Malaikat yang mencatat amal baik Anda ada di sisi ini.\nMemutar kepala ke kiri dan mengucapkan, "As-salamu alaykum wa Rahmatullahi." Malaikat yang mencatat amal buruk Anda ada di sisi ini. Shalat telah selesai!</string>
+    <string name="internet_not_available">Internet tidak tersedia</string>
+
+
+</resources>

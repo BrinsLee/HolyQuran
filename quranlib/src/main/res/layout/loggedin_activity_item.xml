@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_16dp">
+
+    <TextView
+        android:id="@+id/txtMobileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Samsung SMH-098"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+        android:textColor="@color/onPrimary1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deviceInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="This Device"
+        android:layout_marginTop="@dimen/margin_6dp"
+        android:textSize="@dimen/size_10"
+        app:layout_constraintStart_toStartOf="@id/txtMobileName"
+        app:layout_constraintTop_toBottomOf="@id/txtMobileName" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logged_in_delete_setting_icon"
+        app:layout_constraintBottom_toBottomOf="@id/deviceInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtMobileName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

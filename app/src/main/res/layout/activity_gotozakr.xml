@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/hi"
+    android:orientation="vertical"
+    android:background="@color/fav_black">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+
+            android:id="@+id/circularProgressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:foregroundGravity=""
+            android:indeterminate="false"
+            android:layoutDirection="ltr"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/circular"
+            android:secondaryProgress="100" />
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/mganumber"
+            android:gravity="center"
+            android:text="@string/_0"
+            android:textColor="@color/fav_grey"
+            android:textSize="50sp" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1sp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/fav_black">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@drawable/btn_press"
+                android:text="@string/t"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/fonts"
+                android:id="@+id/alert"
+                android:onClick="alert"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/btn_press"
+                android:id="@+id/custom_btn"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:fontFamily="@font/fonts"
+                android:text="@string/n"
+                android:onClick="support" />
+
+
+
+
+
+
+            <Button
+                android:id="@+id/m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="@drawable/btn_press"
+                android:text="@string/da"
+                android:fontFamily="@font/fonts"
+                android:onClick="o"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

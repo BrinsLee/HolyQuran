@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.setting.fragments.QuranTextSettings">
+
+    <include
+        android:id="@+id/include14"
+        layout="@layout/toolbar_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardArabicTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/titleArabicTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quransp_arabic_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/quranTextSettingtoggleBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:tag="closed"
+                    app:layout_constraintBottom_toBottomOf="@+id/titleArabicTextStyle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/titleArabicTextStyle"
+                    app:tint="@color/onSurface2" />
+
+                <View
+                    android:id="@+id/dividerArabicTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/surfaceSeparatorColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titleArabicTextStyle" />
+
+
+                <RadioGroup
+                    android:id="@+id/rdgArabicTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/dividerArabicTextStyle">
+
+
+                    <RadioButton
+                        android:id="@+id/rdoNone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/onSurface2"
+                        android:text="@string/text_none"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDefault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/onSurface2"
+                        android:text="@string/quransp_default_diacritics_or_symbols"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/rdoNoSymbols"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/onSurface2"
+                        android:text="@string/quransp_no_diacritics_or_symbols"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/quranTExtSettingsAlViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:constraint_referenced_ids="dividerArabicTextStyle,rdgArabicTextStyle" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/firstSeprator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@color/surfaceSeparatorColor"
+                app:layout_constraintEnd_toEndOf="@+id/cardArabicTextStyle"
+                app:layout_constraintStart_toStartOf="@+id/cardArabicTextStyle"
+                app:layout_constraintTop_toBottomOf="@id/cardArabicTextStyle" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardPhoneticTransliteration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardArabicTextStyle"
+                app:layout_constraintStart_toStartOf="@+id/cardArabicTextStyle"
+                app:layout_constraintTop_toBottomOf="@id/firstSeprator">
+
+                <TextView
+                    android:id="@+id/tvPhoneticTransliteration"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/qurantp_phonetic_transliteration"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/PhoneticTransliterationSwitch"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/PhoneticTransliterationSwitch"
+                    style="@style/Widget.App.Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:checked="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvPhoneticTransliteration"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvPhoneticTransliteration"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/secondSeprator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@color/surfaceSeparatorColor"
+                app:layout_constraintEnd_toEndOf="@+id/cardArabicTextStyle"
+                app:layout_constraintStart_toStartOf="@+id/cardArabicTextStyle"
+                app:layout_constraintTop_toBottomOf="@id/cardPhoneticTransliteration" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardSetTranslations"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardPhoneticTransliteration"
+                app:layout_constraintStart_toStartOf="@+id/cardPhoneticTransliteration"
+                app:layout_constraintTop_toBottomOf="@id/secondSeprator">
+
+                <TextView
+                    android:id="@+id/tvTranslations"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:text="@string/qurantp_translations"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnTranslation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/btnTranslation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:tag="closed"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvTranslations"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvTranslations"
+                    app:tint="@color/onSurface2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/fourthSeprator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@color/surfaceSeparatorColor"
+                app:layout_constraintEnd_toEndOf="@+id/cardSetTranslations"
+                app:layout_constraintStart_toStartOf="@+id/cardSetTranslations"
+                app:layout_constraintTop_toBottomOf="@id/cardSetTranslations" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardQuranVoice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="@+id/fourthSeprator"
+                app:layout_constraintStart_toStartOf="@+id/fourthSeprator"
+                app:layout_constraintTop_toBottomOf="@+id/fourthSeprator">
+
+                <TextView
+                    android:id="@+id/tvAudio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:text="@string/text_audio_recitations"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnAudio"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/btnAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:tag="closed"
+                    app:layout_constraintBottom_toBottomOf="@id/tvAudio"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvAudio"
+                    app:tint="@color/onSurface2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tafseerLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/surfaceColor1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:contentPadding="@dimen/margin_16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cardQuranVoice"
+                app:layout_constraintStart_toStartOf="@+id/cardQuranVoice"
+                app:layout_constraintTop_toBottomOf="@+id/cardQuranVoice"
+                app:strokeColor="@color/surfaceColor2"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/tafseerLinearlayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/btnChangeTafseer"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tafseer"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tafseerInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            tools:text="Urdu by Dr. Asrar" />
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnChangeTafseer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:text="@string/qurankhatam_change"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardArabicFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:contentPadding="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardPhoneticTransliteration"
+                app:strokeColor="@color/onPrimary1"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvArabicFont"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quransp_arabic_font"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btnArabicFont"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnArabicFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="@string/qurankhatam_setFont"
+                        android:textAllCaps="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:strokeColor="@color/onPrimary1"
+                        app:strokeWidth="2dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        android:visibility="gone"
+        app:adUnitId="@string/ad_banner_id_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

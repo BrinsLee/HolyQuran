@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_allduas"
+    app:startDestination="@id/allDuaFragment">
+
+    <fragment
+        android:id="@+id/allDuaFragment"
+        android:name="com.ihyas.soharamkarubar.ui.duas.AllDuas"
+        android:label="@string/allDuas"
+        tools:layout="@layout/fragment_all_duas">
+        <action
+            android:id="@+id/action_allDuasFragment_to_ramadnDuaFragment"
+            app:destination="@id/ramadandua" />
+        <action
+            android:id="@+id/action_allDuasFragment_to_hisnulmuslim"
+            app:destination="@id/hisnulmuslim" />
+        <action
+            android:id="@+id/action_allDuasFragment_to_rabbanaDuaFragment"
+            app:destination="@id/rabbanaDua" />
+        <action
+            android:id="@+id/action_allDuaFragment_to_favoriteDuas"
+            app:destination="@id/favoriteDuas" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rabbanaDua"
+        android:name="com.ihyas.soharamkarubar.ui.duas.rabbanadua.RabbanaDuaFragment"
+        android:label=""
+        tools:layout="@layout/fragment_rabbana_dua">
+        <argument
+            android:name="index"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hisnulmuslim"
+        android:name="com.ihyas.soharamkarubar.ui.duas.hisnulmuslim.HisnulMuslimDisplayFragment"
+        android:label=""
+        tools:layout="@layout/fragment_hisnul_muslim_display">
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ramadandua"
+        android:name="com.ihyas.soharamkarubar.ui.duas.ramadhanduas.RamadanDuaFragment"
+        android:label=""
+        tools:layout="@layout/fragment_ramadn_dua">
+        <argument
+            android:name="index"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteDuas"
+        android:name="com.ihyas.soharamkarubar.ui.favoriteduas.FavoriteDuas"
+        android:label="fragment_favorite_duas"
+        tools:layout="@layout/fragment_favorite_duas">
+        <action
+            android:id="@+id/action_favoriteDuas_to_rabbanaDuaFavoriteFragment"
+            app:destination="@id/rabbanaDuaFavoriteFragment" />
+        <action
+            android:id="@+id/action_favoriteDuas_to_hisnulMuslimFavoriteDua"
+            app:destination="@id/hisnulMuslimFavoriteDua" />
+        <action
+            android:id="@+id/action_favoriteDuas_to_ramadanFavoriteDua"
+            app:destination="@id/ramadanFavoriteDua" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rabbanaDuaFavoriteFragment"
+        android:name="com.ihyas.soharamkarubar.ui.favoriteduas.fragments.RabbanaDuaFavoriteFragment"
+        android:label="fragment_rabbana_dua_favorite"
+        tools:layout="@layout/fragment_rabbana_dua_favorite">
+    <argument
+        android:name="index"
+        app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hisnulMuslimFavoriteDua"
+        android:name="com.ihyas.soharamkarubar.ui.favoriteduas.fragments.HisnulMuslimFavoriteDua"
+        android:label="fragment_hisnul_muslim_favorite_dua"
+        tools:layout="@layout/fragment_hisnul_muslim_favorite_dua" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/ramadanFavoriteDua"
+        android:name="com.ihyas.soharamkarubar.ui.favoriteduas.fragments.RamadanFavoriteDua"
+        android:label="fragment_ramadan_favorite_dua"
+        tools:layout="@layout/fragment_ramadan_favorite_dua" >
+        <argument
+            android:name="index"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

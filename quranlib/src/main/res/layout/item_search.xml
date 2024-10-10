@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/ayahReference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/onPrimary1" />
+
+    <TextView
+        android:id="@+id/ayahDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@id/ayahReference"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/onPrimary1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ayahReference"
+        android:layout_marginTop="4dp"
+        android:background="@color/onPrimary1" />
+
+</RelativeLayout>

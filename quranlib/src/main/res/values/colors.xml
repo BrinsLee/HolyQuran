@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#FFFFFF</color>
+    <color name="onSurface1">#23374D</color>
+<!--    <color name="onSurface2">#009688</color>-->
+    <color name="onSurface2">#0f76df</color>
+    <color name="onSurface3">#9D9D9D</color>
+    <color name="onSurface4">#23374D</color>
+    <color name="onSurface5">#9D9D9D</color>
+    <color name="primaryVariant">#F7F7F7</color>
+    <color name="surfaceSeparatorColor">#E6E6E6</color>
+    <color name="transparentColor">#00FFFFFF</color>
+    <color name="surfaceColor1">#FFFFFF</color>
+    <color name="surfaceColor2">#E6E6E6</color>
+    <color name="surfaceColor3">#FFFFFF</color>
+    <color name="navigationBar1">#E6E6E6</color>
+    <color name="navigationBar2">#36777d</color>
+    <color name="onSurfaceBar2">#FFFFFF</color>
+    <color name="onPrimary1">#23374D</color>
+    <color name="onPrimary2">@color/onSurface2</color>
+    <color name="onPrimary3">#9D9D9D</color>
+    <color name="navigationBarSurface">#FFFFFF</color>
+    <color name="backBtn_backgroundColor">#4DFFFFFF</color>
+    <color name="cal_normal_color">#0F3A31</color>
+    <color name="cal_press_color">#279B84</color>
+    <color name="purple_200">#97E5D7</color>
+    <color name="purple_500">#279B84</color>
+    <color name="purple_700">#0F3A31</color>
+    <color name="screenBackground">#F2FFFD</color>
+    <color name="color_seven">#36777d</color>
+    <color name="color_eight">#f54748</color>
+    <color name="color_nine">#ac66cc</color>
+    <color name="color_ten">#ff96ad</color>
+    <color name="color_eleven">#fff5b7</color>
+    <color name="color_twelve">#fff8d9</color>
+    <color name="color_thirteen">#480032</color>
+    <color name="color_fourteen">#fc5404</color>
+    <color name="color_fifteen">#cc9b6d</color>
+    <color name="color_sixteen">#ffd56b</color>
+    <color name="color_seventeen">#fb3640</color>
+    <color name="color_eighteen">#bdc7c9</color>
+    <color name="color_nineteen">#51c4d3</color>
+    <color name="color_twenty">#798777</color>
+    <color name="color_calendar_bar">#279B84</color>
+    <color name="color_calendar_circle">#279B84</color>
+    <color name="grey_line_prayer_tracker">#EEEEEE</color>
+    <color name="grey_font_color_Prayer_tracker">#E5E5E5</color>
+    <color name="grey_font_month_color">#848484</color>
+    <color name="tracker_dashboard_card_line">#DBDBDB</color>
+    <color name="tracker_dashboard_check_line">#9E9E9E</color>
+    <color name="teal_700">#9A9A9A</color>
+
+    <color name="PurpleTheme">#CD24FF</color>
+    <color name="RedTheme">#FF0000</color>
+    <color name="GreenTheme">#02CE00</color>
+    <color name="BlueTheme">#0085FF</color>
+    <color name="OrangeTheme">#EC8E00</color>
+    <color name="GoldenTheme">#EACC53</color>
+
+    <color name="colorPrimary">#5A98CA</color>
+    <color name="colorPrimaryDark">#005DB3</color>
+    <color name="colorAccent">#5D92BD</color>
+    <color name="colortrans">#BE5D92BD</color>
+    <color name="black">#000000</color>
+    <color name="dullblack">#2E2E2E</color>
+    <color name="white">#ffffff</color>
+    <color name="white_dull">#DDDDDD</color>
+    <color name="teal_200">#00000029</color>
+    <color name="bgcolor">#51466A87</color>
+    <color name="blackdull">#191919</color>
+    <color name="colorLocation">#b71513</color>
+    <color name="colorDate">#b71513</color>
+    <color name="colorPrayerTime">#795548</color>
+    <color name="md_white_1000">#ffffff</color>
+    <color name="md_red_400">#EF5350</color>
+    <color name="watermelon">#e64a3c</color>
+    <color name="background">#F6F7F9</color>
+    <color name="lightblack">#393939</color>
+    <color name="dull_black">#262626</color>
+    <color name="highlight_color">#FFC107</color>
+
+    <color name="mushaf2">#eeeade</color>
+    <color name="mushaf3">#ede6d3</color>
+    <color name="mushaf4">#ddcca2</color>
+    <color name="mushaf5">#dcd69c</color>
+
+    <color name="blue_1">#e1e3f0</color>
+    <color name="blue_2">#bec2dd</color>
+    <color name="blue_3">#AEB2D1</color>
+    <color name="blue_4">#6D7DDB</color>
+    <color name="blue_5">#5D6ECF</color>
+    <color name="blue_6">#4556B6</color>
+    <color name="blue_7">#4556B6</color>
+
+    <!-- indigo -->
+    <color name="md_indigo_50">#E8EAF6</color>
+    <color name="md_indigo_100">#C5CAE9</color>
+    <color name="md_indigo_200">#9FA8DA</color>
+    <color name="md_indigo_300">#7986CB</color>
+    <color name="md_indigo_400x">#4559c4</color>
+    <color name="md_indigo_500x">#3C4DB1</color>
+    <color name="md_indigo_800">#283593</color>
+    <color name="md_indigo_800x">#27348D</color>
+
+    <!-- green -->
+    <color name="md_green_50">#E8F5E9</color>
+    <color name="md_green_100">#C8E6C9</color>
+    <color name="md_green_200">#A5D6A7</color>
+    <color name="md_green_300">#81C784</color>
+    <color name="md_green_400">#66BB6A</color>
+    <color name="md_green_600">#43A047</color>
+    <color name="md_green_600x">#45A549</color>
+    <color name="md_green_700">#388E3C</color>
+    <color name="md_green_700x">#3D9740</color>
+    <color name="md_green_800">#2E7D32</color>
+
+    <color name="window_background_color">#2f2f37</color>
+    <color name="compass_foreground_color">#2f2f37</color>
+    <color name="compass_background_color">#1e1d23</color>
+    <color name="compass_text_secondary_color">#c0bfc5</color>
+    <color name="compass_text_primary_color">#ffffff</color>
+    <color name="compass_accent_color">#03a9f4</color>
+</resources>

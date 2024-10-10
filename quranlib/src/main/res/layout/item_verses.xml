@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/onSurface2"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvCounter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_ayah_bg_white"
+            android:backgroundTint="@color/onSurface2"
+            android:gravity="center"
+            android:text="1. "
+            android:textColor="@color/onSurface2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvSurahEnglishName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@id/tvSurahUrduName"
+            android:layout_toEndOf="@id/tvCounter"
+            android:text="Allah"
+            android:textAlignment="viewStart"
+            android:textColor="@color/onPrimary1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvSurahUrduName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:text="اَ للّ"
+            android:textColor="@color/onSurface2"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</layout>

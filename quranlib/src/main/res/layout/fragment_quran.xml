@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.quran.QuranFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/include5"
+                layout="@layout/toolbar_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/constraintLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/onSurface2"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include5">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/quranKhatamView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/quran_toplogo"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/quranProgressBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:drawablePadding="2dp"
+                            android:text="@string/qurankhatam_quranreadingprogress"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:drawableTint="@color/cal_press_color"
+                            app:layout_constraintBottom_toTopOf="@+id/quranProgresSurahProgress"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/quranProgressCurrentSurah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Surah 1"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            app:layout_constraintStart_toStartOf="@+id/imageView5"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                        <ProgressBar
+                            android:id="@+id/quranProgresSurahProgress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:progressBackgroundTint="@color/black"
+                            android:progressTint="@color/white"
+                            app:layout_constraintBottom_toTopOf="@+id/startReadingBtn"
+                            app:layout_constraintEnd_toEndOf="@+id/quranProgressBtn"
+                            app:layout_constraintStart_toStartOf="@+id/quranProgressBtn"
+                            app:layout_constraintTop_toBottomOf="@+id/quranProgressBtn" />
+
+                        <TextView
+                            android:id="@+id/startReadingBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+                            android:drawablePadding="10dp"
+                            android:includeFontPadding="false"
+                            android:padding="5dp"
+                            android:text="@string/qurankhatam_startReading"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:visibility="visible"
+                            app:drawableEndCompat="@drawable/startreadicon"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/quranProgresSurahProgress"
+                            app:layout_constraintTop_toBottomOf="@+id/quranProgresSurahProgress" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/noKhatamView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:text="@string/qurankhatam_planyourownkhatam"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toTopOf="@+id/textView7"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="@string/qurankhatam_start"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+
+                            app:drawableTint="@color/white"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                            app:layout_constraintStart_toStartOf="@+id/textView6"
+                            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/quran_toplogo"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/allView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="constraintLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="12dp" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/quran_TabLayout"
+                style="@style/QuranTabStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:tabGravity="start"
+                app:tabMode="auto">
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/quran_ViewPager"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toTopOf="@id/adView7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quran_TabLayout" />
+            <FrameLayout
+                android:id="@+id/adView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </FrameLayout>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar4"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/onPrimary1"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

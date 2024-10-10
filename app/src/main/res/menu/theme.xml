@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="@string/m"
+    android:id="@+id/one"
+    android:contentDescription="@string/hi"/>
+    <item
+        android:title="@string/a"
+        android:id="@+id/two"
+        android:contentDescription="@string/hi"/>
+    <item
+        android:title="@string/naby"
+        android:id="@+id/three"
+        android:contentDescription="@string/hi"/>
+    <item
+        android:title="@string/_1"
+        android:id="@+id/four"
+        android:contentDescription="@string/hi"/>
+    <item
+        android:title="@string/stopalert"
+        android:id="@+id/five"
+        android:contentDescription="@string/hi"/>
+
+</menu>

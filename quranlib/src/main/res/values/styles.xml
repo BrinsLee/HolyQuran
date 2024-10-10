@@ -1,0 +1,95 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/md_indigo_300</item>
+    </style>
+
+    <style name="AppThemeThree" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeTwo" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+
+        <item name="outerCircleColor">@color/md_indigo_300</item>
+        <item name="middleCircleColor">@color/md_indigo_400x</item>
+        <item name="innerCircleColor">@color/md_indigo_500x</item>
+        <item name="indicatorBackgroundColor">@color/md_indigo_800x</item>
+        <item name="indicatorTextColor">@color/md_indigo_50</item>
+        <item name="indicatorFieldColor">@color/blue_3</item>
+        <item name="smallMarkColor">@color/blue_2</item>
+        <item name="bigMarkColor">@color/md_indigo_50</item>
+        <item name="primaryTextColor">@color/md_indigo_50</item>
+        <item name="compassTextColor">@color/md_indigo_50</item>
+        <item name="secondaryTextColor">@color/md_indigo_100</item>
+        <item name="northMarkColor">@color/md_red_400</item>
+        <item name="accelerometerGridColor">@color/blue_1</item>
+        <item name="accelerometerBallColor">@color/blue_1</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppFullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:divider">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/dullblack</item>
+
+    </style>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme.Mushaf" parent="AppTheme.Base">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+        <item name="android:windowBackground">@color/mushaf2</item>
+        <item name="android:colorBackgroundCacheHint">@color/mushaf2</item>
+        <item name="pagerTitleStripBackground">#88b131</item>
+        <item name="pagerTitleStripTextColor">#fff</item>
+    </style>
+
+    <style name="AppTheme.White" parent="AppTheme.Base">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="pagerTitleStripBackground">#33b5e5</item>
+        <item name="pagerTitleStripTextColor">#fff</item>
+    </style>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_fasting"
+    app:startDestination="@id/nav_fasting_rule_fragment">
+    <fragment
+        android:id="@+id/nav_fasting_rule_fragment"
+        android:name="com.ihyas.soharamkarubar.ui.fastingrule.FastingRuleListFragment"
+        android:label=""
+        tools:layout="@layout/fragment_fasting_rule_list">
+        <action
+            android:id="@+id/action_fasting_main_to_sunnah_detail"
+            app:destination="@id/nav_aly_sunnah_fragment" />
+        <action
+            android:id="@+id/action_fasting_main_to_Tashi_detail"
+            app:destination="@id/nav_aly_tashi_fragment" />
+    </fragment>
+    <fragment android:id="@+id/nav_aly_sunnah_fragment"
+        android:name="com.ihyas.soharamkarubar.ui.fastingrule.AlySunnahFastingRuleFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_aly_sunnah_fasting_rule"/>
+    <fragment
+        android:id="@+id/nav_aly_tashi_fragment"
+        android:name="com.ihyas.soharamkarubar.ui.fastingrule.AlyTashiFastingRuleFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_aly_tashi_fasting_rule"/>
+
+
+</navigation>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.ihyas.soharamkarubar.ui.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/activity_splash_lib">
+
+        <action
+            android:id="@+id/navigateToDashboard"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/navigateToPermissionDetails"
+            app:destination="@id/permissionDetailsFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/permissionDetailsFragment"
+        android:name="com.ihyas.soharamkarubar.ui.permission.PermissionDetailsFragment"
+        android:label="PermissionDetailsFragment"
+        tools:layout="@layout/activity_permission_detail">
+
+        <action
+            android:id="@+id/navigateToDashboard"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/permissionDetailsFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/navigateToCompass"
+            app:destination="@id/compassFragment"
+            app:popUpTo="@id/permissionDetailsFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.ihyas.soharamkarubar.ui.dashboard.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/activity_dashboard">
+
+        <action
+            android:id="@+id/navigateToSetting"
+            app:destination="@id/settingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+
+        <action
+            android:id="@+id/navigateToPrayer"
+            app:destination="@id/prayerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/navigateToTasbeeh"
+            app:destination="@id/tasbeehFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/navigateToShirkFragment"
+            app:destination="@id/shirkFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/navigateToCompass"
+            app:destination="@id/compassFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/navigateToKalma"
+            app:destination="@id/kalmaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/navigateToAzkar"
+            app:destination="@id/graph_allduas" />
+
+        <action
+            android:id="@+id/navigateToZakat"
+            app:destination="@id/zakatFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/navigateToWeather"
+            app:destination="@id/weatherFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/navigateToAsma"
+            app:destination="@id/asmaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/navigateToCalendar"
+            app:destination="@id/calendarFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/navigateToPrayerGuide"
+            app:destination="@id/prayerGuideFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/action_navigation_home_to_graph_quran"
+            app:destination="@id/graph_quran" />
+
+        <action
+            android:id="@+id/action_navigation_home_to_graph_fasting"
+            app:destination="@id/graph_fasting" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_prayerGuideFragment"
+            app:destination="@id/prayerGuideFragment" />
+
+    </fragment>
+
+    <include app:graph="@navigation/graph_fasting" />
+
+    <include app:graph="@navigation/graph_quran" />
+
+    <include app:graph="@navigation/graph_allduas" />
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.ihyas.soharamkarubar.ui.setting.fragments.AppSettingFragment"
+        android:label="AppSettingFragment"
+        tools:layout="@layout/fragment_app_setting">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/prayerFragment"
+        android:name="com.ihyas.soharamkarubar.ui.prayer.PrayerFragment"
+        android:label="PrayerFragment"
+        tools:layout="@layout/activity_prayer">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tasbeehFragment"
+        android:name="com.ihyas.soharamkarubar.ui.tasbeeh.TasbeehFragment"
+        android:label="TasbeehFragment"
+        tools:layout="@layout/activity_counter">
+
+        <action
+            android:id="@+id/action_tasbeehFragment_to_graph_allduas"
+            app:destination="@id/graph_allduas" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shirkFragment"
+        android:name="com.ihyas.soharamkarubar.ui.shirk.ShirkFragment"
+        android:label="ShirkFragment"
+        tools:layout="@layout/fragment_shirk">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/compassFragment"
+        android:name="com.ihyas.soharamkarubar.ui.compass.CompassFragment"
+        android:label="CompassFragment"
+        tools:layout="@layout/activity_compass">
+
+        <action
+            android:id="@+id/action_compassFragment_to_prayerFragment"
+            app:destination="@id/prayerFragment" />
+
+        <action
+            android:id="@+id/action_compassFragment_to_permissionDetails"
+            app:destination="@id/permissionDetailsFragment"
+            app:popUpTo="@id/compassFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/kalmaFragment"
+        android:name="com.ihyas.soharamkarubar.ui.kalma.KalmaFragment"
+        android:label="KalmaFragment"
+        tools:layout="@layout/activity_six_kalmas">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/zakatFragment"
+        android:name="com.ihyas.soharamkarubar.ui.zakat.ZakatFragment"
+        android:label="ZakatFragment"
+        tools:layout="@layout/fragment_zakat">
+
+        <action
+            android:id="@+id/navigateToGoldPrice"
+            app:destination="@id/goldPriceFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/goldPriceFragment"
+        android:name="com.ihyas.soharamkarubar.ui.gold_price.GoldPriceFragment"
+        android:label="GoldPriceFragment"
+        tools:layout="@layout/activity_gold_price">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.ihyas.soharamkarubar.ui.weather.WeatherFragment"
+        android:label="WeatherFragment"
+        tools:layout="@layout/activity_weather_widget">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/asmaFragment"
+        android:name="com.ihyas.soharamkarubar.ui.asma.AsmaFragment"
+        android:label="AsmaFragment"
+        tools:layout="@layout/activity_allah_names">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.ihyas.soharamkarubar.ui.islamic_calendar.CalendarFragment"
+        android:label="CalendarFragment"
+        tools:layout="@layout/fragment_calendar">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/prayerGuideFragment"
+        android:name="com.ihyas.soharamkarubar.ui.prayer_guide.PrayerGuideMainFragment"
+        android:label="PrayerGuideFragment"
+        tools:layout="@layout/fragment_prayer_guide_main">
+
+
+
+
+    </fragment>
+
+</navigation>

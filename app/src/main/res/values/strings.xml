@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">Quran Pashto قرآن پښتو</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">د قرآن پښتو ترجمه</string>
+    <string name="nav_header_subtitle"> إحياء السنة فاونډیشن</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Method of use</string>
+    <string name="menu_gallery">Create an app</string>
+    <string name="menu_slideshow">Rating</string>
+    <string name="menu_tools">Go to mark</string>
+    <string name="menu_share">Share the app</string>
+    <string name="menu_send">Contact (Akçod)</string>
+    <string name="agza">mercury</string>
+    <string name="hi">hi</string>
+    <string name="fhares">Surahs</string>
+
+    <string name="is">further</string>
+
+    <string name="zakr">Message from allah</string>
+    <string name="alah">to know message</string>
+    <string name="notification">Reminder of mention</string>
+    <string name="messag">Contact</string>
+    <string name="suppo">cooperate</string>
+    <string name="aler">Notifications</string>
+    <string name="_0">0</string>
+    <string name="_1">Every 12 hours.</string>
+    <string name="stopalert">Close reminder mention</string>
+    <string name="m">Every 30 minutes.</string>
+    <string name="a">every hour.</string>
+    <string name="naby">every 6 hours.</string>
+    <string name="stop">stop</string>
+    <string name="zak">Open Digital Tasbeeh</string>
+    <string name="zakrallah">Did you pray today?</string>
+    <string name="t">Mention Reminder</string>
+    <string name="n">More of our apps</string>
+    <string name="da">Contact us</string>
+    <string name="e">night </string>
+    <string name="marks">Sections</string>
+    <string name="parties">hi</string>
+
+
+    <string name="close">Close</string>
+    <string name="continue1">Continue</string>
+    <string name="congrat">Congratsا</string>
+    <string name="dowell">You do wellً</string>
+    <string name="gotostore">Go</string>
+    <string name="ratetheapp">If you like the app, go to rate it</string>
+    <string name="ratingapp">Do you like the app?</string>
+    <string name="light">light</string>
+    <string name="mark">mark</string>
+    <string name="add">add</string>-->
+
+    <!-- English Copy -->
+    <!--  <string name="app_name">Quran Kareem</string>
+   <string name="navigation_drawer_open">Open navigation drawer</string>
+   <string name="navigation_drawer_close">Close navigation drawer</string>
+   <string name="nav_header_title">Quran Kareem</string>
+   <string name="nav_header_subtitle">The Constitution of Lifeً</string>
+   <string name="nav_header_desc">Navigation header</string>
+   <string name="action_settings">Settings</string>
+
+   <string name="menu_home">Doaa</string>
+   <string name="menu_gallery">More app</string>
+   <string name="menu_slideshow">Rate app</string>
+   <string name="menu_tools">Go to mark</string>
+   <string name="menu_share">Share app</string>
+   <string name="menu_send">Contact us </string>
+   <string name="agza">Parties</string>
+   <string name="hi">hi</string>
+   <string name="fhares">Fahres</string>
+
+   <string name="is">More</string>
+
+   <string name="zakr">Message from allah</string>
+   <string name="alah">to know message</string>
+   <string name="notification">Notifications</string>
+   <string name="messag">Contact us</string>
+   <string name="suppo">Support us</string>
+   <string name="aler">Notifications</string>
+   <string name="_0">0</string>
+   <string name="_1">notify every hour</string>
+   <string name="stopalert">close notifications</string>
+   <string name="m">notify every 10 minutes</string>
+   <string name="a">notify every 20 minute</string>
+   <string name="naby">notify every 30 minute</string>
+   <string name="stop">stop</string>
+   <string name="zak">Go to zakr allah</string>
+   <string name="zakrallah">Did you remember allah today? </string>
+   <string name="t"> Notifications</string>
+   <string name="n">Support us</string>
+   <string name="da">Contact us</string>
+   <string name="e">night </string>
+   <string name="marks">Parties</string>
+   <string name="parties">hi</string>
+
+
+   <string name="close">Close</string>
+   <string name="continue1">Continue</string>
+   <string name="congrat">Congratsا</string>
+   <string name="dowell">You do wellً</string>
+   <string name="gotostore">Go</string>
+   <string name="ratetheapp">If you like the app, go to rate it</string>
+   <string name="ratingapp">Do you like the app?</string>
+   <string name="light">light</string>
+   <string name="mark">mark</string>
+   <string name="add">add</string>-->
+
+
+    <!--remove the comment below and delete all above if you want the app in arabic language only-->
+
+    <!--  <string name="app_name">القرآن الكريم</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">القرآن الكريم</string>
+    <string name="nav_header_subtitle">دستور الحياة الذى لم يخطئ ابداً</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">دعاء الختم</string>
+    <string name="menu_gallery">المزيد من التطبيقات</string>
+    <string name="menu_slideshow">تقييم التطبيق</string>
+    <string name="menu_tools">الذهاب الى العلامة</string>
+    <string name="menu_share">مشاركة التطبيق</string>
+    <string name="menu_send">رابطہ کریں</string>
+    <string name="agza">پارے</string>
+    <string name="hi">hi</string>
+    <string name="fhares">فہرست</string>
+
+    <string name="is">المزيد</string>
+
+    <string name="zakr">رسالة من الله</string>
+    <string name="alah">معرفة الرسالة</string>
+    <string name="notification">التنبيهات</string>
+    <string name="messag">تواصل معنا</string>
+    <string name="suppo">ادعمنا</string>
+    <string name="aler">التنبيهات</string>
+    <string name="_0">0</string>
+    <string name="_1">التنبية كل ساعة</string>
+    <string name="stopalert">إيقاف التنبيهات</string>
+    <string name="m">تفعيل التنبيهات كل 10 دقائق</string>
+    <string name="a">تفعيل التنبيهات كل 20 دقائق</string>
+    <string name="naby">تفعيل التنبيهات كل 30 دقائق</string>
+    <string name="stop">stop</string>
+    <string name="zak">الذهاب لذكر الله</string>
+    <string name="zakrallah">هل ذكرت الله اليوم؟</string>
+    <string name="t"> التنبيهات</string>
+    <string name="n">ادعمنا</string>
+    <string name="da">تواصل معنا</string>
+
+    <string name="close">إغلاق</string>
+    <string name="continue1">استمرار</string>
+    <string name="congrat">تهانيا</string>
+    <string name="dowell">أنت تبلي بلاءً حسناً</string>
+    <string name="gotostore">الذهاب</string>
+    <string name="ratetheapp">إن اعجبك التطبيق، اذهب إلى المتجر لتقييمه</string>
+    <string name="ratingapp">هل اعجبك التطبيق؟</string>
+
+
+   <string name="banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="init">ca-app-pub-3940256099942544/1033173712</string>-->
+
+
+    <string name="more_menu" translatable="false">More</string>
+    <string name="privacy_settings" translatable="false">Privacy Settings</string>
+    <string name="splash_activity_image_text" translatable="false">Splash Activity Image</string>
+    <string name="splash_activity_text" translatable="false">AdMob App Open Example</string>
+    <string name="marked">marked</string>
+    <string name="symptoms">reached the mark</string>
+    <string name="press_back_again_to_exit">Press back again to exit</string>
+
+</resources>

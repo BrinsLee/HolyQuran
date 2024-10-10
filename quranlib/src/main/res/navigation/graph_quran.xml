@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/quranMainGraph"
+    android:id="@+id/graph_quran">
+
+    <navigation android:id="@+id/quranMainGraph" app:startDestination="@id/navigation_quran">
+
+
+    <fragment
+        android:id="@+id/navigation_quran"
+        android:name="com.ihyas.soharamkarubar.ui.quran.QuranFragment"
+        tools:layout="@layout/fragment_quran"
+        android:label="fragment_quran">
+    </fragment>
+        <fragment
+            android:id="@+id/quran_ByJuzz"
+            android:name="com.ihyas.soharamkarubar.ui.quran.viewpagerfragments.Quran_ByJuzz"
+            android:label="fragment_quran__by_juzz"
+            tools:layout="@layout/fragment_quran__by_juzz" />
+        <fragment
+            android:id="@+id/quran_ByNotes"
+            android:name="com.ihyas.soharamkarubar.ui.quran.viewpagerfragments.Quran_ByNotes"
+            android:label="fragment_quran__by_notes"
+            tools:layout="@layout/fragment_quran__by_notes" />
+        <fragment
+            android:id="@+id/quran_BySurah"
+            android:name="com.ihyas.soharamkarubar.ui.quran.viewpagerfragments.Quran_BySurah"
+            android:label="fragment_quran__by_surah"
+            tools:layout="@layout/fragment_quran__by_surah" />
+        <fragment
+            android:id="@+id/quran_ByBookmarks"
+            android:name="com.ihyas.soharamkarubar.ui.quran.viewpagerfragments.Quran_ByBookmarks"
+            android:label="fragment_quran__by_bookmarks"
+            tools:layout="@layout/fragment_quran__by_bookmarks" />
+    </navigation>
+    <fragment
+        android:id="@+id/quranDetailFragment"
+        android:name="com.ihyas.soharamkarubar.ui.quran.QuranDetailFragment"
+        tools:layout="@layout/qurandetailfragmnt_layout"
+        android:label="fragment_quran_detail">
+        <action
+            android:id="@+id/action_quranDetailFragment_to_ayahNoteFragment"
+            app:destination="@id/ayahNoteFragment" />
+        <action
+            android:id="@+id/action_quranDetailFragment_to_quranSettingsFragment"
+            app:destination="@id/quranTextSettings" />
+        <action
+            android:id="@+id/action_quranDetailFragment_to_audioSettingsFragment"
+            app:destination="@id/audioSettingsFragment" />
+        <action
+            android:id="@+id/action_quranDetailFragment_to_ayahShareFragment"
+            app:destination="@id/ayahShareFragment" />
+        <action
+            android:id="@+id/action_quranDetailFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+
+        <deepLink
+            android:id="@+id/quranDetailDeepLink"
+            android:autoVerify="true"
+            app:uri="https://qurandetail.com/{randomAyat}" />
+        <argument
+            android:name="randomAyat"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayahNoteFragment"
+        android:name="com.ihyas.soharamkarubar.ui.quran.AyahNoteFragment"
+        tools:layout="@layout/fragment_ayah_note"
+        android:label="fragment_ayah_note">
+        <argument
+            android:name="surahNumber"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="verseNumber"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="surahUrduName"
+            android:defaultValue="Al-Fathis"
+            app:argType="string" />
+        <argument
+            android:name="surahEngName"
+            android:defaultValue="Al-Fathia"
+            app:argType="string" />
+        <deepLink
+            android:id="@+id/ayatNoteDeepLink"
+            android:autoVerify="true"
+            app:uri="https://ayatnote.com/{surahNumber}/{verseNumber}/{surahUrduName}/{surahEngName}" />
+    </fragment>
+    <fragment
+        android:id="@+id/quranTranslationsFragment"
+        android:name="com.ihyas.soharamkarubar.ui.quran.QuranTranslationsFragment"
+        tools:layout="@layout/fragment_quran_translations"
+        android:label="fragment_quran_translations">
+        <deepLink
+            android:id="@+id/ayatShareDeepLink"
+            android:autoVerify="true"
+            app:uri="https://qurantranslationsettings.com/" />
+    </fragment>
+    <fragment
+        android:id="@+id/quranTextSettings"
+        android:name="com.ihyas.soharamkarubar.ui.setting.fragments.QuranTextSettings"
+        tools:layout="@layout/fragment_qurantext_settings"
+        android:label="fragment_quran_settings">
+        <deepLink
+            android:id="@+id/quranTextSettingsdeepling"
+            android:autoVerify="true"
+            app:uri="https://qurantextSetting.com/" />
+        <action
+            android:id="@+id/action_quranSettingsFragment_to_arabicFontFragment"
+            app:destination="@id/arabicFontFragment" />
+        <action
+            android:id="@+id/action_quranSettingsFragment_to_quranTranslationsFragment"
+            app:destination="@id/quranTranslationsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ayahShareFragment"
+        android:name="com.ihyas.soharamkarubar.ui.quran.AyahShareFragment"
+        android:label="fragment_ayah_share"
+        tools:layout="@layout/fragment_ayah_share">
+        <argument
+            android:name="arabic"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="translation"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="roman"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="referenceofAyah"
+            android:defaultValue='""' />
+        <deepLink
+            android:id="@+id/ayatShareDeepLink"
+            android:autoVerify="true"
+            app:uri="https://quranshare.com/{arabic}/{translation}/{roman}/{referenceofAyah}" />
+    </fragment>
+    <fragment
+        android:id="@+id/arabicFontFragment"
+        android:name="com.ihyas.soharamkarubar.ui.quran.QuranArabicFontFragment"
+        tools:layout="@layout/fragment_arabic_font"
+        android:label="fragment_arabic_font" />
+    <fragment
+        android:id="@+id/audioSettingsFragment"
+        android:name="com.ihyas.soharamkarubar.ui.quran.QuranAudioSettingsFragment"
+        tools:layout="@layout/fragment_audio_settings"
+        android:label="fragment_audio_settings" >
+
+        <deepLink
+            android:id="@+id/ayatShareDeepLink"
+            android:autoVerify="true"
+            app:uri="https://quranaudiosettings.com/" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.ihyas.soharamkarubar.ui.quran.QuranSearchFragment"
+        tools:layout="@layout/fragment_search"
+        android:label="fragment_search" >
+        <deepLink
+            android:id="@+id/quranSearchDeepLink"
+            android:autoVerify="true"
+            app:uri="https://quranSearch.com/" />
+    </fragment>
+    <fragment
+        android:id="@+id/quranKhatamIntoScreen"
+        android:name="com.ihyas.soharamkarubar.ui.quranakhatam.QuranKhatamIntroScreen"
+        tools:layout="@layout/quran_khatam_intro_screen_fragment" >
+        <deepLink
+            android:id="@+id/quranKhatamIntroScreenDeepLink"
+            android:autoVerify="true"
+            app:uri="https://quranKhatamIntroScreen.com/" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quranKhatamProgressDetail"
+        android:name="com.ihyas.soharamkarubar.ui.quranakhatam.QuranKhatamProgressDetail"
+        tools:layout="@layout/fragment_quran_khatam_progress_detail" >
+
+        <deepLink
+            android:id="@+id/quranKhatamProgressDetailDeepLink"
+            app:uri="https://quranKhatamProgressDetail.com/" />
+
+    </fragment>
+    <navigation android:id="@+id/QuranBookViewNavigation"
+        app:startDestination="@id/quranBookVIewFragment">
+        <fragment
+            android:id="@+id/quranBookVIewFragment"
+            android:name="com.ihyas.soharamkarubar.ui.quran.quranbookview.QuranBookVIewFragment"
+            android:label="fragment_quran_book_v_iew"
+            tools:layout="@layout/fragment_quran_book_v_iew">
+            <argument
+                android:name="navigateToAyat"
+                app:argType="integer"
+                android:defaultValue="-1" />
+            <deepLink
+                android:id="@+id/quranBookViewDeepLink"
+                app:uri="https://quranBookView.com/{navigateToAyat}" />
+            <action
+                android:id="@+id/action_quranBookVIewFragment_to_quranTranslationDiolog"
+                app:destination="@id/quranTranslationDiolog" />
+
+        </fragment>
+        <dialog
+            android:id="@+id/quranTranslationDiolog"
+            android:name="com.ihyas.soharamkarubar.ui.quran.quranbookview.QuranTranslationDiolog"
+            android:label="QuranTranslationDiolog" />
+    </navigation>
+</navigation>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScrol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="false"
+    android:scrollbarSize="0dp"
+    android:background="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainCOns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="110dp">
+
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_top_border" />
+
+        <TextView
+            android:id="@+id/quranBookViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_surah_title_frame"
+            android:gravity="center"
+            android:text="asdadadasdasda"
+            android:textColor="@color/onPrimary1"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+        <TextView
+            android:id="@+id/quranBookView_Arabic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:justificationMode="inter_word"
+            android:scrollIndicators="none"
+            android:scrollbarSize="0dp"
+            android:text="Loading..."
+            android:textColor="@color/onPrimary1"
+            android:textColorLink="@color/onPrimary1"
+            android:textIsSelectable="false"
+            android:textSize="30sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quranBookViewTitle" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quranBookView_Arabic"
+            app:srcCompat="@drawable/quran_ic_botton_border" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+
+    <!--            <androidx.constraintlayout.helper.widget.Flow-->
+    <!--                android:id="@+id/flow"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="20dp"-->
+    <!--                android:orientation="horizontal"-->
+    <!--                app:flow_wrapMode="chain"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toBottomOf="@+id/juzzCount" />-->
+
+
+
+

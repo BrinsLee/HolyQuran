@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Quran Majeed</string>
+    <string name="share_kalma">شارك كلمة</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="time_for">وقت صلاة %s</string>
+    <string name="time_in">في %s عند %s</string>
+    <string name="time_up">لقد حان وقت %s منذ</string>
+    <string name="time_to_next">الصلاة التالية في</string>
+    <string name="downloading_downloading">جاري التنزيل . . .</string>
+    <string name="qurantp_download">تنزيل</string>
+    <string name="downloading_complete">اكتمال التنزيل</string>
+    <string name="kalma_audio">صوت كلام</string>
+    <string name="text_text_and_translations">اختر ترجمة القرآن</string>
+    <string name="delete_translation_message">هل أنت متأكد أنك تريد حذف هذه الترجمة؟</string>
+    <string name="text_ok">موافق</string>
+    <string name="text_cancel">إلغاء</string>
+    <string name="arabic_text_error_message">يرجى إدخال اللغة العربية فقط</string>
+    <string name="stop_athan">إيقاف الأذان</string>
+    <string name="close_notification">إغلاق</string>
+    <string name="set_location">" اضغط هنا لتعيين الموقع"</string>
+    <string name="notifications">التنبيهات</string>
+    <string name="qibla_notic">ملاحظة: قد تحتاج إلى تحريك الجهاز في حركة دائرية لإعادة ضبط البوصلة</string>
+    <string name="qibla_direction">اتجاه القبلة من الشمال:</string>
+    <string name="accuracy">الدقة</string>
+    <string name="accuracy3">الدقة: %s</string>
+    <string name="about_us">" هل أردت يومًا تحفيزًا في حياتك؟ إذا كانت الإجابة نعم، فإن هذا التطبيق سيساعدك على الحصول على الدافع في كل لحظة من حياتك من خلال أكبر مجموعة من الأدوات الإسلامية المميزة."</string>
+    <string name="error">خطأ</string>
+    <string name="unable_to_init_sensor">غير قادر على تهيئة المستشعرات للبوصلة.</string>
+    <string name="btn_ok">موافق</string>
+    <string name="acceleration">التسارع</string>
+    <string name="orientation">التوجيه</string>
+    <string name="accuracy_unreliable">غير موثوق</string>
+    <string name="accuracy_low">منخفض</string>
+    <string name="accuracy_medium">متوسط</string>
+    <string name="accuracy_high">مرتفع</string>
+    <string name="need_calibration">"لهاتف بتكرار حركة الرقم ثمانية حتى تكتمل المعايرة. "</string>
+    <string name="asr">العصر</string>
+    <string name="maghrib">المغرب</string>
+    <string name="isha">العشاء</string>
+    <string name="tahajjud">التهجد</string>
+    <string name="nextfajr">الفجر التالي</string>
+    <string name="pref_header_general">عام</string>
+    <string name="pref_title_language">اللغة</string>
+    <string name="pref_title_numerals">الأرقام</string>
+    <string name="get_started">ابدأ الآن</string>
+    <string name="fetching">جارٍ تحديد الموقع الحالي</string>
+    <string name="grant_all">منح الكل</string>
+    <string name="about_permissions">الأذونات المطلوبة</string>
+    <string name="sunrise">الشروق</string>
+    <string name="sunset">الغروب</string>
+    <string name="duhr">الظهر</string>
+    <string name="asar">العصر</string>
+    <string name="prayer_time">مواقيت الصلاة</string>
+    <string name="gregorian_date">تاريخ اليوم:</string>
+    <string name="islamic_date">هجري:</string>
+    <string name="settings">الإعدادات</string>
+    <string name="time_formats">تنسيقات الوقت</string>
+    <string name="calculation_methods">طرق الحساب</string>
+    <string name="juristic_methods">طرق فقهية</string>
+    <string name="adjusting_methods">طرق التعديل</string>
+    <string name="pref_title_about">حول</string>
+    <string name="pref_header_notifications">الإشعارات</string>
+    <string name="pref_title_prayer_time">وقت الصلاة</string>
+    <string name="pref_title_athan">الأذان</string>
+    <string name="pref_title_muezzin">المؤذن</string>
+    <string name="pref_title_vibrate">اهتزاز</string>
+    <string name="search_city">بحث عن المدينة</string>
+    <string name="pref_header_locations">الموقع</string>
+    <string name="pref_title_search_city">المدينة</string>
+    <string name="pref_undefined_city">غير معرف</string>
+    <string name="pref_title_method">طريقة الحساب</string>
+    <string name="pref_title_mathhab_hanafi">المذهب الحنفي</string>
+    <string name="pref_description_mathhab_hanafi">اتباع المذهب الحنفي لتوقيت العصر</string>
+    <string name="al_hajj">" الحج"</string>
+    <string name="calander_al_hijira">الهجرة</string>
+    <string name="calander_ashura">عاشوراء</string>
+    <string name="calander_malid_al_nabi">المولد النبوي</string>
+    <string name="calander_lailat_al_miraj">ليلة المعراج</string>
+    <string name="text_hisnual_125">عند الخوف من إصابة شيء أو شخص بعين الحسد###2</string>
+    <string name="text_hisnual_126">عند الفزع###4</string>
+    <string name="text_hisnual_127">عند الذبح أو تقديم الأضحية###8</string>
+    <string name="text_hisnual_128">لدرء خداع الشياطين العنيدة###2</string>
+    <string name="text_hisnual_129">"طلب المغفرة والتوبة###7 "</string>
+    <string name="text_hisnual_130">فضل الذكر وتمجيد الله###7</string>
+    <string name="text_hisnual_131">كيف كان النبي (ﷺ) يسبح###7</string>
+    <string name="text_hisnual_132">القواعد العامة والمفيدة###2</string>
+    <string name="what_is_fasting">ما هو الصيام؟</string>
+    <string name="fasting_is_a_direction_to_Allah">الصيام هو توجيه إلى طريق الله للمجتمع المسلم. سيكونون متحمسين لهذا.</string>
+    <string name="fasting_rule">قواعد الصيام</string>
+    <string name="sunnah_fasting_rule">قواعد الصيام في السنة</string>
+    <string name="shia_fasting_rule">قواعد الصيام عند الشيعة</string>
+    <string name="sunnah">السنة</string>
+    <string name="tashi">الشيعة</string>
+
+    <string name="fajr">الفجر</string>
+    <string name="shuruk">الشروق</string>
+    <string name="dhuhr">الظهر</string>
+    <string name="jumu3a">الجمعة</string>
+
+
+    <string name="internetfirst">مطلوب اتصال بالإنترنت</string>
+    <string name="pref_title_round">تدوير الثواني</string>
+    <string name="nissab">المحتال:</string>
+
+    <string name="goldsilver">لقياس سعر الذهب أو الفضة الذي تملكه لأكثر من عام، يجب عليك حساب سعره لكل 10 جرامات بعملتك المحلية. يجب إضافة كل نوع من الذهب الذي تملكه (حسب القيراط) بشكل منفصل بسبب اختلاف قيمته.</string>
+    <string name="nissabinfo">وفقًا للشريعة الإسلامية، النصاب هو الحد الأدنى من المال الذي يمتلكه الشخص لأكثر من عام ليكون ملزمًا بدفع الزكاة. يمكنك حساب قيمة النصاب من حيث قيمة الذهب أو الفضة. بالنسبة للفضة، فإن النصاب هو 21 أوقية من الفضة (653.17 جرامًا) أو ما يعادلها من المال. بالنسبة للذهب، النصاب هو 3 أوقيات (85.05 جرامًا) من الذهب أو ما يعادلها من المال.</string>
+    <string name="zakatfitr">هناك نوع آخر من الزكاة التي يجب على المسلمين دفعها وهو زكاة الفطر. يتم توزيعها قرب نهاية شهر رمضان. قيمة زكاة الفطر هي نفسها لجميع الناس بغض النظر عن دخلهم المختلف. الحد الأدنى للزكاة هو صاع واحد من الطعام أو الحبوب أو الفواكه المجففة لكل فرد من أفراد الأسرة.</string>
+    <string name="zakatcalcul">أدخل قيمة المال الذي تريد إخراج زكاتك عليه للحصول على النتيجة باستخدام حاسبة الزكاة</string>
+    <string name="menu_zakat">الزكاة</string>
+    <string name="totalprice">السعر الإجمالي</string>
+    <string name="goldprice">سعر الذهب</string>
+    <string name="calculate">احسب</string>
+    <string name="zakatprice">قيمة الزكاة</string>
+    <string name="nozakat">لا زكاة</string>
+    <string name="localprice">السعر المحلي</string>
+    <string name="localgoldprice"><u>سعر الذهب المحلي</u></string>
+
+    <string name="zakathowto">طريقة حساب الزكاة</string>
+    <string name="stepone">الخطوة الأولى:</string>
+    <string name="steptwo">الخطوة الثانية:</string>
+    <string name="stepthree">الخطوة الثالثة:</string>
+    <string name="steponedetail">أضف قيمة المال والعقارات والثروة التي تملكها لأكثر من عام مع طرح مقدار الديون التي يجب عليك دفعها والالتزامات التي يجب الوفاء بها.</string>
+    <string name="steptwodetail">تحقق مرة أخرى من قيمة الذهب بعملتك المحلية</string>
+    <string name="stepthreedetail">انقر فوق زر حساب زكاتك، سيصدر ملخص يوضح ما إذا كنت ملزمًا بدفع الزكاة أم لا. إذا كنت ملزمًا بالدفع، فسيكون المبلغ المطلوب دفعه للزكاة واضحًا. هذه القيمة هي 2.5٪ من جميع ممتلكاتك.</string>
+    <string name="info">معلومة:</string>
+
+    <string name="latitude_label">خط العرض:</string>
+    <string name="longitude_label">خط الطول:</string>
+    <string name="get_updates">الحصول على التحديثات</string>
+    <string name="title_activity_main">النشاط الرئيسي</string>
+    <string name="default_notification_channel_id">افتراضي</string>
+
+    <string name="go_to_geo_fencing">التوجه إلى السياج الجغرافي</string>
+    <string name="go_to_fetch_location_in_fore_ground">جلب الموقع في المقدمة</string>
+    <string name="go_to_fetch_location_in_back_ground">جلب الموقع في الخلفية</string>
+    <string name="latitude">خط العرض</string>
+    <string name="longitude">خط الطول</string>
+    <string name="radius_in_meter">نصف القطر بالمتر</string>
+    <string name="set_geo_fence">تعيين السياج الجغرافي</string>
+    <string name="valid_latitude">أدخل قيمة صحيحة لخط العرض</string>
+    <string name="valid_longitude">أدخل قيمة صحيحة لخط الطول</string>
+    <string name="default_radius_is_set_as_100_meter_for_geo_fencing">تم تعيين نصف القطر الافتراضي للسياج الجغرافي بـ 100 متر</string>
+    <string name="geo_fencing_added_successfully">تمت إضافة السياج الجغرافي بنجاح</string>
+    <string name="geo_fencing_removed_successfully">تمت إزالة السياج الجغرافي بنجاح</string>
+    <string name="geo_fencing_add_failed">فشل في إضافة السياج الجغرافي</string>
+    <string name="geo_fencing_remove_failed">فشل في إزالة السياج الجغرافي</string>
+
+    <string name="errorloadprayertimes">فشل في تجديد أوقات الصلاة</string>
+    <string name="loadingprayertimes">تجديد أوقات الصلاة...</string>
+    <string name="prayertimesloaded">تم تحديث أوقات الصلاة</string>
+
+    <string name="fajrar">الفجر</string>
+    <string name="dhuhrar">الظهر</string>
+    <string name="asrar">العصر</string>
+    <string name="maghribar">المغرب</string>
+    <string name="ishaar">العشاء</string>
+    <string name="menu_fadl1">إنَّ من أفضل الأعمال الصالحة اليسيرة التي تقرب المسلم إلى ربه جل وعلا الذكرُ.</string>
+    <string name="menu_fadl2">بعض الآيات والأحاديث في فضل الذكر والدعاء والحث عليها :</string>
+    <string name="menu_fadlGod1">قال تعالى :</string>
+    <string name="menu_fadlGod2">و قال تعالى :</string>
+    <string name="menu_fadlProphet">و قال رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّم َ:</string>
+    <string name="ProphetSaid"> قال رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّم َ:</string>
+    <string name="thought1">"وَلَذِكْرُ اللَّهِ أَكْبَرُ".</string>
+    <string name="thought2">"وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا".</string>
+    <string name="thought3">"فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلا تَكْفُرُونِ".</string>
+    <string name="thought4">"يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْراً كَثِيراً".</string>
+    <string name="thought5"> "وَالذَّاكِرِينَ اللَّهَ كَثِيراً وَالذَّاكِرَاتِ أَعَدَّ اللَّهُ لَهُمْ مَغْفِرَةً وَأَجْراً عَظِيماً".</string>
+    <string name="thought6">"وَاذْكُر رَّبَّكَ كَثِيرًا وَسَبِّحْ بِالْعَشِيِّ وَالْإِبْكَارِ".</string>
+    <string name="thought7">"الَّذِينَ يَذْكُرُونَ اللَّهَ قِيَامًا وَقُعُودًا وَعَلَىٰ جُنُوبِهِمْ".</string>
+    <string name="thought8">"فَإِذَا قَضَيْتُم مَّنَاسِكَكُمْ فَاذْكُرُوا اللَّهَ كَذِكْرِكُمْ آبَاءَكُمْ أَوْ أَشَدَّ ذِكْرًا".</string>
+    <string name="thought9">"يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تُلْهِكُمْ أَمْوَالُكُمْ وَلَا أَوْلَادُكُمْ عَن ذِكْرِ اللَّهِ".</string>
+    <string name="thought10"> "وَاذْكُرْ رَبَّكَ فِي نَفْسِكَ تَضَرُّعاً وَخِيفَةً وَدُونَ الْجَهْرِ مِنْ الْقَوْلِ بِالْغُدُوِّ وَالآصَالِ وَلا تَكُنْ مِنْ الْغَافِلِينَ".</string>
+    <string name="thought11"> "مثل الذي يذكر ربه و الذي لا يذكر ربه مثل الحي و الميت".</string>
+    <string name="thought12">"ألا أنبئكم بخير أعمالكم و أزكاها عند مليككم و أرفعها في درجاتكم و خير لكم من أنفاق الذهب و الورق و خير لكم من أن تلقوا عدوكم فتضربوا أعناقهم و يضربوا أعناقكم ?، قالو بلى .  قال : (ذكر الله تعالى).</string>
+    <string name="thought13">"يقول الله تعالى : أنا عند ظن عبدي بي ، و أنا معه إذا ذكرني ، فان ذكرني في نفسه ذكرته في نفسي و ان ذكرني في ملأ ذكرته في ملأ خير منهم ، و ان تقرب إلي شبرا تقربت اليه ذراعا و ان تقرب إلى ذراعا تقربت اليه باعا و ان اتاني يمشي أتيته هرولة.</string>
+    <string name="thought14">"من قعد مقعدا لم يذكر الله فيه كانت عليه من الله تره ، و من أضطجع مضجعا لم يذكر فيه الله كانت عليه ترة".</string>
+    <string name="thought15">"ما جلس قوم مجلسا لم يذكروا الله فيه ، و لم يصلوا على نبيهم الا كان عليهم ترة فان شاء عذبهم و ان شاء غفر لهم".</string>
+    <string name="thought16"> "ما من قوم يقومون من مجلس لا يذكرون الله فيه الا قاموا عن مثل جيفة حمار و كان لهم حسره".</string>
+    <string name="AdkarExtra1">الأذكار تنير للعبد طريقه في دنياه وأخرته وعند الصراط المستقيم</string>
+    <string name="AdkarExtra2">الأذكار تعمل على تطهير اللسان وإشغاله بالذكر عن الغيبة والنميمة والقول الفاسد</string>
+    <string name="AdkarExtra3">الأذكار تنزل الرحمة والسكينة والراحة والأمان على المسلم وتحفه بالملائكة</string>
+    <string name="AdkarExtra4">ذكر الله سبحانه وتعالى يعادل أفضل الأعمال من عتق الرقاب و الجهاد في سبيل الله جل جلاله، وإنفاق المال في سبيله</string>
+    <string name="AdkarExtra5">أذكار الصباح و المساء تريح القلب وتنشر الطمأنينة والراحة النفسية في قلب المسلم</string>
+    <string name="AdkarExtra6">أذكار الصباح و المساء تساعد المسلم في الابتعاد عن الغفلة عن ذكر الله</string>
+    <string name="SalatThought1">َالَّذِينَ هُمْ عَلَى صَلَاتِهِمْ يُحَافِظُونَ*أُولَئِكَ فِي جَنَّاتٍ مُّكْرَمُونَ</string>
+    <string name="SalatThought2">إِنَّ الصَّلاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَاباً مَوْقُوتاً</string>
+    <string name="SalatThought3">وَأَنْ أَقِيمُوا الصَّلَاةَ وَاتَّقُوهُ وَهُوَ الَّذِي إِلَيْهِ تُحْشَرُونَِ</string>
+    <string name="SalatThought4">يَا أَيُّهَا الَّذِينَ آمَنُوا اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ</string>
+    <string name="SalatThought5">وَأَقِمِ الصَّلَاةَ طَرَفَيِ النَّهَارِ وَزُلَفًا مِنَ اللَّيْلِ إِنَّ الْحَسَنَاتِ يُذْهِبْنَ السَّيِّئَاتِ ذَلِكَ ذِكْرَى لِلذَّاكِرِينَ</string>
+    <string name="SalatThought6">يَا أَيُّهَا الَّذِينَ آمَنُوا ارْكَعُوا وَاسْجُدُوا وَاعْبُدُوا رَبَّكُمْ وَافْعَلُوا الْخَيْرَ لَعَلَّكُمْ تُفْلِحُونَ</string>
+    <string name="SalatThought7">إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَأَقَامُوا الصَّلَاةَ وَآتَوُا الزَّكَاةَ لَهُمْ أَجْرُهُمْ عِنْدَ رَبِّهِمْ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ</string>
+    <string name="SalatExtra1"> أول ما يُحاسب عليه العبد يوم القيامة الصلاة؛ فصلاحها صلاح لأعماله، وفسادها فساد لأعماله</string>
+    <string name="SalatExtra2">المحافظة على الصلاة في وقتها من أحبّ الأعمال إلى الله تعالى</string>
+    <string name="SalatExtra3">الصّلاة نور وهداية وحُجّة لصاحبها في الدنيا والآخرة عند لقاء الله تعالى</string>
+    <string name="SalatExtra4">الصلاة نور لصاحبها في الدنيا وفي الآخرة</string>
+    <string name="SalatExtra5">الصّلاة أفضل الأعمال عند الله -تعالى- بعد الشهادتين</string>
+    <string name="menu_sunrise">أذكار الصباح</string>
+    <string name="menu_sunset">أذكار المساء</string>
+    <string name="dohr">Dohr</string>
+    <string name="internetlost">لتجديد معطيات الصفحة، يجب أن تتصل بالإنترنت</string>
+    <string name="internetfound">جاري تجديد المعطيات ...</string>
+
+    <string name="itsprayertime">إنه وقت الصلاة</string>
+    <string name="city">المدينة</string>
+    <string name="action_about">حول</string>
+    <string name="action_rateUs">قيمنا</string>
+    <string name="day">اليوم</string>
+    <string name="month">الشهر</string>
+    <string name="year">السنة</string>
+    <string name="tohijri">إلى الهجري</string>
+    <string name="togregorian">إلى الميلادي</string>
+    <string name="dayw">يوم الأسبوع</string>
+
+    <string name="convert">تحويل</string>
+    <string name="restore">استعادة</string>
+    <string name="clear">مسح</string>
+    <string name="note">*هناك احتمال ضئيل لوجود خطأ في يوم واحد</string>
+
+    <!--About-->
+    <string name="copyToastText">تم النسخ إلى الحافظة</string>
+
+    <!-- Settings-->
+    <string name="lang">اللغة</string>
+    <string name="content">المحتوى</string>
+    <string name="show_trans">عرض الترجمة</string>
+    <string name="wordbyword">كلمة بكلمة</string>
+    <string name="appearance">المظهر (يتطلب إعادة تشغيل التطبيق)</string>
+    <string name="arabic_font">خط عربي</string>
+    <string name="arabic_font_size">حجم الخط العربي</string>
+    <string name="trans_font_size">حجم خط الترجمة</string>
+    <string name="other">أخرى</string>
+    <string name="screen_on">ابقاء الشاشة قيد التشغيل</string>
+
+    <!-- -->
+    <string name="cancel">إلغاء</string>
+    <string name="rootWord">جذر الكلمة</string>
+
+    <string name="copy">نسخ</string>
+    <string name="share">مشاركة</string>
+
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="allah_99_names">أسماء الله الحسنى</string>
+    <string name="azkar">أذكار</string>
+    <string name="qibla_compass">بوصلة القبلة</string>
+    <string name="sorry_device_sensor">عذراً، جهازك لا يدعم مستشعر المجال المغناطيسي</string>
+    <string name="tasbeeh_counter">عداد التسبيح</string>
+    <string name="counter">عداد</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="count">عدد</string>
+    <string name="back">رجوع</string>
+    <string name="save">حفظ</string>
+    <string name="internet">الإنترنت</string>
+    <string name="internet_permission">هذا الإذن يتعلق بالمهام المتعلقة بالإنترنت.</string>
+    <string name="access_coarse">الوصول إلى الموقع التقريبي</string>
+    <string name="access_coarse_permission">يسمح لـ API باستخدام WiFi أو بيانات الجوال (أو كليهما) لتحديد موقع الجهاز. يقوم API بإرجاع الموقع بدقة تقريبية تعادل كتلة مدينة.</string>
+    <string name="access_fine">الوصول إلى الموقع الدقيق</string>
+    <string name="access_fine_permission">لاستخدام Wi-Fi P2P لمشاركة الملفات، توصي وثائق Android الرسمية بإضافة هذا الإذن للاتصال.</string>
+    <string name="location_detail">تفاصيل الموقع:</string>
+    <string name="country">البلد:</string>
+    <string name="_city">المدينة:</string>
+    <string name="location">الموقع:</string>
+    <string name="counter_sound">صوت العداد:</string>
+    <string name="on">تشغيل</string>
+    <string name="off">إيقاف</string>
+    <string name="alarm_setting">إعدادات التنبيه</string>
+    <string name="translation">الترجمة:</string>
+    <string name="six_kalmas">6 كلمات</string>
+    <string name="weather">الطقس</string>
+    <string name="sunny">مشمس</string>
+    <string name="zakat_calculator">حاسبة الزكاة</string>
+    <string name="search">بحث</string>
+    <string name="results">النتائج</string>
+    <string name="dates_conversion">تحويل التواريخ</string>
+    <string name="pick_date">اختر تاريخ</string>
+    <string name="search_methods">طرق البحث</string>
+    <string name="flashlight">مصباح يدوي</string>
+    <string name="al_quran">القرآن</string>
+    <string name="shirk">الشرك</string>
+
+    <string name="first_kalma">الكلمة الأولى</string>
+    <string name="second_kalma">الكلمة الثانية</string>
+    <string name="third_kalma">الكلمة الثالثة</string>
+    <string name="forth_kalma">الكلمة الرابعة</string>
+    <string name="fifth_kalma">الكلمة الخامسة</string>
+    <string name="sixth_kalma">الكلمة السادسة</string>
+
+    <string name="first_kalma_name">كلمة الطيب (طيبة)</string>
+    <string name="second_kalma_name">كلمة الشهادة (شهادة)</string>
+    <string name="third_kalma_name">كلمة التمجيد (تمجيد)</string>
+    <string name="forth_kalma_name">كلمة التوحيد (توحيد)</string>
+    <string name="fifth_kalma_name">كلمة الاستغفار (استغفار)</string>
+    <string name="sixth_kalma_name">كلمة رفض الكفر (رد الكفر)</string>
+
+    <string name="first_kalma_translation">(لا إله إلا الله محمد رسول الله)</string>
+    <string name="second_kalma_translation">(أشهد أن لا إله إلا الله وحده لا شريك له، وأشهد أن محمداً عبده ورسوله)</string>
+    <string name="third_kalma_translation">(سبحان الله والحمد لله، ولا إله إلا الله، والله أكبر. ولا حول ولا قوة إلا بالله العلي العظيم.)</string>
+    <string name="forth_kalma_translation">(لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، يحيي ويميت، وهو حي لا يموت، بيده الخير، وهو على كل شيء قدير.)</string>
+    <string name="fifth_kalma_translation">(أستغفر الله ربي من كل ذنب أذنبته عمداً أو خطأً، سراً أو علانية، وأتوب إليه من الذنب الذي أعلمه ومن الذنب الذي لا أعلمه. إنك أنت علام الغيوب وستار العيوب وغفار الذنوب. ولا حول ولا قوة إلا بالله العلي العظيم)</string>
+    <string name="sixth_kalma_translation">(اللهم إني أعوذ بك أن أشرك بك شيئاً وأنا أعلمه، وأستغفرك لما لا أعلمه. تبت منه وبرئت من الكفر والشرك والكذب والغيبة والبدعة والقول الفاسد والأعمال الفاسدة كلها. وأشهد أن لا إله إلا الله، محمد رسول الله.)</string>
+
+    <string name="copied">تم النسخ بنجاح</string>
+    <string name="send_to">إرسال إلى</string>
+    <string name="permissions">الأذونات المطلوبة</string>
+    <string name="core_fundamentals">الأساسيات تعتمد على هذه الأذونات</string>
+    <string name="allow_necessary_permissions">تحتاج إلى السماح بالأذونات الضرورية في الإعدادات يدوياً</string>
+    <string name="all_permissions_granted">تم منح جميع الأذونات</string>
+    <string name="download_this">قم بتنزيل هذا</string>
+    <string name="download">تنزيل</string>
+    <string name="tafseer_download_message">تنزيل هذا التفسير؟</string>
+    <string name="downloading">جارٍ التنزيل</string>
+    <string name="downloading_download_progress">تقدم التنزيل</string>
+    <string name="downloading_start_downloading">بدء التنزيل . . .</string>
+    <string name="downloading_mb" translatable="false">MB</string>
+    <string name="downloading_kb" translatable="false">KB</string>
+    <string name="prayer_guide">دليل الصلاة</string>
+    <string name="downloading_failed">فشل التنزيل</string>
+
+    <string name="zakatMoneyTitle">المال</string>
+    <string name="totalMoney" translatable="false">0.00</string>
+    <string name="moneyCashInHandTitle">نقد في اليد</string>
+    <string name="moneyCashInHandET" translatable="false">0.00</string>
+    <string name="moneyCashInBankAccountTitle">نقد في حساب البنك</string>
+    <string name="moneyCashInBankET" translatable="false">0.00</string>
+    <string name="zakatGoldTitle">الذهب</string>
+    <string name="totalGoldTV" translatable="false">0.00</string>
+    <string name="goldValuePriceTV">سعر الذهب</string>
+    <string name="goldValuePriceET" translatable="false">00.0</string>
+    <string name="goldWeight24caratPriceTV">سعر الذهب (عيار 24)</string>
+    <string name="goldWeightUnitPriceET" translatable="false">00.0</string>
+    <string name="goldWeight24caratQuantityTV">كمية الذهب</string>
+    <string name="goldWeight24caratET" translatable="false">0</string>
+    <string name="goldWeight24caratgiramTV">جرام</string>
+    <string name="gold24caratpriceTitleTV">سعر الذهب عيار 24</string>
+    <string name="goldWeight24CaratPriceTV" translatable="false">00.0</string>
+    <string name="gold22CaratWeightQuentityTV">كمية الذهب</string>
+    <string name="gold22CaratweightPerUnitPriceET" translatable="false">0</string>
+    <string name="gold22CaratWeightUnit_Txt">جرام</string>
+    <string name="goldWeight22caratTitleTV2">سعر الذهب عيار 22</string>
+    <string name="goldWeight22CaratPriceTV" translatable="false">00.0</string>
+    <string name="gold18CaratWeightQuentityTV">كمية الذهب</string>
+    <string name="gold18CaratweightPerUnitPriceET" translatable="false">0</string>
+    <string name="gold18CaratWeightUnit_Txt">جرام</string>
+    <string name="goldWeight18caratTitleTV2">سعر الذهب عيار 18</string>
+    <string name="goldWeight18CaratPriceTV" translatable="false">00.0</string>
+    <string name="silverHeadingTV">الفضة</string>
+    <string name="silverValueRB">بالنقد</string>
+    <string name="silverWeightRB">بالوزن</string>
+    <string name="silverValueTitle2TV">سعر الفضة</string>
+    <string name="silverValuePriceET" translatable="false">00.0</string>
+    <string name="silverWeightTitleTV">سعر الفضة</string>
+    <string name="silverWeightUnitPriceET" translatable="false">00.0</string>
+    <string name="silverWeightQuentityTV">كمية الفضة</string>
+    <string name="silverWeightQuentityET" translatable="false">0</string>
+    <string name="weightUnit_Txt">جرام</string>
+    <string name="silverWeightTitleTV2">سعر الفضة</string>
+    <string name="weightPriceTV" translatable="false">00.0</string>
+    <string name="investmentHeadingTV">الاستثمار</string>
+    <string name="totalInvestmentTV" translatable="false">0.00</string>
+    <string name="sharesTV">الأسهم</string>
+    <string name="sharesET" translatable="false">0.00</string>
+    <string name="otherInvestmentTV">نقد في حساب البنك</string>
+    <string name="otherInvestmentET" translatable="false">0.00</string>
+    <string name="propertyHeadingTV">العقارات</string>
+    <string name="totalPropertyTV" translatable="false">0.00</string>
+    <string name="rentTV">دخل الإيجارات</string>
+    <string name="propertyRentET" translatable="false">0.00</string>
+    <string name="propertyTV">العقارات</string>
+    <string name="propertyET" translatable="false">0.00</string>
+    <string name="businessHeadingTV">الأعمال التجارية</string>
+    <string name="totalBusinessTV" translatable="false">0.00</string>
+    <string name="businessCashTV">النقد التجاري</string>
+    <string name="businessCashET" translatable="false">0.00</string>
+    <string name="businessGoodsTV">البضائع / الأسهم</string>
+    <string name="businessGoodsET" translatable="false">0.00</string>
+    <string name="agricultureHeadingTV">الزراعة</string>
+    <string name="totalAgriTV" translatable="false">0.00</string>
+    <string name="agriPriceTitleTV">إجمالي دخل الزراعة</string>
+    <string name="agriPriceET" translatable="false">00.0</string>
+    <string name="agriRainHeadingTV">عن طريق مياه الأمطار 10%</string>
+    <string name="agriRainET" translatable="false">00.0</string>
+    <string name="agriIrrigationHeadingTV">عن طريق الري 5%</string>
+    <string name="agriIrrigationET" translatable="false">00.0</string>
+    <string name="agriBothHeadingTV">عن طريق كلاهما 7.5%</string>
+    <string name="agriBothET" translatable="false">00.0</string>
+    <string name="cattleHeadingTV">الماشية</string>
+    <string name="totalCattleTV" translatable="false">0.00</string>
+    <string name="cattleCamelET" translatable="false">00.0</string>
+    <string name="cattleCowHeadingTV">البقر</string>
+    <string name="cattleCowET" translatable="false">00.0</string>
+    <string name="cattleSheepHeadingTV">الأغنام</string>
+    <string name="cattleSheepET" translatable="false">00.0</string>
+    <string name="preciousStonesHeadingTV">الأحجار الكريمة</string>
+    <string name="totalPreciousStonesTV" translatable="false">0.00</string>
+    <string name="preciousStonesHeadingChildTV">الأحجار الكريمة</string>
+    <string name="preciousStonesET" translatable="false">00.0</string>
+    <string name="otherHeadingTV">أخرى</string>
+    <string name="totalOtherTV" translatable="false">0.00</string>
+    <string name="otherPensionHeadingTV">المعاشات</string>
+    <string name="otherPensionET" translatable="false">00.0</string>
+    <string name="otherLoanHeadingTV">القروض للعائلة والآخرين</string>
+    <string name="otherLoanET" translatable="false">00.0</string>
+    <string name="otherAssetsHeadingTV">أصول أخرى</string>
+    <string name="zakatPayablesTitle">المستحقات</string>
+    <string name="zakatTotalPayableTV" translatable="false">0.00</string>
+    <string name="zakatCreditCardPaymentHeadingTV">دفعة بطاقة الائتمان</string>
+    <string name="zakatCreditCardPaymentET" translatable="false">00.0</string>
+    <string name="zakatHomeHeadingTV">دفعة المنزل</string>
+    <string name="homePaymentET" translatable="false">00.0</string>
+    <string name="zakatCarHeadingTV">دفعة السيارة</string>
+    <string name="zakatCarPaymentET" translatable="false">00.0</string>
+    <string name="zakatBusinessPaymentHeadingTV">دفعة العمل</string>
+    <string name="zakatBusinessPaymentET" translatable="false">00.0</string>
+    <string name="zakatFamilyDebtHeadingTV">الديون للعائلة</string>
+    <string name="zakatFamilyDebtET" translatable="false">00.0</string>
+    <string name="zakatOthersDebtHeadingTV">الديون للآخرين</string>
+    <string name="zakatOthersDebtET" translatable="false">00.0</string>
+    <string name="zakatTotalAssetsHeadingTV">إجمالي الأصول</string>
+    <string name="zakatTotalAssetsTV" translatable="false">0.00</string>
+    <string name="zakatDueHeadingTV">الزكاة المستحقة</string>
+    <string name="totalZakatDueTV" translatable="false">0.00</string>
+    <string name="zakatTotalSilverTV" translatable="false">0.00</string>
+    <string name="zakatDetailTitle">تفاصيل الزكاة</string>
+    <string name="zakatDetailInfo">تطبق الزكاة بنسبة 2.5٪ على الثروة لمدة عام واحد. باستثناء الزراعة. تقسم الزراعة إلى 3 أجزاء لتطبيق الزكاة: من ماء المطر تطبق الزكاة بنسبة 10٪ ، ومن ماء الري تطبق الزكاة بنسبة 5٪ ، ومن كلاهما (ماء المطر وماء الري) تطبق الزكاة بنسبة 7.5٪</string>
+    <string name="goldValueRB">بالنقد</string>
+    <string name="goldWeightRB">بالوزن</string>
+    <string name="cattleCamelHeadingTV">الجمال</string>
+
+    <string name="definition">التعريف</string>
+    <string name="verses">الآيات</string>
+    <string name="ahadees">الأحاديث</string>
+    <string name="types">الأنواع</string>
+    <string name="differences">الفروق</string>
+    <string name="tawhid">التوحيد</string>
+
+    <string name="shirk_difference_1">الشرك الأكبر يُخرج الشخص من ملة الإسلام، بينما الشرك الأصغر لا يُخرج الشخص من الإسلام، لكنه يقلل من إيمان الشخص بالله.</string>
+    <string name="shirk_difference_2">الشخص الذي يموت وهو يرتكب الشرك الأكبر سيكون في النار إلى الأبد؛ هذا ليس هو الحال مع من يرتكب الشرك الأصغر.</string>
+    <string name="shirk_difference_3">الشرك الأكبر يمحو ويبطل جميع الأعمال الصالحة، بينما الشرك الأصغر يفسد فقط الأعمال التي يحفزها أو يكون جزءًا منها.</string>
+    <string name="shirk_difference_4">الشرك الأكبر لا يغفره الله إلا من خلال التوبة الصادقة التي تتم قبل الموت؛ أما الشرك الأصغر فإن الأمر يعود إلى الله في معاقبته أو مغفرته.</string>
+    <string name="shirk_definition">الشرك هو أن يشرك أحدٌ غير الله في تلك الجوانب التي هي خاصة بالله وحده وحقه الحصري. الشرك هو عبادة المخلوقات كما تُعبد الله، أو تعظيم المخلوقات كما يجب تعظيم الله، أو نسب جزء من ألوهيته إلى غيره.</string>
+    <string name="shirk_verse_1" ><p><b>المائدة 05:72 :</b></p> \nلقد كفر الذين قالوا إن الله هو المسيح ابن مريم. وقال المسيح: "يا بني إسرائيل، اعبدوا الله، ربي وربكم. إنه من يشرك بالله، فقد حرّم الله عليه الجنة، ومأواه النار، وما للظالمين من أنصار."</string>
+    <string name="shirk_verse_2" ><p><b>الزمر 39:65 :</b></p> \nولقد أوحي إليك وإلى الذين من قبلك: لئن أشركت ليحبطن عملك ولتكونن من الخاسرين.</string>
+    <string name="shirk_hadees_1" ><p><b> المعجم الكبير 11457 :</b></p> \nعن ابن عباس، قال: قال رسول الله صلى الله عليه وسلم: "قال الله تعالى: من علم أني أقدر على مغفرة الذنوب غفرت له ولا أبالي، ما لم يشرك بي شيئاً."</string>
+    <string name="shirk_hadees_2" ><p><b>صحيح مسلم 2985 :</b></p> \nعن أبي هريرة رضي الله عنه قال: قال رسول الله ﷺ: "أنا الغني عن الشركاء، من عمل عملاً أشرك فيه معي غيري، تركته وشركه."</string>
+    <string name="shirk_type_1" ><p><b>الشرك الأكبر :</b></p> \nالشرك الأكبر هو إشراك غير الله في تلك الجوانب التي هي خاصة بالله في ذاته، باتخاذ ند أو شريك لله وجعله مساوياً لله. الشرك في الربوبية.</string>
+    <string name="shirk_type_2" ><p><b>الشرك الأصغر :</b></p> \nالشرك الأصغر هو ما وردت النصوص بكونه شركاً في القرآن والسنة، لكنه لم يبلغ حد الشرك الأكبر. الشرك الأصغر قد يؤدي إلى الشرك الأكبر. بعض العلماء قالوا إن الشرك الأصغر واسع لدرجة يصعب تحديده بدقة.</string>
+    <string name="shirk_type_3" ><p><b>الرياء :</b></p> \nقال رسول الله ﷺ: "إن أخوف ما أخاف عليكم الشرك الأصغر." قالوا: "يا رسول الله، وما الشرك الأصغر؟" قال: "الرياء، فإن الله سيقول يوم القيامة: اذهبوا إلى الذين كنتم تراؤونهم بأعمالكم في الدنيا، فانظروا هل تجدون عندهم جزاء؟" (أحمد) الرياء هو القيام بالعبادة ليرى الناس ويمدحون الشخص. الرياء يبطل العمل؛ ويكسب الشخص الإثم بدلاً من الثواب من الله، ويعرضه للعقاب.</string>
+
+    <string name="tawhid_defination">التوحيد، في الإسلام، هو وحدانية الله بمعنى أنه واحد ولا يوجد إله إلا هو، كما هو مذكور في صيغة الشهادة: "لا إله إلا الله ومحمد رسول الله". يشير التوحيد إلى طبيعة الله بأنه وحدة غير مركبة أو مكونة من أجزاء، ولكنه بسيط وغير معقد. يظهر مبدأ وحدانية الله والقضايا التي يثيرها، مثل مسألة العلاقة بين ذات الله وصفاته، عبر معظم تاريخ الإسلام. في مصطلحات المتصوفين المسلمين (الصوفيين)، يأخذ التوحيد معنى حلولياً؛ جميع الجواهر إلهية، ولا يوجد وجود مطلق إلا الله. بالنسبة لمعظم العلماء المسلمين، فإن علم التوحيد هو اللاهوت النظامي الذي من خلاله يمكن الوصول إلى معرفة أفضل بالله، لكن بالنسبة للصوفيين، يمكن الوصول إلى معرفة الله فقط من خلال التجربة الدينية والرؤية المباشرة.</string>
+    <string name="tawhid_verse_1" ><p><b>الذاريات 51:56 :</b></p>  \nوما خلقت الجن والإنس إلا ليعبدون.</string>
+    <string name="tawhid_verse_2" ><p><b>الأنعام 6:151 :</b></p>  \nقل (يا محمد صلّى الله عليه وسلّم): "تعالوا أتل ما حرم ربكم عليكم: ألا تشركوا به شيئا.</string>
+    <string name="tawhid_hadees_1" ><p><b>صحيح البخاري 7373 :</b></p> \nصحيح مسلم 30 معاذ بن جبل رضي الله عنه قال: قال النبي صلى الله عليه وسلم: "يا معاذ، أتدري ما حق الله على عباده؟" قلت: الله ورسوله أعلم. قال: "أن يعبدوه ولا يشركوا به شيئا. أتدري ما حقهم عليه؟" قلت: الله ورسوله أعلم. قال: "ألا يعذبهم إن فعلوا ذلك."</string>
+    <string name="tawhid_hadees_2" ><p><b>السنن الكبرى للنسائي 5760 :</b></p> \nأبو هريرة رضي الله عنه قال: قال رسول الله صلى الله عليه وسلم: "لا إله إلا الله، والله أكبر. لا إله إلا الله وحده لا شريك له، لا إله إلا الله، له الملك وله الحمد، لا إله إلا الله. لا حول ولا قوة إلا بالله. من قال هذه الكلمات في يوم أو ليلة أو شهر، ثم مات في ذلك اليوم أو الليل أو الشهر، غفر له ذنوبه."</string>
+    <string name="kalmas">كلمات التوحيد</string>
+    <string name="muharram_1236_ah">محرم 1236 هـ</string>
+    <string name="oct_24_2012">24 أكتوبر 2012</string>
+
+
+    <string name="calander_lailat_al_barat">ليلة البراءة</string>
+    <string name="calander_ramdan_start">بداية رمضان</string>
+    <string name="calander_eid_ul_fitr">عيد الفطر</string>
+    <string name="calander_waqf_al_arafa_hajj">وقفة عرفة - الحج</string>
+    <string name="calander_eid_ul_azha">عيد الأضحى</string>
+    <string name="Hajj_guide">دليل الحج</string>
+    <string name="Hajj_hajj_umrah">الحج</string>
+    <string name="Hajj_umrah">العمرة</string>
+
+    <!--Islamic months-->
+    <string name="text_muharram">محرم</string>
+    <string name="text_safar">صفر</string>
+    <string name="text_rabi_ul_awal">ربيع الأول</string>
+    <string name="text_rabi_ul_thani">ربيع الآخر</string>
+    <string name="text_jumad_al_awal">جمادى الأولى</string>
+    <string name="text_jumad_al_thani">جمادى الآخرة</string>
+    <string name="text_rajab">رجب</string>
+    <string name="text_shaban">شعبان</string>
+    <string name="text_ramdan">رمضان</string>
+    <string name="text_shawwal">شوال</string>
+    <string name="text_zul_qaadah">ذو القعدة</string>
+    <string name="text_zul_hajj">ذو الحجة</string>
+    <string name="text_today">اليوم</string>
+    <string name="text_done">تم</string>
+    <string name="text_title_isalamic_calandar">التقويم الإسلامي</string>
+
+    <string name="prayer_formale">ذكر</string>
+    <string name="prayer_forfemale">أنثى</string>
+    <string name="Quran_bookmarkadded">تمت إضافة الإشارة المرجعية</string>
+
+    <!-- Quran -->
+    <string name="text_quran">القرآن</string>
+    <string name="juz">جزء</string>
+    <string name="surah">سورة</string>
+    <string name="bookmarks">إشارات مرجعية</string>
+    <string name="text_notes">ملاحظات</string>
+    <string name="no_data_found">لا توجد بيانات</string>
+    <string name="selectVerseNumber">اختر رقم الآية</string>
+
+    <!-- Quran Khatam -->
+    <string name="qurankhatam_khatamdescription">يتيح لك الختم إنشاء خطة قراءة القرآن الخاصة بك إما بشكل فردي أو في مجموعة مع عائلتك وأصدقائك.</string>
+    <string name="qurankhatam_planmykhatambtntext">خطط ختمتي الخاصة</string>
+    <string name="qurankhatam_wantokhatam">أريد أن أختم بحلول</string>
+    <string name="qurankhatam_khatamduraton">يجب عليك قراءة %1$s آية يوميًا لإكمال قراءة القرآن بحلول %2$s</string>
+    <string name="qurankhatam_khatamdurationbefore">يجب أن يكون التاريخ المحدد بعد التاريخ الحالي</string>
+    <string name="qurankhatam_nextBtn">التالي</string>
+    <string name="qurankhatam_startReading">ابدأ القراءة</string>
+    <string name="qurankhatam_yes">نعم</string>
+    <string name="qurankhatam_no">لا</string>
+    <string name="qurankhatam_youhaveactivekhaam">لديك خطة قراءة قرآن نشطة، هل ترغب في بدء التتبع؟</string>
+    <string name="qurankhatam_deletqurankhatam">حذف ختم القرآن!</string>
+    <string name="qurankhatam_areYouSuretoDeleteQuranKhatam">هل أنت متأكد من حذف ختم القرآن؟</string>
+    <string name="qurankhatam_totalVerse">إجمالي الآيات</string>
+    <string name="qurankhatam_readedVerse">الآيات المقروءة</string>
+    <string name="qurankhatam_completed">مكتمل</string>
+    <string name="qurankhatam_completedsurahlist">قائمة السور المكتملة</string>
+    <string name="qurankhatam_markread">وضع علامة كمقروء</string>
+    <string name="qurankhatam_markunread">وضع علامة كغير مقروء</string>
+    <string name="qurankhatam_unreadSurah">سورة غير مقروءة</string>
+    <string name="qurankhatam_areToUnread">هل أنت متأكد من وضع علامة غير مقروءة لهذه السورة؟</string>
+    <string name="qurankhatam_WaitPlease">يرجى الانتظار…</string>
+    <string name="qurankhatam_deletekhatamsuccess">تم حذف الختم بنجاح</string>
+    <string name="qurankhatam_title">ختم القرآن</string>
+    <string name="qurankhatam_start">ابدأ</string>
+    <string name="qurankhatam_planyourownkhatam">خطط ختمك الخاص</string>
+    <string name="qurankhatam_quranreadingprogress">تقدم قراءة القرآن</string>
+    <string name="qurankhatam_verseno">رقم الآية %1$s</string>
+    <string name="qurankhatam_dayleft">الأيام المتبقية</string>
+    <string name="qurankhatam_surahLeft">السور المتبقية</string>
+    <string name="qurankhatam_ayatLeft">الآيات المتبقية</string>
+    <string name="qurankhatam_completedby">إكمال بحلول:</string>
+    <string name="qurankhatam_enteryournotehere">أدخل ملاحظتك هنا</string>
+    <string name="qurankhatam_prayertimecalculationmethodmanual">تصحيح وقت الصلاة يدويًا</string>
+    <string name="qurankhatam_change">تغيير</string>
+    <string name="qurankhatam_quransetting">إعدادات القرآن</string>
+    <string name="qurankhatam_setFont">تعيين الخط</string>
+    <string name="qurankhatam_setTranslation">تعيين الترجمة</string>
+    <string name="qurankhatam_setAudio">تعيين الصوت</string>
+    <string name="qurankhatam_audiorepeattitle">أبدًا</string>
+    <string name="qurankhatam_audiorepeat1">1 مرة</string>
+    <string name="qurankhatam_audiorepeat2">2 مرات</string>
+    <string name="qurankhatam_audiorepeat3">3 مرات</string>
+    <string name="qurankhatam_audiorepeat4">4 مرات</string>
+    <string name="qurankhatam_audiorepeat5">5 مرات</string>
+    <string name="qurankhatam_audiorepeat6">بلا نهاية</string>
+
+    <string name="set_arabic_text_size">حجم النص العربي</string>
+    <string name="set_translation_text_size">حجم النص المترجم</string>
+    <string name="asdadasadads" translatable="false">asdadasadads</string>
+    <string name="quran_khatam">ختم القرآن</string>
+    <string name="ayatShare_setArabicTextColor">تعيين لون النص العربي</string>
+    <string name="ayatShare_setTranslationTextColor">تعيين لون النص المترجم</string>
+    <string name="searchinquran">البحث في القرآن</string>
+    <string name="ayatShare_Both">كلاهما</string>
+    <string name="ayatShare_translation">الترجمة</string>
+
+    <string name="settingpg_shafi">شافعي</string>
+    <string name="settingpg_never">أبدًا</string>
+    <string name="settingpg_save">حفظ</string>
+    <string name="settingpg_diable">تعطيل</string>
+    <string name="settingpg_miles">أميال</string>
+    <string name="settingpg_kilo_meters">كيلومترات</string>
+    <string name="settingpg_test_adhan">اختبار الأذان</string>
+    <string name="quransp_audio_play_option">خيارات تشغيل الصوت</string>
+    <string name="quransp_auto_scroll">التمرير التلقائي</string>
+    <string name="quransp_keep_screen_on_while_reading">الإبقاء على الشاشة مفتوحة أثناء التلاوة</string>
+    <string name="quransp_at_the_end_of_surah">في نهاية السورة</string>
+    <string name="quransp_repeat_each_verse">تكرار كل آية</string>
+    <string name="quransp_time">الوقت</string>
+    <string name="quransp_times">مرات</string>
+    <string name="quransp_infinite">لا نهاية</string>
+    <string name="quransp_reciters">القراء</string>
+    <string name="quransp_quran_reciter1">عبد الرحمن السديس</string>
+    <string name="quransp_quran_reciter2">مشاري راشد العفاسي</string>
+    <string name="quransp_quran_reciter3">سعد الغامدي</string>
+    <string name="quransp_arabic">العربية</string>
+    <string name="quransp_premium_user_can_download_all_recitation_for_offline_playback">يمكن للمستخدم المميز تنزيل جميع التلاوات للتشغيل دون اتصال</string>
+    <string name="quransp_arabic_text">نمط النص العربي</string>
+    <string name="quransp_default_diacritics_or_symbols">افتراضي (علامات التشكيل أو الرموز)</string>
+    <string name="quransp_no_diacritics_or_symbols">بدون علامات التشكيل أو الرموز</string>
+    <string name="quransp_arabic_font">خط عربي</string>
+    <string name="quransp_select_the_best_arabic_font_for_your_device">اختر أفضل خط عربي لجهازك</string>
+    <string name="quransp_default_font">الخط الافتراضي</string>
+    <string name="quransp_custom_font">خط مخصص</string>
+    <string name="qurantp_phonetic_transliteration">النسخ الصوتي</string>
+    <string name="qurantp_default_phonetic_transliteration">النسخ الصوتي الافتراضي</string>
+    <string name="qurantp_translations">الترجمات</string>
+    <string name="qurantp_translation_1">سالمو كييزر</string>
+    <string name="qurantp_translation_2">مكتب رئيس جزر المالديف</string>
+    <string name="qurantp_translation_3">ترجمة إ. هربك</string>
+    <string name="qurantp_translation_4">عبد الله محمد بسم الله</string>
+    <string name="qurantp_translation_5">وزارة الشؤون الدينية الإندونيسية</string>
+    <string name="qurantp_translation_6">محی الدین خان</string>
+    <string name="qurantp_translation_7">رمضان منصور</string>
+    <string name="qurantp_translation_8">مصطفى مليفو</string>
+    <string name="qurantp_translation_9">عبد الله يوسف علي</string>
+    <string name="qurantp_translation_10">محمد عيسى جارسيا</string>
+    <string name="qurantp_translation_11">محمد حميد الله</string>
+    <string name="qurantp_translation_12">أبوبكر محمود غومي</string>
+    <string name="qurantp_translation_13">محمد فاروق خان ومحمد أحمد</string>
+    <string name="qurantp_translation_14">حمزة روبرتو بيكاردو</string>
+    <string name="qurantp_translation_15">برهان محمد أمين</string>
+    <string name="qurantp_translation_16">محمد كركنو وفانيداس إيليافور</string>
+    <string name="qurantp_translation_17">جوزيفا بيلافسكي</string>
+    <string name="qurantp_translation_18">اينار بيرغ</string>
+    <string name="qurantp_translation_19">حسين أنصاريان</string>
+    <string name="qurantp_translation_20">سمير الحايك</string>
+    <string name="qurantp_translation_21">أبو عادل</string>
+    <string name="qurantp_translation_22" tools:ignore="Typos">شريف أحمدي</string>
+    <string name="qurantp_translation_23">تاج محمود أمرطي</string>
+    <string name="qurantp_translation_24">كنوت برنستروم</string>
+    <string name="qurantp_translation_25">علي محسن البارواني</string>
+    <string name="qurantp_translation_26">عبدول محمد آياتي</string>
+    <string name="qurantp_translation_27">مؤسسة جان تورست</string>
+    <string name="qurantp_translation_28">يعقوب بن نوغمان</string>
+    <string name="qurantp_translation_29">سليمان آتيش</string>
+    <string name="qurantp_translation_30">محمد صديق محمد يوسف</string>
+    <string name="qurantp_translation_31">تزفيتان ثيوفانوف</string>
+    <string name="qurantp_translation_32">فتح محمد جالندهري</string>
+    <string name="qurantp_translation_33">مجمع الملك فهد لطباعة المصحف الشريف</string>
+    <string name="qurantp_translation_34">غير معروف</string>
+    <string name="qurantp_translation_35">غير متوفر</string>
+    <string name="qurantp_translation_36">ما جيان</string>
+    <string name="qurantp_translation_37">سيد محمد زكريا حسين شاه سيالفي</string>
+    <string name="qurantp_download_phonetic_transliteration">لم يتم تنزيل هذا النسخ الصوتي للقرآن بعد. هل ترغب في تنزيله الآن؟</string>
+    <string name="qurantp_legal_information">معلومات قانونية</string>
+    <string name="enternotehere">أدخل ملاحظتك هنا</string>
+    <string name="tasbeehSaveBtn">حفظ</string>
+    <string name="text_font_setting">إعدادات الخط</string>
+    <string name="quransp_stop_playing">توقف عن التشغيل</string>
+    <string name="quransp_repeat_the_surah">أعد تشغيل السورة</string>
+    <string name="quransp_play_the_next_surah">شغل السورة التالية</string>
+    <string name="quran_ayahshareapplink">احصل على Islamic Guide Pro لاكتشاف المزيد من المحتوى الإسلامي: https://play.google.com/store/apps/details?id=%s</string>
+    <string name="searchHere...">ابحث هنا…</string>
+    <string name="quran_madesuccess">تم إنشاء ختم القرآن بنجاح</string>
+    <string name="text_none">لا شيء</string>
+    <string name="text_audio_recitations">التلاوات الصوتية</string>
+    <string name="connecting">جاري الاتصال ....</string>
+    <string name="qurankhatam_QuranKhatamCompleted">تم ختم القرآن</string>
+    <string name="qurankhatam_CongrateQuranKhatmCompleted">تهانينا، لقد أكملت ختم القرآن</string>
+    <string name="text_ayah">آية</string>
+    <string name="text_copy_to_clipboard">نسخ إلى الحافظة</string>
+    <string name="no_internet_message">الإنترنت غير متوفر</string>
+    <string name="emptytNoteIsnotAllowed">لا يُسمح بملاحظة فارغة</string>
+    <string name="note_updated_msg">تم تحديث ملاحظتك لهذه الآية بنجاح.</string>
+    <string name="note_save_message">تم حفظ ملاحظتك لهذه الآية بنجاح.</string>
+    <string name="note_delete_msg">تم حذف الملاحظة بنجاح</string>
+    <string name="edit_as_you_want">حرر كما تريد!</string>
+    <string name="ayah_saved">تم حفظ آية قرآنية</string>
+
+    <string name="tafseer">تفسير</string>
+    <string name="tafseer_english_Hafiz_Ibn_Kathir">التفسير الإنجليزي لحافظ ابن كثير</string>
+    <string name="tafseer_english_Mufti_Muhammad_Shafi">التفسير الإنجليزي لمفتي محمد شفيع</string>
+    <string name="tafseer_russian_Saddi">التفسير الروسي لسعدي</string>
+    <string name="tafseer_arabic_Qurtubi">التفسير العربي للقرطبي</string>
+    <string name="tafseer_arabic_Saddi">التفسير العربي لسعدي</string>
+    <string name="tafseer_arabic_Tanweer">التفسير العربي للتنوير</string>
+    <string name="tafseer_arabic_Waseet">التفسير العربي للوسيط</string>
+    <string name="tafseer_arabic_Baghawy">التفسير العربي للبغوي</string>
+    <string name="tafseer_english_Al_Mukhtasar">التفسير الإنجليزي للمختصر</string>
+    <string name="tafseer_bengali_Bayaan_Foundation">التفسير البنغالي لمؤسسة البيان</string>
+    <string name="tafseer_bengali_King_Fahd_Quran_Printing_Complex">التفسير البنغالي لمجمع الملك فهد لطباعة المصحف الشريف</string>
+    <string name="tafseer_bengali_Tawheed_Publication">التفسير البنغالي لمنشورات التوحيد</string>
+    <string name="tafseer_urdu_Dr_Israr_Ahmad">التفسير الأردي لدكتور إسرار أحمد</string>
+    <string name="tafseer_urdu_Hafiz_Ibn_Kathir">التفسير الأردي لحافظ ابن كثير</string>
+    <string name="tafseer_urdu_Sayyid_Ibrahim_Qutb">التفسير الأردي للسيد إبراهيم قطب</string>
+    <string name="shareDua">مشاركة الدعاء</string>
+    <string name="allDuas">جميع الأدعية</string>
+    <string name="no_dua_s_saved">لا توجد أدعية محفوظة</string>
+    <string name="downloading_rabbana_dua_audio">جاري تحميل دعاء ربنا</string>
+    <string name="text_rabbana_duas">أدعية ربنا</string>
+    <string name="text_rabbana_duas2">أدعية ربنا %1$s</string>
+    <string name="deleteDua">"هل أنت متأكد أنك تريد حذف هذا الدعاء؟"</string>
+    <string name="shareRamadanDua">مشاركة دعاء رمضان</string>
+    <string name="text_surah">سورة</string>
+    <string name="text_dua_audio">صوت الدعاء</string>
+    <string name="favorite_duas">الأدعية المفضلة</string>
+
+    <string name="text_hisnul_muslim">حصن المسلم</string>
+    <string name="ramdhan_dua">أدعية رمضان</string>
+
+    <!-- أدعية رمضان -->
+    <string name="dua_for_fasting">دعاء الصيام</string>
+    <string name="dua_when_breaking_fast">دعاء الإفطار</string>
+    <string name="dua_for_fast_ashra">دعاء للعشر الأوائل</string>
+    <string name="dua_for_second_ashra">دعاء للعشر الأواسط</string>
+    <string name="dua_for_third_ashra">دعاء للعشر الأواخر</string>
+    <string name="tasbeeh_e_taraweeh">تسبيح التراويح</string>
+
+    <!-- حصن المسلم -->
+    <string name="text_hisnual_1">فضل الذكر###1</string>
+    <string name="text_hisnual_2">عند الاستيقاظ###1</string>
+    <string name="text_hisnual_3">عند لبس الثوب###2</string>
+    <string name="text_hisnual_4">عند لبس الثوب الجديد###2</string>
+    <string name="text_hisnual_5">لشخص يرتدي ثوبًا جديدًا###2</string>
+    <string name="text_hisnual_6">قبل خلع الملابس###2</string>
+    <string name="text_hisnual_7">قبل دخول الحمام###2</string>
+    <string name="text_hisnual_8">بعد الخروج من الحمام###6</string>
+    <string name="text_hisnual_9">عند بدء الوضوء###6</string>
+    <string name="text_hisnual_10">عند إتمام الوضوء###2</string>
+    <string name="text_hisnual_11">عند دخول / الخروج من المنزل###2</string>
+    <string name="text_hisnual_12">عند الذهاب إلى المسجد###6</string>
+    <string name="text_hisnual_13">عند دخول المسجد###6</string>
+    <string name="text_hisnual_14">عند الخروج من المسجد###6</string>
+    <string name="text_hisnual_15">عن الأذان###6</string>
+    <string name="text_hisnual_16">عند بدء الصلاة###6</string>
+    <string name="text_hisnual_17">عند الركوع###6</string>
+    <string name="text_hisnual_18">عند القيام من الركوع###6</string>
+    <string name="text_hisnual_19">عند السجود###6</string>
+    <string name="text_hisnual_20">بين السجدتين###6</string>
+    <string name="text_hisnual_21">عند السجود لتلاوة القرآن###6</string>
+    <string name="text_hisnual_22">التشهد###6</string>
+    <string name="text_hisnual_23">الصلاة على النبي بعد التشهد###6</string>
+    <string name="text_hisnual_24">بعد التشهد الأخير وقبل السلام###6</string>
+    <string name="text_hisnual_25">بعد السلام###6</string>
+    <string name="text_hisnual_26">للاستخارة###7</string>
+    <string name="text_hisnual_27">في الصباح والمساء###1</string>
+    <string name="text_hisnual_28">قبل النوم###1</string>
+    <string name="text_hisnual_29">عند التقلب أثناء الليل###1</string>
+    <string name="text_hisnual_30" tools:ignore="TypographyEllipsis">عند الشعور بالقلق أو الخوف أثناء النوم###1</string>
+    <string name="text_hisnual_31">عند رؤية حلم جيد أو سيئ###1</string>
+    <string name="text_hisnual_32">قنوت الوتر###6</string>
+    <string name="text_hisnual_33">بعد سلام الوتر مباشرة###6</string>
+    <string name="text_hisnual_34">للقلق والحزن###4</string>
+    <string name="text_hisnual_35">للشخص المكروب###4</string>
+    <string name="text_hisnual_36">عند مواجهة عدو###4</string>
+    <string name="text_hisnual_37">لمن يخاف ظلم الحاكم###4</string>
+    <string name="text_hisnual_38">ضد الأعداء###4</string>
+    <string name="text_hisnual_39">عند الخوف من مجموعة من الناس###4</string>
+    <string name="text_hisnual_40">للشخص المشكوك في إيمانه###4</string>
+    <string name="text_hisnual_41">لتسديد دين###4</string>
+    <string name="text_hisnual_42">لمن يعاني من وساوس في الصلاة###6</string>
+    <string name="text_hisnual_43">للشخص الذي أصبح عمله صعبًا###7</string>
+    <string name="text_hisnual_44">عند ارتكاب ذنب###7</string>
+    <string name="text_hisnual_45">لطرد الشيطان ووساوسه###2</string>
+    <string name="text_hisnual_46">عند وقوع مصيبة###7</string>
+    <string name="text_hisnual_47">تهنئة بمناسبة الولادة###9</string>
+    <string name="text_hisnual_48">لوضع الأطفال تحت حماية الله###11</string>
+    <string name="text_hisnual_49">عند زيارة المريض###11</string>
+    <string name="text_hisnual_50">فضل زيارة المريض###11</string>
+    <string name="text_hisnual_51">عند فقدان الأمل في الحياة###11</string>
+    <string name="text_hisnual_52">إرشادات للمحتضر###11</string>
+    <string name="text_hisnual_53">لمن أصيب بمصيبة###4</string>
+    <string name="text_hisnual_54">عند إغلاق عيني الميت###11</string>
+    <string name="text_hisnual_55">للميت في صلاة الجنازة###11</string>
+    <string name="text_hisnual_56">عندما يكون الميت طفلًا أثناء صلاة الجنازة###11</string>
+    <string name="text_hisnual_57">تعزية###11</string>
+    <string name="text_hisnual_58">عند دفن الميت###11</string>
+    <string name="text_hisnual_59">بعد دفن الميت###11</string>
+    <string name="text_hisnual_60">عند زيارة القبور###11</string>
+    <string name="text_hisnual_61">عند حدوث عاصفة###10</string>
+    <string name="text_hisnual_62">عند سماع الرعد###10</string>
+    <string name="text_hisnual_63">عند نزول المطر###10</string>
+    <string name="text_hisnual_64">عندما يبدأ المطر###10</string>
+    <string name="text_hisnual_65">بعد هطول المطر###10</string>
+    <string name="text_hisnual_66">لطلب الجو الصافي###10</string>
+    <string name="text_hisnual_67">عند رؤية الهلال###10</string>
+    <string name="text_hisnual_68">عند الإفطار###3</string>
+    <string name="text_hisnual_69">قبل الأكل###3</string>
+    <string name="text_hisnual_70">عند إتمام الوجبة###3</string>
+    <string name="text_hisnual_71">دعاء الضيف للمضيف###3</string>
+    <string name="text_hisnual_72">لمن يقدم لك شرابًا###3</string>
+    <string name="text_hisnual_73">عند الإفطار في بيت شخص آخر###3</string>
+    <string name="text_hisnual_74">للصائم عندما يقدم له طعام ولا يفطر###3</string>
+    <string name="text_hisnual_75">عند التعرض للإهانة أثناء الصيام###9</string>
+    <string name="text_hisnual_76">عند رؤية الثمر المبكر###10</string>
+    <string name="text_hisnual_77">عند العطاس###9</string>
+    <string name="text_hisnual_78">عندما يحمد الله الشخص الغير مؤمن بعد العطاس###9</string>
+    <string name="text_hisnual_79">للمتزوج الجديد###2</string>
+    <string name="text_hisnual_80">في ليلة الزفاف أو عند شراء حيوان###9</string>
+    <string name="text_hisnual_81">قبل الجماع###2</string>
+    <string name="text_hisnual_82">عند الغضب###9</string>
+    <string name="text_hisnual_83">عند رؤية شخص في محنة###9</string>
+    <string name="text_hisnual_84">في مجلس أو تجمع###9</string>
+    <string name="text_hisnual_85">كفارة المجلس###9</string>
+    <string name="text_hisnual_86">رد الدعاء للمغفرة###9</string>
+    <string name="text_hisnual_87">لمن أحسن إليك###9</string>
+    <string name="text_hisnual_88">حماية من الدجال###7</string>
+    <string name="text_hisnual_89">لمن يقول لك أنه يحبك لأجل الله###9</string>
+    <string name="text_hisnual_90">لمن يعرض عليك بعض ماله###9</string>
+    <string name="text_hisnual_91">للدائن عند سداد دينه###9</string>
+    <string name="text_hisnual_92">لخوف الشرك###4</string>
+    <string name="text_hisnual_93">رد الدعاء بعد تقديم هدية أو صدقة###9</string>
+    <string name="text_hisnual_94">التحذير من التطيير###4</string>
+    <string name="text_hisnual_95">عند ركوب الدابة أو وسيلة النقل###5</string>
+    <string name="text_hisnual_96">للسفر###5</string>
+    <string name="text_hisnual_97">عند دخول مدينة أو قرية###5</string>
+    <string name="text_hisnual_98">عند دخول السوق###5</string>
+    <string name="text_hisnual_99">عند تعثر الدابة###5</string>
+    <string name="text_hisnual_100">دعاء المسافر للمقيم###5</string>
+    <string name="text_hisnual_101">دعاء المقيم للمسافر###5</string>
+    <string name="text_hisnual_102">ذكر عند الصعود أو النزول###5</string>
+    <string name="text_hisnual_103">دعاء المسافر عند اقتراب الفجر###5</string>
+    <string name="text_hisnual_104">عند التوقف أو النزول###5</string>
+    <string name="text_hisnual_105">عند العودة من السفر###5</string>
+    <string name="text_hisnual_106">ماذا تقول عند تلقي أخبار سارة أو سيئة###4</string>
+    <string name="text_hisnual_107">فضل الصلاة على النبي (صلى الله عليه وسلم)###7</string>
+    <string name="text_hisnual_108">فضل نشر التحية الإسلامية###9</string>
+    <string name="text_hisnual_109">رد التحية لغير المسلم###9</string>
+    <string name="text_hisnual_110">عند سماع صياح الديك أو نهيق الحمار###10</string>
+    <string name="text_hisnual_111">عند سماع نباح الكلاب في الليل###10</string>
+    <string name="text_hisnual_112">لمن أسأت إليه###9</string>
+    <string name="text_hisnual_113">آداب مدح المسلم###9</string>
+    <string name="text_hisnual_114">للشخص الذي تم مدحه###9</string>
+    <string name="text_hisnual_115">التلبية للحاج أو المعتمر###8</string>
+    <string name="text_hisnual_116">التكبير عند المرور بالحجر الأسود###8</string>
+    <string name="text_hisnual_117">بين الركن اليماني والحجر الأسود###8</string>
+    <string name="text_hisnual_118">عند جبل الصفا والمروة###8</string>
+    <string name="text_hisnual_119">يوم عرفة###8</string>
+    <string name="text_hisnual_120">ذكر عند مزدلفة###8</string>
+    <string name="text_hisnual_121">عند رمي الجمرات###8</string>
+    <string name="text_hisnual_122">في أوقات الدهشة والفرح###4</string>
+    <string name="text_hisnual_123">عند تلقي أخبار سارة###4</string>
+    <string name="text_hisnual_124">عند الشعور بألم في الجسم###11</string>
+
+    <string name="prayer_timings">مواقيت الصلاة</string>
+    <string name="learn_quran">تعلم القرآن</string>
+    <string name="_6_kalma">6 كلمے</string>
+    <string name="islamic_calendar">التقويم الإسلامي</string>
+    <string name="fasting_rules">قواعد الصيام</string>
+
+    <string name="how_to_pray">كيفية الصلاة</string>
+    <string name="pray_guide_desc1">الصلاة (السلاة؛ جمع صلوات) هي أحد أركان الإسلام الخمسة.\n  \n
+        من الواجب على جميع المسلمين البالغين، ويُنصح بشدة للأطفال الذين تبلغ أعمارهم عشرة سنوات فما فوق، أن يكملوا صلواتهم الخمس اليومية وفقًا للطريقة التي أداها النبي (صلى الله عليه وسلم) لكي تكون صلاتهم صحيحة. يعتقد المسلمون أن الاتصال بالله سيمنح الصلاة حياة ويمنحهم الشجاعة.\n \nويعتقد المسلمون أن الله يتحدث إلينا من خلال القرآن، والصلاة هي وسيلتنا للاتصال بالله.\n \nسواء كنت مجرد فضولي لمعرفة كيفية صلاة المسلمين أو كنت تبحث عن تعلم الصلاة بنفسك، فليس من السابق لأوانه البدء.</string>
+    <string name="make_your_intention">اجعل نيتك معروفة في قلبك.</string>
+    <string name="pray_guide_desc2">قبل بدء الصلاة، من المهم أن تكون لديك نية للصلاة.</string>
+    <string name="raise_your_hands_up">ارفع يديك إلى مستوى أذنيك وكتفيك.</string>
+    <string name="pray_guide_desc3">ارفع يديك بجانب أذنيك وكتفيك، ثم قل الله أكبر (الله أَكْبَر). هذا يترجم إلى "الله أكبر". افعل ذلك أثناء الوقوف (أو الجلوس إذا لم تستطع الوقوف). \n \nينبغي أن تكون الأصابع مباعدة عندما تُرفع اليدين.</string>
+    <string name="place_your_right_hand_over">ضع يدك اليمنى فوق يدك اليسرى.</string>
+    <string name="pray_guide_desc4">ضع يديك إما على السرة، أو على الصدر، أو بين الاثنين؛ هناك اختلاف في الرأي بين المدارس الفكرية الإسلامية. حافظ على تركيز عينيك على الأرض. يساعدك هذا في تثبيت نظرك على المكان الذي ستستقر فيه رأسك عند السجود لاحقًا. لا تدع عينيك تتجولان.\n \nاقرأ الدعاء الاختياري دعاء الاستفتاح (الدعاء الافتتاحي):\n \nاتبعها بسورة الفاتحة (تُقرأ هذه السورة في كل ركعة):\n \nاقرأ أي سورة أخرى أو أي جزء من القرآن، مثل سورة الإخلاص.\n \nقراءة سورة بعد الفاتحة تُقرأ فقط في أول ركعتين من الصلاة الفرضية، بينما في الصلاة السُنة المؤكدة تُقرأ في جميع الركعات.</string>
+    <string name="say_allahu_akbar">قل "الله أكبر" واركع.</string>
+    <string name="pray_guide_desc5">اثنِ جسمك بحيث تكون ظهرك ورقبتك مستقيمتين قدر الإمكان ومتوازيتين مع الأرض، مع إبقاء عينيك مركزة على الأرض، وحافظ على أصابعك وكفيك على ركبتيك. يجب أن يكون ظهرك ورأسك بزاوية 90° مع ساقيك. لا تحتاج إلى صنع زاوية مثالية؛ يجب أن يكون جسمك مسترخيًا. يُطلق على هذا الوضع اسم الركوع.</string>
+    <string name="stand_back_up_raise">قف مجددًا (ارفع من الركوع).</string>
+    <string name="pray_guide_desc6">أثناء النهوض ارفع ذراعيك بجانبك.</string>
+    <string name="say_allahu_akbar_and_prostrate">قل الله أكبر واسجد.</string>
+    <string name="pray_guide_desc7">ضع رأسك وركبتيك ويديك على الأرض. أثناء السجود، تأكد من أن جبهتك وأنفك تلامسان الأرض. يُسمى هذا الوضع السجود.</string>
+    <string name="rise_from_sajdah">انهض من السجدة واجلس على ركبتيك.</string>
+    <string name="pray_guide_desc8">ضع قدمك اليسرى من الكعب إلى الكعب على الأرض. يجب أن تكون قدمك اليمنى بأصابع على الأرض فقط. ضع يديك بشكل مسطح على ركبتيك.</string>
+    <string name="say_allahu_akbar_and_stand_up">قل الله أكبر وانهض.</string>
+    <string name="pray_guide_desc9">لقد أكملت ركعة واحدة. بناءً على الصلاة، قد تحتاج إلى إكمال ما يصل إلى ثلاث ركعات أخرى.\n \nفي كل ركعة ثانية، بعد السجدة الثانية، اجلس على ركبتيك مرة أخرى. اقرأ:\n \nالتشهد\nالدعاء</string>
+    <string name="finish_the_prayer_with_tasleem">اختم الصلاة بالتسليم.</string>
+    <string name="pray_guide_desc10">بعد التشهد، والدعاء، وأي دعاء ترغب في قراءته، اختتم الصلاة عن طريق:\n \nتحريك رأسك إلى اليمين وقول السلام عليكم ورحمة الله. الملك الذي يسجل أعمالك الصالحة في هذا الجانب.\n \nتحريك رأسك إلى اليسار وقول السلام عليكم ورحمة الله. الملك الذي يسجل أعمالك السيئة في هذا الجانب. انتهت الصلاة!</string>
+
+    <string name="pray_guide_desc1_female">الصلاة (السلاة؛ جمع صلوات) هي أحد أركان الإسلام الخمسة.\\nإنها واجبة على جميع المسلمين البالغين، ومستحبّة للغاية للأطفال الذين تزيد أعمارهم عن عشر سنوات، لأداء صلواتهم الخمس اليومية بالطريقة التي أداها النبي (صلى الله عليه وسلم) لكي تكون صلاتهم صحيحة. يُعتقد أن الاتصال بالله سيمنح الحياة للمصلين ويمنحهم الشجاعة.\\nيعتقد المسلمون أن الله يتحدث إلينا من خلال القرآن، والصلاة هي وسيلتنا للتواصل مع الله.\\nسواء كنتَ فضوليًا لمعرفة كيفية صلاة المسلمين أو كنتَ ترغب في التعلم بنفسك، فإنه لا يكون أبدًا متأخرًا للبدء.</string>
+    <string name="make_your_intention_known_in_your_heart">اجعل نيتك معروفة في قلبك.</string>
+    <string name="pray_guide_desc2_female">قبل بدء الصلاة، من المهم أن تكون لديك نية للصلاة.</string>
+    <string name="raise_your_hands_up_next_to_your_ears_and_shoulders">ارفع يديك بجانب أذنيك وكتفيك.</string>
+    <string name="pray_guide_desc3_female">قفي وقدميك قريبتين من بعضهما البعض، وارفعي يديك إلى مستوى الكتفين، وراحة يديك مواجهة للقبلة، وأصابعك مفرودة بشكل طبيعي، مع تغطية معصميك وساعديك.</string>
+    <string name="place_your_right_hand_over_your_left_hand">ضعي يدك اليمنى فوق يدك اليسرى.</string>
+    <string name="pray_guide_desc4_female">قفي وقدميك قريبتين من بعضهما البعض، وارفعي يديك إلى مستوى الكتفين، وراحة يديك مواجهة للقبلة، وأصابعك مفرودة بشكل طبيعي، مع تغطية معصميك وساعديك. هناك اختلاف في الرأي بين المدارس الفكرية الإسلامية. ابقي عينيك مركزة على الأرض. يساعدك ذلك على إبقاء نظرك مركزًا على المكان الذي ستضعين فيه رأسك عند السجود لاحقًا. لا تدعي عينيك تتجولان.\\n اقرئي الدعاء الافتتاحي الاختياري:\\nاتبعِ ذلك بقراءة سورة الفاتحة (تقرأ هذه السورة في كل ركعة)\\n : اقرئي أي سورة أخرى أو أي جزء من القرآن، مثل سورة الإخلاص.\\nتُقرأ سورة بعد الفاتحة فقط في الركعتين الأوليين من الصلاة الفرض، بينما في السنة المؤكدة تُقرأ في جميع الركعات.</string>
+    <string name="say_allahu_akbar_and_bend_down">قولي "الله أكبر" واركعي.</string>
+    <string name="pray_guide_desc5_female">اثني جسمك بحيث تكون ظهرك ورقبتك مستقيمين قدر الإمكان ومتوازيين مع الأرض، مع إبقاء عينيك مركزة على الأرض، واحتفظي بأصابعك وكفيك على ركبتيك. يجب أن يكون ظهرك ورأسك بزاوية 90° مع ساقيك. لا تحتاجين إلى زاوية مثالية؛ يجب أن يكون جسمك مسترخيًا. هذه الوضعية تسمى الركوع.</string>
+    <string name="stand_back_up_raise_from_ruku">قفي مجددًا (ارفعي من الركوع).</string>
+    <string name="pray_guide_desc6_female">قفي تمامًا. قولي هذا الدعاء بصوت منخفض أثناء الوقوف مع تثبيت النظر على مكان السجود.</string>
+    <string name="say_allahu_akbar_">قولي "الله أكبر" واسجدي.</string>
+    <string name="pray_guide_desc7_female">ضعي رأسك وركبتيك ويديك على الأرض. أثناء السجود، تأكدي من أن جبهتك وأنفك يلامسان الأرض. هذه الوضعية تسمى "السجدة".</string>
+    <string name="rise_from_sajdah_and_sit_on_your_knees">انهضي من السجدة واجلسي على ركبتيك.</string>
+    <string name="pray_guide_desc8_female">اجذبي كلا الساقين إلى الجانب الأيمن، واثني الفخذين فوق بعضهما البعض، واجلسي على الأرداف اليسرى، وضعي اليدين على الفخذين بحيث تصل أطراف الأصابع إلى الركبتين، وأصابعك متجمعة، والعينين مركزة على حضنك.</string>
+    <string name="say_allahu_akbar_a">قولي "الله أكبر" وانهضي.</string>
+    <string name="pray_guide_desc9_female">لقد أكملتِ ركعة واحدة. بناءً على الصلاة، قد تحتاجين إلى إكمال حتى ثلاث ركعات أخرى.\n في كل ركعة ثانية، بعد السجدة الثانية، اجلسي على ركبتيكِ مجددًا. اقرئي:\n التشهد \n الدعاء</string>
+    <string name="finish_the_prayer_with_t">اختمي الصلاة بالتسليم.</string>
+    <string name="pray_guide_desc10_female">بعد التشهد، والدعاء، وأي دعاء ترغبين في قراءته، اختمي الصلاة بما يلي:\n تحريك رأسك إلى اليمين وقول "السلام عليكم ورحمة الله". الملك الذي يسجل أعمالكِ الصالحة على هذا الجانب.\n تحريك رأسك إلى اليسار وقول "السلام عليكم ورحمة الله". الملك الذي يسجل أعمالكِ السيئة على هذا الجانب. انتهت الصلاة!</string>
+    <string name="internet_not_available">الإنترنت غير متوفر</string>
+
+
+</resources>

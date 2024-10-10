@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/margin_8dp">
+
+    <TextView
+        android:id="@+id/txtColorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue"
+        android:textColor="@color/onPrimary1"
+        android:textSize="@dimen/size_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgColorCircle"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/color_circle_setting"
+        app:layout_constraintBottom_toBottomOf="@id/txtColorName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtColorName"
+        app:tint="@color/black" />
+
+    <ImageView
+        android:id="@+id/imgCheckColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/check_setting"
+        app:layout_constraintBottom_toBottomOf="@id/imgColorCircle"
+        app:layout_constraintEnd_toEndOf="@id/imgColorCircle"
+        app:layout_constraintStart_toStartOf="@id/imgColorCircle"
+        app:layout_constraintTop_toTopOf="@id/imgColorCircle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

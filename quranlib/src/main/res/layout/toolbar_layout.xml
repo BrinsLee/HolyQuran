@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/onSurface2"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:rotation="180"
+            android:padding="5dp"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/ralewaymedium"
+            android:gravity="center"
+            android:text="@string/zakat_calculator"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_list"
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/ic_baseline_format_align_center_24"
+            android:visibility="gone"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/btn_delete"
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_more"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/btn_more"
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginLeft="25dp"
+            android:onClick="ZakatInfo"
+            android:visibility="gone"
+            android:src="@drawable/information"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

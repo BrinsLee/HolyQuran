@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainCOns"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layoutDirection="ltr"
+        app:cardBackgroundColor="@color/primaryColor"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="@+id/tvSurahAyahTranslation"
+        app:layout_constraintStart_toStartOf="@+id/tvSurahAyahTranslation"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurahAyahTranslation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <ImageView
+                android:id="@+id/playBtn"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="7dp"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintEnd_toStartOf="@+id/ivAyahBookMark"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_play_white"
+                app:tint="@color/onSurface2" />
+
+            <ImageView
+                android:id="@+id/ivAyahCopy"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:padding="8dp"
+                android:src="@drawable/ic_copy"
+                android:tint="@color/onSurface2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivAyahShare"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/onSurface2"
+                tools:ignore="UseAppTint" />
+
+            <ImageView
+                android:id="@+id/ivAyahShare"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:padding="8dp"
+                android:src="@drawable/ic_share_single_ayah"
+                android:tint="@color/onSurface2"
+                app:layout_constraintEnd_toStartOf="@+id/ivAyahCopy"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivAyahNote"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/onSurface2"
+                tools:ignore="UseAppTint" />
+
+            <ImageView
+                android:id="@+id/ivAyahBookMark"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:padding="8dp"
+                android:src="@drawable/ic_bookmark_outline"
+                android:tint="@color/onSurface2"
+                app:layout_constraintEnd_toStartOf="@+id/ivAyahNote"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/playBtn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/onSurface2"
+                tools:ignore="UseAppTint" />
+
+            <ImageView
+                android:id="@+id/ivAyahNote"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/empty_note"
+                android:tint="@color/onSurface2"
+                app:layout_constraintEnd_toStartOf="@+id/ivAyahShare"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivAyahBookMark"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/onSurface2"
+                tools:ignore="UseAppTint" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/arabicText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:includeFontPadding="false"
+        android:layoutDirection="ltr"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="عندما يريد العالم أن ‪يتكلّم ‬ ، فهو يتحدّث بلغة يونيكود. تسجّل الآن لحضور المؤتمر الدولي العاشر ليونيكود (Unicode Conference)، الذي سيعقد في 10-12 آذار 1997 بمدينة مَايِنْتْس، ألمانيا."
+
+        android:textAlignment="viewEnd"
+        android:textColor="@color/onPrimary1"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSurahAyahRoman"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="asdakdhasdhakjds"
+        android:textColor="@color/onPrimary1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arabicText" />
+
+    <TextView
+        android:id="@+id/tvSurahAyahTranslation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="asdakdhasdhakjds"
+        android:textColor="@color/onPrimary1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurahAyahRoman" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

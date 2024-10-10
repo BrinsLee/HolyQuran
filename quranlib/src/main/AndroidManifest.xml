@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <application>
+        <activity
+            android:name="com.ihyas.soharamkarubar.ui.main.MainActivity"
+            android:theme="@style/Theme.MuslimProGuide"
+            android:exported="true"
+            android:screenOrientation="portrait">
+<!--            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <receiver
+            android:name="com.ihyas.soharamkarubar.scheduler.LocationChangedReceiver"
+            android:exported="true" />
+        <receiver
+            android:name="com.ihyas.soharamkarubar.scheduler.PrayAlarmReceiver"
+            android:exported="true" />
+        <receiver
+            android:name="com.ihyas.soharamkarubar.scheduler.AlarmReceiver"
+            android:exported="true" />
+        <receiver
+            android:name="com.ihyas.soharamkarubar.scheduler.PrayBootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <!--For HTC devices-->
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.ihyas.soharamkarubar.scheduler.PraySchedulingService"
+            tools:ignore="Instantiatable" />
+
+        <service
+            android:name="com.ihyas.soharamkarubar.Helper.GpsTracker"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="apps.ssatechs.quranpashto.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+</manifest>
