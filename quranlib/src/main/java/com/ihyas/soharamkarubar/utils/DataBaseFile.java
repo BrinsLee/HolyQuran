@@ -351,7 +351,7 @@ public class DataBaseFile {
                 file = new File(start_path + "/" + entry.getName());
                 // 验证解压路径是否在目标文件夹中，防止路径遍历
                 String destDirPath = desPath;
-                String newFilePath = file.getCanonicalPath();
+                String newFilePath = file.getAbsolutePath();
                 if (!newFilePath.startsWith(destDirPath + File.separator)) {
                     throw new ZipException("Illegal name: " + entry.getName());
                 }
