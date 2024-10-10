@@ -6,18 +6,14 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.navigation.fragment.findNavController
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.interstitial.InterstitialAd
-import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
+import com.ihyas.adlib.BANNER_AD_TYPE_PRAYER_CALCULATE
 import com.ihyas.soharamkaru.R
-import dagger.hilt.android.AndroidEntryPoint
-
+import com.ihyas.soharamkaru.databinding.ActivityCounterBinding
 import com.ihyas.soharamkarubar.SharedData.SharedClass
 import com.ihyas.soharamkarubar.base.BaseFragment
-import com.ihyas.soharamkaru.databinding.ActivityCounterBinding
+import dagger.hilt.android.AndroidEntryPoint
 
 
 @AndroidEntryPoint
@@ -30,9 +26,10 @@ class TasbeehFragment : BaseFragment<ActivityCounterBinding, TasbeehViewModel>()
     override val viewModel: TasbeehViewModel by hiltNavGraphViewModels(R.id.main_navigation)
 
     override val layoutId: Int = R.layout.activity_counter
-    private lateinit var adViewadmob: AdView
-    //private lateinit var adView: com.facebook.ads.AdView
-    private var mInterstitialAd: InterstitialAd? = null
+    override fun onResume() {
+        super.onResume()
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_PRAYER_CALCULATE)
+    }
 
     override fun onReady(savedInstanceState: Bundle?) {
         observe()
@@ -42,7 +39,7 @@ class TasbeehFragment : BaseFragment<ActivityCounterBinding, TasbeehViewModel>()
         }
         val sharedPrefs = context?.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
 
-        loadAds()
+//        loadAds()
 
         /*if (Constants.AdsSwitch.equals("admob")){
             loadAds()
@@ -106,21 +103,6 @@ class TasbeehFragment : BaseFragment<ActivityCounterBinding, TasbeehViewModel>()
             findNavController().navigate(R.id.action_tasbeehFragment_to_graph_allduas)
         }
 
-    }
-
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_PRAYER_CALCULATE)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
     }
 
     fun observe() {

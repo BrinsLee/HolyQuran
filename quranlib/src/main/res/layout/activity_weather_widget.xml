@@ -14,9 +14,7 @@
         android:orientation="vertical"
         tools:context=".Activities.WeatherWidget">
 
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/bgcolor"
@@ -30,8 +28,7 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -59,10 +56,10 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/txtTemp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:id="@+id/txtTemp"
                             android:fontFamily="@font/ralewaymedium"
                             android:text="74"
                             android:textColor="@color/black"
@@ -74,10 +71,10 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/descTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:id="@+id/descTxt"
                             android:fontFamily="@font/ralewaymedium"
                             android:gravity="center"
                             android:text="@string/sunny"
@@ -104,12 +101,12 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/feelsText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/ralewaymedium"
                             android:text="Feels like 71°"
-                            android:id="@+id/feelsText"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
@@ -119,12 +116,12 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/minmaxTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:fontFamily="@font/montserrat_regular"
                             android:gravity="center"
-                            android:id="@+id/minmaxTxt"
                             android:text="Min 50° | Max 85°"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
@@ -138,35 +135,35 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/timeTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom"
                             android:layout_marginRight="5dp"
-                            android:id="@+id/timeTxt"
                             android:fontFamily="@font/montserrat_regular"
                             android:text="09:22"
                             android:textColor="@color/black"
                             android:textSize="40sp" />
 
                         <TextView
+                            android:id="@+id/ampmTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom"
                             android:fontFamily="@font/montserrat_regular"
                             android:text="AM"
-                            android:id="@+id/ampmTxt"
                             android:textColor="@color/black"
                             android:textSize="15sp" />
 
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/dayTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:fontFamily="@font/montserrat_regular"
                         android:gravity="center"
-                        android:id="@+id/dayTxt"
                         android:text="Wed, Oct 01- 2020"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
@@ -208,41 +205,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="40dp"
-                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                         android:layout_marginTop="40dp"
-                        android:layout_marginRight="40dp" />
-
-
+                        android:layout_marginRight="40dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 
                 </LinearLayout>
-                <FrameLayout
-                    android:id="@+id/adView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent">
-                </FrameLayout>
-
 
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btnRefresh"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:layout_gravity="bottom|right"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="70dp"
                 android:background="@drawable/circle"
                 android:backgroundTint="@color/onSurface2"
-                android:orientation="vertical"
-                android:id="@+id/btnRefresh"
                 android:gravity="center"
-                android:layout_marginBottom="70dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginStart="30dp">
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="30dp"
@@ -253,12 +237,10 @@
             </LinearLayout>
 
 
-
         </FrameLayout>
 
 
     </LinearLayout>
-
 
 
 </layout>

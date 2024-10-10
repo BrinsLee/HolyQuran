@@ -3,7 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ad_app_id"/>
         <activity
             android:name="com.ihyas.soharamkarubar.ui.main.MainActivity"
             android:theme="@style/Theme.MuslimProGuide"

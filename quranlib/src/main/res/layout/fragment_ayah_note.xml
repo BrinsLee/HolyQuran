@@ -10,6 +10,7 @@
         android:id="@+id/include2"
         layout="@layout/toolbar_layout"
         android:layout_width="0dp"
+        app:adUnitId=""
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@+id/ivDelete"
         app:layout_constraintStart_toStartOf="parent"

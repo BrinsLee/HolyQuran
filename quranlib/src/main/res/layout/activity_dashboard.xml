@@ -30,16 +30,17 @@
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:layout_marginTop="4dp"
-                    android:visibility="gone"
                     android:src="@drawable/menuicon"
+                    android:visibility="gone"
                     app:tint="@color/white" />
+
                 <ImageView
                     android:id="@+id/backBtn"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:layout_marginTop="4dp"
-                    android:src="@drawable/back"
                     android:rotation="180"
+                    android:src="@drawable/back"
                     app:tint="@color/white" />
 
                 <TextView
@@ -81,23 +82,21 @@
             android:id="@+id/dashboardRV"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
             android:clipToPadding="false"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
-            tools:listitem="@layout/dashboard_cell"
-            android:layout_weight="1"
-            android:layout_margin="10dp" />
+            tools:listitem="@layout/dashboard_cell" />
 
-        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView"
+        <com.ihyas.adlib.AdBannerView
+            android:id="@+id/ad_view_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            ads:adSize="BANNER"
-            android:visibility="gone"
-            android:translationZ="3dp"
-            ads:adUnitId="@string/ad_banner_id_bottom" />
-
+            app:adUnitId="BANNER_AD_TYPE_MAIN_BOTTOM"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
 </layout>

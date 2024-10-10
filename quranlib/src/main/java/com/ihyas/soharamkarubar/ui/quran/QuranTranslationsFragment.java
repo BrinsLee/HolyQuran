@@ -77,9 +77,9 @@ public class QuranTranslationsFragment extends Fragment {
     }
 
     private void loadAds() {
-        AdView mAdView = binding.adView;
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        AdView mAdView = binding.adView;
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
     }
 
 

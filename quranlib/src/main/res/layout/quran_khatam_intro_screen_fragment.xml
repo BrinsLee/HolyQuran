@@ -22,6 +22,7 @@
             android:id="@+id/include29"
             layout="@layout/toolbar_layout"
             android:layout_width="0dp"
+            app:adUnitId=""
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -369,15 +369,15 @@ class RamadanDuaFragment : Fragment() {
     }
 
     private fun loadAds() {
-        Log.d("loadAds", "loadAds: DashboardFragment")
-        val mAdView = binding.adView
-        mAdView.visibility = View.VISIBLE
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+//        Log.d("loadAds", "loadAds: DashboardFragment")
+//        val mAdView = binding.adView
+//        mAdView.visibility = View.VISIBLE
+//        val adRequest = AdRequest.Builder().build()
+//        mAdView.loadAd(adRequest)
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding.adView.destroy()
+//        binding.adView.destroy()
     }
 }

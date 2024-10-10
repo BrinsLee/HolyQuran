@@ -9,11 +9,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/adView"
         android:layout_centerInParent="true">
 
         <include
-            android:id="@+id/include"
+            android:id="@+id/toolbar"
             layout="@layout/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -23,7 +22,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/include"
+            android:layout_below="@id/toolbar"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
@@ -130,17 +129,6 @@
             tools:listitem="@layout/item_search" />
 
     </RelativeLayout>
-
-
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        app:adSize="BANNER" android:visibility="gone"
-        app:adUnitId="@string/ad_banner_id_bottom" />
 
 
 </RelativeLayout>

@@ -1,14 +1,5 @@
 package com.ihyas.soharamkarubar.ui.weather
 
-import com.ihyas.soharamkarubar.Adapters.NextWeatherAdapter
-import com.ihyas.soharamkarubar.Adapters.TodayWeatherAdapter
-import com.ihyas.soharamkaru.R
-import com.ihyas.soharamkarubar.SharedData.SharedClass
-import com.ihyas.soharamkarubar.base.BaseFragment
-import com.ihyas.soharamkaru.databinding.ActivityWeatherWidgetBinding
-import com.ihyas.soharamkarubar.models.WeatherModel
-import com.ihyas.soharamkarubar.utils.extensions.getCurrentTime
-import com.ihyas.soharamkarubar.utils.extensions.getDayValue
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -17,14 +8,20 @@ import androidx.navigation.fragment.findNavController
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
-import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
+import com.ihyas.adlib.BANNER_AD_TYPE_WEATHER
+import com.ihyas.soharamkaru.R
+import com.ihyas.soharamkaru.databinding.ActivityWeatherWidgetBinding
+import com.ihyas.soharamkarubar.Adapters.NextWeatherAdapter
+import com.ihyas.soharamkarubar.Adapters.TodayWeatherAdapter
+import com.ihyas.soharamkarubar.SharedData.SharedClass
+import com.ihyas.soharamkarubar.base.BaseFragment
+import com.ihyas.soharamkarubar.models.WeatherModel
+import com.ihyas.soharamkarubar.utils.extensions.getCurrentTime
+import com.ihyas.soharamkarubar.utils.extensions.getDayValue
 import dagger.hilt.android.AndroidEntryPoint
 import org.json.JSONObject
-import java.util.*
+import java.util.Locale
 import kotlin.math.roundToInt
 
 @AndroidEntryPoint
@@ -42,6 +39,10 @@ class WeatherFragment : BaseFragment<ActivityWeatherWidgetBinding, WeatherViewMo
     override val viewModel: WeatherViewModel by hiltNavGraphViewModels(R.id.main_navigation)
 
     override val layoutId: Int = R.layout.activity_weather_widget
+    override fun onResume() {
+        super.onResume()
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_WEATHER)
+    }
 
     override fun onReady(savedInstanceState: Bundle?) {
 
@@ -51,7 +52,6 @@ class WeatherFragment : BaseFragment<ActivityWeatherWidgetBinding, WeatherViewMo
         binding.toolbar.backBtn.setOnClickListener {
             findNavController().popBackStack()
         }
-        loadAds()
         /*if (Constants.AdsSwitch.equals("admob")){
             loadAds()
         }
@@ -76,6 +76,7 @@ class WeatherFragment : BaseFragment<ActivityWeatherWidgetBinding, WeatherViewMo
             getNextWeather()
             getTodayWeather()
             Toast.makeText(requireActivity(), "Updated Successfully", Toast.LENGTH_SHORT).show()
+            binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_WEATHER)
         }
         /*
         */
@@ -231,19 +232,4 @@ class WeatherFragment : BaseFragment<ActivityWeatherWidgetBinding, WeatherViewMo
     fun observe() {
 
     }
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_WEATHER)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
-    }
-
 }

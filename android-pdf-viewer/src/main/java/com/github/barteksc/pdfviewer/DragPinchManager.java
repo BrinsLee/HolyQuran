@@ -191,9 +191,7 @@ class DragPinchManager implements GestureDetector.OnGestureListener, GestureDete
         hideHandle();
         if (!animationManager.isFlinging()) {
             pdfView.performPageSnap();
-
         }
-
     }
 
     @Override

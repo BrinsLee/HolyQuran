@@ -63,7 +63,7 @@
                             android:layout_marginRight="5dp"
                             android:fontFamily="@font/ralewaybold"
                             android:text="@string/gregorian_date"
-                            android:textColor="@color/dull_black"/>
+                            android:textColor="@color/dull_black" />
 
                         <TextView
                             android:id="@+id/tv_gregorian_date"
@@ -71,7 +71,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/ralewayregular"
                             android:text="--/--"
-                            android:textColor="@color/dull_black"/>
+                            android:textColor="@color/dull_black" />
 
                     </LinearLayout>
 
@@ -86,7 +86,7 @@
                             android:layout_marginRight="5dp"
                             android:fontFamily="@font/ralewaybold"
                             android:text="@string/islamic_date"
-                            android:textColor="@color/dull_black"/>
+                            android:textColor="@color/dull_black" />
 
                         <TextView
                             android:id="@+id/tv_islamic_date"
@@ -94,7 +94,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/ralewayregular"
                             android:text="--/--"
-                            android:textColor="@color/dull_black"/>
+                            android:textColor="@color/dull_black" />
 
                     </LinearLayout>
 
@@ -576,24 +576,10 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <FrameLayout
-                    android:id="@+id/adView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:background="@android:color/transparent"
-                    >
-                </FrameLayout>
-
             </LinearLayout>
 
 
-
         </ScrollView>
-
-
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

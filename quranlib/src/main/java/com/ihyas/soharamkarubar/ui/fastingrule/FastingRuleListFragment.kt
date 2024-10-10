@@ -16,7 +16,6 @@ import com.google.android.gms.ads.AdView
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
 import com.ihyas.soharamkaru.R
 import com.ihyas.soharamkaru.databinding.FragmentFastingRuleListBinding
 import com.ihyas.soharamkarubar.ui.fastingrule.adapter.FastingRuleViewPagerAdaper
@@ -88,17 +87,17 @@ class FastingRuleListFragment : Fragment() {
 
     private fun loadAds() {
         // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_FASTING_RULE)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView8
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
+//        adViewadmob = AdView(requireContext())
+//        adViewadmob.setAdSize(AdSize.BANNER)
+//        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_FASTING_RULE)
+//
+//        // Add the AdView to the FrameLayout.
+//        val adContainer = binding.adView8
+//        adContainer.addView(adViewadmob)
+//
+//        // Load the ad.
+//        val adRequest = AdRequest.Builder().build()
+//        adViewadmob.loadAd(adRequest)
     }
 
     private fun onClickListener() {

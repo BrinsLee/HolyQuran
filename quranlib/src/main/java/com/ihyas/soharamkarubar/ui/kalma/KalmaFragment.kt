@@ -1,13 +1,5 @@
 package com.ihyas.soharamkarubar.ui.kalma
 
-import com.ihyas.soharamkaru.R
-import com.ihyas.soharamkarubar.base.BaseFragment
-import com.ihyas.soharamkaru.databinding.ActivitySixKalmasBinding
-import com.ihyas.soharamkarubar.download.DownloadKalmaAudio
-import com.ihyas.soharamkarubar.ui.kalma.adapters.KalmasRecyclerViewAdapter
-import com.ihyas.soharamkarubar.ui.kalma.clicklisteners.KalmasRecyclerViewClickListeners
-import com.ihyas.soharamkarubar.utils.DataBaseFile
-import com.ihyas.soharamkarubar.utils.extensions.setSafeOnClickListener
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
@@ -19,11 +11,16 @@ import android.os.Message
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
-import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
+import com.ihyas.adlib.BANNER_AD_TYPE_KALMAS
+import com.ihyas.soharamkaru.R
+import com.ihyas.soharamkaru.databinding.ActivitySixKalmasBinding
+import com.ihyas.soharamkarubar.base.BaseFragment
+import com.ihyas.soharamkarubar.download.DownloadKalmaAudio
+import com.ihyas.soharamkarubar.ui.kalma.adapters.KalmasRecyclerViewAdapter
+import com.ihyas.soharamkarubar.ui.kalma.clicklisteners.KalmasRecyclerViewClickListeners
+import com.ihyas.soharamkarubar.utils.DataBaseFile
+import com.ihyas.soharamkarubar.utils.extensions.setSafeOnClickListener
 import dagger.hilt.android.AndroidEntryPoint
 import java.io.File
 import java.io.IOException
@@ -39,8 +36,6 @@ class KalmaFragment : BaseFragment<ActivitySixKalmasBinding, KalmaViewModel>(),
     var kalmaNames: Array<String>? = null
     lateinit var dataList: Array<String>
     var previousPosition: Int = -1
-    private lateinit var adViewadmob: AdView
-    //private lateinit var adView: com.facebook.ads.AdView
     @SuppressLint("HandlerLeak")
     private val mHandler: Handler = object : Handler(Looper.getMainLooper()) {
         override fun handleMessage(message: Message) {
@@ -59,25 +54,16 @@ class KalmaFragment : BaseFragment<ActivitySixKalmasBinding, KalmaViewModel>(),
 
     override val layoutId: Int = R.layout.activity_six_kalmas
 
+    override fun onResume() {
+        super.onResume()
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_KALMAS)
+    }
     override fun onReady(savedInstanceState: Bundle?) {
 
         activity?.let {
             initUtils(it)
             getDataFromFile(it)
             onClickEvent()
-            loadAds()
-
-            /*if (Constants.AdsSwitch.equals("admob")){
-                loadAds()
-            }
-            else {
-                adView = com.facebook.ads.AdView(context, Constants.fbBannerId, com.facebook.ads.AdSize.BANNER_HEIGHT_50)
-                val adContainerFb = binding.adView7
-                adContainerFb.addView(adView)
-                adView.loadAd()
-            }*/
-            /*
-            */
 
             activity?.let {
                 setUpRecyclerView()
@@ -92,23 +78,9 @@ class KalmaFragment : BaseFragment<ActivitySixKalmasBinding, KalmaViewModel>(),
         binding.kalmasRecyclerView.adapter = adapter
     }
 
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_KALMAS)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
-    }
 
     private fun onClickEvent() {
-        binding.backBtn.setSafeOnClickListener {
+        binding.toolbar.backBtn.setSafeOnClickListener {
             findNavController().popBackStack()
         }
     }
@@ -166,6 +138,7 @@ class KalmaFragment : BaseFragment<ActivitySixKalmasBinding, KalmaViewModel>(),
     }
 
     fun playAudio(context: Context, position: Int) {
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_KALMAS)
         if (player == null) {
             val f = getFile("kalma_" + (kalmaIndex + 1) + ".mp3", context)
             if (f.exists()) {
@@ -193,7 +166,7 @@ class KalmaFragment : BaseFragment<ActivitySixKalmasBinding, KalmaViewModel>(),
 
         kalmaNames =
             arrayOf("1st Kalma", "2nd Kalma", "3rd Kalma", "4th Kalma", "5th Kalma", "6th Kalma")
-        binding.txtTitle.text = getString(R.string.kalam_title)
+        binding.toolbar.tvTitle.text = getString(R.string.kalam_title)
     }
 
     private fun stopBtn(position: Int) {

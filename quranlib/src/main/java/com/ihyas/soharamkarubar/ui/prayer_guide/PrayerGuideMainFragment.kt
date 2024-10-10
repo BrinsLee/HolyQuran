@@ -14,34 +14,32 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
+import com.ihyas.adlib.BANNER_AD_TYPE_PRAYER_GUIDE
 import com.ihyas.soharamkaru.R
+import com.ihyas.soharamkaru.databinding.FragmentPrayerGuideMainBinding
 import com.ihyas.soharamkarubar.download.FileDownloadManager
 import com.ihyas.soharamkarubar.utils.DataBaseFile
 import com.ihyas.soharamkarubar.utils.common.constants.DirectoryConstants
 import com.ihyas.soharamkarubar.utils.common.constants.FilesNameConstants
 import com.ihyas.soharamkarubar.utils.common.constants.ServerLinksConstants
+import com.ihyas.soharamkarubar.utils.extensions.ContextExtensions.getFilePath
+import com.ihyas.soharamkarubar.utils.extensions.ViewExtensions.visible
+import com.ihyas.soharamkarubar.utils.extensions.setSafeOnClickListener
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
-import com.ihyas.soharamkaru.databinding.FragmentPrayerGuideMainBinding
-import com.ihyas.soharamkarubar.utils.extensions.ContextExtensions.getFilePath
-import com.ihyas.soharamkarubar.utils.extensions.ViewExtensions.visible
-import com.ihyas.soharamkarubar.utils.extensions.setSafeOnClickListener
 
 class PrayerGuideMainFragment : Fragment() {
 
     lateinit var binding: FragmentPrayerGuideMainBinding
     private var fragmentPosition = 0
     private lateinit var adViewadmob: AdView
+
     //private lateinit var adView: com.facebook.ads.AdView
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -51,40 +49,40 @@ class PrayerGuideMainFragment : Fragment() {
         return binding.root
     }
 
+    override fun onResume() {
+        super.onResume()
+        refreshAd()
+    }
+
+    private fun refreshAd() {
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_PRAYER_GUIDE)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         activity?.let {
 
             setUpViewPager()
             onClickEvent(it)
-            loadAds()
-            /*if (Constants.AdsSwitch.equals("admob")){
-                loadAds()
-            }
-            else {
-                adView = com.facebook.ads.AdView(context, Constants.fbBannerId, com.facebook.ads.AdSize.BANNER_HEIGHT_50)
-                val adContainerFb = binding.adView7
-                adContainerFb.addView(adView)
-                adView.loadAd()
-            }*/
+
         }
     }
 
-    fun onClickEvent(context: Context) {
-        binding.txtToolbar.text = getString(R.string.prayer_guide)
-        binding.backBtn.setSafeOnClickListener {
+    private fun onClickEvent(context: Context) {
+        binding.toolbar.tvTitle.text = getString(R.string.prayer_guide)
+        binding.toolbar.backBtn.setSafeOnClickListener {
             findNavController().navigateUp()
         }
-
-        with(binding.shareBtn) {
+        binding.toolbar.btnMore.apply {
+            setImageResource(R.drawable.share)
             visible()
             setSafeOnClickListener {
-
                 if (fragmentPosition == 0) {
                     sharePdf(context)
                 } else if (fragmentPosition == 1) {
                     sharePdf(context, false)
                 }
+                refreshAd()
             }
         }
     }
@@ -123,13 +121,17 @@ class PrayerGuideMainFragment : Fragment() {
                 fileNameDisplayable = getString(R.string.prayer_guide),
                 downloadCancel = { mess, file ->
                     file.delete()
-                    Toast.makeText(context, getString(R.string.downloading_failed), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        context,
+                        getString(R.string.downloading_failed),
+                        Toast.LENGTH_SHORT
+                    ).show()
                 },
                 downloadComplete = {
                     CoroutineScope(Dispatchers.IO).launch {
 
                         DataBaseFile.ExtractZip(File(it), File(myDir).path)
-                        withContext(Dispatchers.Main){
+                        withContext(Dispatchers.Main) {
                             if (fragmentPosition == 0) {
                                 sharePdf(context)
                             } else if (fragmentPosition == 1) {
@@ -173,6 +175,7 @@ class PrayerGuideMainFragment : Fragment() {
                 super.onPageScrolled(position, positionOffset, positionOffsetPixels)
                 fragmentPosition = position
                 Log.e("position", fragmentPosition.toString())
+                refreshAd()
             }
         })
     }
@@ -188,28 +191,15 @@ class PrayerGuideMainFragment : Fragment() {
                 0 -> {
                     PrayerGuideFragment()
                 }
+
                 1 -> {
                     PrayerGuideFragFemale()
                 }
+
                 else -> {
                     PrayerGuideFragFemale()
                 }
             }
         }
     }
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_PRAYER_GUIDE)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
-    }
-
 }

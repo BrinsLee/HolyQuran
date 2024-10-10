@@ -1,5 +1,7 @@
 package com.ihyas.soharamkarubar.ui.quran;
 
+import static com.ihyas.adlib.ADIdProviderKt.BANNER_AD_TYPE_QURAN;
+
 import android.app.Activity;
 import android.content.Context;
 import android.net.Uri;
@@ -19,9 +21,6 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 ;
 import com.ihyas.soharamkaru.R;
@@ -56,8 +55,14 @@ public class QuranSearchFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentSearchBinding.inflate(inflater);
-        binding.include.tvTitle.setText(getString(R.string.searchinquran));
+        binding.toolbar.tvTitle.setText(getString(R.string.searchinquran));
         return binding.getRoot();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_QURAN);
     }
 
     @Override
@@ -67,11 +72,10 @@ public class QuranSearchFragment extends Fragment {
         navController = Navigation.findNavController(view);
 
         initUtils();
-        loadAds();
 
 
         checkChipsId();
-        binding.include.backBtn.setOnClickListener(v ->
+        binding.toolbar.backBtn.setOnClickListener(v ->
         {
             Utils.preventTwoClick(v);
 
@@ -154,16 +158,6 @@ public class QuranSearchFragment extends Fragment {
         });
     }
 
-    private void loadAds() {
-        AdView mAdView = binding.adView;
-        if (dataBaseFile.getBooleanData(DataBaseFile.purchaseKey, false)) {
-            mAdView.setVisibility(View.GONE);
-        } else {
-            mAdView.setVisibility(View.VISIBLE);
-            AdRequest adRequest = new AdRequest.Builder().build();
-            mAdView.loadAd(adRequest);
-        }
-    }
 
     private void searchInQuran() {
         List<SearchSurah> searchSurahList = searchAllFiles(Objects.requireNonNull(binding.etSearch.getText()).toString(), choice);

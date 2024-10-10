@@ -26,7 +26,7 @@
             <FrameLayout
                 android:layout_width="400dp"
                 android:layout_height="400dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="125dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/circleframe"
                 android:backgroundTint="@color/onSurface2"
@@ -286,16 +286,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
-
-            <FrameLayout
-                android:id="@+id/adView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentBottom="true"
-                android:background="@android:color/transparent"></FrameLayout>
 
 
         </RelativeLayout>

@@ -10,6 +10,7 @@
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar_layout"
+        app:adUnitId="BANNER_AD_TYPE_FASTING_RULE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +31,6 @@
             android:background="@drawable/hadees_big_section_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/adView8"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -70,17 +70,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-        <FrameLayout
-            android:id="@+id/adView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@android:color/transparent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-        </FrameLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

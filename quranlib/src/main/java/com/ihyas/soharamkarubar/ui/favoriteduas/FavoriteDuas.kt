@@ -7,13 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
 import com.ihyas.soharamkaru.R
 import com.ihyas.soharamkaru.databinding.FragmentFavoriteDuasBinding
 import com.ihyas.soharamkarubar.ui.favoriteduas.adapters.FavoriteDuasViewPagerAdapter
@@ -46,7 +42,6 @@ class FavoriteDuas : Fragment() {
         dataBaseFile = DataBaseFile(context)
         onClickListener()
         setUpViewPager()
-        loadAds()
         /*if (Constants.AdsSwitch.equals("admob")){
             loadAds()
         }
@@ -60,23 +55,9 @@ class FavoriteDuas : Fragment() {
     }
 
     private fun setUpToolbar() {
-        binding.include23.tvTitle.setText(getString(R.string.favorite_duas))
+        binding.toolbar.tvTitle.setText(getString(R.string.favorite_duas))
     }
 
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_PRAYER_WORD_DETAIL)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
-    }
 
     private fun setUpViewPager() {
         val titles = listOf(
@@ -94,7 +75,7 @@ class FavoriteDuas : Fragment() {
     }
 
     private fun onClickListener() {
-        binding.include23.backBtn.setSafeOnClickListener {
+        binding.toolbar.backBtn.setSafeOnClickListener {
             findNavController().navigateUp()
         }
     }

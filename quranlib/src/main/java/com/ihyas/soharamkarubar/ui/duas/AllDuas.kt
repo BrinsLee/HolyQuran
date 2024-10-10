@@ -23,7 +23,7 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
+import com.ihyas.adlib.BANNER_AD_TYPE_PRAYER_WORD
 
 class AllDuas : Fragment() {
 
@@ -48,12 +48,15 @@ class AllDuas : Fragment() {
         return binding.root
     }
 
+    override fun onResume() {
+        super.onResume()
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_PRAYER_WORD)
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         dataBaseFile = DataBaseFile(context)
         onClickListener()
         setUpViewPager()
-        loadAds()
         /*if (Constants.AdsSwitch.equals("admob")){
             loadAds()
         }
@@ -79,33 +82,19 @@ class AllDuas : Fragment() {
         })
     }
 
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_PRAYER_WORD)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
-    }
 
     private fun setUpToolbar() {
-        binding.include23.tvTitle.text = getString(R.string.allDuas)
-        binding.include23.btnDelete.visible()
-        binding.include23.btnDelete.setImageResource(R.drawable.ic_ins_favorite)
+        binding.toolbar.tvTitle.text = getString(R.string.allDuas)
+        binding.toolbar.btnDelete.visible()
+        binding.toolbar.btnDelete.setImageResource(R.drawable.ic_ins_favorite)
         val outValue = TypedValue()
         requireContext().theme.resolveAttribute(
             android.R.attr.selectableItemBackground,
             outValue,
             true
         )
-        binding.include23.btnDelete.setBackgroundResource(outValue.resourceId)
-        binding.include23.btnDelete.setSafeOnClickListener {
+        binding.toolbar.btnDelete.setBackgroundResource(outValue.resourceId)
+        binding.toolbar.btnDelete.setSafeOnClickListener {
             findNavController().navigate(R.id.favoriteDuas)
         }
     }
@@ -139,7 +128,7 @@ class AllDuas : Fragment() {
     }
 
     private fun onClickListener() {
-        binding.include23.backBtn.setSafeOnClickListener {
+        binding.toolbar.backBtn.setSafeOnClickListener {
             findNavController().navigateUp()
         }
     }

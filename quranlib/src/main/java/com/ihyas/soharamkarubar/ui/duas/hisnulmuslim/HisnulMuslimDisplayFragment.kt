@@ -16,7 +16,6 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
 import com.ihyas.soharamkaru.R
 import com.ihyas.soharamkarubar.database.FavoriteDua
 import com.ihyas.soharamkaru.databinding.FragmentHisnulMuslimDisplayBinding
@@ -135,17 +134,17 @@ class HisnulMuslimDisplayFragment : Fragment() {
 
     private fun loadAds() {
         // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_PRAYER_WORD_DETAIL)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
+//        adViewadmob = AdView(requireContext())
+//        adViewadmob.setAdSize(AdSize.BANNER)
+//        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_PRAYER_WORD_DETAIL)
+//
+//        // Add the AdView to the FrameLayout.
+//        val adContainer = binding.adView7
+//        adContainer.addView(adViewadmob)
+//
+//        // Load the ad.
+//        val adRequest = AdRequest.Builder().build()
+//        adViewadmob.loadAd(adRequest)
     }
 
     var nameData: MutableList<String>? = null

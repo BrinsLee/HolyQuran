@@ -15,6 +15,7 @@
 
         <include
             android:id="@+id/toolbar"
+            app:adUnitId=""
             layout="@layout/toolbar_layout" />
 
         <LinearLayout

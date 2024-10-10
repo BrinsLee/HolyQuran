@@ -17,21 +17,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.lifecycle.distinctUntilChanged
 import androidx.navigation.fragment.findNavController
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
-import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
-import dagger.hilt.android.AndroidEntryPoint
+import com.ihyas.adlib.BANNER_AD_TYPE_COMPASS
+import com.ihyas.soharamkaru.R
+import com.ihyas.soharamkaru.databinding.ActivityCompassBinding
 import com.ihyas.soharamkarubar.Constants
 import com.ihyas.soharamkarubar.Helper.CalculateQibla
-import com.ihyas.soharamkaru.R
 import com.ihyas.soharamkarubar.base.BaseFragment
-import com.ihyas.soharamkaru.databinding.ActivityCompassBinding
 import com.ihyas.soharamkarubar.pref.ConfigPreferences
 import com.ihyas.soharamkarubar.ui.splash.SplashViewModel
 import com.ihyas.soharamkarubar.utils.PrefsUtils
 import com.ihyas.soharamkarubar.utils.extensions.ViewExtensions.hide
+import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class CompassFragment : BaseFragment<ActivityCompassBinding, CompassViewModel>(),
@@ -99,7 +96,6 @@ class CompassFragment : BaseFragment<ActivityCompassBinding, CompassViewModel>()
         }
         init()
         if (splashViewModel.checkPermissionGranted()) {
-            loadAds()
             return
         } else {
             splashViewModel.checkPermissions()
@@ -109,6 +105,7 @@ class CompassFragment : BaseFragment<ActivityCompassBinding, CompassViewModel>()
 
     override fun onResume() {
         super.onResume()
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_COMPASS)
         handler.removeCallbacksAndMessages(null)
         if (isSupported()) {
             mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_GAME)
@@ -181,7 +178,6 @@ class CompassFragment : BaseFragment<ActivityCompassBinding, CompassViewModel>()
     fun observe() {
         splashViewModel.grantedStatusObservable.distinctUntilChanged().observe(viewLifecycleOwner) {
             if (it == splashViewModel.GRANTED) {
-                loadAds()
             }
             if (it == splashViewModel.NOT_GRANTED) {
                 findNavController().navigate(R.id.action_compassFragment_to_permissionDetails)
@@ -269,20 +265,5 @@ class CompassFragment : BaseFragment<ActivityCompassBinding, CompassViewModel>()
     }
     override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
     }
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_COMPASS)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
-    }
-
 
 }

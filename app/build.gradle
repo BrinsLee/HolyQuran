@@ -50,7 +50,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.google.android.material:material:1.12.0'
-    implementation("com.google.android.gms:play-services-ads-identifier:18.0.1")
+    implementation("com.google.android.gms:play-services-ads-identifier:18.1.0")
     implementation(project(":android-pdf-viewer"))
     implementation(project(":quranlib"))
     implementation 'androidx.appcompat:appcompat:1.7.0'
@@ -58,8 +58,8 @@ dependencies {
 
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
-    implementation 'com.google.android.gms:play-services-ads:23.2.0'
-    implementation 'com.google.android.ump:user-messaging-platform:2.2.0'
+    implementation 'com.google.android.gms:play-services-ads:23.3.0'
+    implementation 'com.google.android.ump:user-messaging-platform:3.0.0'
 
     // Hilt
     implementation hiltDependencies.hilt

@@ -1770,12 +1770,12 @@ class QuranBookVIewFragment : Fragment() {
     }*/
 
     private fun loadAds() {
-        val mAdView = binding.adView
-        mAdView.visibility = View.VISIBLE
-/*        mAdView.adUnitId = ADIdProvider.getBannerAdId()
-        mAdView.setAdSize(AdSize.BANNER)*/
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+//        val mAdView = binding.adView
+//        mAdView.visibility = View.VISIBLE
+///*        mAdView.adUnitId = ADIdProvider.getBannerAdId()
+//        mAdView.setAdSize(AdSize.BANNER)*/
+//        val adRequest = AdRequest.Builder().build()
+//        mAdView.loadAd(adRequest)
     }
 
 }

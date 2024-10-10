@@ -1,14 +1,5 @@
 package com.ihyas.soharamkarubar.ui.asma
 
-import com.ihyas.soharamkaru.R
-import com.ihyas.soharamkarubar.base.BaseFragment
-import com.ihyas.soharamkaru.databinding.ActivityVideoPlayerBinding
-import com.ihyas.soharamkarubar.models.AsmaModel
-import com.ihyas.soharamkarubar.utils.CustomMediaController
-import com.ihyas.soharamkarubar.utils.DataBaseFile
-import com.ihyas.soharamkarubar.utils.common.constants.DirectoryConstants
-import com.ihyas.soharamkarubar.utils.common.constants.FilesNameConstants
-import com.ihyas.soharamkarubar.utils.extensions.ContextExtensions.getFilePath
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
@@ -17,11 +8,17 @@ import android.view.SurfaceView
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
-import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
+import com.ihyas.adlib.BANNER_AD_TYPE_TRUE_NAME
+import com.ihyas.soharamkaru.R
+import com.ihyas.soharamkaru.databinding.ActivityVideoPlayerBinding
+import com.ihyas.soharamkarubar.base.BaseFragment
+import com.ihyas.soharamkarubar.models.AsmaModel
+import com.ihyas.soharamkarubar.utils.CustomMediaController
+import com.ihyas.soharamkarubar.utils.DataBaseFile
+import com.ihyas.soharamkarubar.utils.common.constants.DirectoryConstants
+import com.ihyas.soharamkarubar.utils.common.constants.FilesNameConstants
+import com.ihyas.soharamkarubar.utils.extensions.ContextExtensions.getFilePath
 import dagger.hilt.android.AndroidEntryPoint
 import java.io.File
 
@@ -64,24 +61,16 @@ class AsmaFragment : BaseFragment<ActivityVideoPlayerBinding, AsmaViewModel>(),
 
     override val layoutId: Int = R.layout.activity_video_player
 
+    override fun onResume() {
+        super.onResume()
+       binding.nameLayout.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_TRUE_NAME)
+    }
     override fun onReady(savedInstanceState: Bundle?) {
 
         binding.nameLayout.toolbar.tvTitle.text = resources.getString(R.string.allah_99_names)
         binding.nameLayout.toolbar.backBtn.setOnClickListener {
             findNavController().popBackStack()
         }
-        loadAds()
-        /*if (Constants.AdsSwitch.equals("admob")){
-            loadAds()
-        }
-        else {
-            adView = com.facebook.ads.AdView(context, Constants.fbBannerId, com.facebook.ads.AdSize.BANNER_HEIGHT_50)
-            val adContainerFb = binding.adView7
-            adContainerFb.addView(adView)
-            adView.loadAd()
-        }*/
-        /*
-        */
         binding.nameLayout.nameList.adapter = asmaAdapter
         observe()
         viewModel.getDataFromFile()
@@ -205,20 +194,4 @@ class AsmaFragment : BaseFragment<ActivityVideoPlayerBinding, AsmaViewModel>(),
     override fun canSeekForward(): Boolean {
         return true
     }
-
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_TRUE_NAME)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
-    }
-
 }

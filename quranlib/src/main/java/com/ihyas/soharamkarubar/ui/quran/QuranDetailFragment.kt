@@ -1,26 +1,5 @@
 package com.ihyas.soharamkarubar.ui.quran
 
-import com.ihyas.soharamkarubar.Helper.LastSurahAndAyahHelper
-import com.ihyas.soharamkaru.R
-import com.ihyas.soharamkarubar.database.AppDatabase
-import com.ihyas.soharamkaru.databinding.QurandetailfragmntLayoutBinding
-import com.ihyas.soharamkarubar.download.DownloadAudioFile
-import com.ihyas.soharamkarubar.models.AyahBookMark
-import com.ihyas.soharamkarubar.models.Verses
-import com.ihyas.soharamkarubar.ui.quran.adapters.QuranDetailAdapter
-import com.ihyas.soharamkarubar.ui.quran.adapters.VersesAdapter
-import com.ihyas.soharamkarubar.utils.DataBaseFile
-import com.ihyas.soharamkarubar.utils.QuranUtils.isFromKhatam
-import com.ihyas.soharamkarubar.utils.QuranUtils.loadDataFromFile
-import com.ihyas.soharamkarubar.utils.QuranUtils.removeCharacter2
-import com.ihyas.soharamkarubar.utils.common.constants.QuranConstants.QURAN_TRANSALTION_DEFAULTVALUE
-import com.ihyas.soharamkarubar.utils.common.constants.QuranConstants.URDU_TRANSLATION_KEY
-import com.ihyas.soharamkarubar.utils.common.constants.QuranConstants.sizeArra
-import com.ihyas.soharamkarubar.utils.common.constants.QuranConstants.sizeArra2
-import com.ihyas.soharamkarubar.utils.extensions.FragmentExtension.setSafeOnClickListener
-import com.ihyas.soharamkarubar.utils.extensions.ViewExtensions.hide
-import com.ihyas.soharamkarubar.utils.extensions.ViewExtensions.visible
-import com.ihyas.soharamkarubar.utils.managers.QuranNotificationManager.setUpNotification
 import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.ClipData
@@ -59,13 +38,34 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
-import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
+import com.ihyas.soharamkaru.R
+import com.ihyas.soharamkaru.databinding.QurandetailfragmntLayoutBinding
+import com.ihyas.soharamkarubar.Helper.LastSurahAndAyahHelper
+import com.ihyas.soharamkarubar.database.AppDatabase
+import com.ihyas.soharamkarubar.download.DownloadAudioFile
+import com.ihyas.soharamkarubar.models.AyahBookMark
+import com.ihyas.soharamkarubar.models.Verses
+import com.ihyas.soharamkarubar.ui.quran.adapters.QuranDetailAdapter
+import com.ihyas.soharamkarubar.ui.quran.adapters.VersesAdapter
+import com.ihyas.soharamkarubar.utils.DataBaseFile
+import com.ihyas.soharamkarubar.utils.QuranUtils.isFromKhatam
+import com.ihyas.soharamkarubar.utils.QuranUtils.loadDataFromFile
+import com.ihyas.soharamkarubar.utils.QuranUtils.removeCharacter2
+import com.ihyas.soharamkarubar.utils.common.constants.QuranConstants.QURAN_TRANSALTION_DEFAULTVALUE
+import com.ihyas.soharamkarubar.utils.common.constants.QuranConstants.URDU_TRANSLATION_KEY
+import com.ihyas.soharamkarubar.utils.common.constants.QuranConstants.sizeArra
+import com.ihyas.soharamkarubar.utils.common.constants.QuranConstants.sizeArra2
+import com.ihyas.soharamkarubar.utils.extensions.FragmentExtension.setSafeOnClickListener
+import com.ihyas.soharamkarubar.utils.extensions.ViewExtensions.hide
+import com.ihyas.soharamkarubar.utils.extensions.ViewExtensions.visible
+import com.ihyas.soharamkarubar.utils.managers.QuranNotificationManager.setUpNotification
 import java.io.File
-import java.util.*
+import java.util.Arrays
+import java.util.Formatter
+import java.util.Locale
+import java.util.Timer
+import java.util.TimerTask
 import java.util.concurrent.Executors
 
 
@@ -123,7 +123,6 @@ class QuranDetailFragment : Fragment() {
             initUtils(it)
             showArrow(it)
             surahIndexDataFromFile
-            loadAds()
             /*if (Constants.AdsSwitch.equals("admob")){
                 loadAds()
             }
@@ -1095,21 +1094,5 @@ class QuranDetailFragment : Fragment() {
 
 
     }
-
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_QURAN_AUDIO)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
-    }
-
 
 }

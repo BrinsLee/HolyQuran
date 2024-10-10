@@ -38,22 +38,8 @@
                 android:id="@+id/nameLayout"
                 layout="@layout/activity_allah_names"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="55dp" />
+                android:layout_height="match_parent" />
         </FrameLayout>
-
-
-        <FrameLayout
-            android:id="@+id/adView7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@android:color/transparent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-        </FrameLayout>
-
 
     </LinearLayout>
 

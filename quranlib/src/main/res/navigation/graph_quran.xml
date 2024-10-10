@@ -2,18 +2,19 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/quranMainGraph"
-    android:id="@+id/graph_quran">
+    android:id="@+id/graph_quran"
+    app:startDestination="@id/quranMainGraph">
 
-    <navigation android:id="@+id/quranMainGraph" app:startDestination="@id/navigation_quran">
+    <navigation
+        android:id="@+id/quranMainGraph"
+        app:startDestination="@id/navigation_quran">
 
 
-    <fragment
-        android:id="@+id/navigation_quran"
-        android:name="com.ihyas.soharamkarubar.ui.quran.QuranFragment"
-        tools:layout="@layout/fragment_quran"
-        android:label="fragment_quran">
-    </fragment>
+        <fragment
+            android:id="@+id/navigation_quran"
+            android:name="com.ihyas.soharamkarubar.ui.quran.QuranFragment"
+            android:label="fragment_quran"
+            tools:layout="@layout/fragment_quran"></fragment>
         <fragment
             android:id="@+id/quran_ByJuzz"
             android:name="com.ihyas.soharamkarubar.ui.quran.viewpagerfragments.Quran_ByJuzz"
@@ -38,8 +39,8 @@
     <fragment
         android:id="@+id/quranDetailFragment"
         android:name="com.ihyas.soharamkarubar.ui.quran.QuranDetailFragment"
-        tools:layout="@layout/qurandetailfragmnt_layout"
-        android:label="fragment_quran_detail">
+        android:label="fragment_quran_detail"
+        tools:layout="@layout/qurandetailfragmnt_layout">
         <action
             android:id="@+id/action_quranDetailFragment_to_ayahNoteFragment"
             app:destination="@id/ayahNoteFragment" />
@@ -62,14 +63,14 @@
             app:uri="https://qurandetail.com/{randomAyat}" />
         <argument
             android:name="randomAyat"
-            app:argType="integer"
-            android:defaultValue="-1" />
+            android:defaultValue="-1"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/ayahNoteFragment"
         android:name="com.ihyas.soharamkarubar.ui.quran.AyahNoteFragment"
-        tools:layout="@layout/fragment_ayah_note"
-        android:label="fragment_ayah_note">
+        android:label="fragment_ayah_note"
+        tools:layout="@layout/fragment_ayah_note">
         <argument
             android:name="surahNumber"
             android:defaultValue="0"
@@ -94,8 +95,8 @@
     <fragment
         android:id="@+id/quranTranslationsFragment"
         android:name="com.ihyas.soharamkarubar.ui.quran.QuranTranslationsFragment"
-        tools:layout="@layout/fragment_quran_translations"
-        android:label="fragment_quran_translations">
+        android:label="fragment_quran_translations"
+        tools:layout="@layout/fragment_quran_translations">
         <deepLink
             android:id="@+id/ayatShareDeepLink"
             android:autoVerify="true"
@@ -104,8 +105,8 @@
     <fragment
         android:id="@+id/quranTextSettings"
         android:name="com.ihyas.soharamkarubar.ui.setting.fragments.QuranTextSettings"
-        tools:layout="@layout/fragment_qurantext_settings"
-        android:label="fragment_quran_settings">
+        android:label="fragment_quran_settings"
+        tools:layout="@layout/fragment_qurantext_settings">
         <deepLink
             android:id="@+id/quranTextSettingsdeepling"
             android:autoVerify="true"
@@ -146,13 +147,13 @@
     <fragment
         android:id="@+id/arabicFontFragment"
         android:name="com.ihyas.soharamkarubar.ui.quran.QuranArabicFontFragment"
-        tools:layout="@layout/fragment_arabic_font"
-        android:label="fragment_arabic_font" />
+        android:label="fragment_arabic_font"
+        tools:layout="@layout/fragment_arabic_font" />
     <fragment
         android:id="@+id/audioSettingsFragment"
         android:name="com.ihyas.soharamkarubar.ui.quran.QuranAudioSettingsFragment"
-        tools:layout="@layout/fragment_audio_settings"
-        android:label="fragment_audio_settings" >
+        android:label="fragment_audio_settings"
+        tools:layout="@layout/fragment_audio_settings">
 
         <deepLink
             android:id="@+id/ayatShareDeepLink"
@@ -164,8 +165,8 @@
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.ihyas.soharamkarubar.ui.quran.QuranSearchFragment"
-        tools:layout="@layout/fragment_search"
-        android:label="fragment_search" >
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
         <deepLink
             android:id="@+id/quranSearchDeepLink"
             android:autoVerify="true"
@@ -174,7 +175,7 @@
     <fragment
         android:id="@+id/quranKhatamIntoScreen"
         android:name="com.ihyas.soharamkarubar.ui.quranakhatam.QuranKhatamIntroScreen"
-        tools:layout="@layout/quran_khatam_intro_screen_fragment" >
+        tools:layout="@layout/quran_khatam_intro_screen_fragment">
         <deepLink
             android:id="@+id/quranKhatamIntroScreenDeepLink"
             android:autoVerify="true"
@@ -184,14 +185,15 @@
     <fragment
         android:id="@+id/quranKhatamProgressDetail"
         android:name="com.ihyas.soharamkarubar.ui.quranakhatam.QuranKhatamProgressDetail"
-        tools:layout="@layout/fragment_quran_khatam_progress_detail" >
+        tools:layout="@layout/fragment_quran_khatam_progress_detail">
 
         <deepLink
             android:id="@+id/quranKhatamProgressDetailDeepLink"
             app:uri="https://quranKhatamProgressDetail.com/" />
 
     </fragment>
-    <navigation android:id="@+id/QuranBookViewNavigation"
+    <navigation
+        android:id="@+id/QuranBookViewNavigation"
         app:startDestination="@id/quranBookVIewFragment">
         <fragment
             android:id="@+id/quranBookVIewFragment"
@@ -200,8 +202,8 @@
             tools:layout="@layout/fragment_quran_book_v_iew">
             <argument
                 android:name="navigateToAyat"
-                app:argType="integer"
-                android:defaultValue="-1" />
+                android:defaultValue="-1"
+                app:argType="integer" />
             <deepLink
                 android:id="@+id/quranBookViewDeepLink"
                 app:uri="https://quranBookView.com/{navigateToAyat}" />

@@ -11,6 +11,7 @@
         android:id="@+id/include25"
         layout="@layout/toolbar_layout"
         android:layout_width="0dp"
+        app:adUnitId=""
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -174,18 +175,18 @@
             </androidx.cardview.widget.CardView>
 
 
-            <com.google.android.gms.ads.AdView
-                android:id="@+id/adView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="@dimen/margin_small"
-                app:adSize="BANNER" android:visibility="gone"
-                app:adUnitId="@string/ad_banner_id_prayer_detail"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/duaPlayCV"
-                app:layout_constraintStart_toStartOf="@+id/duaPlayCV" />
+<!--            <com.google.android.gms.ads.AdView-->
+<!--                android:id="@+id/adView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginBottom="@dimen/margin_small"-->
+<!--                app:adSize="BANNER" android:visibility="gone"-->
+<!--                app:adUnitId="@string/ad_banner_id_prayer_detail"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/duaPlayCV"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/duaPlayCV" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

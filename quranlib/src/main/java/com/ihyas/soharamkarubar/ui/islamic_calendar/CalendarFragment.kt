@@ -1,11 +1,5 @@
 package com.ihyas.soharamkarubar.ui.islamic_calendar
 
-import com.ihyas.soharamkaru.R
-import com.ihyas.soharamkarubar.base.BaseFragment
-import com.ihyas.soharamkaru.databinding.FragmentCalendarBinding
-import com.ihyas.soharamkarubar.utils.DataBaseFile
-import com.ihyas.soharamkarubar.utils.Utils
-import com.ihyas.soharamkarubar.utils.calendarutils.CalendarAdapter
 import android.os.Bundle
 import android.view.View
 import android.view.animation.Animation
@@ -13,11 +7,13 @@ import android.view.animation.AnimationUtils
 import android.widget.NumberPicker
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.navigation.fragment.findNavController
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
-import com.google.android.gms.ads.AdView
-import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
+import com.ihyas.adlib.BANNER_AD_TYPE_CALENDAR
+import com.ihyas.soharamkaru.R
+import com.ihyas.soharamkaru.databinding.FragmentCalendarBinding
+import com.ihyas.soharamkarubar.base.BaseFragment
+import com.ihyas.soharamkarubar.utils.DataBaseFile
+import com.ihyas.soharamkarubar.utils.Utils
+import com.ihyas.soharamkarubar.utils.calendarutils.CalendarAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -29,33 +25,28 @@ class CalendarFragment : BaseFragment<FragmentCalendarBinding, CalendarViewModel
     override val viewModel: CalendarViewModel by hiltNavGraphViewModels(R.id.main_navigation)
 
     override val layoutId: Int = R.layout.fragment_calendar
-    private lateinit var adViewadmob: AdView
-    //private lateinit var adView: com.facebook.ads.AdView
+
+    override fun onResume() {
+        super.onResume()
+        refreshAd()
+    }
+
+    private fun refreshAd() {
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_CALENDAR)
+    }
+
     override fun onReady(savedInstanceState: Bundle?) {
 
-        binding.txtToolbar.text = getString(R.string.text_title_isalamic_calandar)
+        binding.toolbar.tvTitle.text = getString(R.string.text_title_isalamic_calandar)
         initUtils()
         setCustomCalendar()
         setListener()
-        loadAds()
-        /*if (Constants.AdsSwitch.equals("admob")){
-            loadAds()
-        }
-        else {
-            adView = com.facebook.ads.AdView(context, Constants.fbBannerId, com.facebook.ads.AdSize.BANNER_HEIGHT_50)
-            val adContainerFb = binding.adView7
-            adContainerFb.addView(adView)
-            adView.loadAd()
-        }*/
-        /*
-        */
+
     }
 
     private fun initUtils() {
         dataBaseFile = DataBaseFile(requireActivity())
         hijriNames = resources.getStringArray(R.array.hijri_months)
-//        binding.toolbarSearchBtn.setVisibility(View.VISIBLE)
-//        binding.toolbarSettingBtn.setVisibility(View.VISIBLE)
     }
 
 
@@ -125,34 +116,25 @@ class CalendarFragment : BaseFragment<FragmentCalendarBinding, CalendarViewModel
         binding.doneBtn.setOnClickListener { v ->
             Utils.preventTwoClick(v)
             disableAnimation(binding.searchMenu)
+            refreshAd()
         }
-        /*binding.include17.toolbarSearchBtn.setOnClickListener { v ->
-            Utils.preventTwoClick(v)
-            if (binding.searchMenu.visibility === View.GONE) {
-                enableAnimation(binding.searchMenu)
-            } else {
-                disableAnimation(binding.searchMenu)
+        binding.toolbar.btnMore.apply {
+            visibility = View.VISIBLE
+            setImageResource(R.drawable.ic_search_icon)
+            setOnClickListener { v ->
+                Utils.preventTwoClick(v)
+                if (binding.searchMenu.visibility == View.GONE) {
+                    enableAnimation(binding.searchMenu)
+                } else {
+                    disableAnimation(binding.searchMenu)
+                }
+                refreshAd()
             }
-        }*/
-        binding.backBtn.setOnClickListener { v ->
+        }
+        binding.toolbar.backBtn.setOnClickListener { v ->
             Utils.preventTwoClick(v)
             findNavController().navigateUp()
         }
     }
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_CALENDAR)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
-    }
-
 
 }

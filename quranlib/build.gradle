@@ -13,7 +13,6 @@ android {
     defaultConfig {
         minSdk 21
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
 
@@ -110,7 +109,4 @@ dependencies {
     implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
     implementation 'com.google.android.gms:play-services-ads:23.2.0'
 
-    testImplementation 'junit:junit:4.14-SNAPSHOT'
-    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 }

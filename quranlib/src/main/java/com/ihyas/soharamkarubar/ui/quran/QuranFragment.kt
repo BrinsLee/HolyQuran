@@ -1,6 +1,5 @@
 package com.ihyas.soharamkarubar.ui.quran
 
-import com.ihyas.soharamkarubar.Helper.LastSurahAndAyahHelper
 import android.content.Context
 import android.graphics.Typeface
 import android.os.Bundle
@@ -16,14 +15,12 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.google.android.material.tabs.TabLayoutMediator
-import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
+import com.ihyas.adlib.BANNER_AD_TYPE_QURAN
 import com.ihyas.soharamkaru.R
 import com.ihyas.soharamkaru.databinding.FragmentQuranBinding
+import com.ihyas.soharamkarubar.Helper.LastSurahAndAyahHelper
 import com.ihyas.soharamkarubar.ui.quran.viewpagerfragments.*
 import com.ihyas.soharamkarubar.utils.DataBaseFile
 import com.ihyas.soharamkarubar.utils.QuranUtils
@@ -47,10 +44,14 @@ class QuranFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentQuranBinding.inflate(layoutInflater)
-        binding.include5.tvTitle.text = getString(R.string.text_quran)
+        binding.toolbar.tvTitle.text = getString(R.string.text_quran)
         return binding.root
     }
 
+    override fun onResume() {
+        super.onResume()
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_QURAN)
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         QuranUtils.isFromKhatam = false
@@ -74,7 +75,6 @@ class QuranFragment : Fragment() {
             }
 
         }
-        loadAds()
         /*if (Constants.AdsSwitch.equals("admob")){
             loadAds()
         }
@@ -182,13 +182,13 @@ class QuranFragment : Fragment() {
             findNavController().navigate("https://quranKhatamProgressDetail.com/".toUri())
         }
 
-        binding.include5.backBtn.setSafeOnClickListener {
+        binding.toolbar.backBtn.setSafeOnClickListener {
             findNavController().popBackStack()
         }
 
-        binding.include5.btnMore.visible()
-        binding.include5.btnMore.setImageResource(R.drawable.ic_search_icon)
-        binding.include5.btnMore.setSafeOnClickListener { v: View? ->
+        binding.toolbar.btnMore.visible()
+        binding.toolbar.btnMore.setImageResource(R.drawable.ic_search_icon)
+        binding.toolbar.btnMore.setSafeOnClickListener { v: View? ->
             findNavController().navigate("https://quranSearch.com/".toUri())
         }
     }
@@ -232,19 +232,4 @@ class QuranFragment : Fragment() {
         onPageCallack?.let { binding.quranViewPager.unregisterOnPageChangeCallback(it) }
         adapter=null
     }
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_QURAN)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
-    }
-
 }

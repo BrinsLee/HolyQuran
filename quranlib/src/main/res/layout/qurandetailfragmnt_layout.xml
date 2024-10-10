@@ -19,6 +19,7 @@
         <include
             android:id="@+id/include6"
             layout="@layout/toolbar_layout"
+            app:adUnitId="BANNER_AD_TYPE_QURAN_AUDIO"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
@@ -110,17 +111,6 @@
 
     <!-- Sound Bar Setting............................ -->
 
-
-    <FrameLayout
-        android:id="@+id/adView7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

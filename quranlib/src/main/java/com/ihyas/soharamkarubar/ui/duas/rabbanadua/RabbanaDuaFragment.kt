@@ -377,11 +377,11 @@ class RabbanaDuaFragment : Fragment() {
     }
 
     private fun loadAds() {
-        Log.d("loadAds", "loadAds: DashboardFragment")
-        val mAdView = binding.adView
-        mAdView.visibility = View.VISIBLE
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+//        Log.d("loadAds", "loadAds: DashboardFragment")
+//        val mAdView = binding.adView
+//        mAdView.visibility = View.VISIBLE
+//        val adRequest = AdRequest.Builder().build()
+//        mAdView.loadAd(adRequest)
     }
 
 
@@ -438,7 +438,7 @@ class RabbanaDuaFragment : Fragment() {
             player?.pause()
             player = null
         }
-        binding.adView.destroy()
+//        binding.adView.destroy()
     }
 
     companion object {

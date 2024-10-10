@@ -58,14 +58,14 @@ public class QuranArabicFontFragment extends Fragment {
     }
 
     private void loadAds() {
-        AdView mAdView = binding.adView;
-        if (dataBaseFile.getBooleanData(DataBaseFile.purchaseKey, false)) {
-            mAdView.setVisibility(View.GONE);
-        } else {
-            mAdView.setVisibility(View.VISIBLE);
-            AdRequest adRequest = new AdRequest.Builder().build();
-            mAdView.loadAd(adRequest);
-        }
+//        AdView mAdView = binding.adView;
+//        if (dataBaseFile.getBooleanData(DataBaseFile.purchaseKey, false)) {
+//            mAdView.setVisibility(View.GONE);
+//        } else {
+//            mAdView.setVisibility(View.VISIBLE);
+//            AdRequest adRequest = new AdRequest.Builder().build();
+//            mAdView.loadAd(adRequest);
+//        }
     }
 
     private void setRadioButtonListeners() {

@@ -35,8 +35,4 @@ public interface OnDrawListener {
      * @param displayedPage The current page index
      */
     void onLayerDrawn(Canvas canvas, float pageWidth, float pageHeight, int displayedPage);
-
-    void onPreloadAd(int displayedPage);
-
-    void onDrawAd(Canvas canvas, float pageWidth, float pageHeight, int displayedPage);
 }

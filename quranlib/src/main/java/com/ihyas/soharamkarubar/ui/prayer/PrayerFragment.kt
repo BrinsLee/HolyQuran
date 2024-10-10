@@ -1,15 +1,5 @@
 package com.ihyas.soharamkarubar.ui.prayer
 
-import com.ihyas.soharamkarubar.Constants
-import com.ihyas.soharamkaru.R
-import com.ihyas.soharamkarubar.base.BaseFragment
-import com.ihyas.soharamkaru.databinding.ActivityPrayerBinding
-import com.ihyas.soharamkarubar.settings.AppSettings
-import com.ihyas.soharamkarubar.utils.DateUtils
-import com.ihyas.soharamkarubar.utils.DialogUtils
-import com.ihyas.soharamkarubar.utils.PrayTime
-import com.ihyas.soharamkarubar.utils.PrefsUtils
-import com.ihyas.soharamkarubar.utils.extensions.ViewExtensions.visible
 import android.app.NotificationManager
 import android.content.ContentResolver
 import android.content.Context
@@ -17,18 +7,28 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import androidx.core.content.ContextCompat
 import androidx.core.text.TextUtilsCompat
 import androidx.core.view.ViewCompat
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.navigation.fragment.findNavController
-import dagger.hilt.android.AndroidEntryPoint
-import java.util.*
-import androidx.core.content.ContextCompat
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
-import com.google.android.gms.ads.AdView
 import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
+import com.ihyas.adlib.BANNER_AD_TYPE_PRAYER_TIME
+import com.ihyas.soharamkaru.R
+import com.ihyas.soharamkaru.databinding.ActivityPrayerBinding
+import com.ihyas.soharamkarubar.Constants
+import com.ihyas.soharamkarubar.base.BaseFragment
+import com.ihyas.soharamkarubar.settings.AppSettings
+import com.ihyas.soharamkarubar.utils.DateUtils
+import com.ihyas.soharamkarubar.utils.DialogUtils
+import com.ihyas.soharamkarubar.utils.PrayTime
+import com.ihyas.soharamkarubar.utils.PrefsUtils
+import com.ihyas.soharamkarubar.utils.extensions.ViewExtensions.visible
+import dagger.hilt.android.AndroidEntryPoint
+import java.util.Calendar
+import java.util.Date
+import java.util.Locale
+import java.util.TimeZone
 
 @AndroidEntryPoint
 class PrayerFragment : BaseFragment<ActivityPrayerBinding, PrayerViewModel>(),
@@ -45,17 +45,19 @@ class PrayerFragment : BaseFragment<ActivityPrayerBinding, PrayerViewModel>(),
     override val viewModel: PrayerViewModel by hiltNavGraphViewModels(R.id.main_navigation)
 
     override val layoutId: Int = R.layout.activity_prayer
-    private lateinit var adViewAdmob: AdView
+//    private lateinit var adViewAdmob: AdView
     //private lateinit var adView: com.facebook.ads.AdView
 
-
+    override fun onResume() {
+        super.onResume()
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_PRAYER_TIME)
+    }
 
     override fun onReady(savedInstanceState: Bundle?) {
 
         binding.toolbar.btnMore.visible()
         binding.toolbar.btnMore.setImageResource(R.drawable.settings)
         binding.toolbar.tvTitle.text = resources.getString(R.string.prayer_time)
-        loadAds()
         /*if (Constants.AdsSwitch.equals("admob")){
             loadAds()
         }
@@ -176,20 +178,6 @@ class PrayerFragment : BaseFragment<ActivityPrayerBinding, PrayerViewModel>(),
 
     override fun onSettingsSaved(isSaved: Boolean) {
         getPrayerTimes(prayers, latitude, longitude, timezone)
-    }
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewAdmob = AdView(requireContext())
-        adViewAdmob.setAdSize(AdSize.BANNER)
-        adViewAdmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_PRAYER_TIME)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewAdmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewAdmob.loadAd(adRequest)
     }
 
 

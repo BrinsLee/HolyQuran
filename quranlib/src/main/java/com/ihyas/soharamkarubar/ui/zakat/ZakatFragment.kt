@@ -1,11 +1,5 @@
 package com.ihyas.soharamkarubar.ui.zakat
 
-import com.ihyas.soharamkaru.R
-import com.ihyas.soharamkarubar.base.BaseFragment
-import com.ihyas.soharamkaru.databinding.FragmentZakatBinding
-import com.ihyas.soharamkarubar.utils.DataBaseFile
-import com.ihyas.soharamkarubar.utils.extensions.DoubleExtensions.limitTo2Decimal
-import com.ihyas.soharamkarubar.utils.extensions.setSafeOnClickListener
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
@@ -16,11 +10,14 @@ import androidx.core.view.isVisible
 import androidx.core.widget.doAfterTextChanged
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.navigation.fragment.findNavController
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
-import com.ihyas.adlib.ADIdProvider
-import com.ihyas.adlib.BannerAdType
+import com.ihyas.adlib.BANNER_AD_TYPE_CALCULATE
+import com.ihyas.soharamkaru.R
+import com.ihyas.soharamkaru.databinding.FragmentZakatBinding
+import com.ihyas.soharamkarubar.base.BaseFragment
+import com.ihyas.soharamkarubar.utils.DataBaseFile
+import com.ihyas.soharamkarubar.utils.extensions.DoubleExtensions.limitTo2Decimal
+import com.ihyas.soharamkarubar.utils.extensions.setSafeOnClickListener
 import dagger.hilt.android.AndroidEntryPoint
 import io.github.douglasjunior.androidSimpleTooltip.SimpleTooltip
 
@@ -93,11 +90,11 @@ class ZakatFragment : BaseFragment<FragmentZakatBinding, ZakatViewModel>() {
 
         dataBaseFile = DataBaseFile(context)
 
+        binding.toolbar.tvTitle.text=getString(R.string.zakat_calculator)
         setListener()
         setSpinner()
         setInfoListner()
         setZakatCalculationListener()
-        loadAds()
         /*if (Constants.AdsSwitch.equals("admob")){
             loadAds()
         }
@@ -223,7 +220,7 @@ class ZakatFragment : BaseFragment<FragmentZakatBinding, ZakatViewModel>() {
             }
         }
 
-        binding.backBtn.setSafeOnClickListener {
+        binding.toolbar.backBtn.setSafeOnClickListener {
             findNavController().navigateUp()
         }
 
@@ -1021,19 +1018,8 @@ class ZakatFragment : BaseFragment<FragmentZakatBinding, ZakatViewModel>() {
         binding.totalAssetsTV.text = totalAssets.toLong().toString()
         binding.totalZakatDueTV.text = totalZakatDue.toLong().toString()
     }
-    private fun loadAds() {
-        // Initialize the AdView.
-        adViewadmob = AdView(requireContext())
-        adViewadmob.setAdSize(AdSize.BANNER)
-        adViewadmob.adUnitId = ADIdProvider.getBannerAdId(BannerAdType.BANNER_AD_TYPE_CALCULATE)
-
-        // Add the AdView to the FrameLayout.
-        val adContainer = binding.adView7
-        adContainer.addView(adViewadmob)
-
-        // Load the ad.
-        val adRequest = AdRequest.Builder().build()
-        adViewadmob.loadAd(adRequest)
+    override fun onResume() {
+        super.onResume()
+        binding.toolbar.adViewContainer.refreshAd(BANNER_AD_TYPE_CALCULATE)
     }
-
 }

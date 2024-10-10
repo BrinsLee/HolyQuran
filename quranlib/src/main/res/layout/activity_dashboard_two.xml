@@ -75,14 +75,14 @@
             android:layout_weight="1"
             android:layout_margin="10dp" />
 
-        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            ads:adSize="BANNER"
-            android:translationZ="3dp"
-            ads:adUnitId="@string/ad_banner_id_bottom" />
+<!--        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--            android:id="@+id/adView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/white"-->
+<!--            ads:adSize="BANNER"-->
+<!--            android:translationZ="3dp"-->
+<!--            ads:adUnitId="@string/ad_banner_id_bottom" />-->
 
     </LinearLayout>
 
